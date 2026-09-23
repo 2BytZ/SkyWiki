@@ -1,0 +1,74 @@
+
+.mw-games-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.mw-games-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0;
+}
+
+
+li.gallerybox div.thumb {
+    text-align: center;
+    margin: 2px;
+}
+
+.gallerybox {
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    outline: 1px solid #4c4c4c;
+    width: 155px;
+}
+
+div.thumb {
+    width: auto;
+    background-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.thumb {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+ul.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: .75rem;
+    padding: 5px;
+    list-style: none;
+}
+
+ul.gallery li {
+    display: flex;
+}
+
+div.gallerytext {
+    align-items: center;
+    word-wrap: break-word;
+    text-align: center;
+    flex: 1;
+}
+
+ul li a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    padding: 5px;
+
+    text-decoration: none;
+}

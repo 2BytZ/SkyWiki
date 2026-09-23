@@ -1,0 +1,64 @@
+
+.ts-container {
+    padding: 0 10px;
+    background: #101010;
+}
+
+.ts-container .ts-inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: auto;
+    position: relative;
+}
+
+.ts-inner {
+    padding: 6px 0;
+    height: 55px;
+}
+
+.ts-container .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .logo {
+
+} */
+
+.navbar {
+    display: flex;
+    min-width: 0;
+    flex: 1 1 auto;
+    justify-content: left;
+
+    margin: 0 24px;
+
+    margin-inline: 24px;
+}
+
+
+
+.navbutton {
+    display: inline-block;
+    position: relative;
+
+    padding: 7px 10px;
+
+
+    background: #181818;
+    border: 1px solid #333;
+
+    cursor: pointer;
+}
+
+.nav-main {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+
+}
