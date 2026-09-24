@@ -1,4 +1,6 @@
+import { href } from "react-router-dom"
 import { InfoCard } from "../components/InfoCard"
+import "./characterPage.css"
 
 
 export function Dranleic() {
@@ -11,12 +13,7 @@ export function Dranleic() {
             {text: "Tamriel", href: "https://en.uesp.net/wiki/Lore:Tamriel"},
         ]
     }
-    const race = {
-        title: "Race", 
-        desc: [
-            {text: "Argonian", href: "https://en.uesp.net/wiki/Lore:Argonian"}
-        ]
-    }
+    const race = {title: "Race", desc: [{text: "Argonian", href: "https://en.uesp.net/wiki/Lore:Argonian"}]}
     const gender = { title: "Gender", desc: "Male"}
     const birth = { title: "Birth", desc: "6th of First Seed, 4E1XX"}
     const faction = {
@@ -48,7 +45,7 @@ export function Dranleic() {
             {text: "Winterhold", href: "https://en.uesp.net/wiki/Lore:Winterhold_(city)"},
             {text: ", "},
             {text: "Windhelm", href: "https://en.uesp.net/wiki/Lore:Windhelm"},
-            {text: ", "},
+            {text: " and "},
             {text: "Falkreath", href: "https://en.uesp.net/wiki/Lore:Falkreath"},
             {text: ", "},
             {text: "War Hero"},
@@ -60,30 +57,29 @@ export function Dranleic() {
             {text: "Ysmir", href: "https://en.uesp.net/wiki/Lore:Ysmir"}
         ]
     }
-    const family = {title: "Family Role", desc: "Father, married to Brelyna Maryon with two children"}
+    const spouse = {title: "Spouse", desc: [{text: "Brelyna Maryon", href: "https://en.uesp.net/wiki/Skyrim:Brelyna_Maryon"}]}
+    const children = {title: "Children", desc: "2"}
     const arrests = {title: "# of times in jail", desc: "4"}
     const kills = {title: "Confirmed Kills", desc: "N/A"}
     const bounty = {title: "Accumulated Bounty", desc: "N/A"}
     const sentence = {title: "Estimated judicial sentence", desc: "Death / Public Execution"}
 
 
-    const infoCardRows = [origin, race, gender, birth, faction, titles, family, arrests, kills, bounty, sentence]
+    const infoCardRows = [origin, race, gender, birth, faction, titles, spouse, children, arrests, kills, bounty, sentence]
 
     return (
         <>
-            <table>
-                <thead>
-                    <tr>
-                        <td>Dranleic Haligdrake</td>
-                    </tr>
-                    <tr>
-                        <img src="public/Dranleic-Haligdrake-thumb.jpg" alt="Dranleic Haligdrake" />
-                    </tr>
-                </thead>
+            <table className="infobox vcard">
+                <caption className="infobox-title">Dranleic Haligdrake</caption>
                 <tbody>
+                    <tr>
+                        <td colSpan="2" className="infobox-img">
+                            <img src="/dummy-pic-character-page.png" alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
+                        </td>
+                    </tr>
                     {infoCardRows.map((info) => {
                         return <InfoCard key={info.title} info={info}/>
-                    })}            
+                    })}
                 </tbody>
             </table>
         </>

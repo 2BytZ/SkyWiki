@@ -1,0 +1,47 @@
+
+/* :root {
+    --image-size-small: 180px;
+    --image-size-standard: 250px;
+    --image-size-large: 400px;
+    --image-size-user: var(--image-size-standard)
+
+
+
+
+    --mw-file-upright: 0.68;
+
+}
+
+@supports (width: round(1.5px,1px)){
+    img.mw-file-upright {
+        width: round(var(--mw-file-upright) * var(--mw-file-upright, 1), 10px);
+    }
+} */
+
+@media (min-width: 640px) {
+    .infobox {
+        margin-left: 1em;
+        float: right;
+        clear: right;
+        width: 22em;
+    }
+}
+
+.infobox {
+    border: 1px solid #4c4c4c;
+    padding: .2em;
+    font-size: 88%;
+    line-height: 1.5em;
+    border-spacing: 3px;
+    margin: 0.5em 0;
+}
+    
+img.mw-file-upright {
+    width: 68%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    /* width: calc(var(--image-size-user) * var(--mw-file-upright, 1)); */
+
+    vertical-align: middle;
+}
