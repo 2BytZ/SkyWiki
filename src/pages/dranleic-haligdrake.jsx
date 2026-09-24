@@ -1,4 +1,4 @@
-import { href } from "react-router-dom"
+
 import { InfoCard } from "../components/InfoCard"
 import "./characterPage.css"
 
@@ -69,19 +69,65 @@ export function Dranleic() {
 
     return (
         <>
-            <table className="infobox vcard">
-                <caption className="infobox-title">Dranleic Haligdrake</caption>
-                <tbody>
-                    <tr>
-                        <td colSpan="2" className="infobox-img">
-                            <img src="/dummy-pic-character-page.png" alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
-                        </td>
-                    </tr>
-                    {infoCardRows.map((info) => {
-                        return <InfoCard key={info.title} info={info}/>
-                    })}
-                </tbody>
-            </table>
+            <div className="mw-page-container">
+                <div className="mw-page-container-inner">
+                    <div className="vector-column-start">
+                        <div className="vector-sticky-pinned-container">
+                            <nav className="mw-table-of-contents-container">
+                                <ul className="vector-toc-contents">
+                                    <li className="vector-toc-list-item">
+                                        <a href="#" className="vector-toc-link">
+                                            <div className="vector-toc-text">Back to top</div>
+                                        </a>
+                                    </li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div className="mw-content-container">
+                        <main className="mw-body">
+                            <header className="mw-body-header">
+                                {/* 
+                                    TOC collapsed here
+                                */}
+                                <h1 className="firstHeading mw-first-heading">Dranleic Haligdrake</h1>
+                            </header>
+                            <div className="mw-body-container">
+                                <div className="mw-body-content">
+                                    <section>
+                                        <table className="infobox vcard">
+                                            <caption className="infobox-title">Dranleic Haligdrake</caption>
+                                            <tbody>
+                                                <tr>
+                                                    <td colSpan="2" className="infobox-img">
+                                                        <img src="/dummy-pic-character-page.png" alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
+                                                    </td>
+                                                </tr>
+                                                {infoCardRows.map((info) => {
+                                                    return <InfoCard key={info.title} info={info}/>
+                                                })}
+                                            </tbody>
+                                        </table>
+                                    </section>
+                                    <section>
+
+                                    </section>
+                                    {/* Content goes here in <section>s */}
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
