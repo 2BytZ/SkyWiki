@@ -69,19 +69,47 @@ export function Dranleic() {
 
     return (
         <>
-            <table className="infobox vcard">
-                <caption className="infobox-title">Dranleic Haligdrake</caption>
-                <tbody>
-                    <tr>
-                        <td colSpan="2" className="infobox-img">
-                            <img src="/dummy-pic-character-page.png" alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
-                        </td>
-                    </tr>
-                    {infoCardRows.map((info) => {
-                        return <InfoCard key={info.title} info={info}/>
-                    })}
-                </tbody>
-            </table>
+            <div className="content-body">
+                <main>
+                    <h1 className="firstHeading mw-first-heading">Dranleic Haligdrake</h1>
+                    <div className="vector-content">
+                        <div className="mw-body-content">
+                            <div className="infobox-wrapper">
+                                <table className="infobox vcard">
+                                    <caption className="infobox-title">Dranleic Haligdrake</caption>
+                                    <tbody>
+                                        <tr>
+                                            <td colSpan="2" className="infobox-img">
+                                                <img src="/dummy-pic-character-page.png" alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
+                                            </td>
+                                        </tr>
+                                        {infoCardRows.map((info) => {
+                                            return <InfoCard key={info.title} info={info}/>
+                                        })}
+                                    </tbody>
+                                </table>
+                            </div>
+                            <blockquote className="page-quote">
+                                <div className="quote-style">"</div>
+                                <div className="quote-text-style">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </blockquote>
+                            <section>
+                                <p>
+                                    <b>Dranliec Haligdrake</b> is a male Argonian warrior, thief and assassin, said to be the Dragonborn of legend, with connections with notable criminal factions such as the Thieves Guild and the Dark Brotherhood, all the while still having connection with people of power in the land of Skyrim such as the Jarls. Dranleic hails from Cyrodiil in the land of Tamriel. Both his true age and his potential parents are unknown, though we do know of his birthday and that he was born in the last half century or so. He is a notorious force of evil and mischief known throughout Skyrim. Although it is said that he is to be the Dragonborn, many people and citizens alike disagree with this fact because of all the misdeeds he has done and all the chaos that has been caused by him in his time in Skyrim.
+                                </p>
+                                <p>
+                                    Dranleic has been involved in some of the biggest criminal events Skyrim has seen in the last couple centuries and has played a huge part in those criminal operations, often being the centerpiece of the operations – operations such The attempt to kill the Emperor of Tamriel, The Escape of Cidhna mine with Madanach and the bloodbath that followed, the Murder of Vittoria Vici the soon-to-be spouse of Asgier Snow-Shod, along with the takeover of the the major holds of Skyrim; The city of Whiterun, Falkreath, Markarth and Solitude.
+                                </p>
+                                <p>
+                                    Dranleic Haligdrake also had a big influence in the Restoration of the Thieves Guild and the Revitalization of the Dark Brotherhood. For these reasons, Dranliec Haligdrake is known throughout Skyrim and many fear they will encounter him and what may happen to them and their families if they do. Therefore Dranleic is fierce, and a force - not to be reckoned with.
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </main>
+            </div>
         </>
     )
 }
