@@ -1,4 +1,4 @@
-import { href } from "react-router-dom"
+
 import { InfoCard } from "../components/InfoCard"
 import "./characterPage.css"
 
@@ -92,18 +92,41 @@ export function Dranleic() {
                             <blockquote className="page-quote">
                                 <div className="quote-style">"</div>
                                 <div className="quote-text-style">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Faal koraav do joor motaad ahst fin miin do vahzah mulaag.
                                 </div>
                             </blockquote>
                             <section>
                                 <p>
-                                    <b>Dranliec Haligdrake</b> is a male Argonian warrior, thief and assassin, said to be the Dragonborn of legend, with connections with notable criminal factions such as the Thieves Guild and the Dark Brotherhood, all the while still having connection with people of power in the land of Skyrim such as the Jarls. Dranleic hails from Cyrodiil in the land of Tamriel. Both his true age and his potential parents are unknown, though we do know of his birthday and that he was born in the last half century or so. He is a notorious force of evil and mischief known throughout Skyrim. Although it is said that he is to be the Dragonborn, many people and citizens alike disagree with this fact because of all the misdeeds he has done and all the chaos that has been caused by him in his time in Skyrim.
+                                    <b>Dranleic Haligdrake</b> is a male <a href="https://en.uesp.net/wiki/Lore:Argonian">Argonian</a> warrior, thief and assassin, said to be the <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn">Dragonborn of legend</a>. Having ties to notable criminal factions such as the <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild">Thieves Guild</a> and the <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">Dark Brotherhood</a>, he also has connections with people in positions of power in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>, such as the <a href="https://en.uesp.net/wiki/Skyrim:Jarl">Jarls</a>. Dranleic hails from the province of <a href="https://en.uesp.net/wiki/Lore:Cyrodiil">Cyrodiil</a> in the <a href="https://en.uesp.net/wiki/Lore:Tamriel">Tamriel</a> continent. His true age and potential parents are unknown; however, based on physical appearance and attributes, it is believed he was born in the last half-century. Dranleic is a notorious force of evil and mischief in Skyrim, and although it is said that he is the <a href="https://en.uesp.net/wiki/Lore:Dragonborn">Dragonborn</a>, many citizens alike disagree with this fact due to the various misdeeds he has attributed to and chaos which has been caused by him in his time in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>.
                                 </p>
                                 <p>
-                                    Dranleic has been involved in some of the biggest criminal events Skyrim has seen in the last couple centuries and has played a huge part in those criminal operations, often being the centerpiece of the operations – operations such The attempt to kill the Emperor of Tamriel, The Escape of Cidhna mine with Madanach and the bloodbath that followed, the Murder of Vittoria Vici the soon-to-be spouse of Asgier Snow-Shod, along with the takeover of the the major holds of Skyrim; The city of Whiterun, Falkreath, Markarth and Solitude.
+                                    Dranleic has been largely involved in some of the biggest criminal events Tamriel has experienced since <a href="">The Assassination of Emperor Uriel Septim VII</a>
+                                    <sup>
+                                        <a href="">
+                                            <span>
+                                                <span>[</span>
+                                                1
+                                                <span>]</span>
+                                            </span>
+                                        </a>
+                                    </sup> and has played a major hand in those criminal operations, often being the centerpiece of the operations &mdash; operations such as <a href="">The Attempted Assassination of Emperor Titus Mede II</a> and the subsequent successful <a href="">assassination of Emperor Titus Mede II</a>, <a href="">The Escape of Cidhna Mine</a> with <a href="https://en.uesp.net/wiki/Lore:Madanach">Madanach</a> and the bloodbath that followed, <a href="">The Assassination of Vittoria Vici</a>, the soon-to-be spouse of <a href="https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod">Asgier Snow-Shod</a>, along with the takeovers of the major holds of Skyrim: the city of Whiterun, Falkreath, Markarth, and Solitude.
                                 </p>
                                 <p>
-                                    Dranleic Haligdrake also had a big influence in the Restoration of the Thieves Guild and the Revitalization of the Dark Brotherhood. For these reasons, Dranliec Haligdrake is known throughout Skyrim and many fear they will encounter him and what may happen to them and their families if they do. Therefore Dranleic is fierce, and a force - not to be reckoned with.
+                                    Dranleic Haligdrake also had a big influence in the restoration and resurgence of the Thieves Guild and the revitalization of the Dark Brotherhood. For these reasons, Dranleic Haligdrake is known throughout Skyrim, and many fear encountering him and what may happen to them and their families. Therefore, Dranleic is fierce and a force not to be reckoned with.
+                                </p>
+                            </section>
+                            <section>
+                                <div className="mw-heading mw-heading-2">
+                                    <h2>Early life</h2>
+                                </div>
+                                <p>
+                                    Very little is known about Dranleic regarding his origins and the early days of his life. Ever since he was sentenced to execution in Helgen, along with other bandits, thieves, and Ulfric Stormcloak, almost nothing about him or his past has been known to anyone in Skyrim. It's as if Dranleic suddenly appeared in Skyrim and was unfortunately bundled together with other petty thieves and bandits ready for the chopping block. Some say that he was trying to cross the border of Skyrim to return home but was caught in an Imperial ambush.
+                                </p>
+                                <p>
+                                    Even though there is little to nothing to know for certain about his origins and past, it is still very much possible to speculate. For example, there are clear signs that point to Dranleic Haligdrake originating from Cyrodiil, as well as him being an orphan, seeing as he is so far from home and hasn't had any contact with his potential parents for so long, and also hasn't made an attempt to go back to his homeland. It's also fair to say that Dranleic likely isn't immortal, and so, with his young and strong stature, can confidently say that he must have been born in the 4th era, within the last decade or half-decade. 
+                                </p>
+                                <p>
+                                    The exact date of his birth is also very unclear, to say the least, but theories from sorcerers and their studies suggest he was born around the time of the first week of the third month of the year. So although speculative, this is the most information available related to Dranleic's past.
                                 </p>
                             </section>
                         </div>

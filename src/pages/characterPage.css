@@ -23,10 +23,19 @@
 } */
 
 
+.vcard {
+    text-align: center;
+}
+  
+.infobox {
+    border: 1px solid #4c4c4c;
+    padding: .2em;
+    font-size: 88%;
+    line-height: 1.5em;
+    border-spacing: 3px;
+    margin: 0.5em 0;
 
-
-
-
+}
 
 @media (min-width: 640px) {
     .infobox {
@@ -36,20 +45,7 @@
         width: 22em;
     }
 }
-
-.infobox {
-    border: 1px solid #4c4c4c;
-    padding: .2em;
-    font-size: 88%;
-    line-height: 1.5em;
-    border-spacing: 3px;
-    margin: 0.5em 0;
-}
-
-.vcard {
-    text-align: center;
-}
-    
+ 
 img.mw-file-upright {
     width: 68%;
     height: auto;
@@ -77,4 +73,8 @@ img.mw-file-upright {
     padding: 0.5em 1em; 
     display: inline-block;
     font-size: 1.5em;
+}
+
+.mw-body-content p {
+    margin: 0.5em 0 1em 0;
 }
