@@ -1,8 +1,10 @@
-
+import { useRef } from "react"
+import { TableOfContents } from "../components/TableOfContents"
 import { InfoCard } from "../components/InfoCard"
 import "./characterPage.css"
 
 export function Pharis() {
+    const contentRef = useRef(null)
 
     const origin = {
         title: "Homeland/Origin",
@@ -66,17 +68,20 @@ export function Pharis() {
     return (
         <>
             <div className="content-body">
-                <main>
-                    <h1 className="firstheading mw-first-heading">Pharis Ironeye</h1>
+                <div className="vector-column-start">
+                    <TableOfContents contentRef={contentRef} />
+                </div>
+                <main className="mw-content-container">
+                    <h1 id="top" className="firstheading mw-first-heading">Pharis Ironeye</h1>
                     <div className="vector-content">
-                        <div className="mw-body-content">
+                        <div className="mw-body-content" ref={contentRef}>
                             <div className="infobox-wrapper">
                                 <table className="infobox vcard">
                                     <caption className="infobox-title">Pharis Ironeye</caption>
                                     <tbody>
                                         <tr>
                                             <td colSpan={2} className="infobox-img">
-                                                <img src="/" alt="Pharis Ironeye" height={155} width={170} className="mw-file-upright" />
+                                                <img src="/Pharis-Ironeye-home-page-banner-art.jpg" alt="Pharis Ironeye" height={155} width={170} className="mw-file-upright" />
                                             </td>
                                         </tr>
                                         {infoCardRows.map((info) => {

@@ -1,3 +1,8 @@
+.mw-first-header {
+    display: flex;
+    justify-content: center;
+}
+
 
 .mw-games-buttons {
     display: flex;

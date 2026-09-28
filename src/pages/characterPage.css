@@ -22,6 +22,23 @@
     }
 } */
 
+.content-body {
+    display: grid;
+    column-gap: 24px;
+    grid-template: min-content 1fr min-content / 12.25rem minmax(0, 1fr);
+    grid-template-areas: 'columnStart pageContent';
+}
+
+.mw-content-container {
+    grid-area: pageContent;
+}
+
+.vector-column-start {
+    grid-column: columnStart;
+    margin-top: 2.8rem;
+    contain: paint; /* what does this even do??*/
+    padding: 0 16px
+}
 
 .vcard {
     text-align: center;

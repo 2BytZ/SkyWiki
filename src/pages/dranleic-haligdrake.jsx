@@ -1,10 +1,12 @@
-
+import { useRef } from "react"
+import { TableOfContents } from "../components/TableOfContents"
 import { InfoCard } from "../components/InfoCard"
 import "./characterPage.css"
 
 
 export function Dranleic() {
-    
+    const contentRef = useRef(null)
+
     const origin = {
         title: "Homeland/Origin",
         desc: [
@@ -70,10 +72,13 @@ export function Dranleic() {
     return (
         <>
             <div className="content-body">
-                <main>
+                <div className="vector-column-start">
+                    <TableOfContents contentRef={contentRef} />
+                </div>
+                <main className="mw-content-container">
                     <h1 className="firstHeading mw-first-heading">Dranleic Haligdrake</h1>
                     <div className="vector-content">
-                        <div className="mw-body-content">
+                        <div className="mw-body-content" ref={contentRef}>
                             <div className="infobox-wrapper">
                                 <table className="infobox vcard">
                                     <caption className="infobox-title">Dranleic Haligdrake</caption>
@@ -117,7 +122,7 @@ export function Dranleic() {
                             </section>
                             <section>
                                 <div className="mw-heading mw-heading-2">
-                                    <h2>Early life</h2>
+                                    <h2 id="Early_life">Early life</h2>
                                 </div>
                                 <p>
                                     Very little is known about Dranleic regarding his origins and the early days of his life. Ever since he was sentenced to execution in Helgen, along with other bandits, thieves, and Ulfric Stormcloak, almost nothing about him or his past has been known to anyone in Skyrim. It's as if Dranleic suddenly appeared in Skyrim and was unfortunately bundled together with other petty thieves and bandits ready for the chopping block. Some say that he was trying to cross the border of Skyrim to return home but was caught in an Imperial ambush.
@@ -131,27 +136,27 @@ export function Dranleic() {
                             </section>
                             <section>
                                 <div className="mw-heading mw-heading-2">
-                                    <h2>Career</h2>
+                                    <h2 id="Career">Career</h2>
                                 </div>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3>Early career</h3>
+                                        <h3 id="Early_career">Early career</h3>
                                     </div>
                                     <section>
                                         <div className="mw-heading mw-heading-4">
-                                            <h4>Escape from Helgen</h4>
+                                            <h4 id="Escape_from_Helgen">Escape from Helgen</h4>
                                         </div>
                                         <p>
                                             [TBA]
                                         </p>
                                         <div className="mw-heading mw-heading-4">
-                                            <h4>Thanehood in Whiterun</h4>
+                                            <h4 id="Thanehood_in_Whiterun">Thanehood in Whiterun</h4>
                                         </div>
                                         <p>
                                             [TBA]
                                         </p>
                                         <div className="mw-heading mw-heading-4">
-                                            <h4>The Greybeards' call</h4>
+                                            <h4 id="The_Greybeards_call">The Greybeards' call</h4>
                                         </div>
                                         <p>
                                             [TBA]
@@ -160,14 +165,14 @@ export function Dranleic() {
                                 </section>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3>Joining the Thieves Guild</h3>
+                                        <h3 id="Joining_the_Thieves_Guild">Joining the Thieves Guild</h3>
                                     </div>
                                     <p>
                                         [TBA]
                                     </p>
                                     <section>
                                         <div className="mw-heading mw-heading-4">
-                                            <h4>Becoming a Nightingale</h4>
+                                            <h4 id="Becoming_a_Nightingale">Becoming a Nightingale</h4>
                                         </div>
                                         <p>
                                             [TBA]
@@ -175,14 +180,14 @@ export function Dranleic() {
                                     </section>
                                     <section>
                                         <div className="mw-heading mw-heading-4">
-                                            <h4>Restoration of the Thieves Guild</h4>
+                                            <h4 id="Restoration_of_the_Thieves_Guild">Restoration of the Thieves Guild</h4>
                                         </div>
                                         <p>
                                             [TBA]
                                         </p>
                                         <section>
                                             <div className="mw-heading mw-heading-5">
-                                                <h5>Becoming Guildmaster</h5>
+                                                <h5 id="Becoming_Guildmaster">Becoming Guildmaster</h5>
                                             </div>
                                             <p>
                                                 [TBA]
@@ -192,7 +197,7 @@ export function Dranleic() {
                                 </section>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3>Joining the Companions</h3>
+                                        <h3 id="Joining_the_Companions">Joining the Companions</h3>
                                     </div>
                                     <p>
                                         [TBA]
@@ -200,14 +205,14 @@ export function Dranleic() {
                                 </section>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3>Joining the Dark Brotherhood</h3>
+                                        <h3 id="Joining_the_Dark_Brotherhood">Joining the Dark Brotherhood</h3>
                                     </div>
                                     <p>
                                         [TBA]
                                     </p>
                                     <section>
                                         <div className="mw-heading mw-heading-4">
-                                            <h4>Revitalizing the Dark Brotherhood</h4>
+                                            <h4 id="Revitalizing_the_Dark_Brotherhood">Revitalizing the Dark Brotherhood</h4>
                                         </div>
                                         <p>
                                             [TBA]
@@ -216,7 +221,7 @@ export function Dranleic() {
                                 </section>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3>Alliance with the Stormcloaks</h3>
+                                        <h3 id="Alliance_with_the_Stormcloaks">Alliance with the Stormcloaks</h3>
                                     </div>
                                     <p>
                                         [TBA]
@@ -224,7 +229,7 @@ export function Dranleic() {
                                 </section>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3>Becoming Thane of the holds</h3>
+                                        <h3 id="Becoming_Thane_of_the_holds">Becoming Thane of the holds</h3>
                                     </div>
                                     <p>
                                         [TBA]
@@ -232,7 +237,7 @@ export function Dranleic() {
                                 </section>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3>Pledging allegiance with the vampires</h3>
+                                        <h3 id="Pledging_allegiance_with_the_vampires">Pledging allegiance with the vampires</h3>
                                     </div>
                                     <p>
                                         [TBA]
@@ -241,19 +246,19 @@ export function Dranleic() {
                             </section>
                             <section>
                                 <div className="mw-heading mw-heading-2">
-                                    <h2>Notable events</h2>
+                                    <h2 id="Notable_events">Notable events</h2>
                                 </div>
 
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3>Escaping from Cidhna Mine</h3>
+                                        <h3 id="Escaping_from_Cidhna_Mine">Escaping from Cidhna Mine</h3>
                                     </div>
                                     <p>
                                         [TBA]
                                     </p>
                                     <section>
                                         <div className="mw-heading mw-heading-4">
-                                            <h4>Battle of the Forsworn</h4>
+                                            <h4 id="Battle_of_the_Forsworn">Battle of the Forsworn</h4>
                                         </div>
                                         <div role="note" className="hatnote">
                                             See also: <a href="https://en.uesp.net/wiki/Lore:Forsworn_Rebellion">The Forsworn Rebellion</a>
@@ -266,13 +271,13 @@ export function Dranleic() {
 
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3>Return of the Dark Brotherhood</h3>
+                                        <h3 id="Return_of_the_Dark_Brotherhood">Return of the Dark Brotherhood</h3>
                                     </div>
                                     <p>
                                         [TBA]
                                     </p>
                                         <div>
-                                            <h4>The murder of Vittoria Vici</h4>
+                                            <h4 id="The_murder_of_Vittoria_Vici">The murder of Vittoria Vici</h4>
                                         </div>
                                         <div role="note" className="hatnote">
                                             See also: <a href="">The Assassination of Vittoria Vici</a>
@@ -281,19 +286,19 @@ export function Dranleic() {
 
                                         </p>
                                         <div>
-                                            <h4>The assassination of Gaius Maro</h4>
+                                            <h4 id="The_assassination_of_Gaius_Maro">The assassination of Gaius Maro</h4>
                                         </div>
                                         <p>
 
                                         </p>
                                         <div>
-                                            <h4>The murder of the Mysterious Gourmet</h4>
+                                            <h4 id="The_murder_of_the_Mysterious_Gourmet">The murder of the Mysterious Gourmet</h4>
                                         </div>
                                         <p>
 
                                         </p>
                                         <div>
-                                            <h4>Attempted assassination of the Emperor</h4>
+                                            <h4 id="Attempted_assassination_of_the_Emperor">Attempted assassination of the Emperor</h4>
                                         </div>
                                         <div role="note" className="hatnote">
                                             See also: <a href="">The Attempted Assassination of Emperor Titus Mede II</a>
@@ -302,7 +307,7 @@ export function Dranleic() {
 
                                         </p>
                                         <div>
-                                            <h4>The assassination of Emperor Titus Mede II</h4>
+                                            <h4 id="The_assassination_of_Emperor_Titus_Mede_II">The assassination of Emperor Titus Mede II</h4>
                                         </div>
                                         <div role="note" className="hatnote">
                                             See also: <a href="">The Assassination of Emperor Titud Mede II</a>
@@ -313,7 +318,7 @@ export function Dranleic() {
                                 </section>
                                 <section>
                                     <div>
-                                        <h3>Civil war</h3>
+                                        <h3 id="Civil_war">Civil war</h3>
                                     </div>
                                     <div role="note" className="hatnote">
                                         See also: <a href="https://en.uesp.net/wiki/Lore:Stormcloak_Rebellion">Skyrim Civil War</a>
@@ -322,55 +327,55 @@ export function Dranleic() {
                                         [...] Played a big part in the <a href="https://en.uesp.net/wiki/Lore:Stormcloak_Rebellion">Stormcloak rebellion</a> and their success in <a href="">the battle for Solitude</a>...
                                     </p>
                                     <div>
-                                        <h4>Whiterun city takeover</h4>
+                                        <h4 id="Whiterun_city_takeover">Whiterun city takeover</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
                                     <div>
-                                        <h4>Liberation of Falkreath</h4>
+                                        <h4 id="Liberation_of_Falkreath">Liberation of Falkreath</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
                                     <div>
-                                        <h4>Liberation of the Reach</h4>
+                                        <h4 id="Liberation_of_the_Reach">Liberation of the Reach</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
                                     <div>
-                                        <h4>Liberation of Hjaalmarch</h4>
+                                        <h4 id="Liberation_of_Hjaalmarch">Liberation of Hjaalmarch</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
                                     <div>
-                                        <h4>Liberation of the Pale</h4>
+                                        <h4 id="Liberation_of_the_Pale">Liberation of the Pale</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
                                     <div>
-                                        <h4>Liberation of Winterhold</h4>
+                                        <h4 id="Liberation_of_Winterhold">Liberation of Winterhold</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
                                     <div>
-                                        <h4>Liberation of the Rift</h4>
+                                        <h4 id="Liberation_of_the_Rift">Liberation of the Rift</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
                                     <div>
-                                        <h4>Liberation of Haalfingar</h4>
+                                        <h4 id="Liberation_of_Haalfingar">Liberation of Haalfingar</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
                                     <div>
-                                        <h4>The battle for Solitude</h4>
+                                        <h4 id="The_battle_for_Solitude">The battle for Solitude</h4>
                                     </div>
                                     <div role="note" className="hatnote">
                                         See also: <a href="">The Battle of Solitude</a>
@@ -383,7 +388,7 @@ export function Dranleic() {
                             </section>
                             <section>
                                 <div className="mw-header mw-header-2">
-                                    <h2>Personal life</h2>
+                                    <h2 id="Personal_life">Personal life</h2>
                                 </div>
                                 <p>
 
@@ -391,7 +396,7 @@ export function Dranleic() {
                                 
                                 <section>
                                     <div>
-                                        <h3>Personality</h3>
+                                        <h3 id="Personality">Personality</h3>
                                     </div>
                                     <p>
 
@@ -399,7 +404,7 @@ export function Dranleic() {
                                 </section>
                                 <section>
                                     <div>
-                                        <h3>Appearance</h3>
+                                        <h3 id="Appearance">Appearance</h3>
                                     </div>
                                     <p>
 
@@ -407,7 +412,7 @@ export function Dranleic() {
                                 </section>
                                 <section>
                                     <div>
-                                        <h3>Relationships</h3>
+                                        <h3 id="Relationships">Relationships</h3>
                                     </div>
                                     <p>
                                         
@@ -415,18 +420,18 @@ export function Dranleic() {
                                 </section>
                                 <section>
                                     <div>
-                                        <h3>Beliefs</h3>
+                                        <h3 id="Beliefs">Beliefs</h3>
                                     </div>
                                 </section>
                             </section>
                             <section>
                                 <div>
-                                    <h2>Gallery</h2>
+                                    <h2 id="Gallery">Gallery</h2>
                                 </div>
                             </section>
                             <section>
                                 <div>
-                                    <h2>See also</h2>
+                                    <h2 id="See_also">See also</h2>
                                 </div>
                                 Emperor Uriel Septim VII (https://en.uesp.net/wiki/Lore:Uriel_VII)
                                 Emperor Titus Mede II (https://en.uesp.net/wiki/Lore:Titus_Mede_II)
@@ -435,7 +440,7 @@ export function Dranleic() {
                             </section>
                             <section>
                                 <div>
-                                    <h2>References</h2>
+                                    <h2 id="References">References</h2>
                                 </div>
                                 Uriel VII assassination (https://en.uesp.net/wiki/Lore:Assassination!)
                                 1. ^ "SPECIAL EDITION! EMPEROR AND HEIRS ASSASSINATED!". The Black Horse Courier. approx. 27th of Last Seed, 3E 433.
