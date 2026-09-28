@@ -92,12 +92,12 @@ export function Dranleic() {
                             <blockquote className="page-quote">
                                 <div className="quote-style">"</div>
                                 <div className="quote-text-style">
-                                    Faal koraav do joor motaad ahst fin miin do vahzah mulaag.
+                                    Akatosh, Arkay, Dibella, Julianos, Kynareth, Mara, Stendarr, Zenithar, Talos. Draal wah wo hi los sahvot. Hi fen ni lahney.
                                 </div>
                             </blockquote>
                             <section>
                                 <p>
-                                    <b>Dranleic Haligdrake</b> is a male <a href="https://en.uesp.net/wiki/Lore:Argonian">Argonian</a> warrior, thief and assassin, said to be the <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn">Dragonborn of legend</a>. Having ties to notable criminal factions such as the <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild">Thieves Guild</a> and the <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">Dark Brotherhood</a>, he also has connections with people in positions of power in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>, such as the <a href="https://en.uesp.net/wiki/Skyrim:Jarl">Jarls</a>. Dranleic hails from the province of <a href="https://en.uesp.net/wiki/Lore:Cyrodiil">Cyrodiil</a> in the <a href="https://en.uesp.net/wiki/Lore:Tamriel">Tamriel</a> continent. His true age and potential parents are unknown; however, based on physical appearance and attributes, it is believed he was born in the last half-century. Dranleic is a notorious force of evil and mischief in Skyrim, and although it is said that he is the <a href="https://en.uesp.net/wiki/Lore:Dragonborn">Dragonborn</a>, many citizens alike disagree with this fact due to the various misdeeds he has attributed to and chaos which has been caused by him in his time in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>.
+                                    <b>Dranleic Haligdrake</b> is a male <a href="https://en.uesp.net/wiki/Lore:Argonian">argonian</a> warrior, thief and assassin, said to be the <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn">Dragonborn of legend</a>. Having ties to notable criminal factions such as the <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild">Thieves Guild</a> and the <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">Dark Brotherhood</a>, he also has connections with people in positions of power in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>, such as the <a href="https://en.uesp.net/wiki/Skyrim:Jarl">Jarls</a>. Dranleic hails from <a href="https://en.uesp.net/wiki/Lore:Cyrodiil">Cyrodiil</a> in <a href="https://en.uesp.net/wiki/Lore:Tamriel">Tamriel</a>. His true age and potential parents are unknown; however, based on physical appearance and attributes, it is believed he was born in the last half-century. Dranleic is a notorious force of evil and mischief in Skyrim. Although it is said that he is the <a href="https://en.uesp.net/wiki/Lore:Dragonborn">Dragonborn</a>, many citizens disagree because of the various misdeeds he has committed and chaos he has caused during his time in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>.
                                 </p>
                                 <p>
                                     Dranleic has been largely involved in some of the biggest criminal events Tamriel has experienced since <a href="">The Assassination of Emperor Uriel Septim VII</a>
@@ -128,6 +128,318 @@ export function Dranleic() {
                                 <p>
                                     The exact date of his birth is also very unclear, to say the least, but theories from sorcerers and their studies suggest he was born around the time of the first week of the third month of the year. So although speculative, this is the most information available related to Dranleic's past.
                                 </p>
+                            </section>
+                            <section>
+                                <div className="mw-heading mw-heading-2">
+                                    <h2>Career</h2>
+                                </div>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3>Early career</h3>
+                                    </div>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4>Escape from Helgen</h4>
+                                        </div>
+                                        <p>
+                                            [TBA]
+                                        </p>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4>Thanehood in Whiterun</h4>
+                                        </div>
+                                        <p>
+                                            [TBA]
+                                        </p>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4>The Greybeards' call</h4>
+                                        </div>
+                                        <p>
+                                            [TBA]
+                                        </p>
+                                    </section>
+                                </section>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3>Joining the Thieves Guild</h3>
+                                    </div>
+                                    <p>
+                                        [TBA]
+                                    </p>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4>Becoming a Nightingale</h4>
+                                        </div>
+                                        <p>
+                                            [TBA]
+                                        </p>
+                                    </section>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4>Restoration of the Thieves Guild</h4>
+                                        </div>
+                                        <p>
+                                            [TBA]
+                                        </p>
+                                        <section>
+                                            <div className="mw-heading mw-heading-5">
+                                                <h5>Becoming Guildmaster</h5>
+                                            </div>
+                                            <p>
+                                                [TBA]
+                                            </p>
+                                        </section>
+                                    </section>
+                                </section>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3>Joining the Companions</h3>
+                                    </div>
+                                    <p>
+                                        [TBA]
+                                    </p>
+                                </section>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3>Joining the Dark Brotherhood</h3>
+                                    </div>
+                                    <p>
+                                        [TBA]
+                                    </p>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4>Revitalizing the Dark Brotherhood</h4>
+                                        </div>
+                                        <p>
+                                            [TBA]
+                                        </p>
+                                    </section>
+                                </section>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3>Alliance with the Stormcloaks</h3>
+                                    </div>
+                                    <p>
+                                        [TBA]
+                                    </p>
+                                </section>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3>Becoming Thane of the holds</h3>
+                                    </div>
+                                    <p>
+                                        [TBA]
+                                    </p>
+                                </section>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3>Pledging allegiance with the vampires</h3>
+                                    </div>
+                                    <p>
+                                        [TBA]
+                                    </p>
+                                </section>
+                            </section>
+                            <section>
+                                <div className="mw-heading mw-heading-2">
+                                    <h2>Notable events</h2>
+                                </div>
+
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3>Escaping from Cidhna Mine</h3>
+                                    </div>
+                                    <p>
+                                        [TBA]
+                                    </p>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4>Battle of the Forsworn</h4>
+                                        </div>
+                                        <div role="note" className="hatnote">
+                                            See also: <a href="https://en.uesp.net/wiki/Lore:Forsworn_Rebellion">The Forsworn Rebellion</a>
+                                        </div>
+                                        <p>
+                                            [TBA]
+                                        </p>
+                                    </section>
+                                </section>
+
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3>Return of the Dark Brotherhood</h3>
+                                    </div>
+                                    <p>
+                                        [TBA]
+                                    </p>
+                                        <div>
+                                            <h4>The murder of Vittoria Vici</h4>
+                                        </div>
+                                        <div role="note" className="hatnote">
+                                            See also: <a href="">The Assassination of Vittoria Vici</a>
+                                        </div>
+                                        <p>
+
+                                        </p>
+                                        <div>
+                                            <h4>The assassination of Gaius Maro</h4>
+                                        </div>
+                                        <p>
+
+                                        </p>
+                                        <div>
+                                            <h4>The murder of the Mysterious Gourmet</h4>
+                                        </div>
+                                        <p>
+
+                                        </p>
+                                        <div>
+                                            <h4>Attempted assassination of the Emperor</h4>
+                                        </div>
+                                        <div role="note" className="hatnote">
+                                            See also: <a href="">The Attempted Assassination of Emperor Titus Mede II</a>
+                                        </div>
+                                        <p>
+
+                                        </p>
+                                        <div>
+                                            <h4>The assassination of Emperor Titus Mede II</h4>
+                                        </div>
+                                        <div role="note" className="hatnote">
+                                            See also: <a href="">The Assassination of Emperor Titud Mede II</a>
+                                        </div>
+                                        <p>
+                                            
+                                        </p>
+                                </section>
+                                <section>
+                                    <div>
+                                        <h3>Civil war</h3>
+                                    </div>
+                                    <div role="note" className="hatnote">
+                                        See also: <a href="https://en.uesp.net/wiki/Lore:Stormcloak_Rebellion">Skyrim Civil War</a>
+                                    </div>
+                                    <p>
+                                        [...] Played a big part in the <a href="https://en.uesp.net/wiki/Lore:Stormcloak_Rebellion">Stormcloak rebellion</a> and their success in <a href="">the battle for Solitude</a>...
+                                    </p>
+                                    <div>
+                                        <h4>Whiterun city takeover</h4>
+                                    </div>
+                                    <p>
+                                        
+                                    </p>
+                                    <div>
+                                        <h4>Liberation of Falkreath</h4>
+                                    </div>
+                                    <p>
+                                        
+                                    </p>
+                                    <div>
+                                        <h4>Liberation of the Reach</h4>
+                                    </div>
+                                    <p>
+                                        
+                                    </p>
+                                    <div>
+                                        <h4>Liberation of Hjaalmarch</h4>
+                                    </div>
+                                    <p>
+                                        
+                                    </p>
+                                    <div>
+                                        <h4>Liberation of the Pale</h4>
+                                    </div>
+                                    <p>
+                                        
+                                    </p>
+                                    <div>
+                                        <h4>Liberation of Winterhold</h4>
+                                    </div>
+                                    <p>
+                                        
+                                    </p>
+                                    <div>
+                                        <h4>Liberation of the Rift</h4>
+                                    </div>
+                                    <p>
+                                        
+                                    </p>
+                                    <div>
+                                        <h4>Liberation of Haalfingar</h4>
+                                    </div>
+                                    <p>
+                                        
+                                    </p>
+                                    <div>
+                                        <h4>The battle for Solitude</h4>
+                                    </div>
+                                    <div role="note" className="hatnote">
+                                        See also: <a href="">The Battle of Solitude</a>
+                                    </div>
+                                    <p>
+                                        
+                                    </p>
+
+                                </section>
+                            </section>
+                            <section>
+                                <div className="mw-header mw-header-2">
+                                    <h2>Personal life</h2>
+                                </div>
+                                <p>
+
+                                </p>
+                                
+                                <section>
+                                    <div>
+                                        <h3>Personality</h3>
+                                    </div>
+                                    <p>
+
+                                    </p>
+                                </section>
+                                <section>
+                                    <div>
+                                        <h3>Appearance</h3>
+                                    </div>
+                                    <p>
+
+                                    </p>
+                                </section>
+                                <section>
+                                    <div>
+                                        <h3>Relationships</h3>
+                                    </div>
+                                    <p>
+                                        
+                                    </p>
+                                </section>
+                                <section>
+                                    <div>
+                                        <h3>Beliefs</h3>
+                                    </div>
+                                </section>
+                            </section>
+                            <section>
+                                <div>
+                                    <h2>Gallery</h2>
+                                </div>
+                            </section>
+                            <section>
+                                <div>
+                                    <h2>See also</h2>
+                                </div>
+                                Emperor Uriel Septim VII (https://en.uesp.net/wiki/Lore:Uriel_VII)
+                                Emperor Titus Mede II (https://en.uesp.net/wiki/Lore:Titus_Mede_II)
+                                Asgier Snow-Shod (https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod)
+                                Vittoria Vici (https://en.uesp.net/wiki/Skyrim:Vittoria_Vici)
+                            </section>
+                            <section>
+                                <div>
+                                    <h2>References</h2>
+                                </div>
+                                Uriel VII assassination (https://en.uesp.net/wiki/Lore:Assassination!)
+                                1. ^ "SPECIAL EDITION! EMPEROR AND HEIRS ASSASSINATED!". The Black Horse Courier. approx. 27th of Last Seed, 3E 433.
+
                             </section>
                         </div>
                     </div>
