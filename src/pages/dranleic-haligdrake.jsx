@@ -15,7 +15,7 @@ export function Dranleic() {
     }
     const race = {title: "Race", desc: [{text: "Argonian", href: "https://en.uesp.net/wiki/Lore:Argonian"}]}
     const gender = { title: "Gender", desc: "Male"}
-    const birth = { title: "Birth", desc: "6th of First Seed, 4E1XX"}
+    const birth = { title: "Birth", desc: "6th of First Seed, 4E 1XX"}
     const faction = {
         title: "Faction(s)",
         desc: [
@@ -97,7 +97,7 @@ export function Dranleic() {
                             </blockquote>
                             <section>
                                 <p>
-                                    <b>Dranleic Haligdrake</b> is a male <a href="https://en.uesp.net/wiki/Lore:Argonian">argonian</a> warrior, thief and assassin, said to be the <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn">Dragonborn of legend</a>. Having ties to notable criminal factions such as the <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild">Thieves Guild</a> and the <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">Dark Brotherhood</a>, he also has connections with people in positions of power in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>, such as the <a href="https://en.uesp.net/wiki/Skyrim:Jarl">Jarls</a>. Dranleic hails from <a href="https://en.uesp.net/wiki/Lore:Cyrodiil">Cyrodiil</a> in <a href="https://en.uesp.net/wiki/Lore:Tamriel">Tamriel</a>. His true age and potential parents are unknown; however, based on physical appearance and attributes, it is believed he was born in the last half-century. Dranleic is a notorious force of evil and mischief in Skyrim. Although it is said that he is the <a href="https://en.uesp.net/wiki/Lore:Dragonborn">Dragonborn</a>, many citizens disagree because of the various misdeeds he has committed and chaos he has caused during his time in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>.
+                                    <b>Dranleic Haligdrake</b> is a male <a href="https://en.uesp.net/wiki/Lore:Argonian">Argonian</a> warrior, thief and assassin, said to be the <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn">Dragonborn of legend</a>. Having ties to notable criminal factions such as the <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild">Thieves Guild</a> and the <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">Dark Brotherhood</a>, he also has connections with people in positions of power in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>, such as the <a href="https://en.uesp.net/wiki/Skyrim:Jarl">Jarls</a>. Dranleic hails from <a href="https://en.uesp.net/wiki/Lore:Cyrodiil">Cyrodiil</a> in <a href="https://en.uesp.net/wiki/Lore:Tamriel">Tamriel</a>. His true age and potential parents are unknown; however, based on physical appearance and attributes, it is believed he was born in the last half-century. Dranleic is a notorious force of evil and mischief in Skyrim. Although it is said that he is the <a href="https://en.uesp.net/wiki/Lore:Dragonborn">Dragonborn</a>, many citizens disagree because of the various misdeeds he has committed and chaos he has caused during his time in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>.
                                 </p>
                                 <p>
                                     Dranleic has been largely involved in some of the biggest criminal events Tamriel has experienced since <a href="">The Assassination of Emperor Uriel Septim VII</a>
