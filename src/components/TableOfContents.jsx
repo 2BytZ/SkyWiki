@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import "./TableOfContents.css"
 
 
-export function TableOfContents({ contentRef }) {
+export function TableOfContents({ contentRef, language }) {
 
     const [headings, setHeadings] = useState([]);
 
@@ -11,7 +11,7 @@ export function TableOfContents({ contentRef }) {
     const content = contentRef.current;
     if (!content) return;
     setHeadings(Array.from(content.querySelectorAll("h2, h3, h4, h5")));
-   }, [contentRef])
+    }, [contentRef, language])
     return (
     <>
         <div className="vector-sticky-container">

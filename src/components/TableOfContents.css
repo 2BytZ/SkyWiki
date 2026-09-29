@@ -34,6 +34,7 @@
     list-style-type: none;
     padding-left: 12px;
     margin: 0;
+    
 }
 .vector-toc-list-item:hover {
     cursor: pointer;

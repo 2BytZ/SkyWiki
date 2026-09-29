@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import "./Navbar.css"
 
-export function Navbar() {
+export function Navbar({ language, onLanguageChange }) {
     return (
         <div className="ts-container">
             <div className="ts-inner">
@@ -28,6 +28,17 @@ export function Navbar() {
                             </Link>                            
                         </li>
                     </ul>
+                    <label className="nav-language-control">
+                        <span>Language</span>
+                        <select
+                            aria-label="Language"
+                            value={language}
+                            onChange={(event) => onLanguageChange(event.target.value)}
+                        >
+                            <option value="en">English</option>
+                            <option value="da">Dansk</option>
+                        </select>
+                    </label>
                 </nav>
             </div>
         </div>
