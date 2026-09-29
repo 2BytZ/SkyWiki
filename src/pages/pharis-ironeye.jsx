@@ -204,7 +204,20 @@ export function Pharis() {
                                 <div>
                                     <h2>Gallery</h2>
                                 </div>
-
+                                <div className="gallery-image-collection">
+                                    <ul className="gallery-container"> 
+                                        <li className="gallery-list-item">
+                                            <span className="gallery-img">
+                                                <img src="/bullseye-pharis-headshot-art-gore.jpg" width={300} height={169}/>
+                                            </span>
+                                        </li>
+                                        <li className="gallery-list-item">
+                                            <span className="gallery-img">
+                                                <img src="/Pharis-Ironeye-sunrise-sitting.jpg" width={300} height={169}/>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </section>
                             <section>
                                 <div>

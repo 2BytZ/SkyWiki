@@ -97,7 +97,7 @@ export function Dranleic() {
                             <blockquote className="page-quote">
                                 <div className="quote-style">"</div>
                                 <div className="quote-text-style">
-                                    Draal wah pahwo hi los sahvotei. Hi fen ni neilaas...
+                                    Pray to whomever you are faithful. You will not survive...
                                 </div>
                             </blockquote>
                             <section>

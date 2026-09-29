@@ -27,7 +27,7 @@ export function Home(){
                     <li className="gallerybox">
                         <Link to="/Dranleic_Haligdrake" title="Go to character page for Dranleic Haligdrake">
                             <div className="thumb">
-                                <img src="/dummy-pic-1.png" alt="Dranleic Haligdrake" width="480" height="360"/>
+                                <img src="/dranleic-haligdrake-power-stance-swords.jpg" alt="Dranleic Haligdrake" width="480" height="360"/>
                             </div>
                             <div className="gallerytext">
                                 <p>Dranleic Haligdrake</p>
