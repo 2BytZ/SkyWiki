@@ -1,34 +1,30 @@
-.vector-toc{
+.vector-sticky-container {
+    overflow: hidden auto;
     position: sticky;
     top: 24px;
-
-    max-height: calc(100vh - 40px);
-    overflow: auto;
+    box-sizing: border-box;
+    max-height: calc(100vh - (24px * 2));
+    transition: top 250ms linear, max-height 250ms linear; /*Dunno what this does tbh*/
 }
-
+.vector-container {
+    padding: 0 16px;
+    margin-bottom: 2rem;
+}
+.vector-toc-element {
+    font-size: 0.8rem;   
+}
 .vector-toc-contents {
     margin: 0;
-    list-style-type: none;
-    font-size: 0.875rem;
-    line-height: 1.6;
-}
-
-ul {
+    list-style: none;
     padding: 0;
 }
-
-.vector-toc-level-3 {
-    padding-left: 16px;
+.vector-toc-list-item {
+    position: relative;
+    list-style-type: none;
+    padding-left: 12px;
+    margin: 0;
 }
-
-.vector-toc-level-4 {
-    padding-left: 32px;
-}
-
-.vector-toc-level-5 {
-    padding-left: 48px;
-}
-
-.vector-toc-level-6 {
-    padding-left: 64px;
+.vector-toc-list-item:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
 }

@@ -34,10 +34,10 @@
 }
 
 .vector-column-start {
-    grid-column: columnStart;
     margin-top: 2.8rem;
-    contain: paint; /* what does this even do??*/
-    padding: 0 16px
+    
+    grid-column: columnStart;
+    overflow-anchor: none;
 }
 
 .vcard {

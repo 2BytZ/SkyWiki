@@ -41,8 +41,6 @@ export function Pharis() {
     const relationships = {
         title: "Relations",
         desc: [
-            {text: "Ysolda", href: "https://en.uesp.net/wiki/Skyrim:Ysolda"},
-            {text: ", "},
             {text: "Saadia", href: "https://en.uesp.net/wiki/Skyrim:Saadia"},
             {text: ", "},
             {text: "Angi", href: "https://en.uesp.net/wiki/Skyrim:Angi"},
@@ -60,8 +58,8 @@ export function Pharis() {
             {text: "Elrindir", href: "https://en.uesp.net/wiki/Skyrim:Elrindir"}
         ]
     }
-    const spouse = {title: "Spouse", desc: "Single"}
-    const children = {title: "Children", desc: "None"}
+    const spouse = {title: "Spouse", desc: [{text: "Ysolda", href: "https://en.uesp.net/wiki/Skyrim:Ysolda"}]}
+    const children = {title: "Children", desc: "0"}
 
     const infoCardRows = [origin, race, gender, birth, faction, occupation, knownfor, relationships, spouse, children]
     

@@ -97,12 +97,12 @@ export function Dranleic() {
                             <blockquote className="page-quote">
                                 <div className="quote-style">"</div>
                                 <div className="quote-text-style">
-                                    Akatosh, Arkay, Dibella, Julianos, Kynareth, Mara, Stendarr, Zenithar, Talos. Draal wah wo hi los sahvot. Hi fen ni lahney.
+                                    Draal wah fin Rah wo hi los sahvot. Hi fen ni lahney...
                                 </div>
                             </blockquote>
                             <section>
                                 <p>
-                                    <b>Dranleic Haligdrake</b> is a male <a href="https://en.uesp.net/wiki/Lore:Argonian">Argonian</a> warrior, thief and assassin, said to be the <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn">Dragonborn of legend</a>. Having ties to notable criminal factions such as the <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild">Thieves Guild</a> and the <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">Dark Brotherhood</a>, he also has connections with people in positions of power in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>, such as the <a href="https://en.uesp.net/wiki/Skyrim:Jarl">Jarls</a>. Dranleic hails from <a href="https://en.uesp.net/wiki/Lore:Cyrodiil">Cyrodiil</a> in <a href="https://en.uesp.net/wiki/Lore:Tamriel">Tamriel</a>. His true age and potential parents are unknown; however, based on physical appearance and attributes, it is believed he was born in the last half-century. Dranleic is a notorious force of evil and mischief in Skyrim. Although it is said that he is the <a href="https://en.uesp.net/wiki/Lore:Dragonborn">Dragonborn</a>, many citizens disagree because of the various misdeeds he has committed and chaos he has caused during his time in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>.
+                                    <b>Dranleic Haligdrake</b> is a male <a href="https://en.uesp.net/wiki/Lore:Argonian">Argonian</a> warrior, thief and assassin, said to be the <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn">Dragonborn of legend</a>. Having ties to notable criminal factions such as the <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild">Thieves Guild</a> and the <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">Dark Brotherhood</a>, he also has connections with people in positions of power in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>, such as the <a href="https://en.uesp.net/wiki/Skyrim:Jarl">Jarls</a>. Dranleic hails from <a href="https://en.uesp.net/wiki/Lore:Cyrodiil">Cyrodiil</a> in <a href="https://en.uesp.net/wiki/Lore:Tamriel">Tamriel</a>. His true age and potential parents are unknown; however, based on physical appearance and attributes, it is believed he was born in the last half-century. Dranleic is a notorious force of evil and mischief in Skyrim. Although it is said that he is the <a href="https://en.uesp.net/wiki/Lore:Dragonborn">Dragonborn</a>, many citizens disagree because of the various misdeeds he has committed and chaos he has caused during his time in Skyrim.
                                 </p>
                                 <p>
                                     Dranleic has been largely involved in some of the biggest criminal events Tamriel has experienced since <a href="">The Assassination of Emperor Uriel Septim VII</a>
@@ -122,7 +122,7 @@ export function Dranleic() {
                             </section>
                             <section>
                                 <div className="mw-heading mw-heading-2">
-                                    <h2 id="Early_life">Early life</h2>
+                                    <h2>Early life</h2>
                                 </div>
                                 <p>
                                     Very little is known about Dranleic regarding his origins and the early days of his life. Ever since he was sentenced to execution in Helgen, along with other bandits, thieves, and Ulfric Stormcloak, almost nothing about him or his past has been known to anyone in Skyrim. It's as if Dranleic suddenly appeared in Skyrim and was unfortunately bundled together with other petty thieves and bandits ready for the chopping block. Some say that he was trying to cross the border of Skyrim to return home but was caught in an Imperial ambush.
@@ -147,19 +147,19 @@ export function Dranleic() {
                                             <h4 id="Escape_from_Helgen">Escape from Helgen</h4>
                                         </div>
                                         <p>
-                                            [TBA]
+                                            
                                         </p>
                                         <div className="mw-heading mw-heading-4">
                                             <h4 id="Thanehood_in_Whiterun">Thanehood in Whiterun</h4>
                                         </div>
                                         <p>
-                                            [TBA]
+                                            
                                         </p>
                                         <div className="mw-heading mw-heading-4">
                                             <h4 id="The_Greybeards_call">The Greybeards' call</h4>
                                         </div>
                                         <p>
-                                            [TBA]
+                                            
                                         </p>
                                     </section>
                                 </section>
@@ -168,14 +168,14 @@ export function Dranleic() {
                                         <h3 id="Joining_the_Thieves_Guild">Joining the Thieves Guild</h3>
                                     </div>
                                     <p>
-                                        [TBA]
+                                        
                                     </p>
                                     <section>
                                         <div className="mw-heading mw-heading-4">
                                             <h4 id="Becoming_a_Nightingale">Becoming a Nightingale</h4>
                                         </div>
                                         <p>
-                                            [TBA]
+                                            
                                         </p>
                                     </section>
                                     <section>
@@ -183,14 +183,14 @@ export function Dranleic() {
                                             <h4 id="Restoration_of_the_Thieves_Guild">Restoration of the Thieves Guild</h4>
                                         </div>
                                         <p>
-                                            [TBA]
+                                            
                                         </p>
                                         <section>
                                             <div className="mw-heading mw-heading-5">
                                                 <h5 id="Becoming_Guildmaster">Becoming Guildmaster</h5>
                                             </div>
                                             <p>
-                                                [TBA]
+                                                
                                             </p>
                                         </section>
                                     </section>
@@ -200,7 +200,7 @@ export function Dranleic() {
                                         <h3 id="Joining_the_Companions">Joining the Companions</h3>
                                     </div>
                                     <p>
-                                        [TBA]
+                                        
                                     </p>
                                 </section>
                                 <section>
@@ -208,14 +208,14 @@ export function Dranleic() {
                                         <h3 id="Joining_the_Dark_Brotherhood">Joining the Dark Brotherhood</h3>
                                     </div>
                                     <p>
-                                        [TBA]
+                                        
                                     </p>
                                     <section>
                                         <div className="mw-heading mw-heading-4">
                                             <h4 id="Revitalizing_the_Dark_Brotherhood">Revitalizing the Dark Brotherhood</h4>
                                         </div>
                                         <p>
-                                            [TBA]
+                                            
                                         </p>
                                     </section>
                                 </section>
@@ -224,7 +224,7 @@ export function Dranleic() {
                                         <h3 id="Alliance_with_the_Stormcloaks">Alliance with the Stormcloaks</h3>
                                     </div>
                                     <p>
-                                        [TBA]
+                                        
                                     </p>
                                 </section>
                                 <section>
@@ -232,7 +232,7 @@ export function Dranleic() {
                                         <h3 id="Becoming_Thane_of_the_holds">Becoming Thane of the holds</h3>
                                     </div>
                                     <p>
-                                        [TBA]
+                                        
                                     </p>
                                 </section>
                                 <section>
@@ -240,7 +240,7 @@ export function Dranleic() {
                                         <h3 id="Pledging_allegiance_with_the_vampires">Pledging allegiance with the vampires</h3>
                                     </div>
                                     <p>
-                                        [TBA]
+                                        
                                     </p>
                                 </section>
                             </section>
@@ -254,7 +254,7 @@ export function Dranleic() {
                                         <h3 id="Escaping_from_Cidhna_Mine">Escaping from Cidhna Mine</h3>
                                     </div>
                                     <p>
-                                        [TBA]
+                                        
                                     </p>
                                     <section>
                                         <div className="mw-heading mw-heading-4">
@@ -264,7 +264,7 @@ export function Dranleic() {
                                             See also: <a href="https://en.uesp.net/wiki/Lore:Forsworn_Rebellion">The Forsworn Rebellion</a>
                                         </div>
                                         <p>
-                                            [TBA]
+                                            
                                         </p>
                                     </section>
                                 </section>
@@ -274,7 +274,7 @@ export function Dranleic() {
                                         <h3 id="Return_of_the_Dark_Brotherhood">Return of the Dark Brotherhood</h3>
                                     </div>
                                     <p>
-                                        [TBA]
+                                        
                                     </p>
                                         <div>
                                             <h4 id="The_murder_of_Vittoria_Vici">The murder of Vittoria Vici</h4>

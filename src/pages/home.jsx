@@ -4,7 +4,7 @@ import "./home.css"
 export function Home(){
     return (
         <>
-            <h1 className="mw-first-header">Welcome to [Insert not cringe title here]</h1>
+            <h1 className="mw-first-header">Welcome to Himmelloften</h1>
             <div>
                 <div className="mw-games-buttons">
                     <nav>
