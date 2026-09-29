@@ -1,3 +1,14 @@
+
+.top-heading {
+    list-style: none;
+    padding: 6px 0;
+}
+.top-heading:hover {
+    cursor: pointer;
+    color: aliceblue;
+    text-decoration-line: underline;
+}
+
 .vector-sticky-container {
     overflow: hidden auto;
     position: sticky;
@@ -28,3 +39,4 @@
     cursor: pointer;
     text-decoration-line: underline;
 }
+

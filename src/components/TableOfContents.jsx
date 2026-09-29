@@ -4,7 +4,7 @@ import "./TableOfContents.css"
 
 
 export function TableOfContents({ contentRef }) {
-   
+
     const [headings, setHeadings] = useState([]);
 
    useEffect(() => {
@@ -19,6 +19,9 @@ export function TableOfContents({ contentRef }) {
                 <div className="vector-container">
                     <div className="vector-toc-element">
                         <ul className="vector-toc-contents">
+                            <li className="top-heading" onClick={() => window.scrollTo({top: 78, behavior: "smooth"})}>
+                                <b>Back to top</b>
+                            </li>
                             {headings.map((heading, index) => {
                                 return (
                                     <li className="vector-toc-list-item" key={index} onClick={() => {
