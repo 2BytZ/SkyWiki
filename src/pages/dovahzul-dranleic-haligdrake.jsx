@@ -8,18 +8,18 @@ export function Dranleic() {
     const contentRef = useRef(null)
 
     const origin = {
-        title: "Homeland/Origin",
+        title: "Hofkiin",
         desc: [
             {text: "Cyrodiil", href: "https://en.uesp.net/wiki/Lore:Cyrodiil"},
             {text: ", "},
             {text: "Tamriel", href: "https://en.uesp.net/wiki/Lore:Tamriel"},
         ]
     }
-    const race = {title: "Race", desc: [{text: "Argonian", href: "https://en.uesp.net/wiki/Lore:Argonian"}]}
-    const gender = { title: "Gender", desc: "Male"}
-    const birth = { title: "Birth", desc: "6th of First Seed, 4E 1XX"}
+    const race = {title: "Reyliik", desc: [{text: "Argonian", href: "https://en.uesp.net/wiki/Lore:Argonian"}]}
+    const gender = { title: "Veiliin", desc: "Male"}
+    const birth = { title: "Kiin", desc: "6th of First Seed, 4E 1XX"}
     const faction = {
-        title: "Faction(s)",
+        title: "Tokah(he)",
         desc: [
             {text: "Thieves Guild", href: "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)"},
             {text: ", "},
@@ -29,7 +29,7 @@ export function Dranleic() {
         ]
     }
     const titles = {
-        title: "Title(s)",
+        title: "Tet(te)",
         desc: [
             {text: "Thane", href: "https://en.uesp.net/wiki/Lore:Thanes"}, {text: " of "},
             {text: "Whiterun", href: "https://en.uesp.net/wiki/Lore:Whiterun"},
@@ -59,12 +59,12 @@ export function Dranleic() {
             {text: "Ysmir", href: "https://en.uesp.net/wiki/Lore:Ysmir"}
         ]
     }
-    const spouse = {title: "Spouse", desc: [{text: "Brelyna Maryon", href: "https://en.uesp.net/wiki/Skyrim:Brelyna_Maryon"}]}
-    const children = {title: "Children", desc: "2"}
-    const arrests = {title: "# of times in jail", desc: "4"}
-    const kills = {title: "Confirmed Kills", desc: "N/A"}
-    const bounty = {title: "Accumulated Bounty", desc: "N/A"}
-    const sentence = {title: "Estimated judicial sentence", desc: "Death / Public Execution"}
+    const spouse = {title: "Wolov", desc: [{text: "Brelyna Maryon", href: "https://en.uesp.net/wiki/Skyrim:Brelyna_Maryon"}]}
+    const children = {title: "Kiir", desc: "2"}
+    const arrests = {title: "# waarth lost poltor", desc: "4"}
+    const kills = {title: "Daazriaan kriihe", desc: "N/A"}
+    const bounty = {title: "Qor povaas", desc: "N/A"}
+    const sentence = {title: "suzaan thunuv gronzul", desc: "Dinok / Jormah oprotak"}
 
 
     const infoCardRows = [origin, race, gender, birth, faction, titles, spouse, children, arrests, kills, bounty, sentence]
@@ -77,15 +77,16 @@ export function Dranleic() {
                 </div>
                 <main className="mw-content-container">
                     <h1 className="firstHeading mw-first-heading">Dranleic Haligdrake</h1>
+                    <p className="dovahzul">dranl2c revakdov4</p>
                     <div className="vector-content">
                         <div className="mw-body-content" ref={contentRef}>
                             <div className="infobox-wrapper">
                                 <table className="infobox vcard">
-                                    <caption className="infobox-title">Dranleic Haligdrake</caption>
+                                    <caption className="infobox-title dovahzul-small">dranl2c revakdov4</caption>
                                     <tbody>
                                         <tr>
                                             <td colSpan="2" className="infobox-img">
-                                                <img src="/dummy-pic-character-page.png" alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
+                                                <img src="/dranleic-haligdrake-powerful-clenched-fist2.jpg" alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
                                             </td>
                                         </tr>
                                         {infoCardRows.map((info) => {
@@ -98,10 +99,14 @@ export function Dranleic() {
                                 <div className="quote-style">"</div>
                                 <div className="quote-text-style">
                                     Pray to whomever you are faithful. You will not survive...
+                                    <p className="dovahzul-small">pray to whomever you are faithful. you will not s6vive...</p>
                                 </div>
                             </blockquote>
                             <section>
-                                <p>
+                                    <p className="dovahzul">
+                                        <b>dranl2c revakdov4</b> los 1n punmak <a href="https://en.uesp.net/wiki/Lore:Argonian">s3gonis</a> kendov, taf3r 4rk 4vulon, s1g kos f1l <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn">dov4k3n do z8r</a>. p71k gronne w4 s4rotwultr3ntok4he grik ol f1l <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild">taf3rretok4</a> 4rk f1l <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">vulz9m4m1r</a>, he 4k lost gevothendhe w4 muz ko kost1dde do sol9k 4st <a href="https://en.uesp.net/wiki/Lore:Skyrim">k2z1l</a>, grik ol f1l <a href="https://en.uesp.net/wiki/Skyrim:Jarl">bronjunne</a>. dranl2c y2nne nol <a href="https://en.uesp.net/wiki/Lore:Cyrodiil">sarod1l</a> ko  <a href="https://en.uesp.net/wiki/Lore:Tamriel">t1zok1n</a>. ok v4z4 bok 4rk z4vos laf1nne los vomindok; vuthar1k, frolokvon w4 kopr1nuvgenund 4rk tr4k3nne, n3 los kor4 rok lost k3n ko fin l1t hefbeneruvos. dranl2c los 1n dufr4k2 fussevokul 4rk lakif 4st k2z1l. to n3 los s1g tol rok los f1l <a href="https://en.uesp.net/wiki/Lore:Dragonborn">dov4k3n</a>, pog1n t6s1lle vorol6 f4 do fin pog1t nostigge rok lost dr4 4rk t4rovin rok lost drun ko ok t3d 4st k2z1l.
+                                    </p>
+                                <p className="dovahzul-english">
                                     <b>Dranleic Revakdovah</b> los aan punmak <a href="https://en.uesp.net/wiki/Lore:Argonian">Siigonis</a> kendov, tafiir ahrk ahvulon, saag kos faal <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn">Dovahkiin do zoor</a>. Piraak gronne wah sahrotwultriintokahhe grik ol faal <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild">Tafiirretokah</a> ahrk faal <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">Vulzeymahmaar</a>, rok ahk lost gevothendhe wah muz ko kostaadde do soleyk ahst <a href="https://en.uesp.net/wiki/Lore:Skyrim">Keizaal</a>, grik ol faal <a href="https://en.uesp.net/wiki/Skyrim:Jarl">Bronjunne</a>. Dranleic yeinne nol <a href="https://en.uesp.net/wiki/Lore:Cyrodiil">Sarodaal</a> ko <a href="https://en.uesp.net/wiki/Lore:Tamriel">Taazokaan</a>. Ok vahzah bok ahrk zahvos lafaanne los vomindok; vutharaak, frolokvon wah kopraanuvgenund ahrk trahkiinne, nii los korah rok lost kiin ko fin laat hefbeneruvos. Dranleic los aan dufrahkei fussevokul ahrk lakif ahst Keizaal. To nii los saag tol rok los faal <a href="https://en.uesp.net/wiki/Lore:Dragonborn">Dovahkiin</a>, pogaan tursaalle vorolur fah do fin pogaat nostigge rok lost drah ahrk tahrovin rok lost drun ko ok tiid ahst Keizaal.
                                 </p>
                                 <p>

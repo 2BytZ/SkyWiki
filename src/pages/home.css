@@ -57,3 +57,40 @@ div.gallerytext {
     padding: 9px 9px 15px;
     text-align: center;
 }
+
+
+
+
+
+
+
+/*-----------------------Dovahzul Stylings-----------------------*/
+
+.dovahzul-header {
+    font-family: 'dragonscript', sans-serif;
+    font-size: 56px;
+    letter-spacing: 2px;
+}
+
+.dovahzul {
+    font-family: 'dragonscript', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.dovahzul-small {
+    font-family: 'dragonscript', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.dovahzul-smaller {
+    font-family: 'dragonscript', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.dovahzul-english {
+    font-style: italic;
+    font-size: small;
+}
+.dovahzul-english.mw-first-header {
+    font-size: 28px;
+}

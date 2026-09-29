@@ -7,19 +7,20 @@ export function Home(){
     const { language } = useOutletContext()
     return (
         <>
-            <h1 className="mw-first-header">Welcome to Himmelloften</h1>
+            <h1 className="dovahzul-header mw-first-header">valok2n w4 kavselok</h1>
+            <p className="dovahzul-english mw-first-header">Valokein wah Kavselok</p>
             <div>
                 <div className="mw-games-buttons">
                     <nav>
                         <ul className="mw-games-nav">
                             <li>
-                                <Link to={getLocalizedPath("/", language)} ><button>Skyrim</button></Link>
+                                <Link to={getLocalizedPath("/", language)} ><button>Keizaal</button></Link>
                             </li>
                             <li>
                                 <Link to="" ><button>Oblivion</button></Link>
                             </li>
                             <li>
-                                <Link to="" ><button>Morrowind</button></Link>            
+                                <Link to="" ><button>Vulsoven</button></Link>            
                             </li>
                         </ul>
                     </nav>
@@ -34,6 +35,7 @@ export function Home(){
                             </div>
                             <div className="gallerytext">
                                 <p>Dranleic Haligdrake</p>
+                                <span className="dovahzul-smaller">dranl2c revakdov4</span>
                             </div>
                         </Link>
                     </li>
@@ -44,6 +46,7 @@ export function Home(){
                             </div>
                             <div className="gallerytext">
                                 <p>Pharis Ironeye</p>
+                                <span className="dovahzul-smaller">pharis dolm3n</span>
                             </div>
                         </Link>
                     </li>
@@ -54,6 +57,7 @@ export function Home(){
                             </div>
                             <div className="gallerytext">
                                 <p>Priscilla Aurora</p>
+                                <span className="dovahzul-smaller">priscilla loksilkun</span>
                             </div>
                         </Link>
                     </li>

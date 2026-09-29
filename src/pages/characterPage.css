@@ -22,6 +22,10 @@
     }
 } */
 
+.firstHeading {
+    margin-bottom: 20px;
+}
+
 .content-body {
     display: grid;
     column-gap: 24px;
@@ -111,4 +115,24 @@ img.mw-file-upright {
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
+}
+
+.dovahzul {
+    font-family: 'dragonscript', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.dovahzul-small {
+    font-family: 'dragonscript', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.dovahzul-smaller {
+    font-family: 'dragonscript', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.dovahzul-english {
+    font-style: italic;
+    font-size: small;
 }

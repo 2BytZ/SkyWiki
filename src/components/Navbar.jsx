@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { getLocalizedPath } from "../localizedPath"
 import "./Navbar.css"
 
 export function Navbar({ language, onLanguageChange }) {
@@ -6,24 +7,24 @@ export function Navbar({ language, onLanguageChange }) {
         <div className="ts-container">
             <div className="ts-inner">
                 <div className="logo">
-                    <Link to="/" className="mw-logo">
+                    <Link to={getLocalizedPath("/", language)} className="mw-logo">
                         <img src="/Shadowmarks_Thieves_Guild_Sign_darkmode.png"/>
                     </Link>
                 </div>
                 <nav className="navbar">
                     <ul className="nav-main">
                         <li>
-                            <Link to="/">
+                            <Link to={getLocalizedPath("/", language)}>
                                 <button className="navbutton">Home</button>
                             </Link> 
                         </li>
                         <li>
-                            <Link to="/Dranleic_Haligdrake">
+                            <Link to={getLocalizedPath("/Dranleic_Haligdrake", language)}>
                                 <button className="navbutton">page1</button>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/Pharis_Ironeye">
+                            <Link to={getLocalizedPath("/Pharis_Ironeye", language)}>
                                 <button className="navbutton">page2</button>
                             </Link>                            
                         </li>
@@ -37,6 +38,7 @@ export function Navbar({ language, onLanguageChange }) {
                         >
                             <option value="en">English</option>
                             <option value="da">Dansk</option>
+                            <option value="do">Dovahzul</option>
                         </select>
                     </label>
                 </nav>
