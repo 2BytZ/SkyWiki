@@ -60,10 +60,12 @@ function ContentLabel({header, level}) {
 
     return (
         <li className="vector-toc-list-item">
-            <div className="vector-toc-text">
-                <span className={`item-${level}`}>{header.element.textContent}</span>
+            <div className="vector-toc-text" onClick={() => header.element.scrollIntoView()}>
+                <span className={`item-${level}`} >{header.element.textContent}</span>
                 {header.subList.length > 1 && (
-                    <button aria-controls={`toc-${header.element.id}`} className="toc-collapse-button" aria-expanded={expanded} onClick={() => setExpanded(!expanded)}>
+                    <button aria-controls={`toc-${header.element.id}`} className="toc-collapse-button" aria-expanded={expanded} onClick={(e) => {setExpanded(!expanded)
+                        e.stopPropagation();
+                    }}>
                         <img src="src/assets/Arrows_Selected.png" width={10} height={10} />
                     </button>
                 )}
