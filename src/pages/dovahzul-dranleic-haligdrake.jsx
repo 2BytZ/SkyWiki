@@ -98,8 +98,8 @@ export function Dranleic() {
                             <blockquote className="page-quote">
                                 <div className="quote-style">"</div>
                                 <div className="quote-text-style">
-                                    Pray to whomever you are faithful. You will not survive...
-                                    <p className="dovahzul-small">pray to whomever you are faithful. you will not s6vive...</p>
+                                    <span className="dovahzul-quote-style">dr1l w4 p4wo hi los s4vot2. hi fen ni n2l1s...</span>
+                                    <p className="dovahzul-english">Draal wah pahwo hi los sahvotei. Hi fen ni neilaas...</p>
                                 </div>
                             </blockquote>
                             <section>

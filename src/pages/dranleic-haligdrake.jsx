@@ -76,7 +76,7 @@ export function Dranleic() {
                     <TableOfContents contentRef={contentRef} />
                 </div>
                 <main className="mw-content-container">
-                    <h1 className="firstHeading mw-first-heading">Dranleic Haligdrake</h1>
+                    <h1 className="mw-first-heading">Dranleic Haligdrake</h1>
                     <div className="vector-content">
                         <div className="mw-body-content" ref={contentRef}>
                             <div className="infobox-wrapper">
@@ -98,6 +98,7 @@ export function Dranleic() {
                                 <div className="quote-style">"</div>
                                 <div className="quote-text-style">
                                     Draal wah pahwo hi los sahvotei. Hi fen ni neilaas...
+                                    <p className="dovahzul-english">Pray to whomever you are faithful. You will not survive...</p>
                                 </div>
                             </blockquote>
                             <section>
@@ -122,7 +123,7 @@ export function Dranleic() {
                             </section>
                             <section>
                                 <div className="mw-heading mw-heading-2">
-                                    <h2>Early life</h2>
+                                    <h2 id="Early_life">Early life</h2>
                                 </div>
                                 <p>
                                     Very little is known about Dranleic regarding his origins and the early days of his life. Ever since he was sentenced to execution in Helgen, along with other bandits, thieves, and Ulfric Stormcloak, almost nothing about him or his past has been known to anyone in Skyrim. It's as if Dranleic suddenly appeared in Skyrim and was unfortunately bundled together with other petty thieves and bandits ready for the chopping block. Some say that he was trying to cross the border of Skyrim to return home but was caught in an Imperial ambush.
@@ -185,14 +186,14 @@ export function Dranleic() {
                                         <p>
                                             
                                         </p>
-                                        <section>
-                                            <div className="mw-heading mw-heading-5">
-                                                <h5 id="Becoming_Guildmaster">Becoming Guildmaster</h5>
-                                            </div>
-                                            <p>
-                                                
-                                            </p>
-                                        </section>
+                                    </section>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4 id="Becoming_Guildmaster">Becoming Guildmaster</h4>
+                                        </div>
+                                        <p>
+                                            
+                                        </p>
                                     </section>
                                 </section>
                                 <section>

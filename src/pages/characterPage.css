@@ -117,6 +117,22 @@ img.mw-file-upright {
     aspect-ratio: 16/9;
 }
 
+
+/*---------------------Dovahzul Styling---------------------*/
+
+
+
+.dovahzul-header {
+    font-family: 'dragonscript', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.dovahzul-quote-style {
+    font-family: 'dragonscript', sans-serif;
+    position: relative; 
+    display: inline-block;
+    letter-spacing: 2px;
+}
 .dovahzul {
     font-family: 'dragonscript', sans-serif;
     font-size: 18px;

@@ -8,9 +8,28 @@ export function TableOfContents({ contentRef, language }) {
     const [headings, setHeadings] = useState([]);
 
    useEffect(() => {
-    const content = contentRef.current;
-    if (!content) return;
-    setHeadings(Array.from(content.querySelectorAll("h2, h3, h4, h5")));
+        const content = contentRef.current;
+        if (!content) return;
+        const headersList = Array.from(content.querySelectorAll("h2, h3, h4, h5"));
+        let headerStack = [];
+        let rootHeadings = [];
+
+        for(let element of headersList) {
+            let header = {element,subList:[]}
+
+            while (headerStack.length && headerStack[headerStack.length - 1].element.nodeName >= element.nodeName) {
+                headerStack.pop()
+            }
+
+            if (headerStack.length) {
+                headerStack[headerStack.length - 1].subList.push(header)
+            }
+            else {
+                rootHeadings.push(header)
+            }
+            headerStack.push(header)
+        }
+        setHeadings(rootHeadings)
     }, [contentRef, language])
     return (
     <>
@@ -22,13 +41,9 @@ export function TableOfContents({ contentRef, language }) {
                             <li className="top-heading" onClick={() => window.scrollTo({top: 78, behavior: "smooth"})}>
                                 <b>Back to top</b>
                             </li>
-                            {headings.map((heading, index) => {
+                            {headings.map((header) => {
                                 return (
-                                    <li className="vector-toc-list-item" key={index} onClick={() => {
-                                        heading.scrollIntoView();
-                                    }}>
-                                        {heading.innerHTML}
-                                    </li>
+                                    <ContentLabel header={header} level={1}/>
                                 )
                             })}
                         </ul>
@@ -38,4 +53,21 @@ export function TableOfContents({ contentRef, language }) {
         </div>
     </>
    )
+}
+
+function ContentLabel({header, level}) {
+    return (
+        <li className="vector-toc-list-item">
+            <div className="vector-toc-text">
+                <span className={`item-${level}`}>{header.element.textContent}</span>
+            </div>
+            <ul className="vector-toc-contents">
+                {header.subList.length > 0 && header.subList.map((header) => {
+                    return (
+                        <ContentLabel header={header} level={level+1} />
+                    )
+                })}
+            </ul>
+        </li>
+    )
 }

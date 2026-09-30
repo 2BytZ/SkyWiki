@@ -5,6 +5,9 @@ const localizedPaths = {
     "/Dranleic_Haligdrake": {
         do: "/dovahzul_Dranleic_Haligdrake",
     },
+    "/Pharis_Ironeye": {
+        do: "/dovahzul_Pharis_Ironeye"
+    }
 }
 
 export function getLocalizedPath(path, language) {
