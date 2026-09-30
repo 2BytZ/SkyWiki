@@ -56,12 +56,19 @@ export function TableOfContents({ contentRef, language }) {
 }
 
 function ContentLabel({header, level}) {
+    const [expanded, setExpanded] = useState(false);
+
     return (
         <li className="vector-toc-list-item">
             <div className="vector-toc-text">
                 <span className={`item-${level}`}>{header.element.textContent}</span>
+                {header.subList.length > 1 && (
+                    <button aria-controls={`toc-${header.element.id}`} className="toc-collapse-button" aria-expanded={expanded} onClick={() => setExpanded(!expanded)}>
+                        <img src="src/assets/Arrows_Selected.png" width={10} height={10} />
+                    </button>
+                )}
             </div>
-            <ul className="vector-toc-contents">
+            <ul id={`toc-${header.element.id}`} className="vector-toc-contents" hidden={!expanded}>
                 {header.subList.length > 0 && header.subList.map((header) => {
                     return (
                         <ContentLabel header={header} level={level+1} />
