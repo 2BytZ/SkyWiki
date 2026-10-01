@@ -1,0 +1,152 @@
+{
+
+    "infobox": [
+        {
+            "title": "Homeland/Origin",
+            "desc": [
+                {
+                    "text": "Cyrodiil",
+                    "href": "https://en.uesp.net/wiki/Lore:Cyrodiil"
+                },
+                {
+                    "text": "Tamriel",
+                    "href": "https://en.uesp.net/wiki/Lore:Tamriel"
+                }
+            ]
+        },
+        {
+            "title": "Race", 
+            "desc": [
+                {
+                    "text": "Argonian", 
+                    "href": "https://en.uesp.net/wiki/Lore:Argonian"
+                }
+            ]
+        },
+        { 
+            "title": "Gender", 
+            "desc": "Male"
+        },
+        { 
+            "title": "Birth", 
+            "desc": "6th of First Seed, 4E 1XX"
+        },
+        {
+            "title": "Faction(s)",
+            "desc": [
+                {
+                    "text": "Thieves Guild", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)"
+                },
+                {
+                    "text": "Dark Brotherhood", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood"
+                },
+                {
+                    "text": "Stormcloaks", 
+                    "href": "https://en.uesp.net/wiki/Lore:Stormcloak_Clan"
+                }
+            ]
+        },
+        {
+            "title": "Title(s)",
+            "desc": [
+                {
+                    "text": "Thane", 
+                    "href": "https://en.uesp.net/wiki/Lore:Thanes",
+                    "separator": " of "
+                },
+                {
+                    "text": "Whiterun", 
+                    "href": "https://en.uesp.net/wiki/Lore:Whiterun"
+                },
+                {
+                    "text": "Riften", 
+                    "href": "https://en.uesp.net/wiki/Lore:Riften"
+                },
+                {
+                    "text": "Dawnstar", 
+                    "href": "https://en.uesp.net/wiki/Lore:Dawnstar"
+                },
+                {
+                    "text": "Markarth", 
+                    "href": "https://en.uesp.net/wiki/Lore:Markarth"
+                },
+                {
+                    "text": "Morthal", 
+                    "href": "https://en.uesp.net/wiki/Lore:Morthal"
+                },
+                {
+                    "text": "Solitude", 
+                    "href": "https://en.uesp.net/wiki/Lore:Solitude"
+                },
+                {
+                    "text": "Winterhold", 
+                    "href": "https://en.uesp.net/wiki/Lore:Winterhold_(city)"
+                },
+                {
+                    "text": "Windhelm", 
+                    "href": "https://en.uesp.net/wiki/Lore:Windhelm",
+                    "separator": " and "
+                },
+                {
+                    "text": "Falkreath", 
+                    "href": "https://en.uesp.net/wiki/Lore:Falkreath"
+                },
+                {
+                    "text": "War Hero"
+                },
+                {
+                    "text": "Stormblade"
+                },
+                {
+                    "text": "Guildmaster"
+                },
+                {
+                    "text": "Ysmir", 
+                    "href": "https://en.uesp.net/wiki/Lore:Ysmir"
+                }
+            ]
+        },
+        {
+            "title": "Spouse", 
+            "desc": [
+                {
+                    "text": "Brelyna Maryon", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Brelyna_Maryon"
+                }
+            ]
+        },
+        {
+            "title": "Children", 
+            "desc": "2"
+        },
+        {
+            "title": "# of times in jail", 
+            "desc": "4"
+        },
+        {
+            "title": "Confirmed Kills", 
+            "desc": "N/A"
+        },
+        {
+            "title": "Accumulated Bounty", 
+            "desc": "N/A"
+        },
+        {
+            "title": "Estimated judicial sentence", 
+            "desc": "Death / Public Execution"
+        }
+    ],
+
+
+
+
+    "mwFh": "Dranleic Haligdrake",
+    "mwIbt": "Dranleic Haligdrake",
+
+    "mwQt": "Draal wah pahwo hi los sahvotei. Hi fen ni neilaas...",
+    "mwQtT": "Pray to whomever you are faithful. You will not survive...",
+
+    "mwLp1": "<0>Dranleic Haligdrake</0> is a male <1>Argonian</1> warrior, thief and assassin, said to be the <2>Dragonborn of legend</2>. Having ties to notable criminal factions such as the <3>Thieves Guild</3> and the <4>Dark Brotherhood</4>, he also has connections with people in positions of power in <5>Skyrim</5>, such as the <6>Jarls</6>. Dranleic hails from <7>Cyrodiil</7> in <8>Tamriel</8>. His true age and potential parents are unknown; however, based on physical appearance and attributes, it is believed he was born in the last half-century. Dranleic is a notorious force of evil and mischief in Skyrim. Although it is said that he is the <9>Dragonborn</9>, many citizens disagree because of the various misdeeds he has committed and chaos he has caused during his time in Skyrim."
+}

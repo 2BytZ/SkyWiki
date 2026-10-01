@@ -1,3 +1,4 @@
+import i18next from "i18next"
 
 
 export function InfoCard({info}) {
@@ -5,14 +6,20 @@ export function InfoCard({info}) {
 
     return (
         <tr>
-            <td>{info.title}</td>
             <td>
+                <span className={i18next.resolvedLanguage=="dov" && "dovahzul-smaller"}>{info.title}</span>
+                <p hidden={i18next.resolvedLanguage!="dov"} class="dovahzul-english">({info.dovah_english})</p>
+            </td>
+            <td >
                 {description.map((part, index) => (
-                    part.href ? (
-                        <a key={index} href={part.href}>{part.text}</a>
-                    ) : (
-                        <span key={index}>{part.text}</span>
-                    )
+                    <>
+                        {part.href ? (
+                            <a key={index} href={part.href}>{part.text}</a>
+                        ) : (
+                            <span key={index}>{part.text}</span>
+                        )}
+                        {description.length-1!=index && (part.separator || ", ")}
+                    </>
                 ))}
             </td>
         </tr>

@@ -152,3 +152,14 @@ img.mw-file-upright {
     font-style: italic;
     font-size: small;
 }
+td .dovahzul-english {
+    margin: 0;
+    font-size: 10px;
+    justify-self: center;
+    transform: translateY(-30%);
+}
+.dovahzul-lang-dropdown {
+    font-family: 'dragonscript', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px
+}

@@ -1,45 +1,42 @@
 import { Link } from "react-router-dom"
 import { getLocalizedPath } from "../localizedPath"
 import "./Navbar.css"
+import LanguageSwitcher from "./LanguageSwitcher"
+import { Trans, useTranslation } from "react-i18next"
+import i18next from "i18next"
 
-export function Navbar({ language, onLanguageChange }) {
+export function Navbar() {
+    const {t} = useTranslation("navbar")
+    
     return (
         <div className="ts-container">
             <div className="ts-inner">
                 <div className="logo">
-                    <Link to={getLocalizedPath("/", language)} className="mw-logo">
+                    <Link to={getLocalizedPath("/")} className="mw-logo">
                         <img src="/Shadowmarks_Thieves_Guild_Sign_darkmode.png"/>
                     </Link>
                 </div>
                 <nav className="navbar">
                     <ul className="nav-main">
                         <li>
-                            <Link to={getLocalizedPath("/", language)}>
+                            <Link to={getLocalizedPath("/")}>
                                 <button className="navbutton">Home</button>
                             </Link> 
                         </li>
                         <li>
-                            <Link to={getLocalizedPath("/Dranleic_Haligdrake", language)}>
+                            <Link to={getLocalizedPath("/Dranleic_Haligdrake")}>
                                 <button className="navbutton">page1</button>
                             </Link>
                         </li>
                         <li>
-                            <Link to={getLocalizedPath("/Pharis_Ironeye", language)}>
+                            <Link to={getLocalizedPath("/Pharis_Ironeye")}>
                                 <button className="navbutton">page2</button>
                             </Link>                            
                         </li>
                     </ul>
                     <label className="nav-language-control">
-                        <span>Language</span>
-                        <select
-                            aria-label="Language"
-                            value={language}
-                            onChange={(event) => onLanguageChange(event.target.value)}
-                        >
-                            <option value="en">English</option>
-                            <option value="da">Dansk</option>
-                            <option value="do">Dovahzul</option>
-                        </select>
+                        <span className={i18next.resolvedLanguage=="dov" && "dovahzul"}>{t("lang")}</span>
+                        <span>{LanguageSwitcher()}</span>
                     </label>
                 </nav>
             </div>

@@ -2,72 +2,14 @@ import { useRef } from "react"
 import { TableOfContents } from "../components/TableOfContents"
 import { InfoCard } from "../components/InfoCard"
 import "./characterPage.css"
+import { Trans, useTranslation } from "react-i18next"
+import i18next from "i18next"
+
 
 
 export function Dranleic() {
     const contentRef = useRef(null)
-
-    const origin = {
-        title: "Homeland/Origin",
-        desc: [
-            {text: "Cyrodiil", href: "https://en.uesp.net/wiki/Lore:Cyrodiil"},
-            {text: ", "},
-            {text: "Tamriel", href: "https://en.uesp.net/wiki/Lore:Tamriel"},
-        ]
-    }
-    const race = {title: "Race", desc: [{text: "Argonian", href: "https://en.uesp.net/wiki/Lore:Argonian"}]}
-    const gender = { title: "Gender", desc: "Male"}
-    const birth = { title: "Birth", desc: "6th of First Seed, 4E 1XX"}
-    const faction = {
-        title: "Faction(s)",
-        desc: [
-            {text: "Thieves Guild", href: "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)"},
-            {text: ", "},
-            {text: "Dark Brotherhood", href: "https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood"},
-            {text: ", "},
-            {text: "Stormcloaks", href: "https://en.uesp.net/wiki/Lore:Stormcloak_Clan"},
-        ]
-    }
-    const titles = {
-        title: "Title(s)",
-        desc: [
-            {text: "Thane", href: "https://en.uesp.net/wiki/Lore:Thanes"}, {text: " of "},
-            {text: "Whiterun", href: "https://en.uesp.net/wiki/Lore:Whiterun"},
-            {text: ", "},
-            {text: "Riften", href: "https://en.uesp.net/wiki/Lore:Riften"},
-            {text: ", "},
-            {text: "Dawnstar", href: "https://en.uesp.net/wiki/Lore:Dawnstar"},
-            {text: ", "},
-            {text: "Markarth", href: "https://en.uesp.net/wiki/Lore:Markarth"},
-            {text: ", "},
-            {text: "Morthal", href: "https://en.uesp.net/wiki/Lore:Morthal"},
-            {text: ", "},
-            {text: "Solitude", href: "https://en.uesp.net/wiki/Lore:Solitude"},
-            {text: ", "},
-            {text: "Winterhold", href: "https://en.uesp.net/wiki/Lore:Winterhold_(city)"},
-            {text: ", "},
-            {text: "Windhelm", href: "https://en.uesp.net/wiki/Lore:Windhelm"},
-            {text: " and "},
-            {text: "Falkreath", href: "https://en.uesp.net/wiki/Lore:Falkreath"},
-            {text: ", "},
-            {text: "War Hero"},
-            {text: ", "},
-            {text: "Stormblade"},
-            {text: ", "},
-            {text: "Guildmaster"},
-            {text: ", "},
-            {text: "Ysmir", href: "https://en.uesp.net/wiki/Lore:Ysmir"}
-        ]
-    }
-    const spouse = {title: "Spouse", desc: [{text: "Brelyna Maryon", href: "https://en.uesp.net/wiki/Skyrim:Brelyna_Maryon"}]}
-    const children = {title: "Children", desc: "2"}
-    const arrests = {title: "# of times in jail", desc: "4"}
-    const kills = {title: "Confirmed Kills", desc: "N/A"}
-    const bounty = {title: "Accumulated Bounty", desc: "N/A"}
-    const sentence = {title: "Estimated judicial sentence", desc: "Death / Public Execution"}
-
-
-    const infoCardRows = [origin, race, gender, birth, faction, titles, spouse, children, arrests, kills, bounty, sentence]
+    const {t} = useTranslation("dranleic");
 
     return (
         <>
@@ -76,19 +18,20 @@ export function Dranleic() {
                     <TableOfContents contentRef={contentRef} />
                 </div>
                 <main className="mw-content-container">
-                    <h1 className="mw-first-heading">Dranleic Haligdrake</h1>
+                    <h1 className={`${i18next.resolvedLanguage=="dov" && "firstHeading"} mw-first-heading`}>{t("mwFh")}</h1>
+                    <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul">dranl2c revakdov4</p>
                     <div className="vector-content">
                         <div className="mw-body-content" ref={contentRef}>
                             <div className="infobox-wrapper">
                                 <table className="infobox vcard">
-                                    <caption className="infobox-title">Dranleic Haligdrake</caption>
+                                    <caption className={`${i18next.resolvedLanguage=="dov" && "dovahzul-small"} infobox-title`}>{t("mwIbt")}</caption>
                                     <tbody>
                                         <tr>
                                             <td colSpan="2" className="infobox-img">
                                                 <img src="/dranleic-haligdrake-powerful-clenched-fist2.jpg" alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
                                             </td>
                                         </tr>
-                                        {infoCardRows.map((info) => {
+                                        {t("infobox", {returnObjects: true}).map((info) => {
                                             return <InfoCard key={info.title} info={info}/>
                                         })}
                                     </tbody>
@@ -97,14 +40,15 @@ export function Dranleic() {
                             <blockquote className="page-quote">
                                 <div className="quote-style">"</div>
                                 <div className="quote-text-style">
-                                    Draal wah pahwo hi los sahvotei. Hi fen ni neilaas...
-                                    <p className="dovahzul-english">Pray to whomever you are faithful. You will not survive...</p>
+                                    <span className={i18next.resolvedLanguage=="dov" && "dovahzul-quote-style"}>{t("mwQt")}</span>
+                                    <p className="dovahzul-english">{t("mwQtT")}</p>
                                 </div>
                             </blockquote>
                             <section>
-                                <p>
-                                    <b>Dranleic Haligdrake</b> is a male <a href="https://en.uesp.net/wiki/Lore:Argonian">Argonian</a> warrior, thief and assassin, said to be the <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn">Dragonborn of legend</a>. Having ties to notable criminal factions such as the <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild">Thieves Guild</a> and the <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">Dark Brotherhood</a>, he also has connections with people in positions of power in <a href="https://en.uesp.net/wiki/Lore:Skyrim">Skyrim</a>, such as the <a href="https://en.uesp.net/wiki/Skyrim:Jarl">Jarls</a>. Dranleic hails from <a href="https://en.uesp.net/wiki/Lore:Cyrodiil">Cyrodiil</a> in <a href="https://en.uesp.net/wiki/Lore:Tamriel">Tamriel</a>. His true age and potential parents are unknown; however, based on physical appearance and attributes, it is believed he was born in the last half-century. Dranleic is a notorious force of evil and mischief in Skyrim. Although it is said that he is the <a href="https://en.uesp.net/wiki/Lore:Dragonborn">Dragonborn</a>, many citizens disagree because of the various misdeeds he has committed and chaos he has caused during his time in Skyrim.
+                                <p id="lead-paragraph-1" className={i18next.resolvedLanguage=="dov" && "dovahzul"}>
+                                    <Trans i18nKey="mwLp1" ns="dranleic" components={[<b></b>, <a href="https://en.uesp.net/wiki/Lore:Argonian"></a>, <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn"></a>, <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild"></a>, <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood"></a>, <a href="https://en.uesp.net/wiki/Lore:Skyrim"></a>, <a href="https://en.uesp.net/wiki/Skyrim:Jarl"></a>, <a href="https://en.uesp.net/wiki/Lore:Cyrodiil"></a>, <a href="https://en.uesp.net/wiki/Lore:Tamriel"></a>, <a href="https://en.uesp.net/wiki/Lore:Dragonborn"></a>]}/>
                                 </p>
+                                <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english"><b>Dranleic Revakdovah</b> los aan punmak <a href="https://en.uesp.net/wiki/Lore:Argonian">Siigonis</a> kendov, tafiir ahrk ahvulon, saag kos faal <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn">Dovahkiin do zoor</a>. Piraak gronne wah sahrotwultriintokahhe grik ol faal <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild">Tafiirretokah</a> ahrk faal <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">Vulzeymahmaar</a>, rok ahk lost gevothendhe wah muz ko kostaadde do soleyk ahst <a href="https://en.uesp.net/wiki/Lore:Skyrim">Keizaal</a>, grik ol faal <a href="https://en.uesp.net/wiki/Skyrim:Jarl">Bronjunne</a>. Dranleic yeinne nol <a href="https://en.uesp.net/wiki/Lore:Cyrodiil">Sarodaal</a> ko <a href="https://en.uesp.net/wiki/Lore:Tamriel">Taazokaan</a>. Ok vahzah bok ahrk zahvos lafaanne los vomindok; vutharaak, frolokvon wah kopraanuvgenund ahrk trahkiinne, nii los korah rok lost kiin ko fin laat hefbeneruvos. Dranleic los aan dufrahkei fussevokul ahrk lakif ahst Keizaal. To nii los saag tol rok los faal <a href="https://en.uesp.net/wiki/Lore:Dragonborn">Dovahkiin</a>, pogaan tursaalle vorolur fah do fin pogaat nostigge rok lost drah ahrk tahrovin rok lost drun ko ok tiid ahst Keizaal.</p>
                                 <p>
                                     Dranleic has been largely involved in some of the biggest criminal events Tamriel has experienced since <a href="">The Assassination of Emperor Uriel Septim VII</a>
                                     <sup>

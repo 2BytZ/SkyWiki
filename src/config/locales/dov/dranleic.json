@@ -1,0 +1,127 @@
+{
+
+    "infobox": [
+        {
+            "title": "hofk3n",
+            "dovah_english": "Hofkiin",
+            "desc": [
+                {
+                    "text": "Sarodaal",
+                    "href": "https://en.uesp.net/wiki/Lore:Cyrodiil"
+                },
+                {
+                    "text": "Taazokaan",
+                    "href": "https://en.uesp.net/wiki/Lore:Tamriel"
+                }
+            ]
+        },
+        {
+            "title": "r9l3k", 
+            "dovah_english": "Reyliik",
+            "desc": [
+                {
+                    "text": "Siigonis", 
+                    "href": "https://en.uesp.net/wiki/Lore:Argonian"
+                }
+            ]
+        },
+        {
+            "title": "v2l3n",
+            "dovah_english": "Veiliin",
+            "desc": "Punmak"
+        },
+        {
+            "title": "k3n",
+            "dovah_english": "Kiin",
+            "desc": "Diistmaas 6th, 4E 1XX"
+        },
+        {
+            "title": "tok4he",
+            "dovah_english": "Tokahhe",
+            "desc": [
+                {
+                    "text": "Tafiirretokah",
+                    "href": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)"
+                },
+                {
+                    "text": "Vulzeymahmaar",
+                    "href": "https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood"
+                },
+                {
+                    "text": "Strundaamme",
+                    "href": "https://en.uesp.net/wiki/Lore:Stormcloak_Clan"
+                }
+            ]
+        },
+        {
+            "title": "tette",
+            "dovah_english": "Tette",
+            "desc": [
+                {
+                    "text": "Puzaar",
+                    "href": "https://en.uesp.net/wiki/Lore:Thanes",
+                    "separator": " do "
+                },
+                {
+                    "text": "Ahrolsedovah",
+                    "href": "https://en.uesp.net/wiki/Lore:Whiterun"
+                },
+                {
+                    "text": "Gravunlom",
+                    "href": "https://en.uesp.net/wiki/Lore:Riften"
+                },
+                {
+                    "text": "Bromlom",
+                    "href": "https://en.uesp.net/wiki/Lore:Dawnstar"
+                },
+                {
+                    "text": "Golzewer",
+                    "href": "https://en.uesp.net/wiki/Lore:Markarth"
+                },
+                {
+                    "text": "Morthal",
+                    "href": "https://en.uesp.net/wiki/Lore:Morthal"
+                },
+                {
+                    "text": "Bromgrindol",
+                    "href": "https://en.uesp.net/wiki/Lore:Solitude"
+                },
+                {
+                    "text": "Gevildseod",
+                    "href": "https://en.uesp.net/wiki/Lore:Winterhold_(city)"
+                },
+                {
+                    "text": "Hiimsejun",
+                    "href": "https://en.uesp.net/wiki/Lore:Windhelm"
+                },
+                {
+                    "text": "Quethsegolahrol",
+                    "href": "https://en.uesp.net/wiki/Lore:Falkreath"
+                },
+                {
+                    "text": "Keinhun"
+                },
+                {
+                    "text": "Struntuz"
+                },
+                {
+                    "text": "Intokah",
+                    "href": "https://en.uesp.net/wiki/Lore:Thieves_Guild#Hall_of_Guildmasters"
+                },
+                {
+                    "text": "Ysmir",
+                    "href": "https://en.uesp.net/wiki/Lore:Ysmir"
+                }
+            ]
+        }
+    ],
+
+
+    "mwFh": "Dranleic Haligdrake",
+    "mwIbt": "dranl2c revakdov4",
+
+    "mwQt": "dr1l w4 p4wo hi los s4vot2. hi fen ni n2l1s...",
+    "mwQtT": "Draal wah pahwo hi los sahvotei. Hi fen ni neilaas...",
+
+    "mwLp1": "<0>dranl2c revakdov4</0> los 1n punmak <1>s3gonis</1> kendov, taf3r 4rk 4vulon, s1g kos f1l <2>dov4k3n do z8r</2>. p71k gronne w4 s4rotwultr3ntok4he grik ol f1l <3>taf3rretok4</3> 4rk f1l <4>vulz9m4m1r</4>, he 4k lost gevothendhe w4 muz ko kost1dde do sol9k 4st <5>k2z1l</5>, grik ol f1l <6>bronjunne</6>. dranl2c y2nne nol <7>sarod1l</7> ko <8>t1zok1n</8>.  ok v4z4 bok 4rk z4vos laf1nne los vomindok; vuthar1k, frolokvon w4 kopr1nuvgenund 4rk tr4k3nne, n3 los kor4 rok lost k3n ko fin l1t hefbeneruvos. dranl2c los 1n dufr4k2 fussevokul 4rk lakif 4st k2z1l. to n3 los s1g tol rok los f1l <9>dov4k3n</9>, pog1n t6s1lle vorol6 f4 do fin pog1t nostigge rok lost dr4 4rk t4rovin rok lost drun ko ok t3d 4st k2z1l."
+}

@@ -82,3 +82,15 @@
     border-radius: 4px;
     padding: 7px 10px;
 }
+
+.nav-language-control select.dovahzul {
+    font-family: 'dragonscript', sans-serif;
+}
+
+.nav-language-control select option {
+    font-family: var(--sans);
+}
+
+.nav-language-control select option[value="dov"] {
+    font-family: 'dragonscript', sans-serif;
+}
