@@ -152,40 +152,54 @@ img.mw-file-upright {
     font-family: 'dragonscript', sans-serif;
     font-size: 3rem;
     letter-spacing: 2px;
+    font-synthesis: weight;
 }
 .dovahzul-quote-style {
     font-family: 'dragonscript', sans-serif;
     position: relative; 
     display: inline-block;
     letter-spacing: 2px;
+    font-synthesis: weight;
+
 }
 .dovahzul {
     font-family: 'dragonscript', sans-serif;
     font-size: 18px;
     letter-spacing: 2px;
+    font-synthesis: weight;
+
 }
 .dovahzul-small {
     font-family: 'dragonscript', sans-serif;
     font-size: 16px;
     letter-spacing: 2px;
+    font-synthesis: weight;
+
 }
 .dovahzul-smaller {
     font-family: 'dragonscript', sans-serif;
     font-size: 14px;
     letter-spacing: 2px;
+    font-synthesis: weight;
+
 }
 .dovahzul-english {
     font-style: italic;
     font-size: small;
+    font-synthesis: weight;
+
 }
 td .dovahzul-english {
     margin: 0;
     font-size: 10px;
     justify-self: center;
     transform: translateY(-30%);
+
 }
 .dovahzul-lang-dropdown {
     font-family: 'dragonscript', sans-serif;
     font-size: 12px;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+    font-synthesis: weight;
+
 }
