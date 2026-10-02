@@ -1,5 +1,152 @@
 {
-    "mwFh": "Dranleic Haligdrake",
 
-    "lp1": "asdf"
+    "infobox": [
+        {
+            "title": "Hjemland/Oprindelse",
+            "desc": [
+                {
+                    "text": "Cyrodiil",
+                    "href": "https://en.uesp.net/wiki/Lore:Cyrodiil"
+                },
+                {
+                    "text": "Tamriel",
+                    "href": "https://en.uesp.net/wiki/Lore:Tamriel"
+                }
+            ]
+        },
+        {
+            "title": "Race", 
+            "desc": [
+                {
+                    "text": "Argonian", 
+                    "href": "https://en.uesp.net/wiki/Lore:Argonian"
+                }
+            ]
+        },
+        { 
+            "title": "Køn", 
+            "desc": "Mand"
+        },
+        { 
+            "title": "Fødsel", 
+            "desc": "D. 6. 'Første Frø', 4. Æra 1XX"
+        },
+        {
+            "title": "Fraktion(er)",
+            "desc": [
+                {
+                    "text": "Thieves Guild", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)"
+                },
+                {
+                    "text": "Dark Brotherhood", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood"
+                },
+                {
+                    "text": "Stormcloaks", 
+                    "href": "https://en.uesp.net/wiki/Lore:Stormcloak_Clan"
+                }
+            ]
+        },
+        {
+            "title": "Titel(er)",
+            "desc": [
+                {
+                    "text": "Thane", 
+                    "href": "https://en.uesp.net/wiki/Lore:Thanes",
+                    "separator": " af "
+                },
+                {
+                    "text": "Whiterun", 
+                    "href": "https://en.uesp.net/wiki/Lore:Whiterun"
+                },
+                {
+                    "text": "Riften", 
+                    "href": "https://en.uesp.net/wiki/Lore:Riften"
+                },
+                {
+                    "text": "Dawnstar", 
+                    "href": "https://en.uesp.net/wiki/Lore:Dawnstar"
+                },
+                {
+                    "text": "Markarth", 
+                    "href": "https://en.uesp.net/wiki/Lore:Markarth"
+                },
+                {
+                    "text": "Morthal", 
+                    "href": "https://en.uesp.net/wiki/Lore:Morthal"
+                },
+                {
+                    "text": "Solitude", 
+                    "href": "https://en.uesp.net/wiki/Lore:Solitude"
+                },
+                {
+                    "text": "Winterhold", 
+                    "href": "https://en.uesp.net/wiki/Lore:Winterhold_(city)"
+                },
+                {
+                    "text": "Windhelm", 
+                    "href": "https://en.uesp.net/wiki/Lore:Windhelm",
+                    "separator": " og "
+                },
+                {
+                    "text": "Falkreath", 
+                    "href": "https://en.uesp.net/wiki/Lore:Falkreath"
+                },
+                {
+                    "text": "Krigshelt"
+                },
+                {
+                    "text": "Stormblade"
+                },
+                {
+                    "text": "Guildmaster"
+                },
+                {
+                    "text": "Ysmir", 
+                    "href": "https://en.uesp.net/wiki/Lore:Ysmir"
+                }
+            ]
+        },
+        {
+            "title": "Kone", 
+            "desc": [
+                {
+                    "text": "Brelyna Maryon", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Brelyna_Maryon"
+                }
+            ]
+        },
+        {
+            "title": "Børn", 
+            "desc": "2"
+        },
+        {
+            "title": "Antal gange fængslet", 
+            "desc": "4"
+        },
+        {
+            "title": "Konfirmeret drab", 
+            "desc": "N/A"
+        },
+        {
+            "title": "Samlet dusør", 
+            "desc": "N/A"
+        },
+        {
+            "title": "Estimeret straf", 
+            "desc": "Dødsstraf / Offentlig halshugning"
+        }
+    ],
+
+
+
+
+    "mwFh": "Dranleic Haligdrake",
+    "mwIbt": "Dranleic Haligdrake",
+
+    "mwQt": "Pray to whomever you are faithful. You will not survive...",
+    "mwQtT": "Bed til hvem end du giver din tro. Du kommer ikke til at overleve...",
+
+    "mwLp1": "<0>Dranleic Haligdrake</0> er en mandlig <1>argonian</1> kriger, tyv og snigemorder, sagt at være den <2>Legendariske Dragonborn</2>. Havende forbindelser til bemærkelsesværdige kriminelle fraktioner såsom <3>Tyve Gilden</3> og den <4>Mørke Broderskab</4>, han har derudover netværk med folk med stor magt i <5>Skyrim</5>, såsom <6>Jarlsne</6>. Dranleic kommer fra <7>Cyrodiil</7>, som ligger i <8>Tamriel</8> kontinentet. Hans rigtige alder og eventuelle forældre er endnu ikke kendt; dog, ud fra fysisk udseende og attributter, mener man at han er født inden for det sidste halve århundred. Dranleic er en berygtet kraft af ondskab og uhærdighed i Skyrim-regionen. Selvom det siges at han er en <9>Dragonborn</9>, mener mange alligevel ikke at det er sandt pga. alt hans kaos og mange forseelser han har begået gennem hans tid i Skyrim."
 }
