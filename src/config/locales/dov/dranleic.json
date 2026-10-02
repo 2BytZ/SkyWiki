@@ -113,6 +113,41 @@
                     "href": "https://en.uesp.net/wiki/Lore:Ysmir"
                 }
             ]
+        },
+        {
+            "title": "wolov",
+            "dovah_english": "Wolov",
+            "desc": [
+                {
+                    "text": "Brelyna Maryon",
+                    "href": "https://en.uesp.net/wiki/Skyrim:Brelyna_Maryon"
+                }
+            ]
+        },
+        {
+            "title": "k3r",
+            "dovah_english": "Kiir",
+            "desc": "2"
+        },
+        {
+            "title": "poltore",
+            "dovah_english": "Poltore",
+            "desc": "4"
+        },
+        {
+            "title": "d1zri1n kr3he",
+            "dovah_english": "Daazriaan kriihe",
+            "desc": "N/A"
+        },
+        {
+            "title": "qor pov1s",
+            "dovah_english": "Qor povaas",
+            "desc": "N/A"
+        },
+        {
+            "title": "suz1n thunuv gronzul",
+            "dovah_english": "Suzaan thunuv gronzul",
+            "desc": "Dinok / Jormah oprotak"
         }
     ],
 

@@ -94,3 +94,8 @@ div.gallerytext {
 .dovahzul-english.mw-first-header {
     font-size: 28px;
 }
+
+
+[hidden] {
+    display: none;
+}

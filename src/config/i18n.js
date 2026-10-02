@@ -16,7 +16,7 @@ function loadLocale(language, namespace) {
 }
 
 i18next.use(resourcesToBackend(loadLocale)).use(initReactI18next).init({
-    lng: "en",
+    lng: localStorage.getItem("language") || "en",
     fallbackLng: "en",
     ns: ["home"],
     defaultNS: "home",

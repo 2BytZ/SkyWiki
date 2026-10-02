@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { getLocalizedPath } from "../localizedPath"
 import "./Navbar.css"
 import LanguageSwitcher from "./LanguageSwitcher"
 import { Trans, useTranslation } from "react-i18next"
@@ -12,24 +11,24 @@ export function Navbar() {
         <div className="ts-container">
             <div className="ts-inner">
                 <div className="logo">
-                    <Link to={getLocalizedPath("/")} className="mw-logo">
+                    <Link to={("/")} className="mw-logo">
                         <img src="/Shadowmarks_Thieves_Guild_Sign_darkmode.png"/>
                     </Link>
                 </div>
                 <nav className="navbar">
                     <ul className="nav-main">
                         <li>
-                            <Link to={getLocalizedPath("/")}>
+                            <Link to={("/")}>
                                 <button className="navbutton">Home</button>
                             </Link> 
                         </li>
                         <li>
-                            <Link to={getLocalizedPath("/Dranleic_Haligdrake")}>
+                            <Link to={("/Dranleic_Haligdrake")}>
                                 <button className="navbutton">page1</button>
                             </Link>
                         </li>
                         <li>
-                            <Link to={getLocalizedPath("/Pharis_Ironeye")}>
+                            <Link to={("/Pharis_Ironeye")}>
                                 <button className="navbutton">page2</button>
                             </Link>                            
                         </li>

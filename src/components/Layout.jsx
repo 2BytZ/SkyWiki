@@ -1,13 +1,10 @@
 import { useEffect, useState } from "react"
 import { Navbar } from "./Navbar"
-import { Outlet, useLocation, useNavigate } from "react-router-dom"
-import { getLocalizedPath } from "../localizedPath"
+import { Outlet } from "react-router-dom"
 
 const LANGUAGE_STORAGE_KEY = "skyrim-wiki-language"
 
 export function Layout() {
-    const location = useLocation()
-    const navigate = useNavigate()
     const [language, setLanguage] = useState(() => {
         const savedLanguage = window.localStorage.getItem(LANGUAGE_STORAGE_KEY)
         return ["en", "da", "do"].includes(savedLanguage) ? savedLanguage : "en"
@@ -20,7 +17,6 @@ export function Layout() {
     function handleLanguageChange(nextLanguage) {
         setLanguage(nextLanguage)
         window.localStorage.setItem(LANGUAGE_STORAGE_KEY, nextLanguage)
-        navigate(getLocalizedPath(location.pathname, nextLanguage))
     }
 
     return (
