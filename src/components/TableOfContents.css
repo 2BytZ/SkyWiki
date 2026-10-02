@@ -1,7 +1,9 @@
 
 .top-heading {
+    font-family: skyrim-bold;
     list-style: none;
     padding: 6px 0;
+    padding-top: 2.8rem;
 }
 .top-heading:hover {
     cursor: pointer;
@@ -11,11 +13,9 @@
 
 .vector-sticky-container {
     overflow: hidden auto;
-    position: sticky;
-    top: 24px;
     box-sizing: border-box;
-    max-height: calc(100vh - (24px * 2));
-    transition: top 250ms linear, max-height 250ms linear; /*Dunno what this does tbh*/
+    max-height: calc(100vh - 1rem);
+    transition: max-height 250ms linear;
 }
 .vector-container {
     padding: 0 16px;
@@ -60,10 +60,10 @@ ul.vector-toc-contents {
     display: grid;
     place-items: center;
     position: absolute;
-    left: -24px;
+    left: -19px;
     top: 50%;
-    min-width: 22px;
-    min-height: 22px;
+    min-width: 15px;
+    min-height: 15px;
     padding: 0;
     transform: translateY(-50%);
 
@@ -86,7 +86,6 @@ ul.vector-toc-contents {
 }
 .item-2 {
     font-size: 0.9em;
-
 }
 .item-3 {
     font-size: 0.8em;
@@ -95,4 +94,6 @@ ul.vector-toc-contents {
     font-size: 0.7em;
 }
 
-
+.vector-toc {
+    font-family: "skyrim";
+}

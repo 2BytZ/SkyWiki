@@ -34,7 +34,7 @@ export function TableOfContents({ contentRef, language }) {
     return (
     <>
         <div className="vector-sticky-container">
-            <nav id="vector-toc">
+            <nav className="vector-toc">
                 <div className="vector-container">
                     <div className="vector-toc-element">
                         <ul className="vector-toc-contents">

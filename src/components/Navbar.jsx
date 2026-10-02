@@ -24,12 +24,12 @@ export function Navbar() {
                         </li>
                         <li>
                             <Link to={("/Dranleic_Haligdrake")}>
-                                <button className="navbutton">page1</button>
+                                <button className="navbutton">Dranleic Haligdrake</button>
                             </Link>
                         </li>
                         <li>
                             <Link to={("/Pharis_Ironeye")}>
-                                <button className="navbutton">page2</button>
+                                <button className="navbutton">Pharis Ironeye</button>
                             </Link>                            
                         </li>
                     </ul>

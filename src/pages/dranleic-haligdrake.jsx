@@ -15,7 +15,12 @@ export function Dranleic() {
         <>
             <div className="content-body">
                 <div className="vector-column-start">
-                    <TableOfContents contentRef={contentRef} />
+                    <div className="image-overlay">
+                        <img src="src/assets/Main Menu.png" className="toc-background-img"/>
+                        <span>
+                            <TableOfContents contentRef={contentRef} />
+                        </span>
+                    </div>
                 </div>
                 <main className="mw-content-container">
                     <h1 className={`${i18next.resolvedLanguage=="dov" && "firstHeading"} mw-first-heading`}>{t("mwFh")}</h1>

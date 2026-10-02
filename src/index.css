@@ -5,6 +5,21 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'skyrim-bold';
+  src: url(fonts/Futura_Condensed_Bold.ttf) format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'skyrim-light';
+  src: url(fonts/Futura_Condensed_Light.ttf);
+  font-weight:300;
+}
+@font-face {
+  font-family: 'skyrim';
+  src: url(fonts/Futura_Condensed_Medium.ttf);
+  font-weight: 500;
+}
 
 :root {
 
