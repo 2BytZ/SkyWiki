@@ -94,3 +94,11 @@
 .nav-language-control select option[value="dov"] {
     font-family: 'dragonscript', sans-serif;
 }
+
+.mw-logo img {
+    display: block;
+    height: 56px;
+    width: auto;
+    max-width: 128px;
+    object-fit: contain;
+}
