@@ -3,12 +3,29 @@ import { Navbar } from "./Navbar"
 import { Outlet } from "react-router-dom"
 
 const LANGUAGE_STORAGE_KEY = "skyrim-wiki-language"
+const THEME_STORAGE_KEY = "skyrim-wiki-theme"
 
 export function Layout() {
+   
+    const [theme, setTheme] = useState(() => {
+        const savedTheme = window.localStorage.getItem(THEME_STORAGE_KEY)
+
+        if (savedTheme === "light" || savedTheme === "dark") {
+            return savedTheme        
+        }
+
+        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+    })
+
     const [language, setLanguage] = useState(() => {
         const savedLanguage = window.localStorage.getItem(LANGUAGE_STORAGE_KEY)
         return ["en", "da", "do"].includes(savedLanguage) ? savedLanguage : "en"
     })
+
+    useEffect(() => {
+        document.documentElement.dataset.theme = theme
+        window.localStorage.setItem(THEME_STORAGE_KEY, theme)
+    }, [theme])
 
     useEffect(() => {
         window.localStorage.setItem(LANGUAGE_STORAGE_KEY, language)
@@ -21,7 +38,7 @@ export function Layout() {
 
     return (
         <>
-            <Navbar language={language} onLanguageChange={handleLanguageChange}/>
+            <Navbar language={language} onLanguageChange={handleLanguageChange} theme={theme} onThemeChange={setTheme}/>
             <main>
                 <Outlet context={{ language }}/>
             </main>

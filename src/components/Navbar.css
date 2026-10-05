@@ -1,7 +1,7 @@
 
 .ts-container {
     padding: 0 10px;
-    background: #101010;
+    background: var(--nav-bg);
 }
 
 .ts-container .ts-inner {
@@ -49,9 +49,9 @@
 
     padding: 7px 10px;
 
-
-    background: #181818;
-    border: 1px solid #333;
+    color: var(--nav-text);
+    background: var(--nav-button-bg);
+    border: 1px solid var(--nav-border);
 
     cursor: pointer;
 }
@@ -70,15 +70,16 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #f3f3f3;
+    color: var(--nav-text);
+
     font-size: 0.9rem;
 }
 
 .nav-language-control select {
     font: inherit;
     color: inherit;
-    background: #181818;
-    border: 1px solid #444;
+    background: var(--nav-button-bg);
+    border: 1px solid var(--nav-border);
     border-radius: 4px;
     padding: 7px 10px;
 }
@@ -101,4 +102,13 @@
     width: auto;
     max-width: 128px;
     object-fit: contain;
+}
+
+.theme-toggle-btn {
+    color: var(--nav-text);
+    background: var(--nav-button-bg);
+    border: 1px solid var(--nav-border);
+    border-radius: 4px;
+    padding: 7px 10px;
+    cursor: pointer;   
 }

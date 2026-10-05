@@ -4,7 +4,7 @@ import LanguageSwitcher from "./LanguageSwitcher"
 import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
 
-export function Navbar() {
+export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
     const {t} = useTranslation("navbar")
     
     return (
@@ -12,7 +12,7 @@ export function Navbar() {
             <div className="ts-inner">
                 <div className="logo">
                     <Link to={("/")} className="mw-logo">
-                        <img src="/Shadowmarks_Thieves_Guild_Sign_darkmode.png"/>
+                        <img src={theme == "dark" ? "./Shadowmarks_Thieves_Guild_Sign_darkmode.png" : "./Shadowmarks_Thieves_Guild_Sign.png"}/>
                     </Link>
                 </div>
                 <nav className="navbar">
@@ -37,6 +37,11 @@ export function Navbar() {
                         <span className={i18next.resolvedLanguage=="dov" && "dovahzul"}>{t("lang")}</span>
                         <span>{LanguageSwitcher()}</span>
                     </label>
+                    <button className="theme-toggle-btn" type="button" aria-pressed={theme === "dark"} onClick={() => {
+                        onThemeChange(theme === "dark" ? "light" : "dark")
+                    }}>
+                        Mode
+                    </button>
                 </nav>
             </div>
         </div>
