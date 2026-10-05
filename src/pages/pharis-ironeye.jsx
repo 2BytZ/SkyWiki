@@ -79,7 +79,10 @@ export function Pharis() {
                                     <tbody>
                                         <tr>
                                             <td colSpan={2} className="infobox-img">
-                                                <img src="/Pharis-Ironeye-home-page-banner-art.jpg" alt="Pharis Ironeye" height={155} width={170} className="mw-file-upright" />
+                                                <a href="/Pharis-Ironeye-home-page-banner-art.jpg">
+                                                    <img src="/Pharis-Ironeye-home-page-banner-art.jpg" alt="Pharis Ironeye" height={155} width={170} className="mw-file-upright" />
+                                                </a>
+                                                
                                             </td>
                                         </tr>
                                         {infoCardRows.map((info) => {
@@ -208,12 +211,17 @@ export function Pharis() {
                                     <ul className="gallery-container"> 
                                         <li className="gallery-list-item">
                                             <span className="gallery-img">
-                                                <img src="/bullseye-pharis-headshot-art-gore.jpg" width={300} height={169}/>
+                                                <a href="/bullseye-pharis-headshot-art-gore.jpg">
+                                                    <img src="/bullseye-pharis-headshot-art-gore.jpg" width={300} height={169}/>
+                                                </a>
+                                                
                                             </span>
                                         </li>
                                         <li className="gallery-list-item">
                                             <span className="gallery-img">
-                                                <img src="/Pharis-Ironeye-sunrise-sitting.jpg" width={300} height={169}/>
+                                                <a href="/Pharis-Ironeye-sunrise-sitting.jpg">
+                                                    <img src="/Pharis-Ironeye-sunrise-sitting.jpg" width={300} height={169}/>
+                                                </a>
                                             </span>
                                         </li>
                                     </ul>

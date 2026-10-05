@@ -33,7 +33,9 @@ export function Dranleic() {
                                     <tbody>
                                         <tr>
                                             <td colSpan="2" className="infobox-img">
-                                                <img src="/dranleic-haligdrake-powerful-clenched-fist2.jpg" alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
+                                                <a href="/dranleic-haligdrake-powerful-clenched-fist2.jpg">
+                                                    <img src="/dranleic-haligdrake-powerful-clenched-fist2.jpg" alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
+                                                </a>
                                             </td>
                                         </tr>
                                         {t("infobox", {returnObjects: true}).map((info) => {
@@ -382,17 +384,23 @@ export function Dranleic() {
                                     <ul className="gallery-container">
                                         <li className="gallery-list-item">
                                             <span className="gallery-img">
-                                                <img src="/dranleic-execution-whiterun-takeover.jpg" width={300} height={169}/>
+                                                <a href="/dranleic-execution-whiterun-takeover.jpg">
+                                                    <img src="/dranleic-execution-whiterun-takeover.jpg" width={300} height={169}/>
+                                                </a>
                                             </span>
                                         </li>
                                         <li className="gallery-list-item">
                                             <span className="gallery-img">
-                                                <img src="/dranleic-sneak-execution-guard.jpg" width={300} height={169}/>
+                                                <a href="/dranleic-sneak-execution-guard.jpg">
+                                                    <img src="/dranleic-sneak-execution-guard.jpg" width={300} height={169}/>
+                                                </a>
                                             </span>
                                         </li>
                                         <li className="gallery-list-item">
                                             <span className="gallery-img">
-                                                <img src="/dranleic-execution-petty-bandit-gore.jpg" width={300} height={169}/>
+                                                <a href="/dranleic-execution-petty-bandit-gore.jpg">
+                                                    <img src="/dranleic-execution-petty-bandit-gore.jpg" width={300} height={169}/>
+                                                </a>
                                             </span>
                                         </li>
                                     </ul>

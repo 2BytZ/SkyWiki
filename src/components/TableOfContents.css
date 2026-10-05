@@ -24,6 +24,8 @@
     margin-bottom: 2rem;
 
     line-height: 100% !important;
+
+    color: var(--nav-text);
 }
 .vector-toc-element {
     font-size: 0.8rem;   

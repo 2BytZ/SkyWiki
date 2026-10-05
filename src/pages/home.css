@@ -56,6 +56,8 @@ ul.gallery li.gallerybox a {
 div.gallerytext {
     padding: 9px 9px 15px;
     text-align: center;
+    
+    color: var(--text);
 }
 
 

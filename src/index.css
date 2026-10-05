@@ -1,3 +1,4 @@
+/*--------------------------Fonts--------------------------*/ 
 @font-face {
   font-family: 'dragonscript';
   src: url(fonts/dragon_alphabet.ttf) format('truetype');
@@ -10,28 +11,24 @@
   src: url('./fonts/Futura_Condensed_Light.ttf') format('truetype');
   font-weight: 300;
 }
-
 @font-face {
   font-family: 'skyrim';
   src: url('./fonts/Futura_Condensed_Medium.ttf') format('truetype');
   font-weight: 400;
 }
-
 @font-face {
   font-family: 'skyrim';
   src: url('./fonts/FuturaCondensedBold.ttf') format('truetype');
   font-weight: 700;
 }
 
+/*--------------------------Styling--------------------------*/
 :root {
 
   --nav-bg : #f4f3ec;
   --nav-button-bg: #fff;
   --nav-border: #e5e4e7;
   --nav-text: #08060d;
-
-
-
 
   --text: #6b6375;
   --text-h: #08060d;
@@ -81,7 +78,7 @@
   --nav-bg: #101010;
   --nav-button-bg: #181818;
   --nav-border: #333;
-  --nav-text: #f3f3f3;
+  --nav-text: #9ca3af;
 
 
   :root[data-theme="dark"] #social .button-icon {

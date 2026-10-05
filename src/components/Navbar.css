@@ -112,3 +112,8 @@
     padding: 7px 10px;
     cursor: pointer;   
 }
+
+.navbar-right {
+    display:inline-flex;
+    gap: 10px;
+}

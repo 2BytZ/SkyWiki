@@ -33,15 +33,17 @@ export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
                             </Link>                            
                         </li>
                     </ul>
-                    <label className="nav-language-control">
-                        <span className={i18next.resolvedLanguage=="dov" && "dovahzul"}>{t("lang")}</span>
-                        <span>{LanguageSwitcher()}</span>
-                    </label>
-                    <button className="theme-toggle-btn" type="button" aria-pressed={theme === "dark"} onClick={() => {
-                        onThemeChange(theme === "dark" ? "light" : "dark")
-                    }}>
-                        Mode
-                    </button>
+                    <div className="navbar-right">
+                        <label className="nav-language-control">
+                            <span className={i18next.resolvedLanguage=="dov" && "dovahzul"}>{t("lang")}</span>
+                            <span>{LanguageSwitcher()}</span>
+                        </label>
+                        <button className="theme-toggle-btn" type="button" aria-pressed={theme === "dark"} onClick={() => {
+                            onThemeChange(theme === "dark" ? "light" : "dark")
+                        }}>
+                            Mode
+                        </button>
+                    </div>
                 </nav>
             </div>
         </div>
