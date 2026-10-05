@@ -1,0 +1,37 @@
+{
+    "https://en.uesp.net/wiki/Lore:Argonian": {
+            "img": "/LO-race-Argonian.png",
+            "summary": "Argonians (Saxhleel, or People of the Root in their native language of Jel) are the reptilian natives of Black Marsh, a vast swampland province in southeastern Tamriel."
+        },
+    "https://en.uesp.net/wiki/Lore:Last_Dragonborn": {
+        "summary": "The Last Dragonborn, also simply known as the Dragonborn or Dovahkiin, is the hero foretold in the ancient Prophecy of the Dragonborn inscribed on Alduin's Wall."
+    },
+    "https://en.uesp.net/wiki/Lore:Thieves_Guild": {
+        "img": "/SR-banner-Thieves_Guild.png",
+        "summary": "The Thieves Guild, also known as the Children of the Shadows and the Fingers of the Fox, is dedicated to the gathering and training of those who are stealthy and shadowy in nature.  Although criminal by its very definition, for untold years, local authorities in places throughout Tamriel have tolerated the existence of the guild for its role as 'crime regulator', as it does not tolerate competition or egregious conduct from its members."
+    },
+    "https://en.uesp.net/wiki/Lore:Dark_Brotherhood": {
+        "img": "/OB-banner-Dark_Brotherhood.jpg",
+        "summary": "The Dark Brotherhood is a guild of assassins shrouded in shadow and mystery which has been active all over Tamriel. While their business is certainly not legal, their existence has typically been tolerated or ignored."
+    },
+    "https://en.uesp.net/wiki/Lore:Skyrim": {
+        "img": "/LO-map-Skyrim_(Anthology).jpg",
+        "summary": "Skyrim, the northernmost province of Tamriel, is a cold and mountainous region also known as the Old Kingdom, Mereth, or the Fatherland, or Keizaal in the dragon tongue."
+    },
+    "https://en.uesp.net/wiki/Skyrim:Jarl": {
+        "summary": "A Jarl is a ruler of one of the nine holds of Skyrim, equivalent to a Cyrodiilic Count. The jarls of Skyrim are largely autonomous, though they all swear fealty to the High King. Most jarls have their own personal housecarl and steward, and some also have one or more thanes in their service. Many also have a court wizard in their service who is also sometimes the only spell merchant in town."
+    },
+    "https://en.uesp.net/wiki/Lore:Cyrodiil": {
+        "img": "/LO-map-Cyrodiil_(Anthology).jpg",
+        "summary": "Cyrodiil, sometimes shortened to Cyrod, is a province in south-central Tamriel that is home to the human race known as Imperials. As the central region of Tamriel, Cyrodiil is also known as 'the Heartland.'"
+    },
+    "https://en.uesp.net/wiki/Lore:Tamriel": {
+        "img": "/MER-art-Arena_Anthology_Game_Map.jpg",
+        "summary": "Tamriel is one of the main continents of the planet Nirn. This land is a great melting pot of cultures and races; being home to at least a dozen races, with dozens more having died out or changed in ages gone by. The continent is divided into nine provinces, which have on occasion been united under the rule of the Empire."
+    },
+    "https://en.uesp.net/wiki/Lore:Dragonborn": {
+        "title": "Dragonborn",
+        "img": "/Symbol-of-the-Dragonborn.png",
+        "summary": "A Dragonborn (or Dovahkiin in Dragon Language) is a mortal blessed with the blood and soul of a dragon by Akatosh, the Father of Dragons and chief of the Divines."
+    }
+}

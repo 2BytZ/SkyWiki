@@ -1,4 +1,5 @@
 import i18next from "i18next"
+import { LinkPreview } from "./LinkPreview"
 
 
 export function InfoCard({info}) {
@@ -14,7 +15,7 @@ export function InfoCard({info}) {
                 {description.map((part, index) => (
                     <>
                         {part.href ? (
-                            <a key={index} href={part.href}>{part.text}</a>
+                            <LinkPreview key={index} url={part.href}>{part.text}</LinkPreview>
                         ) : (
                             <span key={index}>{part.text}</span>
                         )}

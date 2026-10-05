@@ -1,0 +1,45 @@
+.link-preview {
+    position: relative;
+    display: inline-block;
+}
+
+.link-preview__card {
+    display: none;
+    position: absolute;
+
+    z-index: 10;
+    top: 100%;
+    left: 0;
+
+    box-sizing: border-box;
+    width: min(30rem, calc(100vw - 2rem));
+    max-width: 380px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    background: var(--bg);
+    color: var(--text);
+    box-shadow: var(--shadow);
+}
+
+.link-preview:hover .link-preview__card, .link-preview:focus-within .link-preview__card {
+    display: grid;
+    gap: 8px;
+}
+
+.link-preview__card img {
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+}
+
+.link-preview .preview-text {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow-wrap: anywhere;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}

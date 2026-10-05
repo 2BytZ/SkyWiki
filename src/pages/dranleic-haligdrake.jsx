@@ -4,6 +4,8 @@ import { InfoCard } from "../components/InfoCard"
 import "./characterPage.css"
 import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
+import { LinkPreview } from "../components/LinkPreview"
+import { Link } from "react-router-dom"
 
 
 
@@ -53,7 +55,17 @@ export function Dranleic() {
                             </blockquote>
                             <section>
                                 <p id="lead-paragraph-1" className={i18next.resolvedLanguage=="dov" && "dovahzul"}>
-                                    <Trans i18nKey="mwLp1" ns="dranleic" components={[<b></b>, <a href="https://en.uesp.net/wiki/Lore:Argonian"></a>, <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn"></a>, <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild"></a>, <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood"></a>, <a href="https://en.uesp.net/wiki/Lore:Skyrim"></a>, <a href="https://en.uesp.net/wiki/Skyrim:Jarl"></a>, <a href="https://en.uesp.net/wiki/Lore:Cyrodiil"></a>, <a href="https://en.uesp.net/wiki/Lore:Tamriel"></a>, <a href="https://en.uesp.net/wiki/Lore:Dragonborn"></a>]}/>
+                                    <Trans i18nKey="mwLp1" ns="dranleic" components={[
+                                        <b />, 
+                                        <LinkPreview url={"https://en.uesp.net/wiki/Lore:Argonian"} />,
+                                        <LinkPreview url={"https://en.uesp.net/wiki/Lore:Last_Dragonborn"} />, 
+                                        <LinkPreview url={"https://en.uesp.net/wiki/Lore:Thieves_Guild"} />, 
+                                        <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dark_Brotherhood"} />,
+                                        <LinkPreview url={"https://en.uesp.net/wiki/Lore:Skyrim"} />,
+                                        <LinkPreview url={"https://en.uesp.net/wiki/Skyrim:Jarl"} />,
+                                        <LinkPreview url={"https://en.uesp.net/wiki/Lore:Cyrodiil"} />,
+                                        <LinkPreview url={"https://en.uesp.net/wiki/Lore:Tamriel"} />,
+                                        <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dragonborn"} />]}/>
                                 </p>
                                 <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english"><b>Dranleic Revakdovah</b> los aan punmak <a href="https://en.uesp.net/wiki/Lore:Argonian">Siigonis</a> kendov, tafiir ahrk ahvulon, saag kos faal <a href="https://en.uesp.net/wiki/Lore:Last_Dragonborn">Dovahkiin do zoor</a>. Piraak gronne wah sahrotwultriintokahhe grik ol faal <a href="https://en.uesp.net/wiki/Lore:Thieves_Guild">Tafiirretokah</a> ahrk faal <a href="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">Vulzeymahmaar</a>, rok ahk lost gevothendhe wah muz ko kostaadde do soleyk ahst <a href="https://en.uesp.net/wiki/Lore:Skyrim">Keizaal</a>, grik ol faal <a href="https://en.uesp.net/wiki/Skyrim:Jarl">Bronjunne</a>. Dranleic yeinne nol <a href="https://en.uesp.net/wiki/Lore:Cyrodiil">Sarodaal</a> ko <a href="https://en.uesp.net/wiki/Lore:Tamriel">Taazokaan</a>. Ok vahzah bok ahrk zahvos lafaanne los vomindok; vutharaak, frolokvon wah kopraanuvgenund ahrk trahkiinne, nii los korah rok lost kiin ko fin laat hefbeneruvos. Dranleic los aan dufrahkei fussevokul ahrk lakif ahst Keizaal. To nii los saag tol rok los faal <a href="https://en.uesp.net/wiki/Lore:Dragonborn">Dovahkiin</a>, pogaan tursaalle vorolur fah do fin pogaat nostigge rok lost drah ahrk tahrovin rok lost drun ko ok tiid ahst Keizaal.</p>
                                 <p>
