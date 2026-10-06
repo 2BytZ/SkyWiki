@@ -5,7 +5,6 @@ import "./characterPage.css"
 import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
 import { LinkPreview } from "../components/LinkPreview"
-import { Link } from "react-router-dom"
 
 
 

@@ -4,13 +4,7 @@
 }
 
 .link-preview__card {
-    display: none;
-    position: absolute;
-
     z-index: 10;
-    top: 100%;
-    left: 0;
-
     box-sizing: border-box;
     width: min(30rem, calc(100vw - 2rem));
     max-width: 380px;
@@ -23,11 +17,6 @@
     box-shadow: var(--shadow);
 }
 
-.link-preview:hover .link-preview__card, .link-preview:focus-within .link-preview__card {
-    display: grid;
-    gap: 8px;
-}
-
 .link-preview__card img {
     width: 100%;
     height: 130px;
@@ -38,8 +27,108 @@
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 6;
     overflow-wrap: anywhere;
     font-size: 0.8rem;
     line-height: 1.4;
+}
+
+.link-preview .preview-text--vertical {
+    -webkit-line-clamp: 9;
+}
+
+.link-preview .preview-text--horizontal {
+    -webkit-line-clamp: 7;
+}
+
+
+
+
+
+
+
+.wiki-anchor-text {
+  text-decoration: none;
+  color: #36b;
+  border-bottom: 1px dotted #36b;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.wiki-preview-card {
+  background: #ffffff;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+  box-shadow: 0 30px 90px -20px rgba(0, 0, 0, 0.3), 0 0 1px 1px rgba(0, 0, 0, 0.05);
+  width: min(300px, calc(100vw - 16px));
+  z-index: 9999; /* Keeps it on top of other content */
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.wiki-preview-card--horizontal {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.wiki-preview-card--horizontal .wiki-preview-thumb {
+  box-sizing: border-box;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.wiki-preview-card--vertical {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 160px;
+  align-items: stretch;
+  width: min(420px, calc(100vw - 16px));
+  max-width: 420px;
+}
+
+.wiki-preview-thumb {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  background-color: #f8f9fa;
+}
+
+.wiki-preview-card--vertical .wiki-preview-thumb {
+  grid-column: 2;
+  grid-row: 1;
+  width: 160px;
+  height: 100%;
+  min-height: 180px;
+  object-fit: contain;
+}
+
+.wiki-preview-body {
+  padding: 14px;
+}
+
+.wiki-preview-card--vertical .wiki-preview-body {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+}
+
+.wiki-preview-body h4 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.wiki-preview-body strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.wiki-preview-body p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #202122;
 }
