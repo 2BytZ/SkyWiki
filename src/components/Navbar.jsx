@@ -4,6 +4,10 @@ import LanguageSwitcher from "./LanguageSwitcher"
 import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
 
+import inventoryFilterSeparator from "../assets/inventory_filter_separator.png"
+import inventoryFilterBox from "../assets/inventory_filter_box.png"
+
+
 export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
     const {t} = useTranslation("navbar")
     
@@ -34,10 +38,12 @@ export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
                         </li>
                     </ul>
                     <div className="navbar-right">
+                        <img className="navbar-right-background" src={inventoryFilterBox} alt="" />
                         <label className="nav-language-control">
                             <span className={i18next.resolvedLanguage=="dov" && "dovahzul"}>{t("lang")}</span>
                             <span>{LanguageSwitcher()}</span>
                         </label>
+                        <img className="navbar-right-separator" src={inventoryFilterSeparator} alt="" />
                         <button title={theme === "dark" ? "Switch to Lightmode" : "Switch to Darkmode"}className="theme-toggle-btn" type="button" aria-pressed={theme === "dark"} onClick={() => {
                             onThemeChange(theme === "dark" ? "light" : "dark")
                         }}>
