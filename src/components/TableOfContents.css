@@ -13,12 +13,91 @@
     text-decoration-line: underline;
 }
 
+.toc-scroll-shell {
+    position: relative;
+    margin-right: 6px;
+}
+
 .vector-sticky-container {
     overflow: hidden auto;
     box-sizing: border-box;
+    padding-right: 15px;
     max-height: 100vh;
     transition: max-height 250ms linear;
+    scrollbar-width: none;
 }
+
+.vector-sticky-container::-webkit-scrollbar {
+    display: none;
+}
+
+.toc-scrollbar-skin {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 14.5px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.toc-scroll-shell.is-overflowing .toc-scrollbar-skin {
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.toc-scrollbar-arrow {
+    display: block;
+    height: 22px;
+    flex: 0 0 20px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.toc-scrollbar-skin .toc-scrollbar-arrow img {
+    position: static;
+    inset: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.toc-scrollbar-track {
+    position: relative;
+    flex: 1 1 auto;
+    min-height: 0;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.toc-scrollbar-thumb {
+    position: absolute;
+    left: 2.3px;
+    right: 2.1px;
+    min-height: 24px;
+    background: #ffffff6e; /*ffffffb2*/
+    border: 1.5px solid #f2f2f2;
+    cursor: grab;
+    touch-action: none;
+}
+
+.toc-scrollbar-thumb:active {
+    cursor: grabbing;
+}
+
+@-moz-document url-prefix() {
+    .vector-sticky-container {
+        scrollbar-width: none;
+    }
+}
+
 .vector-container {
     padding: 0 16px;
     margin-bottom: 2rem;

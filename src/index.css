@@ -24,7 +24,6 @@
 
 /*--------------------------Styling--------------------------*/
 :root {
-
   --nav-bg : #f4f3ec;
   --nav-button-bg: #fff;
   --nav-border: #e5e4e7;
@@ -80,12 +79,13 @@
   --nav-border: #333;
   --nav-text: #9ca3af;
 
+  color-scheme: dark;
 
   :root[data-theme="dark"] #social .button-icon {
     filter: invert(1) brightness(2);
   }
-}
 
+}
 
 body {
   margin: 0;
@@ -144,4 +144,18 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+html {
+  scrollbar-color: #555 #111;
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+}
+html::-webkit-scrollbar-track {
+  background: #111;
+}
+html::-webkit-scrollbar-thumb {
+  background: #555;
 }
