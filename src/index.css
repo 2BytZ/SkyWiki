@@ -146,7 +146,7 @@ code {
   background: var(--code-bg);
 }
 
-html {
+/* html {
   scrollbar-color: #555 #111;
 }
 
@@ -158,4 +158,4 @@ html::-webkit-scrollbar-track {
 }
 html::-webkit-scrollbar-thumb {
   background: #555;
-}
+} */
