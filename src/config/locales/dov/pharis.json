@@ -1,1 +1,121 @@
-{}
+{
+    
+    "infobox": [
+        {
+            "title": "Homeland/Origin",
+            "desc": [
+                {
+                    "text": "Stormhold", 
+                    "href": "https://en.uesp.net/wiki/Lore:Stormhold"
+                },
+                {
+                    "text": "Shadowfen", 
+                    "href": "https://en.uesp.net/wiki/Lore:Shadowfen"
+                },
+                {
+                    "text": "Black Marsh", 
+                    "href": "https://en.uesp.net/wiki/Lore:Black_Marsh"
+                },
+                {
+                    "text": "Tamriel", 
+                    "href": "https://en.uesp.net/wiki/Lore:Tamriel"
+                }
+            ]
+        },
+        {
+            "title": "Race", 
+            "desc": [
+                {
+                    "text": "Argonian", 
+                    "href": "https://en.uesp.net/wiki/Lore:Argonian"
+                }
+            ]
+        },
+        {
+            "title": "Gender", 
+            "desc": "Male"
+        },
+        {
+            "title": "Birth", 
+            "desc": "14th of Second Seed, 4E 180"
+        },
+        {
+            "title": "Factions(s)",
+            "desc": [
+                {
+                    "text": "Thieves Guild", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)"
+                },
+                {
+                    "text": "Shadowscales", 
+                    "href": "https://en.uesp.net/wiki/Lore:Shadowscales"
+                }
+            ]
+        },
+        {
+            "title": "Occupation",
+            "desc": [
+                {
+                    "text": "Treasure-/Bounty Hunter"
+                },
+                {
+                    "text": "Assassin"
+                }
+            ]
+        },
+        {
+            "title": "Known for", 
+            "desc": "His excellent stealth, alchemy, and marksmanship"
+        },
+        {
+            "title": "Relations",
+            "desc": [
+                {
+                    "text": "Saadia", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Saadia"
+                },
+                {
+                    "text": "Angi", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Angi"
+                },
+                {
+                    "text": "Faendal", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Faendal"
+                },
+                {
+                    "text": "Brynjolf", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Brynjolf"
+                },
+                {
+                    "text": "Jarl Balgruuf the Greater", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Balgruuf_the_Greater"
+                },
+                {
+                    "text": "Captain Aldis", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Captain_Aldis"
+                },
+                {
+                    "text": "Frihada", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Fihada"
+                },
+                {
+                    "text": "Elrindir", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Elrindir"
+                }
+            ]
+        },
+        {
+            "title": "Spouse", 
+            "desc": [
+                {
+                    "text": "Ysolda", 
+                    "href": "https://en.uesp.net/wiki/Skyrim:Ysolda"
+                }
+            ]
+        },
+        {
+            "title": "Children", 
+            "desc": "1"
+        }
+    ]
+}

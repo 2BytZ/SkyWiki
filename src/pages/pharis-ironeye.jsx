@@ -2,73 +2,24 @@ import { useRef } from "react"
 import { TableOfContents } from "../components/TableOfContents"
 import { InfoCard } from "../components/InfoCard"
 import "./characterPage.css"
+import { Trans, useTranslation } from "react-i18next"
+import i18next from "i18next"
+import { LinkPreview } from "../components/LinkPreview"
 
 export function Pharis() {
     const contentRef = useRef(null)
+    const {t} = useTranslation("pharis")
 
-    const origin = {
-        title: "Homeland/Origin",
-        desc: [
-            {text: "Stormhold", href: "https://en.uesp.net/wiki/Lore:Stormhold"},
-            {text: ", "},
-            {text: "Shadowfen", href: "https://en.uesp.net/wiki/Lore:Shadowfen"},
-            {text: ", "},
-            {text: "Black Marsh", href: "https://en.uesp.net/wiki/Lore:Black_Marsh"},
-            {text: ", "},
-            {text: "Tamriel", href: "https://en.uesp.net/wiki/Lore:Tamriel"}
-        ]
-    }
-    const race = {title: "Race", desc: [{text: "Argonian", href: "https://en.uesp.net/wiki/Lore:Argonian"}]}
-    const gender = {title: "Gender", desc: "Male"}
-    const birth = {title: "Birth", desc: "14th of Second Seed, 4E 180"}
-    const faction = {
-        title: "Factions(s)",
-        desc: [
-            {text: "Thieves Guild", href: "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)"},
-            {text: ", "},
-            {text: "Shadowscales", href: "https://en.uesp.net/wiki/Lore:Shadowscales"}
-        ]
-    }
-    const occupation = {
-        title: "Occupation",
-        desc: [
-            {text: "Treasure-/Bounty Hunter"},
-            {text: ", "},
-            {text: "Assassin"},
-        ]
-    }
-    const knownfor = {title: "Known for", desc: "His excellent stealth, alchemy, and marksmanship"}
-    const relationships = {
-        title: "Relations",
-        desc: [
-            {text: "Saadia", href: "https://en.uesp.net/wiki/Skyrim:Saadia"},
-            {text: ", "},
-            {text: "Angi", href: "https://en.uesp.net/wiki/Skyrim:Angi"},
-            {text: ", "},
-            {text: "Faendal", href: "https://en.uesp.net/wiki/Skyrim:Faendal"},
-            {text: ", "},
-            {text: "Brynjolf", href: "https://en.uesp.net/wiki/Skyrim:Brynjolf"},
-            {text: ", "},
-            {text: "Jarl Balgruuf the Greater", href: "https://en.uesp.net/wiki/Skyrim:Balgruuf_the_Greater"},
-            {text: ", "},
-            {text: "Captain Aldis", href: "https://en.uesp.net/wiki/Skyrim:Captain_Aldis"},
-            {text: ", "},
-            {text: "Frihada", href: "https://en.uesp.net/wiki/Skyrim:Fihada"},
-            {text: ", "},
-            {text: "Elrindir", href: "https://en.uesp.net/wiki/Skyrim:Elrindir"}
-        ]
-    }
-    const spouse = {title: "Spouse", desc: [{text: "Ysolda", href: "https://en.uesp.net/wiki/Skyrim:Ysolda"}]}
-    const children = {title: "Children", desc: "0"}
-
-    const infoCardRows = [origin, race, gender, birth, faction, occupation, knownfor, relationships, spouse, children]
-    
     return (
         <>
             <div className="content-body">
                 <div className="vector-column-start">
-                    <TableOfContents contentRef={contentRef} />
-                </div>
+                    <div className="image-overlay">
+                        <img src="src/assets/Main Menu.png" className="toc-background-img"/>
+                        <span>
+                            <TableOfContents contentRef={contentRef} />
+                        </span>
+                    </div>                </div>
                 <main className="mw-content-container">
                     <h1 id="top" className="firstheading mw-first-heading">Pharis Ironeye</h1>
                     <div className="vector-content">
@@ -76,7 +27,7 @@ export function Pharis() {
                             <div className="infobox-wrapper">
                                 <table className="infobox vcard">
                                     <caption className="infobox-title">Pharis Ironeye</caption>
-                                    <tbody>
+                                    <thead>
                                         <tr>
                                             <td colSpan={2} className="infobox-img">
                                                 <a href="/Pharis-Ironeye-home-page-banner-art.jpg">
@@ -85,7 +36,9 @@ export function Pharis() {
                                                 
                                             </td>
                                         </tr>
-                                        {infoCardRows.map((info) => {
+                                    </thead>
+                                    <tbody>
+                                        {t("infobox", {returnObjects: true}).map((info) => {
                                             return <InfoCard key={info.title} info={info}/>
                                         })}
                                     </tbody>
@@ -98,8 +51,12 @@ export function Pharis() {
                                 </div>
                             </blockquote>
                             <section>
-                                <p>
-                                    
+                                <p id="lead-paragraph-1" className={i18next.resolvedLanguage=="dov" && "dovahzul"}>
+                                    <Trans i18nKey={"mwLp1"} ns="pharis" components={
+                                        [
+
+                                        ]
+                                    } />
                                 </p>
                             </section>
                             <section>
