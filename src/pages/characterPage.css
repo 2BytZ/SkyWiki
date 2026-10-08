@@ -118,6 +118,7 @@ img.mw-file-upright {
 }
 
 
+/*---------------------TOC---------------------*/
 
 
 .image-overlay {
@@ -133,7 +134,7 @@ img.mw-file-upright {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 .image-overlay span {
     position: relative;
