@@ -85,18 +85,50 @@ img.mw-file-upright {
 
 .page-quote {
     display: flex;
+    position: relative;
+    isolation: isolate;
+    container-type: inline-size;
+}
+
+.page-quote-frame {
+    position: absolute;
+    z-index: 0;
+    inset: 50% 0 auto;
+    display: flex;
+    height: min(110%, calc(100cqw / 1.713));
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.page-quote-frame-start,
+.page-quote-frame-end {
+    display: block;
+    height: 100%;
+    width: auto;
+    flex: 0 0 auto;
+    object-fit: contain;
+}
+
+.page-quote-frame-middle {
+    flex: 1 1 0;
+    min-width: 0;
+    background-image: url("../assets/Dialogue_Selector_Mid.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
 }
 
 .page-quote .quote-style {
-    position: absolute; 
+    position: absolute;
+    z-index: 1;
     font-weight: 700; 
     font-size: 3em; 
     line-height: 1em;
 }
 .page-quote .quote-text-style {
     margin-left: 1rem; 
-    position: relative; 
-    padding: 0.5em 1em; 
+    position: relative;
+    z-index: 1;
+    padding: 0.5em 10px; 
     display: inline-block;
     font-size: 1.5em;
 }
@@ -208,4 +240,8 @@ td .dovahzul-english {
     letter-spacing: 2px;
     font-synthesis: weight;
 
+}
+
+.quote-text-style .dovahzul-english {
+    margin: 0.5em 0 0 0 !important;
 }

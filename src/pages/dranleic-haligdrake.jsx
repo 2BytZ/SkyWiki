@@ -6,6 +6,9 @@ import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
 import { LinkPreview } from "../components/LinkPreview"
 
+import DialogueSelectorStart from "../assets/Dialogue_Selector_Start.png"
+import DialogueSelectorEnd from "../assets/Dialogue_Selector_End.png"
+
 
 
 export function Dranleic() {
@@ -46,7 +49,11 @@ export function Dranleic() {
                                 </table>
                             </div>
                             <blockquote className="page-quote">
-                                <div className="quote-style">"</div>
+                                <div className="page-quote-frame" aria-hidden="true">
+                                    <img className="page-quote-frame-start" src={DialogueSelectorStart} alt="" />
+                                    <div className="page-quote-frame-middle" />
+                                    <img className="page-quote-frame-end" src={DialogueSelectorEnd} alt="" />
+                                </div>
                                 <div className="quote-text-style">
                                     <span className={i18next.resolvedLanguage=="dov" && "dovahzul-quote-style"}>{t("mwQt")}</span>
                                     <p className="dovahzul-english">{t("mwQtT")}</p>
