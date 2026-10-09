@@ -22,6 +22,12 @@
     }
 } */
 
+.mw-page-container {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+
 .firstHeading {
     margin-bottom: 20px;
 }
@@ -79,7 +85,6 @@ img.mw-file-upright {
 
 .page-quote {
     display: flex;
-
 }
 
 .page-quote .quote-style {

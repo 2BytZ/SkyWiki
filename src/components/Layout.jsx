@@ -39,7 +39,7 @@ export function Layout() {
     return (
         <>
             <Navbar language={language} onLanguageChange={handleLanguageChange} theme={theme} onThemeChange={setTheme}/>
-            <main>
+            <main className="mw-page-container">
                 <Outlet context={{ language }}/>
             </main>
         </>

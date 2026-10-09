@@ -41,7 +41,7 @@ export function LinkPreview({ url, children }) {
         onOpenChange: setIsOpen,
         placement: "top",
         middleware: [
-            offset({ mainAxis: 5, crossAxis: 120 }),
+            offset({ mainAxis: 8, crossAxis: 100 }),
             flip({
                 fallbackPlacements: ["bottom"],
                 crossAxis: false,
@@ -52,7 +52,7 @@ export function LinkPreview({ url, children }) {
                 crossAxis: false,
                 padding: 8,
             }),
-            arrow({ element: arrowElement, padding: 8 }),
+            arrow({ element: arrowElement, padding: 5 }),
         ],
     });
 
@@ -87,7 +87,7 @@ export function LinkPreview({ url, children }) {
                     ref={setFloating}
                     style={floatingStyles}
                     {...getFloatingProps()}
-                    className={`link-preview__card wiki-preview-card wiki-preview-card--${previewPlacement}`}
+                    className={`link-preview__card wiki-preview-card wiki-preview-card--${previewPlacement}${preview.img ? "" : " wiki-preview-card--no-image"}`}
                 >
                     <img
                         ref={setArrowElement}

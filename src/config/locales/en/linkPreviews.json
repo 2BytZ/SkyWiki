@@ -24,7 +24,8 @@
         "placement": "horizontal"
     },
     "https://en.uesp.net/wiki/Skyrim:Jarl": {
-        "summary": "A Jarl is a ruler of one of the nine holds of Skyrim, equivalent to a Cyrodiilic Count. The jarls of Skyrim are largely autonomous, though they all swear fealty to the High King. Most jarls have their own personal housecarl and steward, and some also have one or more thanes in their service. Many also have a court wizard in their service who is also sometimes the only spell merchant in town."
+        "summary": "A Jarl is a ruler of one of the nine holds of Skyrim, equivalent to a Cyrodiilic Count. The jarls of Skyrim are largely autonomous, though they all swear fealty to the High King. Most jarls have their own personal housecarl and steward, and some also have one or more thanes in their service. Many also have a court wizard in their service who is also sometimes the only spell merchant in town.",
+        "placement": "vertical"
     },
     "https://en.uesp.net/wiki/Lore:Cyrodiil": {
         "img": "/preview-Cyrodiil.jpg",
