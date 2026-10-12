@@ -8,6 +8,9 @@ import { LinkPreview } from "../components/LinkPreview"
 
 import DialogueSelectorStart from "../assets/Dialogue_Selector_Start.png"
 import DialogueSelectorEnd from "../assets/Dialogue_Selector_End.png"
+import previewFrameBottom from "../assets/Info_Card_Small_Bottom.png"
+import previewFrameTop from "../assets/Info_Card_Small_Top.png"
+import dranleicCaptionBackground from "../assets/Journal_Main_Quest.png"
 
 
 
@@ -33,15 +36,27 @@ export function Dranleic() {
                         <div className="mw-body-content" ref={contentRef}>
                             <div className="infobox-wrapper">
                                 <table className="infobox vcard">
-                                    <caption className={`${i18next.resolvedLanguage=="dov" && "dovahzul-small"} infobox-title`}>{t("mwIbt")}</caption>
-                                    <tbody>
+                                    <caption
+                                        className={`${i18next.resolvedLanguage=="dov" && "dovahzul-small"} infobox-title`}
+                                        style={{ "--infobox-title-background": `url(${dranleicCaptionBackground})` }}
+                                    >
+                                        {t("mwIbt")}
+                                    </caption>
+                                    <thead className="infobox-image-header">
                                         <tr>
                                             <td colSpan="2" className="infobox-img">
+                                                <div className="infobox-image-frame" aria-hidden="true">
+                                                    <div className="infobox-image-frame__middle" />
+                                                    <img className="infobox-image-frame__top" src={previewFrameTop} alt="" />
+                                                    <img className="infobox-image-frame__bottom" src={previewFrameBottom} alt="" />
+                                                </div>
                                                 <a href="/dranleic-haligdrake-powerful-clenched-fist2.jpg">
                                                     <img src="/dranleic-haligdrake-powerful-clenched-fist2.jpg" alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
                                                 </a>
                                             </td>
                                         </tr>
+                                    </thead>
+                                    <tbody>
                                         {t("infobox", {returnObjects: true}).map((info) => {
                                             return <InfoCard key={info.title} info={info}/>
                                         })}

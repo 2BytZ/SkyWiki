@@ -147,6 +147,17 @@ p {
     font-size: 22px;
   }
 }
+section {
+  @media (max-width: 1600px) {
+    padding-right: 2.75rem;
+  }
+  @media (max-width: 1440px) {
+    padding-right: 2.75rem;
+  }
+  @media screen and (max-width: 1280px) {
+    padding-right: 2.75rem;
+  }
+}
 
 code,
 .counter {

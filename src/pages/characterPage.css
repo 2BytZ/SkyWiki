@@ -65,13 +65,75 @@
 }
   
 .infobox {
-    border: 1px solid #4c4c4c;
     padding: .2em;
     font-size: 88%;
     line-height: 1.5em;
     border-spacing: 3px;
     margin: 0.5em 0;
 
+}
+
+.infobox-title {
+    background-image: var(--infobox-title-background, none);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    font-family: skyrim;
+}
+
+
+
+.infobox-image-header {
+    position: relative;
+    isolation: isolate;
+}
+
+.infobox-image-header .infobox-img {
+    position: relative;
+    isolation: isolate;
+}
+
+.infobox-image-frame {
+    position: absolute;
+    inset: -3% 0% -3% 0%;
+    z-index: 0;
+    container-type: inline-size;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.infobox-image-frame__top,
+.infobox-image-frame__bottom {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: auto !important;
+    z-index: 1;
+}
+
+.infobox-image-frame__top {
+    top: 0;
+}
+
+.infobox-image-frame__bottom {
+    bottom: 0;
+}
+
+.infobox-image-frame__middle {
+    position: absolute;
+    inset: 7.47cqw 0;
+    background-image: url("../assets/Info_Card_Small_Mid.png");
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+}
+
+.infobox-image-header .infobox-img > a {
+    position: relative;
+    z-index: 1;
+    display: block;
 }
 
 @media (min-width: 640px) {

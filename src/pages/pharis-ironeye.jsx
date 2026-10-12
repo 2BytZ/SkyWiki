@@ -5,6 +5,8 @@ import "./characterPage.css"
 import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
 import { LinkPreview } from "../components/LinkPreview"
+import previewFrameBottom from "../assets/Info_Card_Small_Bottom.png"
+import previewFrameTop from "../assets/Info_Card_Small_Top.png"
 
 export function Pharis() {
     const contentRef = useRef(null)
@@ -27,9 +29,14 @@ export function Pharis() {
                             <div className="infobox-wrapper">
                                 <table className="infobox vcard">
                                     <caption className="infobox-title">Pharis Ironeye</caption>
-                                    <thead>
+                                    <thead className="infobox-image-header">
                                         <tr>
                                             <td colSpan={2} className="infobox-img">
+                                                <div className="infobox-image-frame" aria-hidden="true">
+                                                    <div className="infobox-image-frame__middle" />
+                                                    <img className="infobox-image-frame__top" src={previewFrameTop} alt="" />
+                                                    <img className="infobox-image-frame__bottom" src={previewFrameBottom} alt="" />
+                                                </div>
                                                 <a href="/Pharis-Ironeye-home-page-banner-art.jpg">
                                                     <img src="/Pharis-Ironeye-home-page-banner-art.jpg" alt="Pharis Ironeye" height={155} width={170} className="mw-file-upright" />
                                                 </a>

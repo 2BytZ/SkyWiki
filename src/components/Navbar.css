@@ -165,3 +165,10 @@
     flex: 0 0 auto;
     align-items: center;
 }
+
+@media (max-width: 680px) {
+    .navbar-right {
+        min-width: 0;
+        padding-left: 20px;
+    }
+}
