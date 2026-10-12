@@ -95,7 +95,7 @@ img.mw-file-upright {
     z-index: 0;
     inset: 50% 0 auto;
     display: flex;
-    height: min(110%, calc(100cqw / 1.713));
+    height: min(100%, calc(100cqw / 1.713));
     transform: translateY(-50%);
     pointer-events: none;
 }
