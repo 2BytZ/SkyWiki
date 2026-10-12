@@ -88,6 +88,8 @@ img.mw-file-upright {
     position: relative;
     isolation: isolate;
     container-type: inline-size;
+
+    margin-inline-start: 2vw;
 }
 
 .page-quote-frame {
@@ -130,7 +132,10 @@ img.mw-file-upright {
     z-index: 1;
     padding: 0.5em 10px; 
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.8em;
+
+    font-family: skyrim;
+    font-weight: 300;
 }
 
 .mw-body-content p {
@@ -224,8 +229,8 @@ img.mw-file-upright {
 .dovahzul-english {
     font-style: italic;
     font-size: small;
-    font-synthesis: weight;
-
+    font-family: var(--sans);
+    font-weight: 400;
 }
 td .dovahzul-english {
     margin: 0;

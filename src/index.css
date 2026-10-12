@@ -10,16 +10,19 @@
   font-family: 'skyrim';
   src: url('./fonts/Futura_Condensed_Light.ttf') format('truetype');
   font-weight: 300;
+  letter-spacing: 2px;
 }
 @font-face {
   font-family: 'skyrim';
   src: url('./fonts/Futura_Condensed_Medium.ttf') format('truetype');
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 @font-face {
   font-family: 'skyrim';
   src: url('./fonts/FuturaCondensedBold.ttf') format('truetype');
   font-weight: 700;
+  letter-spacing: 2px;
 }
 
 /*--------------------------Styling--------------------------*/
@@ -85,6 +88,10 @@
     filter: invert(1) brightness(2);
   }
 
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+
 }
 
 body {
@@ -102,10 +109,14 @@ body {
   box-sizing: border-box;
 } */
 
-h1,
-h2 {
-  font-family: var(--heading);
+h1 {
+  font-family: var(--sans);
   font-weight: 500;
+  color: var(--text-h);  
+}
+h2 {
+  font-family: skyrim;
+  font-weight: 300;
   color: var(--text-h);
 }
 
@@ -119,16 +130,22 @@ h1 {
   }
 }
 h2 {
-  font-size: 24px;
+  font-size: 32px;
   line-height: 118%;
-  letter-spacing: -0.24px;
+  letter-spacing: 1px;
   margin: 0 0 8px;
   @media (max-width: 1024px) {
     font-size: 20px;
   }
 }
 p {
+  font-size: 24px;
+  font-family: skyrim;
+  line-height: 1.25;
   margin: 0;
+  @media (max-width: 1280px){
+    font-size: 22px;
+  }
 }
 
 code,
@@ -146,16 +163,11 @@ code {
   background: var(--code-bg);
 }
 
-/* html {
-  scrollbar-color: #555 #111;
+a {
+  color: #36b;
+  text-decoration: none;
+  cursor: pointer;
 }
-
-html::-webkit-scrollbar {
-  width: 12px;
+a:hover {
+  text-decoration: underline;
 }
-html::-webkit-scrollbar-track {
-  background: #111;
-}
-html::-webkit-scrollbar-thumb {
-  background: #555;
-} */

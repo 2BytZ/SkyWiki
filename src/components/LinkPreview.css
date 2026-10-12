@@ -38,9 +38,6 @@
 
 .wiki-anchor-text {
   text-decoration: none;
-  color: #36b;
-  border-bottom: 1px dotted #36b;
-  cursor: pointer;
   display: inline-block;
 }
 
