@@ -39,6 +39,16 @@
     grid-template-areas: 'columnStart pageContent';
 }
 
+@media (min-width: 1440px) {
+    .content-body {
+        grid-template-columns: clamp(12.25rem, 13.6vw, 15rem) minmax(0, 1fr);
+    }
+
+    .vector-column-start {
+        margin-left: clamp(-1.2rem, calc(45rem - 50vw + 10px), 0px);
+    }
+}
+
 .mw-content-container {
     grid-area: pageContent;
 }
