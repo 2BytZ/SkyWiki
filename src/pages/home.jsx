@@ -17,6 +17,7 @@ export function Home(){
         <>
             <h1 className={`${i18next.resolvedLanguage=="dov" && "dovahzul-header"} mw-first-header`}>{t("mwFh")}</h1>
             <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english mw-first-header">Valokein wah Kavselok</p>
+            <br />
             <div>
                 <div className="mw-filter-buttons">
                 <span>Filter characters by game:</span>

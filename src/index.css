@@ -8,20 +8,20 @@
 }
 @font-face {
   font-family: 'skyrim';
-  src: url('./fonts/Futura_Condensed_Medium.ttf') format('truetype');
   font-weight: 500;
+  src: url('./fonts/Futura_Condensed_Medium.ttf') format('truetype');
   /* Remember to use letter-spacing 1px-2px*/
 }
 @font-face {
-  font-family: 'skyrim-light';
-  src: url('./fonts/Futura_Condensed_Light.ttf') format('truetype');
+  font-family: 'skyrim';
   font-weight: 300;
+  src: url('./fonts/Futura_Condensed_Light.ttf') format('truetype');
   /* Remember to use letter-spacing 1px-2px*/
 }
 @font-face {
-  font-family: 'skyrim-bold';
-  src: url('./fonts/FuturaCondensedBold.ttf') format('truetype');
+  font-family: 'skyrim';
   font-weight: 700;
+  src: url('./fonts/FuturaCondensedBold.ttf') format('truetype');
   /* Remember to use letter-spacing 1px-2px*/
 }
 
@@ -120,7 +120,6 @@ h1 {
 }
 h2 {
   font-family: skyrim;
-  font-weight: 300;
   color: var(--text-h);
 }
 

@@ -15,7 +15,8 @@
 }
 .mw-filter-buttons span {
     padding-bottom: 2px;
-    font-family: skyrim-light;
+    font-family: skyrim;
+    font-weight: 300;
     margin: 10px 2px 0px 2px;
     letter-spacing: 2px;
 }
