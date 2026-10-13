@@ -1,19 +1,31 @@
 .mw-first-header {
     display: flex;
     justify-content: center;
+
+    font-family: skyrim;
+    letter-spacing: 3px;
 }
 
 
-.mw-games-buttons {
+.mw-filter-buttons {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.mw-filter-buttons span {
+    padding-bottom: 2px;
+    font-family: skyrim-light;
+    margin: 10px 2px 0px 2px;
+    letter-spacing: 2px;
 }
 
 .mw-games-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center space-between;
+    align-items: center;
     gap: 1rem;
-    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -60,9 +72,44 @@ div.gallerytext {
     color: var(--text);
 }
 
+.games-nav-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: var(--nav-bg);
+    border: none;
+    border-radius: 5px;
+    gap: 5px;
+    min-width: 32px;
+    min-height: 32px;
+    cursor: pointer;
+    border: 1px solid var(--nav-bg);
+    font-family: skyrim;
+    letter-spacing: 1px;
+}
 
+.games-nav-button:hover {
+    border-color: #4c4c4c;
+    background: #2f2f2f;
+    box-shadow: var(--shadow);
+}
+.games-nav-button[aria-pressed="true"] {
+    border-color: var(--border);
+    background: #2f2f2fbb;
+}
 
+#All_button .games-nav-button {
+    padding: 1 6;
+    width: 2.5rem;
+    height: 34px;
+}
 
+.filter-button-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
 
 
 
@@ -98,6 +145,7 @@ div.gallerytext {
 }
 
 
+ul.gallery li.gallerybox[hidden],
 [hidden] {
     display: none;
 }
