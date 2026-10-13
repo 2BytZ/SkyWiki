@@ -4,6 +4,9 @@
     margin: 0 auto;
 }
 
+#root {
+    overflow-x: clip;
+}
 
 .firstHeading {
     margin-bottom: 20px;
@@ -46,6 +49,7 @@
 .infobox-wrapper--background {
     position: relative;
     isolation: isolate;
+    overflow-x: clip;
     font-size: 88%;
     width: fit-content;
     max-width: 100%;
@@ -86,16 +90,16 @@
 .infobox-title {
     position: relative;
     isolation: isolate;
-    --infobox-title-ornament-size: 53%;
+    --infobox-title-ornament-size: clamp(53%, calc(47% + 0.5vw), 55%);
     font-family: skyrim;
-    font-size: 20px;
+    font-size: clamp(18px, calc(12px + 0.5vw), 20px);
 }
 
 .infobox-title::before {
     content: "";
     position: absolute;
     z-index: -1;
-    inset: 0;
+    inset: 0 clamp(-5%, calc(51px - 4.25vw), 0%);
     background-image:
         var(--infobox-title-background-left, none),
         var(--infobox-title-background-right, none);
@@ -105,6 +109,20 @@
         var(--infobox-title-ornament-size) auto,
         var(--infobox-title-ornament-size) auto;
     pointer-events: none;
+}
+
+.infobox-title.dovahzul-small::before {
+    background-image: none;
+}
+
+@media (max-width: 639px) {
+    .infobox-title {
+        --infobox-title-ornament-size: 0%;
+    }
+}
+
+.infobox-wrapper--ornaments-visible {
+    overflow: visible;
 }
 
 .infobox-image-header {
@@ -355,6 +373,7 @@ img.mw-file-upright {
     position: relative; 
     display: inline-block;
     letter-spacing: 2px;
+    line-height: 100%;
     font-synthesis: weight;
 
 }

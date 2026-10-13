@@ -1,6 +1,7 @@
 import { useRef } from "react"
 import { TableOfContents } from "../components/TableOfContents"
 import { InfoCard } from "../components/InfoCard"
+import { InfoboxWrapper } from "../components/InfoboxWrapper"
 import "./characterPage.css"
 import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
@@ -8,8 +9,16 @@ import { LinkPreview } from "../components/LinkPreview"
 
 import previewFrameBottom from "../assets/Info_Card_Small_Bottom.png"
 import previewFrameTop from "../assets/Info_Card_Small_Top.png"
-import pharisCaptionBackgroundLeft from "../assets/Journal_Miscellaneous_Caption_Left.png"
-import pharisCaptionBackgroundRight from "../assets/Journal_Miscellaneous_Caption_Right.png"
+import CaptionBackgroundLeft from "../assets/Journal_Miscellaneous_Caption_Left.png"
+import CaptionBackgroundRight from "../assets/Journal_Miscellaneous_Caption_Right.png"
+import infoboxBackground from "../assets/Main Menu.png"
+import messageCardDivider from "../assets/Message_Card_Divider.png"
+import dividerOrnateLeft from "../assets/Divider_Ornate_L.png"
+import dividerOrnateRight from "../assets/Divider_Ornate_R.png"
+import DialogueSelectorStart from "../assets/Dialogue_Selector_Start.png"
+import DialogueSelectorEnd from "../assets/Dialogue_Selector_End.png"
+
+
 
 
 
@@ -29,18 +38,23 @@ export function Pharis() {
                     </div>                
                 </div>
                 <main className="mw-content-container">
-                    <h1 id="top" className="firstheading mw-first-heading">{t("mwFh")}</h1>
+                    <h1 className={`${i18next.resolvedLanguage=="dov" && "firstHeading"} mw-first-heading`}>{t("mwFh")}</h1>
+                    <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul">pharis dolm3n</p>
                     <div className="vector-content">
                         <div className="mw-body-content" ref={contentRef}>
-                            <div className="infobox-wrapper">
+                            <InfoboxWrapper
+                                style={{ "--infobox-background": `url(${infoboxBackground})` }}
+                            >
                                 <table className="infobox vcard">
                                     <caption 
                                         className={`${i18next.resolvedLanguage=="dov" && "dovahzul-small"} infobox-title`}
                                         style={{
-                                            "--infobox-title-background-left": `url(${pharisCaptionBackgroundLeft})`,
-                                            "--infobox-title-background-right": `url(${pharisCaptionBackgroundRight})`,
+                                            "--infobox-title-background-left": `url(${CaptionBackgroundLeft})`,
+                                            "--infobox-title-background-right": `url(${CaptionBackgroundRight})`,
                                         }}
-                                    >{t("mwIbt")}</caption>
+                                    >
+                                        {t("mwIbt")}
+                                    </caption>
                                     <thead className="infobox-image-header">
                                         <tr>
                                             <td colSpan={2} className="infobox-img">
@@ -52,8 +66,12 @@ export function Pharis() {
                                                 <a href="/Pharis-Ironeye-home-page-banner-art.jpg">
                                                     <img src="/Pharis-Ironeye-home-page-banner-art.jpg" alt="Pharis Ironeye" height={155} width={170} className="mw-file-upright" />
                                                 </a>
-                                                
                                             </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan={2}>
+                                                <img className="infobox-image-divider" src={messageCardDivider} />
+                                            </td>    
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -61,21 +79,34 @@ export function Pharis() {
                                             return <InfoCard key={info.title} info={info}/>
                                         })}
                                     </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colSpan={2}>
+                                                <div className="infobox-footer__ornament" aria-hidden="true">
+                                                    <img src={dividerOrnateLeft} />
+                                                    <div className="infobox-footer__middle" />
+                                                    <img src={dividerOrnateRight} />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
                                 </table>
-                            </div>
+                            </InfoboxWrapper>
                             <blockquote className="page-quote">
-                                <div className="quote-style">"</div>
+                                <div className="page-quote-frame" aria-hidden="true">
+                                    <img className="page-quote-frame-start" src={DialogueSelectorStart} />
+                                    <div className="page-quote-frame-middle" />
+                                    <img className="page-quote-frame-end" src={DialogueSelectorEnd} />
+                                </div>
                                 <div className="quote-text-style">
-                                    {t("mwQt")}
+                                    <span className={i18next.resolvedLanguage=="dov" && "dovahzul-quote-style"}>{t("mwQt")}</span>
                                 </div>
                             </blockquote>
                             <section>
                                 <p id="lead-paragraph-1" className={i18next.resolvedLanguage=="dov" && "dovahzul"}>
-                                    <Trans i18nKey={"mwLp1"} ns="pharis" components={
-                                        [
+                                    <Trans i18nKey={"mwLp1"} ns="pharis" components={[
 
-                                        ]
-                                    } />
+                                    ]}/>
                                 </p>
                             </section>
                             <section>

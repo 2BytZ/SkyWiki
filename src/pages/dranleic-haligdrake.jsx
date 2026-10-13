@@ -1,6 +1,7 @@
 import { useRef } from "react"
 import { TableOfContents } from "../components/TableOfContents"
 import { InfoCard } from "../components/InfoCard"
+import { InfoboxWrapper } from "../components/InfoboxWrapper"
 import "./characterPage.css"
 import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
@@ -10,8 +11,8 @@ import DialogueSelectorStart from "../assets/Dialogue_Selector_Start.png"
 import DialogueSelectorEnd from "../assets/Dialogue_Selector_End.png"
 import previewFrameBottom from "../assets/Info_Card_Small_Bottom.png"
 import previewFrameTop from "../assets/Info_Card_Small_Top.png"
-import dranleicCaptionBackgroundLeft from "../assets/Journal_Main_Quest_Caption_Left.png"
-import dranleicCaptionBackgroundRight from "../assets/Journal_Main_Quest_Caption_Right.png"
+import CaptionBackgroundLeft from "../assets/Journal_Main_Quest_Caption_Left.png"
+import CaptionBackgroundRight from "../assets/Journal_Main_Quest_Caption_Right.png"
 import infoboxBackground from "../assets/Main Menu.png"
 import messageCardDivider from "../assets/Message_Card_Divider.png"
 import dividerOrnateLeft from "../assets/Divider_Ornate_L.png"
@@ -39,16 +40,15 @@ export function Dranleic() {
                     <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul">dranl2c revakdov4</p>
                     <div className="vector-content">
                         <div className="mw-body-content" ref={contentRef}>
-                            <div
-                                className="infobox-wrapper infobox-wrapper--background"
+                            <InfoboxWrapper
                                 style={{ "--infobox-background": `url(${infoboxBackground})` }}
                             >
                                 <table className="infobox vcard">
                                     <caption
                                         className={`${i18next.resolvedLanguage=="dov" && "dovahzul-small"} infobox-title`}
                                         style={{
-                                            "--infobox-title-background-left": `url(${dranleicCaptionBackgroundLeft})`,
-                                            "--infobox-title-background-right": `url(${dranleicCaptionBackgroundRight})`,
+                                            "--infobox-title-background-left": `url(${CaptionBackgroundLeft})`,
+                                            "--infobox-title-background-right": `url(${CaptionBackgroundRight})`,
                                         }}
                                     >
                                         {t("mwIbt")}
@@ -89,12 +89,12 @@ export function Dranleic() {
                                         </tr>
                                     </tfoot>
                                 </table>
-                            </div>
+                            </InfoboxWrapper>
                             <blockquote className="page-quote">
                                 <div className="page-quote-frame" aria-hidden="true">
-                                    <img className="page-quote-frame-start" src={DialogueSelectorStart} alt="" />
+                                    <img className="page-quote-frame-start" src={DialogueSelectorStart} />
                                     <div className="page-quote-frame-middle" />
-                                    <img className="page-quote-frame-end" src={DialogueSelectorEnd} alt="" />
+                                    <img className="page-quote-frame-end" src={DialogueSelectorEnd} />
                                 </div>
                                 <div className="quote-text-style">
                                     <span className={i18next.resolvedLanguage=="dov" && "dovahzul-quote-style"}>{t("mwQt")}</span>

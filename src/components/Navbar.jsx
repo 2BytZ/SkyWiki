@@ -44,7 +44,7 @@ export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
                             <span>{LanguageSwitcher()}</span>
                         </label>
                         <img className="navbar-right-separator" src={inventoryFilterSeparator} alt="" />
-                        <button title={theme === "dark" ? "Switch to Lightmode" : "Switch to Darkmode"}className="theme-toggle-btn" type="button" aria-pressed={theme === "dark"} onClick={() => {
+                        <button title={theme === "dark" ? "Nocturnal mode" : "Meridia mode"}className="theme-toggle-btn" type="button" aria-pressed={theme === "dark"} onClick={() => {
                             onThemeChange(theme === "dark" ? "light" : "dark")
                         }}>
                             <img src={theme === "dark" ? "src/assets/theme_darkmode_moon.png" : "src/assets/theme_lightmode_sun.png"} alt="Mode" width={30} height={30}/>
