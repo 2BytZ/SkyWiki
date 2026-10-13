@@ -10,7 +10,12 @@ import DialogueSelectorStart from "../assets/Dialogue_Selector_Start.png"
 import DialogueSelectorEnd from "../assets/Dialogue_Selector_End.png"
 import previewFrameBottom from "../assets/Info_Card_Small_Bottom.png"
 import previewFrameTop from "../assets/Info_Card_Small_Top.png"
-import dranleicCaptionBackground from "../assets/Journal_Main_Quest.png"
+import dranleicCaptionBackgroundLeft from "../assets/Journal_Main_Quest_Caption_Left.png"
+import dranleicCaptionBackgroundRight from "../assets/Journal_Main_Quest_Caption_Right.png"
+import infoboxBackground from "../assets/Main Menu.png"
+import messageCardDivider from "../assets/Message_Card_Divider.png"
+import dividerOrnateLeft from "../assets/Divider_Ornate_L.png"
+import dividerOrnateRight from "../assets/Divider_Ornate_R.png"
 
 
 
@@ -34,11 +39,17 @@ export function Dranleic() {
                     <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul">dranl2c revakdov4</p>
                     <div className="vector-content">
                         <div className="mw-body-content" ref={contentRef}>
-                            <div className="infobox-wrapper">
+                            <div
+                                className="infobox-wrapper infobox-wrapper--background"
+                                style={{ "--infobox-background": `url(${infoboxBackground})` }}
+                            >
                                 <table className="infobox vcard">
                                     <caption
                                         className={`${i18next.resolvedLanguage=="dov" && "dovahzul-small"} infobox-title`}
-                                        style={{ "--infobox-title-background": `url(${dranleicCaptionBackground})` }}
+                                        style={{
+                                            "--infobox-title-background-left": `url(${dranleicCaptionBackgroundLeft})`,
+                                            "--infobox-title-background-right": `url(${dranleicCaptionBackgroundRight})`,
+                                        }}
                                     >
                                         {t("mwIbt")}
                                     </caption>
@@ -55,12 +66,28 @@ export function Dranleic() {
                                                 </a>
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td colSpan={2}>
+                                                <img className="infobox-image-divider" src={messageCardDivider} />
+                                            </td>    
+                                        </tr>
                                     </thead>
                                     <tbody>
                                         {t("infobox", {returnObjects: true}).map((info) => {
                                             return <InfoCard key={info.title} info={info}/>
                                         })}
                                     </tbody>
+                                    <tfoot className="infobox-footer">
+                                        <tr>
+                                            <td colSpan={2}>
+                                                <div className="infobox-footer__ornament" aria-hidden="true">
+                                                    <img src={dividerOrnateLeft} alt="" />
+                                                    <div className="infobox-footer__middle" />
+                                                    <img src={dividerOrnateRight} alt="" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
                                 </table>
                             </div>
                             <blockquote className="page-quote">
@@ -77,7 +104,7 @@ export function Dranleic() {
                             <section>
                                 <p id="lead-paragraph-1" className={i18next.resolvedLanguage=="dov" && "dovahzul"}>
                                     <Trans i18nKey="mwLp1" ns="dranleic" components={[
-                                        <b />, 
+                                        <strong />,
                                         <LinkPreview url={"https://en.uesp.net/wiki/Lore:Argonian"} />,
                                         <LinkPreview url={"https://en.uesp.net/wiki/Lore:Last_Dragonborn"} />, 
                                         <LinkPreview url={"https://en.uesp.net/wiki/Lore:Thieves_Guild"} />, 

@@ -5,8 +5,13 @@ import "./characterPage.css"
 import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
 import { LinkPreview } from "../components/LinkPreview"
+
 import previewFrameBottom from "../assets/Info_Card_Small_Bottom.png"
 import previewFrameTop from "../assets/Info_Card_Small_Top.png"
+import pharisCaptionBackgroundLeft from "../assets/Journal_Miscellaneous_Caption_Left.png"
+import pharisCaptionBackgroundRight from "../assets/Journal_Miscellaneous_Caption_Right.png"
+
+
 
 export function Pharis() {
     const contentRef = useRef(null)
@@ -21,14 +26,21 @@ export function Pharis() {
                         <span>
                             <TableOfContents contentRef={contentRef} />
                         </span>
-                    </div>                </div>
+                    </div>                
+                </div>
                 <main className="mw-content-container">
-                    <h1 id="top" className="firstheading mw-first-heading">Pharis Ironeye</h1>
+                    <h1 id="top" className="firstheading mw-first-heading">{t("mwFh")}</h1>
                     <div className="vector-content">
                         <div className="mw-body-content" ref={contentRef}>
                             <div className="infobox-wrapper">
                                 <table className="infobox vcard">
-                                    <caption className="infobox-title">Pharis Ironeye</caption>
+                                    <caption 
+                                        className={`${i18next.resolvedLanguage=="dov" && "dovahzul-small"} infobox-title`}
+                                        style={{
+                                            "--infobox-title-background-left": `url(${pharisCaptionBackgroundLeft})`,
+                                            "--infobox-title-background-right": `url(${pharisCaptionBackgroundRight})`,
+                                        }}
+                                    >{t("mwIbt")}</caption>
                                     <thead className="infobox-image-header">
                                         <tr>
                                             <td colSpan={2} className="infobox-img">
@@ -54,7 +66,7 @@ export function Pharis() {
                             <blockquote className="page-quote">
                                 <div className="quote-style">"</div>
                                 <div className="quote-text-style">
-                                    You won't find anyone better in all of Tamriel, my friend!
+                                    {t("mwQt")}
                                 </div>
                             </blockquote>
                             <section>

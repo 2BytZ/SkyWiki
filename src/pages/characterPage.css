@@ -1,27 +1,4 @@
 
-/* * {
-    outline: 1px solid red !important;
-} */
-
-/* :root {
-    --image-size-small: 180px;
-    --image-size-standard: 250px;
-    --image-size-large: 400px;
-    --image-size-user: var(--image-size-standard)
-
-
-
-
-    --mw-file-upright: 0.68;
-
-}
-
-@supports (width: round(1.5px,1px)){
-    img.mw-file-upright {
-        width: round(var(--mw-file-upright) * var(--mw-file-upright, 1), 10px);
-    }
-} */
-
 .mw-page-container {
     max-width: 90rem;
     margin: 0 auto;
@@ -63,26 +40,72 @@
 .vcard {
     text-align: center;
 }
-  
+
+/*--------------------- INFOBOX ---------------------*/
+
+.infobox-wrapper--background {
+    position: relative;
+    isolation: isolate;
+    font-size: 88%;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0.5em 0;
+}
+
+.infobox-wrapper--background::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset-block: 1.5em 0;
+    left: -1%;
+    width: 102%;
+    background-image: var(--infobox-background, none);
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: repeat-y;
+    pointer-events: none;
+}
+
 .infobox {
-    padding: .2em;
+    padding: .2em .2em 0;
     font-size: 88%;
     line-height: 1.5em;
     border-spacing: 3px;
-    margin: 0.5em 0;
+    margin: 0;
+}
 
+.infobox-wrapper--background .infobox {
+    position: relative;
+    z-index: 1;
+    float: none;
+    clear: none;
+    font-size: inherit;
+    max-width: 100%;
 }
 
 .infobox-title {
-    background-image: var(--infobox-title-background, none);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
+    position: relative;
+    isolation: isolate;
+    --infobox-title-ornament-size: 53%;
     font-family: skyrim;
+    font-size: 20px;
 }
 
-
+.infobox-title::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image:
+        var(--infobox-title-background-left, none),
+        var(--infobox-title-background-right, none);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right center;
+    background-size:
+        var(--infobox-title-ornament-size) auto,
+        var(--infobox-title-ornament-size) auto;
+    pointer-events: none;
+}
 
 .infobox-image-header {
     position: relative;
@@ -136,12 +159,68 @@
     display: block;
 }
 
+.infobox-image-divider {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 88%;
+    height: auto;
+    margin: 1em auto 0.5em;
+}
+
+.infobox-footer > tr > td {
+    padding: 0;
+    line-height: 0;
+}
+
+.infobox-footer__ornament {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 104%;
+    margin-inline-start: -2%;
+    height: 1.5em;
+    overflow: hidden;
+    transform: translateY(3px);
+}
+
+.infobox-footer__ornament > img {
+    display: block;
+    flex: 0 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.infobox-footer__middle {
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 12px;
+    background-image: url("../assets/Divider_Mid.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 12px;
+}
+
 @media (min-width: 640px) {
     .infobox {
         margin-left: 1em;
+        margin-right: 0.5em;
         float: right;
         clear: right;
         width: 22em;
+    }
+
+    .infobox-wrapper--background {
+        float: right;
+        clear: right;
+        width: 22em;
+        margin-left: 1em;
+        margin-right: 0.5em;
+    }
+
+    .infobox-wrapper--background .infobox {
+        width: 100%;
+        margin: 0;
     }
 }
  
@@ -154,6 +233,8 @@ img.mw-file-upright {
 
     vertical-align: middle;
 }
+
+/*--------------------- PAGE QUOTE ---------------------*/
 
 .page-quote {
     display: flex;
@@ -232,7 +313,7 @@ img.mw-file-upright {
 }
 
 
-/*---------------------TOC---------------------*/
+/*--------------------- TOC ---------------------*/
 
 
 .image-overlay {
@@ -259,7 +340,7 @@ img.mw-file-upright {
 
 
 
-/*---------------------Dovahzul Styling---------------------*/
+/*--------------------- DOVAHZUL ---------------------*/
 
 
 
