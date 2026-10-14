@@ -7,7 +7,6 @@ import { useState } from "react"
 import SkyrimLogo from "../assets/skyrim_logo_white.png"
 import OblivionLogo from "../assets/oblivion_logo.png"
 import MorrowindLogo from "../assets/morrowind_logo.png"
-import { activeElement } from "@floating-ui/react/utils"
 
 export function Home(){
     const {t} = useTranslation("home")

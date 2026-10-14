@@ -7,6 +7,12 @@ import i18next from "i18next"
 import inventoryFilterSeparator from "../assets/inventory_filter_separator.png"
 import inventoryFilterBox from "../assets/inventory_filter_box.png"
 
+import dranleicNavbarIcon from "../assets/dragonborne_warrior.png"
+import pharisNavbarIcon from "../assets/bow_and_drinks.png"
+import priscillaNavbarIcon from "../assets/frost_and_greatsword.png"
+import gwyndolinNavbarIcon from "../assets/wealth_and_pike.png"
+import homeNavbarIcon from "../assets/Town.png"
+
 
 export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
     const {t} = useTranslation("navbar")
@@ -22,19 +28,44 @@ export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
                 <nav className="navbar">
                     <ul className="nav-main">
                         <li>
-                            <Link to={("/")}>
-                                <button className="navbutton">Home</button>
+                            <Link className="nav-link" to={("/")}>
+                                <button className="navbutton">
+                                    <img src={homeNavbarIcon} />
+                                    Home
+                                </button>
                             </Link> 
                         </li>
                         <li>
-                            <Link to={("/Dranleic_Haligdrake")}>
-                                <button className="navbutton">Dranleic Haligdrake</button>
+                            <Link className="nav-link" to={("/Dranleic_Haligdrake")}>
+                                <button className="navbutton">
+                                    <img src={dranleicNavbarIcon}  />
+                                    Dranleic Haligdrake
+                                </button>
                             </Link>
                         </li>
                         <li>
-                            <Link to={("/Pharis_Ironeye")}>
-                                <button className="navbutton">Pharis Ironeye</button>
+                            <Link className="nav-link" to={("/Pharis_Ironeye")}>
+                                <button className="navbutton">
+                                    <img src={pharisNavbarIcon}  />
+                                    Pharis Ironeye
+                                </button>
                             </Link>                            
+                        </li>
+                        <li>
+                            <Link className="nav-link" to={"/"}>
+                                <button type="button" className="navbutton">
+                                    <img src={priscillaNavbarIcon} />
+                                    Priscilla Aurora
+                                </button>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="nav-link" to={"/"}>
+                                <button type="button" className="navbutton">
+                                    <img src={gwyndolinNavbarIcon} />
+                                    Gwyndolin Golden-Wing
+                                </button>
+                            </Link>
                         </li>
                     </ul>
                     <div className="navbar-right">
