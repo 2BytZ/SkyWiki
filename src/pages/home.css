@@ -19,6 +19,7 @@
     font-weight: 300;
     margin: 10px 2px 0px 2px;
     letter-spacing: 2px;
+    color: var(--nav-text);
 }
 
 .mw-games-nav {
@@ -50,7 +51,7 @@ ul.gallery li.gallerybox {
     max-width: 380px;
     box-sizing: border-box;
 
-    border: 1px solid #4c4c4c;
+    border: 1px solid var(--nav-border);
 }
 
 ul.gallery li.gallerybox img {
@@ -70,7 +71,7 @@ div.gallerytext {
     padding: 9px 9px 15px;
     text-align: center;
     
-    color: var(--text);
+    color: var(--nav-text);
 }
 
 .games-nav-button {
@@ -78,26 +79,25 @@ div.gallerytext {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: var(--nav-bg);
-    border: none;
+    background: var(--filter-bg);
     border-radius: 5px;
     gap: 5px;
     min-width: 32px;
     min-height: 32px;
     cursor: pointer;
-    border: 1px solid var(--nav-bg);
+    border: 1px solid var(--filter-bg);
     font-family: skyrim;
     letter-spacing: 1px;
 }
 
 .games-nav-button:hover {
-    border-color: #4c4c4c;
-    background: #2f2f2f;
+    border-color: var(--filter-border);
+    background: var(--filter-bg-hover);
     box-shadow: var(--shadow);
 }
 .games-nav-button[aria-pressed="true"] {
     border-color: var(--border);
-    background: #2f2f2fbb;
+    background: var(--filter-pressed);
 }
 
 #All_button .games-nav-button {

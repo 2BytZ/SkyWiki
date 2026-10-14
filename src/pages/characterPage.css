@@ -76,6 +76,8 @@
     line-height: 1.5em;
     border-spacing: 3px;
     margin: 0;
+
+    color: var(--text-TOC);
 }
 
 .infobox-wrapper--background .infobox {
@@ -93,6 +95,7 @@
     --infobox-title-ornament-size: clamp(53%, calc(47% + 0.5vw), 55%);
     font-family: skyrim;
     font-size: clamp(18px, calc(12px + 0.5vw), 20px);
+    color: var(--text);
 }
 
 .infobox-title::before {
@@ -261,6 +264,8 @@ img.mw-file-upright {
     container-type: inline-size;
 
     margin-inline-start: 2vw;
+
+    color: var(--text-TOC);
 }
 
 .page-quote-frame {

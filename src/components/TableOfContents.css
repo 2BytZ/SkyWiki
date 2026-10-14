@@ -104,7 +104,7 @@
 
     line-height: 100% !important;
 
-    color: var(--nav-text);
+    color: var(--text-TOC);
 }
 .vector-toc-element {
     font-size: 0.8rem;   
