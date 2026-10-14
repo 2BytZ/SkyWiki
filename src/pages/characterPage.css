@@ -92,7 +92,7 @@
 .infobox-title {
     position: relative;
     isolation: isolate;
-    --infobox-title-ornament-size: clamp(53%, calc(47% + 0.5vw), 55%);
+    --infobox-title-ornament-size: 53%;
     font-family: skyrim;
     font-size: clamp(18px, calc(12px + 0.5vw), 20px);
     color: var(--text);
@@ -102,20 +102,26 @@
     content: "";
     position: absolute;
     z-index: -1;
-    inset: 0 clamp(-5%, calc(51px - 4.25vw), 0%);
+    inset-block: 0;
+    inset-inline-start: calc(
+        var(--infobox-title-text-inset-left, 50%) -
+            var(--infobox-title-ornament-width, 0px)
+    );
+    inset-inline-end: calc(
+        var(--infobox-title-text-inset-right, 50%) -
+            var(--infobox-title-ornament-width, 0px)
+    );
     background-image:
         var(--infobox-title-background-left, none),
         var(--infobox-title-background-right, none);
     background-repeat: no-repeat, no-repeat;
-    background-position: left center, right center;
+    background-position:
+        var(--infobox-title-ornament-shift, 0px) center,
+        calc(100% - var(--infobox-title-ornament-shift, 0px)) center;
     background-size:
-        var(--infobox-title-ornament-size) auto,
-        var(--infobox-title-ornament-size) auto;
+        var(--infobox-title-ornament-width, 0px) auto,
+        var(--infobox-title-ornament-width, 0px) auto;
     pointer-events: none;
-}
-
-.infobox-title.dovahzul-small::before {
-    background-image: none;
 }
 
 @media (max-width: 639px) {
@@ -126,6 +132,11 @@
 
 .infobox-wrapper--ornaments-visible {
     overflow: visible;
+}
+
+.infobox-wrapper--background:not(.infobox-wrapper--ornaments-visible)
+    .infobox-title::before {
+    background-image: none;
 }
 
 .infobox-image-header {
