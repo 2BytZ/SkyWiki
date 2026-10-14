@@ -52,6 +52,8 @@ ul.gallery li.gallerybox {
     box-sizing: border-box;
 
     border: 1px solid var(--nav-border);
+
+    background: var(--nav-button-bg);
 }
 
 ul.gallery li.gallerybox img {

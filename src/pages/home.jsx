@@ -29,19 +29,19 @@ export function Home(){
                             </li>
                             <li>
                                 <button className="games-nav-button" type="button" onClick={() => setSelectedGame("skyrim")} aria-pressed={selectedGame === "skyrim" }>
-                                    <img src={SkyrimLogo} className="filter-button-icon" width={40} height={40}/>
+                                    <img src={SkyrimLogo} className="filter-button-icon light-mode-invert" width={40} height={40}/>
                                     {t("mwNbS")}
                                 </button>
                             </li>
                             <li>
                                 <button className="games-nav-button" type="button" onClick={() => setSelectedGame("oblivion")} aria-pressed={selectedGame === "oblivion" }>
-                                    <img src={OblivionLogo} className="filter-button-icon" width={40}  height={40}/>
+                                    <img src={OblivionLogo} className="filter-button-icon light-mode-invert" width={40}  height={40}/>
                                     {t("mwNbO")}
                                 </button>
                             </li>
                             <li>
                                 <button className="games-nav-button" type="button" onClick={() => setSelectedGame("morrowind")} aria-pressed={selectedGame === "morrowind" }>
-                                    <img src={MorrowindLogo} className="filter-button-icon" width={40} height={40} />
+                                    <img src={MorrowindLogo} className="filter-button-icon light-mode-invert" width={40} height={40} />
                                     {t("mwNbM")}                                        
                                 </button>
                             </li>

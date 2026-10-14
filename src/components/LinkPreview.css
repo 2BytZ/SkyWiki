@@ -51,6 +51,7 @@
   z-index: 9999; /* Keeps it on top of other content */
   font-family: sans-serif;
   text-align: left;
+  color: var(--text-TOC); /* remove if frame assets are changed for light mode */
 }
 
 .link-preview__card .wiki-preview-arrow {

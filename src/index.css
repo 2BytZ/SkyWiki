@@ -199,3 +199,9 @@ a:hover {
 .hatnote a:hover {
   color: #002bb8;
 }
+
+:root:not([data-theme="dark"]) .navbutton img,
+:root:not([data-theme="dark"]) .wiki-preview-arrow,
+:root:not([data-theme="dark"]) .light-mode-invert {
+  filter: invert(1);
+}
