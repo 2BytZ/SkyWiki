@@ -139,6 +139,10 @@
   display: block;
 }
 
+.wiki-preview-thumb--inverted {
+  filter: invert(1);
+}
+
 .wiki-preview-card--vertical .wiki-preview-thumb {
   grid-column: 2;
   grid-row: 1;
@@ -177,7 +181,7 @@
   color: #000;
 }
 
-.wiki-preview-body strong {
+.wiki-preview-body > strong {
   display: block;
 
   font-size: 16px;
@@ -187,6 +191,7 @@
 
   font-size: 18px !important;
   font-family: skyrim;
+  font-weight: 300;
   letter-spacing: normal;
   line-height: 1.4;
   color: var(--text);

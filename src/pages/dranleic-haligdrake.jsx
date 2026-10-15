@@ -17,6 +17,7 @@ import infoboxBackground from "../assets/Main Menu.png"
 import messageCardDivider from "../assets/Message_Card_Divider.png"
 import dividerOrnateLeft from "../assets/Divider_Ornate_L.png"
 import dividerOrnateRight from "../assets/Divider_Ornate_R.png"
+import { Link } from "react-router-dom"
 
 
 
@@ -116,17 +117,18 @@ export function Dranleic() {
                                         <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dragonborn"} />]}/>
                                 </p>
                                 <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english"><b>Dranleic Revakdovah</b> los aan punmak <LinkPreview url="https://en.uesp.net/wiki/Lore:Argonian">Siigonis</LinkPreview> kendov, tafiir ahrk ahvulon, saag kos faal <LinkPreview url="https://en.uesp.net/wiki/Lore:Last_Dragonborn">Dovahkiin do zoor</LinkPreview>. Piraak gronne wah sahrotwultriintokahhe grik ol faal <LinkPreview url="https://en.uesp.net/wiki/Lore:Thieves_Guild">Tafiirretokah</LinkPreview> ahrk faal <LinkPreview url="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">Vulzeymahmaar</LinkPreview>, rok ahk lost gevothendhe wah muz ko kostaadde do soleyk ahst <LinkPreview url="https://en.uesp.net/wiki/Lore:Skyrim">Keizaal</LinkPreview>, grik ol faal <LinkPreview url="https://en.uesp.net/wiki/Skyrim:Jarl">Bronjunne</LinkPreview>. Dranleic yeinne nol <LinkPreview url="https://en.uesp.net/wiki/Lore:Cyrodiil">Sarodaal</LinkPreview> ko <LinkPreview url="https://en.uesp.net/wiki/Lore:Tamriel">Taazokaan</LinkPreview>. Ok vahzah bok ahrk zahvos lafaanne los vomindok; vutharaak, frolokvon wah kopraanuvgenund ahrk trahkiinne, nii los korah rok lost kiin ko fin laat hefbeneruvos. Dranleic los aan dufrahkei fussevokul ahrk lakif ahst Keizaal. To nii los saag tol rok los faal <LinkPreview url="https://en.uesp.net/wiki/Lore:Dragonborn">Dovahkiin</LinkPreview>, pogaan tursaalle vorolur fah do fin pogaat nostigge rok lost drah ahrk tahrovin rok lost drun ko ok tiid ahst Keizaal.</p>
-                                <p>
-                                    Dranleic has been largely involved in some of the biggest criminal events Tamriel has experienced since <a href="">The Assassination of Emperor Uriel Septim VII</a>
-                                    <sup>
-                                        <a href="">
-                                            <span>
-                                                <span>[</span>
-                                                1
-                                                <span>]</span>
-                                            </span>
-                                        </a>
-                                    </sup> and has played a major hand in those criminal operations, often being the centerpiece of the operations &mdash; operations such as <a href="">The Attempted Assassination of Emperor Titus Mede II</a> and the subsequent successful <a href="">assassination of Emperor Titus Mede II</a>, <a href="">The Escape of Cidhna Mine</a> with <a href="https://en.uesp.net/wiki/Lore:Madanach">Madanach</a> and the bloodbath that followed, <a href="">The Assassination of Vittoria Vici</a>, the soon-to-be spouse of <a href="https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod">Asgier Snow-Shod</a>, along with the takeovers of the major holds of Skyrim: the city of Whiterun, Falkreath, Markarth, and Solitude.
+                                <p id="lead-paragraph-2" className={i18next.resolvedLanguage=="dov" && "dovahzul"}>
+                                    <Trans i18nKey="mwLp2" ns="dranleic" components={[
+                                        <LinkPreview url={""} />,
+                                        <sup />, 
+                                        <a href="" />, 
+                                        <span />,
+                                        <LinkPreview url={""} />,
+                                        <LinkPreview url={""} />,
+                                        <LinkPreview url={""} />,
+                                        <LinkPreview url={"https://en.uesp.net/wiki/Lore:Madanach"} />,
+                                        <LinkPreview url={""} />,
+                                        <LinkPreview url={"https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod"} />]}/>
                                 </p>
                                 <p>
                                     Dranleic Haligdrake also had a big influence in the restoration and resurgence of the Thieves Guild and the revitalization of the Dark Brotherhood. For these reasons, Dranleic Haligdrake is known throughout Skyrim, and many fear encountering him and what may happen to them and their families. Therefore, Dranleic is fierce and a force not to be reckoned with.

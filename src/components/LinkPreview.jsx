@@ -17,6 +17,37 @@ import previewFrameBottom from "../assets/Info_Card_Small_Bottom.png";
 import previewFrameTop from "../assets/Info_Card_Small_Top.png";
 import "./LinkPreview.css";
 
+function renderInlineMarkdown(text) {
+    const parts = [];
+    const emphasisPattern = /(\*\*\*|\*\*|\*)(.+?)\1/g;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = emphasisPattern.exec(text)) !== null) {
+        parts.push(text.slice(lastIndex, match.index));
+
+        const content = renderInlineMarkdown(match[2]);
+        const key = `${match.index}-${emphasisPattern.lastIndex}`;
+
+        if (match[1] === "***") {
+            parts.push(
+                <strong key={key}>
+                    <em>{content}</em>
+                </strong>,
+            );
+        } else if (match[1] === "**") {
+            parts.push(<strong key={key}>{content}</strong>);
+        } else {
+            parts.push(<em key={key}>{content}</em>);
+        }
+
+        lastIndex = emphasisPattern.lastIndex;
+    }
+
+    parts.push(text.slice(lastIndex));
+    return parts;
+}
+
 export function LinkPreview({ url, children }) {
     const { i18n } = useTranslation("linkPreviews");
     const { search } = useLocation();
@@ -119,14 +150,14 @@ export function LinkPreview({ url, children }) {
                         <img
                             src={preview.img}
                             alt={preview.title || ""}
-                            className="wiki-preview-thumb"
+                            className={`wiki-preview-thumb${preview.invert === true || preview.invert === "true" ? " wiki-preview-thumb--inverted" : ""}`}
                         />
                     )}
                     <div className="wiki-preview-body">
-                        <strong>{preview.title}</strong>
+                        <strong>{renderInlineMarkdown(preview.title || "")}</strong>
                         {preview.summary && (
                             <p className={`preview-text preview-text--${previewPlacement}`}>
-                                {preview.summary}
+                                {renderInlineMarkdown(preview.summary)}
                             </p>
                         )}
                     </div>

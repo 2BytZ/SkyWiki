@@ -37,6 +37,7 @@
     },
     "https://en.uesp.net/wiki/Lore:Dragonborn": {
         "img": "/Symbol-of-the-Dragonborn.png",
+        "invert": "true",
         "summary": "A Dragonborn (or Dovahkiin in Dragon Language) is a mortal blessed with the blood and soul of a dragon by Akatosh, the Father of Dragons and chief of the Divines. Some sources claim that Dragonborn are fragments of Akatosh's soul and share this status with Alduin and possibly all of Dragonkind. Those with the blessing have an extraordinary aptitude in the use of the thu'um. They are able to absorb knowledge of shouts directly from the souls of slain dragons. This ability breeds fear in dragons, as the removal of their soul severs their immortality.",
         "placement": "vertical"
     }
