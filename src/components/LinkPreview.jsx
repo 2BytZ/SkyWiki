@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {
     arrow,
+    FloatingPortal,
     flip,
     offset,
     safePolygon,
@@ -114,6 +115,7 @@ export function LinkPreview({ url, children }) {
             </a>
 
             {preview && isPreviewOpen && (
+                <FloatingPortal>
                 <div
                     ref={setFloating}
                     style={floatingStyles}
@@ -162,6 +164,7 @@ export function LinkPreview({ url, children }) {
                         )}
                     </div>
                 </div>
+                </FloatingPortal>
             )}
         </span>
     );
