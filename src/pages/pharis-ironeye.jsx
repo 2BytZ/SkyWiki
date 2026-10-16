@@ -6,6 +6,7 @@ import "./characterPage.css"
 import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
 import { LinkPreview } from "../components/LinkPreview"
+import { ImageModal } from "../components/ImageModal"
 
 import previewFrameBottom from "../assets/Info_Card_Small_Bottom.png"
 import previewFrameTop from "../assets/Info_Card_Small_Top.png"
@@ -63,9 +64,9 @@ export function Pharis() {
                                                     <img className="infobox-image-frame__top" src={previewFrameTop} alt="" />
                                                     <img className="infobox-image-frame__bottom" src={previewFrameBottom} alt="" />
                                                 </div>
-                                                <a href="/Pharis-Ironeye-home-page-banner-art.jpg">
+                                                <ImageModal>
                                                     <img src="/Pharis-Ironeye-home-page-banner-art.jpg" alt="Pharis Ironeye" height={155} width={170} className="mw-file-upright" />
-                                                </a>
+                                                </ImageModal>
                                             </td>
                                         </tr>
                                         <tr>
@@ -218,17 +219,16 @@ export function Pharis() {
                                     <ul className="gallery-container"> 
                                         <li className="gallery-list-item">
                                             <span className="gallery-img">
-                                                <a href="/bullseye-pharis-headshot-art-gore.jpg">
+                                                <ImageModal>
                                                     <img src="/bullseye-pharis-headshot-art-gore.jpg" width={300} height={169}/>
-                                                </a>
-                                                
+                                                </ImageModal>                                        
                                             </span>
                                         </li>
                                         <li className="gallery-list-item">
                                             <span className="gallery-img">
-                                                <a href="/Pharis-Ironeye-sunrise-sitting.jpg">
+                                                <ImageModal>
                                                     <img src="/Pharis-Ironeye-sunrise-sitting.jpg" width={300} height={169}/>
-                                                </a>
+                                                </ImageModal>
                                             </span>
                                         </li>
                                     </ul>

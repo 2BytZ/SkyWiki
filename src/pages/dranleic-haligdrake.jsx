@@ -433,23 +433,23 @@ export function Dranleic() {
                                     <ul className="gallery-container">
                                         <li className="gallery-list-item">
                                             <span className="gallery-img">
-                                                <a href="/dranleic-execution-whiterun-takeover.jpg">
+                                                <ImageModal>
                                                     <img src="/dranleic-execution-whiterun-takeover.jpg" width={300} height={169}/>
-                                                </a>
+                                                </ImageModal>
                                             </span>
                                         </li>
                                         <li className="gallery-list-item">
                                             <span className="gallery-img">
-                                                <a href="/dranleic-sneak-execution-guard.jpg">
+                                                <ImageModal>
                                                     <img src="/dranleic-sneak-execution-guard.jpg" width={300} height={169}/>
-                                                </a>
+                                                </ImageModal>
                                             </span>
                                         </li>
                                         <li className="gallery-list-item">
                                             <span className="gallery-img">
-                                                <a href="/dranleic-execution-petty-bandit-gore.jpg">
+                                                <ImageModal>
                                                     <img src="/dranleic-execution-petty-bandit-gore.jpg" width={300} height={169}/>
-                                                </a>
+                                                </ImageModal>
                                             </span>
                                         </li>
                                     </ul>
