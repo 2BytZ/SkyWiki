@@ -6,6 +6,7 @@ import "./characterPage.css"
 import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
 import { LinkPreview } from "../components/LinkPreview"
+import { ImageModal } from "../components/ImageModal"
 
 import DialogueSelectorStart from "../assets/Dialogue_Selector_Start.png"
 import DialogueSelectorEnd from "../assets/Dialogue_Selector_End.png"
@@ -17,7 +18,6 @@ import infoboxBackground from "../assets/Main Menu.png"
 import messageCardDivider from "../assets/Message_Card_Divider.png"
 import dividerOrnateLeft from "../assets/Divider_Ornate_L.png"
 import dividerOrnateRight from "../assets/Divider_Ornate_R.png"
-import { Link } from "react-router-dom"
 
 
 
@@ -62,9 +62,9 @@ export function Dranleic() {
                                                     <img className="infobox-image-frame__top" src={previewFrameTop} alt="" />
                                                     <img className="infobox-image-frame__bottom" src={previewFrameBottom} alt="" />
                                                 </div>
-                                                <a href="/dranleic-haligdrake-powerful-clenched-fist2.jpg">
-                                                    <img src="/dranleic-haligdrake-powerful-clenched-fist2.jpg" alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
-                                                </a>
+                                                <ImageModal>
+                                                    <img src={"/dranleic-haligdrake-powerful-clenched-fist2.jpg"} alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
+                                                </ImageModal>
                                             </td>
                                         </tr>
                                         <tr>

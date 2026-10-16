@@ -152,7 +152,7 @@
 .infobox-image-frame {
     position: absolute;
     inset: -3% 0% -3% 0%;
-    z-index: 0;
+    z-index: -1;
     container-type: inline-size;
     overflow: hidden;
     pointer-events: none;

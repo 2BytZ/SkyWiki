@@ -1,0 +1,90 @@
+
+
+.lightbox-container {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+.modal-content-and-placement-divider {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.modal-wrapper {
+    background: #2e2e2e;
+    display: block;
+    padding: 0;
+    position: relative;
+    z-index: 10000;
+}
+.lightbox-modal {
+    margin-left: 70px;
+    width: calc(80% - 70px);
+
+    overflow: hidden;
+    width: 80%;
+
+}
+
+.lightbox-button {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    right:10px;
+    margin: 0;
+    z-index: 10;
+}
+
+.modal-content {
+    display: block;
+    font-size: 13px;
+    line-height: 21px;
+    margin: 0 20px 20px;
+    zoom: 1;
+}
+.lightbox-modal .modal-content {
+    height: 100%;
+    margin: 0;
+}
+
+.lightbox-modal .lightbox {
+    height: 100%;
+}
+
+.lightbox-modal .media {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+.lightbox-modal .media img {
+    max-width: 80%;
+}
+
+
+
+
+
+
+
+
+.blackout {
+    background: #2e2e2e;
+    opacity: .9;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
