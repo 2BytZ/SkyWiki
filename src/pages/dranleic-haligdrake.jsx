@@ -7,6 +7,7 @@ import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
 import { LinkPreview } from "../components/LinkPreview"
 import { ImageModal } from "../components/ImageModal"
+import { PageNotice } from "../components/PageNotice"
 
 import DialogueSelectorStart from "../assets/Dialogue_Selector_Start.png"
 import DialogueSelectorEnd from "../assets/Dialogue_Selector_End.png"
@@ -22,7 +23,7 @@ import dividerOrnateRight from "../assets/Divider_Ornate_R.png"
 
 
 export function Dranleic() {
-    const contentRef = useRef(null)
+    const contentRef = useRef(null);
     const {t} = useTranslation("dranleic");
 
     return (
@@ -37,6 +38,7 @@ export function Dranleic() {
                     </div>
                 </div>
                 <main className="mw-content-container">
+                    {PageNotice("language")}
                     <h1 className={`${i18next.resolvedLanguage=="dov" && "firstHeading"} mw-first-heading`}>{t("mwFh")}</h1>
                     <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul">dranl2c revakdov4</p>
                     <div className="vector-content">

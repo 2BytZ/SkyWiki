@@ -43,6 +43,8 @@
   --filter-border: #716f00;
   --filter-pressed: #cfc696;
 
+  --notice-bg: white;
+
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
@@ -87,6 +89,8 @@
   --filter-bg-hover: #2f2f2f;
   --filter-pressed: #4d4d4d;
   
+  --notice-bg: black;
+
   color-scheme: dark;
 
   :root[data-theme="dark"] #social .button-icon {
