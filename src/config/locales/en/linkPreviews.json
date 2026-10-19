@@ -113,7 +113,7 @@
     },
     "https://en.uesp.net/wiki/Skyrim:Brelyna_Maryon": {
         "img": "/previews/preview-Brelyna-Maryon.jpg",
-        "summary": "...",
+        "summary": "**Brelyna Maryon** is a Dark Elf mystic and a student at the College of Winterhold. Unlike her fellow students, Onmund and J'zargo, Brelyna tends to cast summoning spells and wards in combat. Because of this, she may be very useful if you seek a follower who will provide defenses and distractions. She is most skilled in Alteration, Illusion, Conjuration, Sneak, and Restoration in that order. She does not know any Illusion spells, however, and often uses Destruction spells as well as bows, despite having minimal Archery and Destruction skills.",
         "placement": "vertical"
     },
     "https://en.uesp.net/wiki/Lore:Madanach": {
@@ -141,6 +141,11 @@
         "summary": "**Alduin** (also spelled **Ald'uin** or simply **Ald**), known as the **World-Eater**, the **First Dragon** (or **First of Dragons**), the **Dragon Who Eats the World**, **Time-Eater**, the **Twilight God**, the **Worm**, the **Dragon King**, and the **Firstborn** is an immensely powerful black Dragon. He is known as a malevolent being who destroys the world periodically, and the Nords believe that his reappearance heralds the end of the current kalpa and the beginning of the next. He is the self-proclaimed First-Born of Akatosh, and supposedly an aspect of him, having also been described as a \"fragment of Akatosh's soul\". Alduin is said to have begun as \"the wisest and most far-seeing\" of all Dragons.",
         "placement": "horizontal"
     },
+    "https://en.uesp.net/wiki/Lore:Akatosh": {
+        "img": "/previews/preview-Akatosh-Father-of-Dragons.jpg",
+        "summary": "**Akatosh**, known as **Auri-El** (or **Auriel**) to the Mer, **Bormahu** (Our Father) to the dragons, the **great Dragon of Time** to the Nedes, **Alkosh** to the Khajiit, is the chief deity of the Eight or Nine Divines (the prescribed religious cults of Cyrodiil and its provinces). He is present in most Tamrielic religions. His avatar is a golden dragon, and he is often called the **Dragon God of Time**, **Father Akatosh**, and the **Lord of the Dragons**. He is generally considered to be the first of the gods to form in the Beginning Place; some even claim he established it. After his formation, other spirits found the process to be easier and the various pantheons of the world emerged. The Aedric spirit is the ultimate God of the Cyrodilic Empire, where he embodies the qualities of endurance, invincibility, and everlasting legitimacy while promoting the virtues of duty, service, and obedience. Akatosh is thought to be the father of all dragons, and their leader Alduin was titled \"First-Born of Akatosh\".",
+        "placement": "horizontal"
+    },
     "https://en.uesp.net/wiki/Lore:Stormhold": {
         "img": "/previews/preview-Stormhold-city.jpg",
         "summary": "**Stormhold** is one of the eight major cities in the province of Black Marsh, serving as the largest settlement of the region of Shadowfen. Stormhold has a dark history that involves the nearby Dark Elves, as it was once the foothold of their slavery industry in the province. The modern-day Stormhold was built atop of an Ayleid ruin known as **Silyanorn** (translated as *Library* in Barsaebic Ayleidoon). During the time of the Ebonheart Pact, the city-state of Stormhold was named the capital of Black Marsh, at least for portions of the province that was affiliated with them.",
@@ -158,6 +163,21 @@
     },
     "https://en.uesp.net/wiki/Lore:Shadowscales": {
         "summary": "The **Shadowscales** are an order of Argonian assassins originating in Black Marsh. Argonians born under the sign of the Shadow are taken at birth and offered to the Dark Brotherhood where they are trained in the arts of stealth and assassination. Shadowscales can identify other members of the order by special medallions. They are typically made of brass and inscribed with the likeness of Sithis, the Dread Father. Any Shadowscale who lives to come of age is accepted into the Dark Brotherhood as a full member of the family. They may also leave the Brotherhood to serve the Argonian people in Black Marsh as ku-vastei, the agents of needed change and arbiters. They act with impunity there, and some are said to serve as personal assassins to the King of Black Marsh and as protectors of the ancient members of the royalty. However, no such king is thought to have ruled since the height of Argonian civilization in ages past—if at all—and the monarch's role as commander of the Shadowscales is said to be overstated.",
+        "placement": "vertical"
+    },
+    "https://en.uesp.net/wiki/Skyrim:Ysolda": {
+        "img": "/previews/preview-Ysolda.jpg",
+        "summary": "**Ysolda** is a Nord citizen who lives in Whiterun. She is one of the few citizens who trusts the Khajiit traders traveling across Skyrim, and her greatest dream is to buy The Bannered Mare from Hulda. Incidentally, should something happen to Hulda, you will find Ysolda taking her place behind the bar in the taproom. During your drunken stupor in A Night To Remember, you will unconsciously buy a wedding ring from Ysolda, for your beloved Moira. Ysolda also has a great secret, discovered during the quest Sleeping Tree Cave.",
+        "placement": "vertical"
+    },
+    "https://en.uesp.net/wiki/Lore:Helgen": {
+        "img": "/previews/preview-Helgen-city.jpg",
+        "summary": "**Helgen**, referred to as the \"Gateway to the North\" due to the many travelers who visited while coming from Cyrodiil to the south, was a fortified hamlet located east-northeast of the city of Falkreath, south of Riverwood, and north of Pale Pass. The rather small \"backwater hovel\" was guarded by a wooden wall and the slopes of the mountains it was nestled in, and surrounded a large fort known as Helgen Keep. The Keep held a barracks for Imperial troops, a torture room, and led into a series of caves that traveled north into the wilderness.",
+        "placement": "horizontal"
+    },
+    "https://en.uesp.net/wiki/Lore:Ulfric_Stormcloak": {
+        "img": "/previews/preview-Jarl-Ulfric.jpg",
+        "summary": "**Ulfric Stormcloak** of the Stormcloak Clan was the Jarl of Windhelm and the leader of the Stormcloak Rebellion. Ulfric first rose to prominence due to his involvement in the Markarth Incident, which began when he and his militia successfully retook the city. For retaking Markarth, Ulfric and his militia were initially permitted to worship Talos by Jarl Hrolfdir and the Imperial Legion; however, they were soon arrested to appease the Thalmor. Following his release from prison, Ulfric and his militia known as the Stormcloaks engaged in skirmishes with the Empire, although they failed to gain much support from Skyrim's populace. In 4E 201, Ulfric killed the High King of Skyrim, Torygg, in a duel, beginning a full-scale civil war against the Empire.",
         "placement": "vertical"
     }
 }

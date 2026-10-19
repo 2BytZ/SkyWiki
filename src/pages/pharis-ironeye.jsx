@@ -135,7 +135,7 @@ export function Pharis() {
                                 </p>
                             </section>
                             <section>
-                                <div>
+                                <div className="mw-heading mw-heading-2">
                                     <h2>Skyrim</h2>
                                 </div>
                                 <section>
@@ -179,7 +179,7 @@ export function Pharis() {
 
                                 </p>
                                 <section>
-                                    <div>
+                                    <div className="mw-heading mw-heading-3">
                                         <h3>Personality</h3>
                                     </div>
                                     <p>
@@ -187,7 +187,7 @@ export function Pharis() {
                                     </p>
                                 </section>
                                 <section>
-                                    <div>
+                                    <div className="mw-heading mw-heading-3">
                                         <h3>Appearance</h3>
                                     </div>
                                     <p>
@@ -195,7 +195,7 @@ export function Pharis() {
                                     </p>
                                 </section>
                                 <section>
-                                    <div>
+                                    <div className="mw-heading mw-heading-3">
                                         <h3>Relationships</h3>
                                     </div>
                                     <p>
@@ -203,7 +203,7 @@ export function Pharis() {
                                     </p>
                                 </section>
                                 <section>
-                                    <div>
+                                    <div className="mw-heading mw-heading-3">
                                         <h3>Beliefs</h3>
                                     </div>
                                     <p>
@@ -212,7 +212,7 @@ export function Pharis() {
                                 </section>
                             </section>
                             <section>
-                                <div>
+                                <div className="mw-heading mw-heading-2">
                                     <h2>Gallery</h2>
                                 </div>
                                 <div className="gallery-image-collection">
@@ -235,13 +235,13 @@ export function Pharis() {
                                 </div>
                             </section>
                             <section>
-                                <div>
+                                <div className="mw-heading mw-heading-2">
                                     <h2>See also</h2>
                                 </div>
 
                             </section>
                             <section>
-                                <div>
+                                <div className="mw-heading mw-heading-2">
                                     <h2>References</h2>
                                 </div>
 

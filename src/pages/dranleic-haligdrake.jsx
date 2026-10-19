@@ -112,13 +112,16 @@ export function Dranleic() {
                                 
                                 <p id="lead-paragraph-2" className={i18next.resolvedLanguage=="dov" && "dovahzul"}>
                                     <Trans i18nKey="mwLp2" ns="dranleic">
-                                        Dranleic has been largely involved in some of the biggest criminal events Tamriel has experienced since <LinkPreview url="https://en.uesp.net/wiki/Lore:Uriel_Septim_VII">The Assassination of Emperor Uriel Septim VII</LinkPreview><sup style={{fontFamily:"skyrim"}}>[1]</sup> and has played a major hand in those criminal operations, often being the centerpiece of the operations &mdash; operations such as <LinkPreview url="">The Attempted Assassination of Emperor Titus Mede II</LinkPreview> and the subsequent successful <LinkPreview url="">assassination of Emperor Titus Mede II</LinkPreview>, <LinkPreview url="">The Escape of Cidhna Mine</LinkPreview> with <LinkPreview url="https://en.uesp.net/wiki/Lore:Madanach">Madanach</LinkPreview> and the bloodbath that followed, <LinkPreview url="">The Assassination of Vittoria Vici</LinkPreview>, the soon-to-be spouse of <LinkPreview url="https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod">Asgier Snow-Shod</LinkPreview>, along with the takeovers of the major holds of Skyrim: the city of <LinkPreview url="https://en.uesp.net/wiki/Lore:Whiterun">Whiterun</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Falkreath">Falkreath</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Markarth">Markarth</LinkPreview>, and <LinkPreview url="https://en.uesp.net/wiki/Lore:Solitude">Solitude</LinkPreview>.
+                                        Dranleic has been largely involved in some of the biggest criminal events Tamriel has experienced since <LinkPreview url="">The Assassination of Emperor Uriel Septim VII</LinkPreview><sup style={{fontFamily:"skyrim"}}>[1]</sup> and has played a major hand in those criminal operations, often being the centerpiece of the operations &mdash; operations such as <LinkPreview url="">The Attempted Assassination of Emperor Titus Mede II</LinkPreview> and the subsequent successful <LinkPreview url="">assassination of Emperor Titus Mede II</LinkPreview>, <LinkPreview url="">The Escape of Cidhna Mine</LinkPreview> with <LinkPreview url="https://en.uesp.net/wiki/Lore:Madanach">Madanach</LinkPreview> and the bloodbath that followed, <LinkPreview url="">The Assassination of Vittoria Vici</LinkPreview>, the soon-to-be spouse of <LinkPreview url="https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod">Asgier Snow-Shod</LinkPreview>, along with the takeovers of the major holds of Skyrim: the city of <LinkPreview url="https://en.uesp.net/wiki/Lore:Whiterun">Whiterun</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Falkreath">Falkreath</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Markarth">Markarth</LinkPreview>, and <LinkPreview url="https://en.uesp.net/wiki/Lore:Solitude">Solitude</LinkPreview>.
                                     </Trans>
                                 </p>
                                 <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">Dranleic kosaan lokgaar vothizaan ko osos do fin zusaak wultriin korosendde Taazokaan seirakaan fah <LinkPreview url="https://en.uesp.net/wiki/Lore:Uriel_Septim_VII">fin kriivat do jun Uriel Septim zost</LinkPreview><sup>[1]</sup> ahrk kosaan aan gaat droliik ko daar wultriin rakendde, grinstiid kos fin thermalur do fin rakendde &mdash; rakendde grik ol <LinkPreview url="">fin togaat kriivat do jun Titus Mede ziist</LinkPreview> ahrk fin zopruntaas <LinkPreview url="">kriivat do jun Titus Mede ziist</LinkPreview> mindindaar, <LinkPreview url="">fin filok do Cidhna vungol</LinkPreview> voth <LinkPreview url="https://en.uesp.net/wiki/Lore:Madanach">Madanach</LinkPreview> ahrk fin soswursk daar kiibokaan, <LinkPreview>fin kriivat do Vittoria Vici</LinkPreview>, faal dasuskos wolov do <LinkPreview url="https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod">Asgier Snow-Shod</LinkPreview>, asamit voth fin vaarnurelvon do fin gevildde do Keizaal: fin hiim do <LinkPreview url="https://en.uesp.net/wiki/Lore:Whiterun">Ahrolsedovah</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Falkreath">Quethsegolahrol</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Markarth">Golzewer</LinkPreview>, ahrk <LinkPreview url="https://en.uesp.net/wiki/Lore:Solitude">Bromgrindol</LinkPreview>.</p>
 
                                 <p>
-                                    Dranleic had a big influence in the outcome of the <LinkPreview url="https://en.uesp.net/wiki/Lore:Stormcloak_Rebellion">civil war</LinkPreview>, restoration and resurgence of the Thieves Guild as well as the revitalization of the Dark Brotherhood, helped to put an end to the <LinkPreview url="https://en.uesp.net/wiki/Lore:Return_of_the_Dragons">Dragon Crisis</LinkPreview> by defeating <LinkPreview url="https://en.uesp.net/wiki/Lore:Alduin">Alduin</LinkPreview> the Firstborn of Akatosh, among other achievements.
+                                    Dranleic had a big influence in the outcome of the <LinkPreview url="https://en.uesp.net/wiki/Lore:Stormcloak_Rebellion">civil war</LinkPreview>, restoration and resurgence of the Thieves Guild as well as the revitalization of the Dark Brotherhood, helped to put an end to the <LinkPreview url="https://en.uesp.net/wiki/Lore:Return_of_the_Dragons">Dragon Crisis</LinkPreview> by defeating <LinkPreview url="https://en.uesp.net/wiki/Lore:Alduin">Alduin</LinkPreview> the Firstborn of <LinkPreview url="https://en.uesp.net/wiki/Lore:Akatosh">Akatosh</LinkPreview>, among other achievements.
+                                </p>
+                                <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">
+
                                 </p>
                             </section>
                             <section>
@@ -126,13 +129,24 @@ export function Dranleic() {
                                     <h2 id="Early_life">Early life</h2>
                                 </div>
                                 <p>
-                                    Very little is known about Dranleic regarding his origins and the early days of his life. Ever since he was sentenced to execution in Helgen, along with other bandits, thieves, and Ulfric Stormcloak, almost nothing about him or his past has been known to anyone in Skyrim. It's as if Dranleic suddenly appeared in Skyrim and was unfortunately bundled together with other petty thieves and bandits ready for the chopping block. Some say that he was trying to cross the border of Skyrim to return home but was caught in an Imperial ambush.
+                                    Very little is known about Dranleic regarding his origins and the early days of his life. Ever since he was sentenced to execution in <LinkPreview url="https://en.uesp.net/wiki/Lore:Helgen">Helgen</LinkPreview>, along with other bandits, thieves, and <LinkPreview url="https://en.uesp.net/wiki/Lore:Ulfric_Stormcloak">Ulfric Stormcloak</LinkPreview>, almost nothing about him or his past has been known to anyone in Skyrim. It's as if Dranleic suddenly appeared in Skyrim and was unfortunately bundled together with other petty thieves and bandits ready for the chopping block. Some say that he was trying to cross the border of Skyrim to return home but was caught in an Imperial ambush.
                                 </p>
-                                <p>
-                                    Even though there is little to nothing to know for certain about his origins and past, it is still very much possible to speculate. For example, there are clear signs that point to Dranleic Haligdrake originating from Cyrodiil, as well as him being an orphan, seeing as he is so far from home and hasn't had any contact with his potential parents for so long, and also hasn't made an attempt to go back to his homeland. It's also fair to say that Dranleic likely isn't immortal, and so, with his young and strong stature, can confidently say that he must have been born in the 4th era, within the last decade or half-decade. 
+                                <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">
+
                                 </p>
+                                    
                                 <p>
-                                    The exact date of his birth is also very unclear, to say the least, but theories from sorcerers and their studies suggest he was born around the time of the first week of the third month of the year. So although speculative, this is the most information available related to Dranleic's past.
+                                    Despite this, people have speculated about his past. There are clear signs that point to Dranleic Haligdrake originating from Cyrodiil, as well as him being an orphan, seeing as he is so far from home and hasn't had any contact with his potential parents for so long, and also hasn't made an attempt to go back to his homeland since the Helgen dragon attack. It's also fair assume that Dranleic likely isn't immortal, and so, with his young and strong stature, can confidently say that he must have been born in the fourth era, within the last decade or half-decade.
+                                </p>
+                                <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">
+                                    
+                                </p>
+
+                                <p>
+                                    The exact date of his birth is unclear, to say the least, but theories from sorcerers and their studies suggest he was born around the time of the first week of the third month of the year. So although speculative, this is the most information available related to Dranleic's past.
+                                </p>
+                                <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">
+                                    
                                 </p>
                             </section>
                             <section>
@@ -277,7 +291,7 @@ export function Dranleic() {
                                     <p>
                                         
                                     </p>
-                                        <div>
+                                        <div className="mw-heading mw-heading-4">
                                             <h4 id="The_murder_of_Vittoria_Vici">The murder of Vittoria Vici</h4>
                                         </div>
                                         <div role="note" className="hatnote">
@@ -286,19 +300,19 @@ export function Dranleic() {
                                         <p>
 
                                         </p>
-                                        <div>
+                                        <div className="mw-heading mw-heading-4">
                                             <h4 id="The_assassination_of_Gaius_Maro">The assassination of Gaius Maro</h4>
                                         </div>
                                         <p>
 
                                         </p>
-                                        <div>
+                                        <div className="mw-heading mw-heading-4">
                                             <h4 id="The_murder_of_the_Mysterious_Gourmet">The murder of the Mysterious Gourmet</h4>
                                         </div>
                                         <p>
 
                                         </p>
-                                        <div>
+                                        <div className="mw-heading mw-heading-4">
                                             <h4 id="Attempted_assassination_of_the_Emperor">Attempted assassination of the Emperor</h4>
                                         </div>
                                         <div role="note" className="hatnote">
@@ -307,7 +321,7 @@ export function Dranleic() {
                                         <p>
 
                                         </p>
-                                        <div>
+                                        <div className="mw-heading mw-heading-4">
                                             <h4 id="The_assassination_of_Emperor_Titus_Mede_II">The assassination of Emperor Titus Mede II</h4>
                                         </div>
                                         <div role="note" className="hatnote">
@@ -318,7 +332,7 @@ export function Dranleic() {
                                         </p>
                                 </section>
                                 <section>
-                                    <div>
+                                    <div className="mw-heading mw-heading-3">
                                         <h3 id="Civil_war">Civil war</h3>
                                     </div>
                                     <div role="note" className="hatnote">
@@ -327,55 +341,55 @@ export function Dranleic() {
                                     <p>
                                         [...] Played a big part in the <a href="https://en.uesp.net/wiki/Lore:Stormcloak_Rebellion">Stormcloak rebellion</a> and their success in <a href="">the battle for Solitude</a>...
                                     </p>
-                                    <div>
+                                    <div className="mw-heading mw-heading-4">
                                         <h4 id="Whiterun_city_takeover">Whiterun city takeover</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
-                                    <div>
+                                    <div className="mw-heading mw-heading-4">
                                         <h4 id="Liberation_of_Falkreath">Liberation of Falkreath</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
-                                    <div>
+                                    <div className="mw-heading mw-heading-4">
                                         <h4 id="Liberation_of_the_Reach">Liberation of the Reach</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
-                                    <div>
+                                    <div className="mw-heading mw-heading-4">
                                         <h4 id="Liberation_of_Hjaalmarch">Liberation of Hjaalmarch</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
-                                    <div>
+                                    <div className="mw-heading mw-heading-4">
                                         <h4 id="Liberation_of_the_Pale">Liberation of the Pale</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
-                                    <div>
+                                    <div className="mw-heading mw-heading-4">
                                         <h4 id="Liberation_of_Winterhold">Liberation of Winterhold</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
-                                    <div>
+                                    <div className="mw-heading mw-heading-4">
                                         <h4 id="Liberation_of_the_Rift">Liberation of the Rift</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
-                                    <div>
+                                    <div className="mw-heading mw-heading-4">
                                         <h4 id="Liberation_of_Haalfingar">Liberation of Haalfingar</h4>
                                     </div>
                                     <p>
                                         
                                     </p>
-                                    <div>
+                                    <div className="mw-heading mw-heading-4">
                                         <h4 id="The_battle_for_Solitude">The battle for Solitude</h4>
                                     </div>
                                     <div role="note" className="hatnote">
@@ -396,7 +410,7 @@ export function Dranleic() {
                                 </p>
                                 
                                 <section>
-                                    <div>
+                                    <div className="mw-heading mw-heading-3">
                                         <h3 id="Personality">Personality</h3>
                                     </div>
                                     <p>
@@ -404,7 +418,7 @@ export function Dranleic() {
                                     </p>
                                 </section>
                                 <section>
-                                    <div>
+                                    <div className="mw-heading mw-heading-3">
                                         <h3 id="Appearance">Appearance</h3>
                                     </div>
                                     <p>
@@ -412,7 +426,7 @@ export function Dranleic() {
                                     </p>
                                 </section>
                                 <section>
-                                    <div>
+                                    <div className="mw-heading mw-heading-3">
                                         <h3 id="Relationships">Relationships</h3>
                                     </div>
                                     <p>
@@ -420,13 +434,13 @@ export function Dranleic() {
                                     </p>
                                 </section>
                                 <section>
-                                    <div>
+                                    <div className="mw-heading mw-heading-3">
                                         <h3 id="Beliefs">Beliefs</h3>
                                     </div>
                                 </section>
                             </section>
                             <section>
-                                <div>
+                                <div className="mw-heading mw-heading-2">
                                     <h2 id="Gallery">Gallery</h2>
                                 </div>
                                 <div className="gallery-image-collection">
@@ -456,7 +470,7 @@ export function Dranleic() {
                                 </div>
                             </section>
                             <section>
-                                <div>
+                                <div className="mw-heading mw-heading-2">
                                     <h2 id="See_also">See also</h2>
                                 </div>
                                 Emperor Uriel Septim VII (https://en.uesp.net/wiki/Lore:Uriel_VII)
@@ -465,7 +479,7 @@ export function Dranleic() {
                                 Vittoria Vici (https://en.uesp.net/wiki/Skyrim:Vittoria_Vici)
                             </section>
                             <section>
-                                <div>
+                                <div className="mw-heading mw-heading-2">
                                     <h2 id="References">References</h2>
                                 </div>
                                 Uriel VII assassination (https://en.uesp.net/wiki/Lore:Assassination!)
