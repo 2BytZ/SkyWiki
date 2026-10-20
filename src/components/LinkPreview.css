@@ -198,3 +198,33 @@
   line-height: 1.4;
   color: var(--text);
 }
+
+.copyright-and-legal-text {
+  justify-self: left;
+  position: relative;
+  z-index: 1;
+  margin: 8px 0 0;
+  font-size: 10px;
+  line-height: 1.3;
+  text-align: center;
+  font-family: var(--sans);
+  color: white;
+  overflow-wrap: anywhere;
+}
+
+.wiki-preview-card--vertical:not(.wiki-preview-card--no-image) {
+  padding-bottom: 26px;
+}
+
+.wiki-preview-card--vertical:not(.wiki-preview-card--no-image) .copyright-and-legal-text {
+  padding-right: 18px;
+}
+
+.copyright-and-legal-text a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.wiki-preview-card--vertical .copyright-and-legal-text {
+  grid-column: 1 / -1;
+}

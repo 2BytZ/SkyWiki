@@ -1,6 +1,7 @@
 {
     "https://en.uesp.net/wiki/Lore:Argonian": {
         "img": "/preview-Argonian.png",
+        "imageSource": "https://en.uesp.net/wiki/File:LO-race-Argonian.png",
         "summary": "Siigonis ('Saxhleel', uv Reyliik do faal Rum ko niist diistaak tinvok do Jel) los faal vriiduv diistaakke do Vedzanos, aan makil styorngolnor junaar ko stumjeren taazokaan. Faal vorey reyliik grinstiid nenvaar wah niin ol siigonishe, julsiigonishe uv faal Siigonisjoriin sinon, suranmiik rul seiktaas kos faazrotaan. Nust los mindok ol faal usnaan pruloshe ko voqurnen keinbonu kozeim Taazokaan, aan kahforaan drun voknau niin naal bildvon niist tiranne nol hokoron fah tiinu beneruvoshe.",
         "placement": "vertical"
     },

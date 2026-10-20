@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Navbar } from "./Navbar"
+import { Footer } from "./Footer"
 import { Outlet } from "react-router-dom"
 
 const LANGUAGE_STORAGE_KEY = "skyrim-wiki-language"
@@ -42,6 +43,7 @@ export function Layout() {
             <main className="mw-page-container">
                 <Outlet context={{ language }}/>
             </main>
+            <Footer/>
         </>
     )
 }

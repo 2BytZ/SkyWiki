@@ -12,7 +12,7 @@ import {
     useRole,
 } from "@floating-ui/react";
 import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import previewArrow from "../assets/Down_Arrow-More_Settings.png";
 import previewFrameBottom from "../assets/Info_Card_Small_Bottom.png";
 import previewFrameTop from "../assets/Info_Card_Small_Top.png";
@@ -54,13 +54,26 @@ export function LinkPreview({ url, children }) {
     const { search } = useLocation();
     const [arrowElement, setArrowElement] = useState(null);
     const language = i18n.resolvedLanguage || i18n.language;
-    const preview = i18n.getResource(language, "linkPreviews", url);
+    const linkUrl = typeof url === "string" ? url : "";
+    const preview = linkUrl
+        ? i18n.getResource(language, "linkPreviews", linkUrl)
+        : undefined;
     const previewPlacement = preview?.placement === "vertical" ? "vertical" : "horizontal";
+    const sourceUrl = linkUrl.startsWith("http://") || linkUrl.startsWith("https://")
+        ? new URL(linkUrl)
+        : null;
+    const isUespSource = sourceUrl?.hostname === "uesp.net"
+        || sourceUrl?.hostname.endsWith(".uesp.net");
+    const historyUrl = isUespSource ? new URL(sourceUrl) : null;
+    historyUrl?.searchParams.set("action", "history");
+    const sourceArticleTitle = isUespSource
+        ? decodeURIComponent(sourceUrl.pathname.split("/").pop()).split(":").pop().replaceAll("_", " ")
+        : null;
     const [isOpen, setIsOpen] = useState(false);
     const pinnedPreviewUrl = import.meta.env.DEV
         ? new URLSearchParams(search).get("preview")
         : null;
-    const isPreviewOpen = isOpen || pinnedPreviewUrl === url;
+    const isPreviewOpen = isOpen || pinnedPreviewUrl === linkUrl;
 
     const {
         refs: { setReference, setFloating },
@@ -94,7 +107,7 @@ export function LinkPreview({ url, children }) {
     });
     const role = useRole(context, { role: "tooltip" });
     const { getReferenceProps, getFloatingProps } = useInteractions([hover, role]);
-    const linkText = children ?? preview?.title ?? url;
+    const linkText = children ?? preview?.title ?? linkUrl;
     const arrowSide = placement.split("-")[0];
     const staticSide = {
         top: "bottom",
@@ -105,14 +118,18 @@ export function LinkPreview({ url, children }) {
 
     return (
         <span className="link-preview">
-            <a
-                ref={setReference}
-                href={url}
-                {...getReferenceProps()}
-                className="wiki-anchor-text"
-            >
-                {linkText}
-            </a>
+            {linkUrl ? (
+                <a
+                    ref={setReference}
+                    href={linkUrl}
+                    {...getReferenceProps()}
+                    className="wiki-anchor-text"
+                >
+                    {linkText}
+                </a>
+            ) : (
+                <span className="wiki-anchor-text">{linkText}</span>
+            )}
 
             {preview && isPreviewOpen && (
                 <FloatingPortal>
@@ -163,6 +180,21 @@ export function LinkPreview({ url, children }) {
                             </p>
                         )}
                     </div>
+                    {isUespSource && (
+                        <p className="copyright-and-legal-text">
+                            Source:{" "}
+                            <a href={linkUrl}>{sourceArticleTitle}</a>
+                            {" "}(
+                            <a href={historyUrl.href}>history</a>
+                            )
+                            {preview.img && (
+                                <>
+                                    {" · "}
+                                    <Link to="/Credits">Image credits</Link>
+                                </>
+                            )}
+                        </p>
+                    )}
                 </div>
                 </FloatingPortal>
             )}
