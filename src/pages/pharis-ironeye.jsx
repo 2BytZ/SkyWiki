@@ -7,6 +7,7 @@ import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
 import { LinkPreview } from "../components/LinkPreview"
 import { ImageModal } from "../components/ImageModal"
+import { PageNotice } from "../components/PageNotice"
 
 import previewFrameBottom from "../assets/Info_Card_Small_Bottom.png"
 import previewFrameTop from "../assets/Info_Card_Small_Top.png"
@@ -39,6 +40,7 @@ export function Pharis() {
                     </div>                
                 </div>
                 <main className="mw-content-container">
+                    {PageNotice("construction")}
                     <h1 className={`${i18next.resolvedLanguage=="dov" && "firstHeading"} mw-first-heading`}>{t("mwFh")}</h1>
                     <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul">pharis dolm3n</p>
                     <div className="vector-content">

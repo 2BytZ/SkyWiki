@@ -6,8 +6,13 @@
 
 
     "mwFh": "Welcome to Himmeloften",
+
+    "mwFt": "Filter characters by game:",
+
     "mwNbA": "All",
+    "mwNbSe": "Sentinel",
     "mwNbS": "Skyrim",
     "mwNbO": "Oblivion",
-    "mwNbM": "Morrowind"
+    "mwNbM": "Morrowind",
+    "mwNbAr": "Arena"
 }

@@ -8,6 +8,8 @@ import i18next from "i18next"
 import { LinkPreview } from "../components/LinkPreview"
 import { ImageModal } from "../components/ImageModal"
 import { PageNotice } from "../components/PageNotice"
+import { Cite, FootnoteList, FootnoteProvider } from "../components/Footnotes";
+import sources from "../data/sources/dranleic.json";
 
 import DialogueSelectorStart from "../assets/Dialogue_Selector_Start.png"
 import DialogueSelectorEnd from "../assets/Dialogue_Selector_End.png"
@@ -27,7 +29,7 @@ export function Dranleic() {
     const {t} = useTranslation("dranleic");
 
     return (
-        <>
+        <FootnoteProvider sources={sources}>
             <div className="content-body">
                 <div className="vector-column-start">
                     <div className="image-overlay">
@@ -114,10 +116,10 @@ export function Dranleic() {
                                 
                                 <p id="lead-paragraph-2" className={i18next.resolvedLanguage=="dov" && "dovahzul"}>
                                     <Trans i18nKey="mwLp2" ns="dranleic">
-                                        Dranleic has been largely involved in some of the biggest criminal events Tamriel has experienced since <LinkPreview url="">The Assassination of Emperor Uriel Septim VII</LinkPreview><sup style={{fontFamily:"skyrim"}}>[1]</sup> and has played a major hand in those criminal operations, often being the centerpiece of the operations &mdash; operations such as <LinkPreview url="">The Attempted Assassination of Emperor Titus Mede II</LinkPreview> and the subsequent successful <LinkPreview url="">assassination of Emperor Titus Mede II</LinkPreview>, <LinkPreview url="">The Escape of Cidhna Mine</LinkPreview> with <LinkPreview url="https://en.uesp.net/wiki/Lore:Madanach">Madanach</LinkPreview> and the bloodbath that followed, <LinkPreview url="">The Assassination of Vittoria Vici</LinkPreview>, the soon-to-be spouse of <LinkPreview url="https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod">Asgier Snow-Shod</LinkPreview>, along with the takeovers of the major holds of Skyrim: the city of <LinkPreview url="https://en.uesp.net/wiki/Lore:Whiterun">Whiterun</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Falkreath">Falkreath</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Markarth">Markarth</LinkPreview>, and <LinkPreview url="https://en.uesp.net/wiki/Lore:Solitude">Solitude</LinkPreview>.
+                                        Dranleic has been largely involved in some of the biggest criminal events Tamriel has experienced since <LinkPreview url="">The Assassination of Emperor Uriel Septim VII</LinkPreview><Cite id="uriel-assassination"/> and has played a major hand in those criminal operations, often being the centerpiece of the operations &mdash; operations such as <LinkPreview url="">The Attempted Assassination of Emperor Titus Mede II</LinkPreview> and the subsequent successful <LinkPreview url="">assassination of Emperor Titus Mede II</LinkPreview>, <LinkPreview url="">The Escape of Cidhna Mine</LinkPreview> with <LinkPreview url="https://en.uesp.net/wiki/Lore:Madanach">Madanach</LinkPreview> and the bloodbath that followed, <LinkPreview url="">The Assassination of Vittoria Vici</LinkPreview>, the soon-to-be spouse of <LinkPreview url="https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod">Asgier Snow-Shod</LinkPreview>, along with the takeovers of the major holds of Skyrim: the city of <LinkPreview url="https://en.uesp.net/wiki/Lore:Whiterun">Whiterun</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Falkreath">Falkreath</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Markarth">Markarth</LinkPreview>, and <LinkPreview url="https://en.uesp.net/wiki/Lore:Solitude">Solitude</LinkPreview>.
                                     </Trans>
                                 </p>
-                                <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">Dranleic kosaan lokgaar vothizaan ko osos do fin zusaak wultriin korosendde Taazokaan seirakaan fah <LinkPreview url="https://en.uesp.net/wiki/Lore:Uriel_Septim_VII">fin kriivat do jun Uriel Septim zost</LinkPreview><sup>[1]</sup> ahrk kosaan aan gaat droliik ko daar wultriin rakendde, grinstiid kos fin thermalur do fin rakendde &mdash; rakendde grik ol <LinkPreview url="">fin togaat kriivat do jun Titus Mede ziist</LinkPreview> ahrk fin zopruntaas <LinkPreview url="">kriivat do jun Titus Mede ziist</LinkPreview> mindindaar, <LinkPreview url="">fin filok do Cidhna vungol</LinkPreview> voth <LinkPreview url="https://en.uesp.net/wiki/Lore:Madanach">Madanach</LinkPreview> ahrk fin soswursk daar kiibokaan, <LinkPreview>fin kriivat do Vittoria Vici</LinkPreview>, faal dasuskos wolov do <LinkPreview url="https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod">Asgier Snow-Shod</LinkPreview>, asamit voth fin vaarnurelvon do fin gevildde do Keizaal: fin hiim do <LinkPreview url="https://en.uesp.net/wiki/Lore:Whiterun">Ahrolsedovah</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Falkreath">Quethsegolahrol</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Markarth">Golzewer</LinkPreview>, ahrk <LinkPreview url="https://en.uesp.net/wiki/Lore:Solitude">Bromgrindol</LinkPreview>.</p>
+                                <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">Dranleic kosaan lokgaar vothizaan ko osos do fin zusaak wultriin korosendde Taazokaan seirakaan fah <LinkPreview url="https://en.uesp.net/wiki/Lore:Uriel_Septim_VII">fin kriivat do jun Uriel Septim zost</LinkPreview><Cite id="uriel-assassination"/> ahrk kosaan aan gaat droliik ko daar wultriin rakendde, grinstiid kos fin thermalur do fin rakendde &mdash; rakendde grik ol <LinkPreview url="">fin togaat kriivat do jun Titus Mede ziist</LinkPreview> ahrk fin zopruntaas <LinkPreview url="">kriivat do jun Titus Mede ziist</LinkPreview> mindindaar, <LinkPreview url="">fin filok do Cidhna vungol</LinkPreview> voth <LinkPreview url="https://en.uesp.net/wiki/Lore:Madanach">Madanach</LinkPreview> ahrk fin soswursk daar kiibokaan, <LinkPreview>fin kriivat do Vittoria Vici</LinkPreview>, faal dasuskos wolov do <LinkPreview url="https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod">Asgier Snow-Shod</LinkPreview>, asamit voth fin vaarnurelvon do fin gevildde do Keizaal: fin hiim do <LinkPreview url="https://en.uesp.net/wiki/Lore:Whiterun">Ahrolsedovah</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Falkreath">Quethsegolahrol</LinkPreview>, <LinkPreview url="https://en.uesp.net/wiki/Lore:Markarth">Golzewer</LinkPreview>, ahrk <LinkPreview url="https://en.uesp.net/wiki/Lore:Solitude">Bromgrindol</LinkPreview>.</p>
 
                                 <p>
                                     Dranleic had a big influence in the outcome of the <LinkPreview url="https://en.uesp.net/wiki/Lore:Stormcloak_Rebellion">civil war</LinkPreview>, restoration and resurgence of the Thieves Guild as well as the revitalization of the Dark Brotherhood, helped to put an end to the <LinkPreview url="https://en.uesp.net/wiki/Lore:Return_of_the_Dragons">Dragon Crisis</LinkPreview> by defeating <LinkPreview url="https://en.uesp.net/wiki/Lore:Alduin">Alduin</LinkPreview> the Firstborn of <LinkPreview url="https://en.uesp.net/wiki/Lore:Akatosh">Akatosh</LinkPreview>, among other achievements.
@@ -471,27 +473,58 @@ export function Dranleic() {
                                     </ul>
                                 </div>
                             </section>
-                            <section>
+                            <section id="See_also">
                                 <div className="mw-heading mw-heading-2">
-                                    <h2 id="See_also">See also</h2>
+                                    <h2>See also</h2>
                                 </div>
-                                Emperor Uriel Septim VII (https://en.uesp.net/wiki/Lore:Uriel_VII)
-                                Emperor Titus Mede II (https://en.uesp.net/wiki/Lore:Titus_Mede_II)
-                                Asgier Snow-Shod (https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod)
-                                Vittoria Vici (https://en.uesp.net/wiki/Skyrim:Vittoria_Vici)
+                                <section id="People">
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3>People</h3>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <LinkPreview url="https://en.uesp.net/wiki/Lore:Uriel_VII">Emperor Uriel Septim VII</LinkPreview> &ndash; Emperor of the Third Empire during the Third Era
+                                        </li>
+                                        <li>
+                                            <LinkPreview url="https://en.uesp.net/wiki/Lore:Titus_Mede_II">Emperor Titus Mede II</LinkPreview> &ndash; Emperor of the Third Empire during the Fourth Era
+                                        </li>
+                                        <li>
+                                            <LinkPreview url="https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod">Asgier Snow-Shod</LinkPreview> &ndash; Nord warrior with connections to the Stormcloaks
+                                        </li>
+                                        <li>
+                                            <LinkPreview url="https://en.uesp.net/wiki/Skyrim:Vittoria_Vici">Vittoria Vici</LinkPreview> &ndash; First cousin of Emperor Titus Mede II
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section id="Events">
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3>Events</h3>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            The Return of the Dragons
+                                        </li>
+                                        <li>
+                                            Stormcloak Rebellion
+                                        </li>
+                                        <li>
+                                            The Forsworn Uprising
+                                        </li>
+                                    </ul>
+                                </section>
                             </section>
-                            <section>
+                            <section id="References">
                                 <div className="mw-heading mw-heading-2">
-                                    <h2 id="References">References</h2>
+                                    <h2>References</h2>
                                 </div>
-                                Uriel VII assassination (https://en.uesp.net/wiki/Lore:Assassination!)
-                                1. ^ "SPECIAL EDITION! EMPEROR AND HEIRS ASSASSINATED!". The Black Horse Courier. approx. 27th of Last Seed, 3E 433.
-
+                                <div className="mw-references-columns">
+                                    <FootnoteList/>
+                                </div>
                             </section>
                         </div>
                     </div>
                 </main>
             </div>
-        </>
+        </FootnoteProvider>
     )
 }

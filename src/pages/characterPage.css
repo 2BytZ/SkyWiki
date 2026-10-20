@@ -355,7 +355,48 @@ img.mw-file-upright {
     aspect-ratio: 16/9;
 }
 
+#See_also ul {
+    margin-top: 0.3em;
+    margin-bottom: 0;
+    margin-left: 1.6em;
+    margin-right: 0;
+    margin-inline-start: 1.6em;
+    margin-inline-end: 0;
+    padding: 0;
+}
 
+.mw-heading, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 4.08px;
+}
+
+.mw-body-content .mw-heading-2, .mw-body-content .mw-heading-3, .mw-body-content .mw-heading-4 {
+    margin: 6px 0 6px 0;
+}
+
+.mw-heading-2 {
+    line-height: 1.375;
+}
+.mw-heading-3 {
+    padding-bottom: 0;
+    line-height: 1.6;
+}
+
+.mw-heading-2, h2 {
+    margin-bottom: 14.4px;
+}
+.mw-heading-3, h3,
+.mw-heading-4, h4 {
+    margin-bottom: 5.76px;
+}
+
+.mw-heading h2, .mw-heading h3, .mw-heading h4, .mw-heading h5, .mw-heading h6 {
+    display: inline;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
 /*--------------------- TOC ---------------------*/
 
 

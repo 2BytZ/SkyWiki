@@ -1,5 +1,6 @@
 import "./PageNotice.css";
 import i18next from "i18next";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 
@@ -35,7 +36,23 @@ export function PageNotice(type) {
                 }
             </div>
         )
-    } else {
+    } else if (type=="construction") {
+        return (
+            <div>
+                {open && 
+                    <div className="mw-page-notice">
+                        <button type="button" className="page-notice-close-button" onClick={() => setOpen(false)}>X</button>
+                        <h2>NOTICE: This page is still under construction and is missing a lot of content!</h2>
+                        <section>
+                            <p>You can still browse the page as you like, but there may not be much to see...</p>
+                            <p>Proceed to a different page, or go back to the home page <Link to="/">here</Link>.</p>
+                        </section>
+                    </div>
+                }
+            </div>
+        )
+    } 
+    else {
         return;
     }
 }

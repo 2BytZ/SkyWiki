@@ -45,6 +45,8 @@
 
   --notice-bg: white;
 
+  --reference-active-bg: #faf5da;
+
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
@@ -90,6 +92,8 @@
   --filter-pressed: #4d4d4d;
   
   --notice-bg: black;
+
+  --reference-active-bg: #35373b;
 
   color-scheme: dark;
 

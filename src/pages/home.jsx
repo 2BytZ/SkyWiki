@@ -7,6 +7,7 @@ import { useState } from "react"
 import SkyrimLogo from "../assets/skyrim_logo_white.png"
 import OblivionLogo from "../assets/oblivion_logo.png"
 import MorrowindLogo from "../assets/morrowind_logo.png"
+import ArenaLogo from "../assets/arena_logo.png"
 
 export function Home(){
     const {t} = useTranslation("home")
@@ -19,12 +20,17 @@ export function Home(){
             <br />
             <div>
                 <div className="mw-filter-buttons">
-                <span>Filter characters by game:</span>
+                <span className={`${i18next.resolvedLanguage=="dov" && "dovahzul-small"}`}>{t("mwFt")}</span>
                     <nav>
                         <ul className="mw-games-nav">
                             <li id="All_button">
                                 <button className="games-nav-button" type="button" onClick={() => setSelectedGame("all")} aria-pressed={selectedGame === "all" } width={40} height={40}>
                                     {t("mwNbA")}    
+                                </button>
+                            </li>
+                            <li>
+                                <button className="games-nav-button" type="button" onClick={() => setSelectedGame("sentinel")} aria-pressed={selectedGame === "sentinel"} width={40} height={40}>
+                                    {t("mwNbSe")}
                                 </button>
                             </li>
                             <li>
@@ -43,6 +49,12 @@ export function Home(){
                                 <button className="games-nav-button" type="button" onClick={() => setSelectedGame("morrowind")} aria-pressed={selectedGame === "morrowind" }>
                                     <img src={MorrowindLogo} className="filter-button-icon light-mode-invert" width={40} height={40} />
                                     {t("mwNbM")}                                        
+                                </button>
+                            </li>
+                            <li>
+                                <button className="games-nav-button" type="button" onClick={() => setSelectedGame("arena")} aria-pressed={selectedGame === "arena"}>
+                                    <img src={ArenaLogo} className="filter-button-icon" width={40} height={40} />
+                                    {t("mwNbAr")}
                                 </button>
                             </li>
                         </ul>
@@ -76,7 +88,7 @@ export function Home(){
                     <li className="gallerybox" hidden={selectedGame !== "all" && selectedGame !== "oblivion"}>
                         <Link to="" title="Go to character page for Priscilla Aurora">
                             <div className="thumb">
-                                <img src="/dummy-pic-1.png" alt="Priscilla Aurora" width="480" height="360" />
+                                <img src="/priscilla-demo-prop.png" alt="Priscilla Aurora" width="480" height="360" />
                             </div>
                             <div className="gallerytext">
                                 <p>Priscilla Aurora</p>
