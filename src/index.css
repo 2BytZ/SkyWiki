@@ -37,6 +37,8 @@
   --text-h: #000;
   --bg: #FCFFF0;
   --border: #e5e4e7;
+  --footer-bg: #fae19b;
+
 
   --filter-bg: #e8dca7;
   --filter-bg-hover: #e1d083;
@@ -76,6 +78,7 @@
   --text-TOC: #9ca3af;
   --bg: #16171d;
   --border: #2e303a;
+  --footer-bg: #30323ba2;
   /* --code-bg: #1f2028; */
 
   --shadow:
@@ -114,17 +117,6 @@ body {
 ul {
   padding-inline-start: 0;
 }
-
-/* #root {
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-} */
 
 h1 {
   font-family: var(--sans);

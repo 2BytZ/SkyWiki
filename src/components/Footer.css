@@ -1,7 +1,8 @@
 .site-footer {
+    background-color: var(--footer-bg);
     padding: 1rem;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 18px;
     opacity: 0.8;
 }
 
