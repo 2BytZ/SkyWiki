@@ -7,7 +7,7 @@ export function PageFooter({ outer = false }) {
             <div className="wrapper w-footer">
                 <div className="footer-inner">
                     <div className="footer-flex-left">
-                        <img src="./Shadowmarks_Thieves_Guild_Sign_darkmode.png" width={50} height={50} />
+                        <img src="./Shadowmarks_Thieves_Guild_Sign_darkmode.png" className="light-mode-invert" width={50} height={50} />
                         <div className="footer-brand-heading">
                             <strong style={{color: "var(--text-h)"}}>Himmeloften</strong>
                             <p>A personal character lore archive</p>

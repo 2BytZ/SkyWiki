@@ -54,7 +54,7 @@ export function Home(){
                                 </li>
                                 <li>
                                     <button className="games-nav-button" type="button" onClick={() => setSelectedGame("arena")} aria-pressed={selectedGame === "arena"}>
-                                        <img src={ArenaLogo} className="filter-button-icon" width={40} height={40} />
+                                        <img src={ArenaLogo} className="filter-button-icon light-mode-invert" width={40} height={40} />
                                         {t("mwNbAr")}
                                     </button>
                                 </li>

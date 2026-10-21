@@ -246,10 +246,10 @@ section:last-of-type {
 }
  
 img.mw-file-upright {
-    width: 68%;
+    width: 95%;
     height: auto;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
+    aspect-ratio: 54 / 50; /* make this wider (e.g. 1 / 1) to crop less on the sides */
+    object-fit: cover; /* "contain" shows the whole image, with no cropping */
     vertical-align: middle;
 }
 
