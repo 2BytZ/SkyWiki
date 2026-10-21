@@ -5,7 +5,7 @@
     font-size: large;
     list-style: none;
     padding: 12px 0;
-    padding-top: 2.8rem;
+    margin-top: calc(2rem - 12px);
 }
 .top-heading:hover {
     cursor: pointer;
@@ -163,3 +163,4 @@
 .vector-toc {
     font-family: "skyrim";
 }
+

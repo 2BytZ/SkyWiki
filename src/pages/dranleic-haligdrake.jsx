@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import { TableOfContents } from "../components/TableOfContents"
 import { InfoCard } from "../components/InfoCard"
 import { InfoboxWrapper } from "../components/InfoboxWrapper"
@@ -27,17 +27,39 @@ import dividerOrnateRight from "../assets/Divider_Ornate_R.png"
 
 export function Dranleic() {
     const contentRef = useRef(null);
+    const [tocHidden, setTocHidden] = useState(false);
     const {t} = useTranslation("dranleic");
 
     return (
         <FootnoteProvider sources={sources}>
-            <div className="content-body">
+            <div className={`content-body${tocHidden ? " toc-hidden" : ""}`}>
                 <div className="vector-column-start">
-                    <div className="image-overlay">
-                        <img src="src/assets/Main Menu.png" className="toc-background-img"/>
-                        <span>
-                            <TableOfContents contentRef={contentRef} />
-                        </span>
+                    <div  className="image-overlay" >
+                        <div className="hide-toc-button">
+                            <span>{tocHidden ? "Show" : "Hide"}</span>
+                            <span className="toc-toggle-wrapper">
+                                <button
+                                    type="button"
+                                    aria-controls="table-of-contents"
+                                    aria-expanded={!tocHidden}
+                                    onClick={() => setTocHidden(!tocHidden)}
+                                    style={{width: "20px", height: "20px"}}
+                                >
+                                </button>
+                                <img src="src/assets/Checkmark.png" className="toc-toggle-checkbox" />
+                                <img
+                                    src="src/assets/Checkmark Check.png"
+                                    className="toc-toggle-check"
+                                    hidden={!tocHidden}
+                                />
+                            </span>
+                        </div>
+                        <div id="table-of-contents" hidden={tocHidden}>
+                            <img src="src/assets/Main Menu.png" className="toc-background-img"/>
+                            <span>
+                                <TableOfContents contentRef={contentRef} />
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <main className="mw-content-container">

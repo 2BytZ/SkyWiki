@@ -20,6 +20,10 @@
         'columnStart pageFooter';
 }
 
+.content-body.toc-hidden {
+    grid-template-columns: 0 minmax(0, 1fr);
+}
+
 @media (min-width: 1440px) {
     .content-body {
         grid-template-columns: clamp(12.25rem, 13.6vw, 15rem) minmax(0, 1fr);
@@ -386,4 +390,64 @@ img.mw-file-upright {
     z-index: 1;
     display: block;
     margin: 0;
+}
+
+
+.hide-toc-button {
+    display: inline-flex;
+    position: relative;
+    z-index: 1;
+    padding: 5px;
+    margin: 5px 6px;
+    color: var(--text-h);
+    font-family: 'skyrim';
+    font-weight: 500;
+    gap: 10px;
+
+    left: 65%;
+}
+
+.content-body.toc-hidden .image-overlay {
+    position: static;
+    height: auto;
+}
+
+.content-body.toc-hidden .hide-toc-button {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+
+    background-color: rgba(0, 0, 0, 0.801);
+}
+.toc-toggle-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+
+.toc-toggle-wrapper button {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.toc-toggle-checkbox,
+.toc-toggle-check {
+    position: absolute;
+    inset: 0;
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.toc-toggle-check[hidden] {
+    display: none;
 }

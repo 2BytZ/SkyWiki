@@ -111,6 +111,7 @@ export function TableOfContents({ contentRef, language }) {
 
     return (
     <>
+        
         <div className={`toc-scroll-shell${hasOverflow ? " is-overflowing" : ""}`}>
             <div className="vector-sticky-container" ref={scrollContainerRef}>
                 <nav className="vector-toc">
