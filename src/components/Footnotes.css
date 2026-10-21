@@ -3,26 +3,12 @@
 .mw-references-columns {
     column-width: 27em;
     margin-top: 4.8px;
-
     font-size: 90%;
-
     word-wrap: break-word;
 }
 
 .mw-references-columns li {
     break-inside: avoid;
-}
-
-.mw-linkback-text {
-    display: none;
-}
-
-a[rel="mw:referencedBy"]::before {
-    font-weight: bold;
-    content: "^";
-}
-[rel~='mw:referencedBy']::before {
-    content: '↑ ';
 }
 
 .footnote-item.footnote-active {

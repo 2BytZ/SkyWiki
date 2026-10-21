@@ -1,4 +1,4 @@
-/*--------------------------Fonts--------------------------*/ 
+/* Fonts */
 @font-face {
   font-family: 'dragonscript';
   src: url(fonts/dragon_alphabet.ttf) format('truetype');
@@ -25,9 +25,9 @@
   /* Remember to use letter-spacing 1px-2px*/
 }
 
-/*--------------------------Styling--------------------------*/
+/* Theme and global defaults */
 :root {
-  --nav-bg : #FBEFD5;
+  --nav-bg: #FBEFD5;
   --nav-button-bg: #F5DEB3;
   --nav-border: #756d59;
   --nav-text: #000;
@@ -38,23 +38,16 @@
   --bg: #FCFFF0;
   --border: #e5e4e7;
   --footer-bg: #fae19b;
-
-
   --filter-bg: #e8dca7;
   --filter-bg-hover: #e1d083;
   --filter-border: #716f00;
   --filter-pressed: #cfc696;
-
   --notice-bg: white;
-
   --reference-active-bg: #faf5da;
-
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --p-size: 24px;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -66,11 +59,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  @media (max-width: 1280px) {
+    --p-size: 22px;
+  }
+
   @media (max-width: 1024px) {
     font-size: 16px;
   }
 }
-
 
 :root[data-theme="dark"] {
   --text: #bbc2cc;
@@ -79,35 +75,27 @@
   --bg: #16171d;
   --border: #2e303a;
   --footer-bg: #30323ba2;
-  /* --code-bg: #1f2028; */
-
   --shadow:
     rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  
   --nav-bg: #101010;
   --nav-button-bg: #181818;
   --nav-border: #333;
   --nav-text: #c6cbd3;
-  
   --filter-bg: #101010;
   --filter-border: #4c4c4c;
   --filter-bg-hover: #2f2f2f;
   --filter-pressed: #4d4d4d;
-  
   --notice-bg: black;
-
   --reference-active-bg: #35373b;
-
   color-scheme: dark;
+}
 
-  :root[data-theme="dark"] #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
+:root:not([data-theme="dark"]) :is(.navbutton img, .wiki-preview-arrow, .light-mode-invert) {
+  filter: invert(1);
+}
 
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
-
+[hidden] {
+  display: none !important;
 }
 
 body {
@@ -120,93 +108,107 @@ ul {
 
 h1 {
   font-family: var(--sans);
-  font-weight: 500;
-  color: var(--text-h);  
-}
-h2 {
-  font-family: skyrim;
-  font-weight: 300;
-  color: var(--text-h);
-}
-h3, h4 {
-  font-family: skyrim;
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
   font-size: 56px;
+  font-weight: 500;
   letter-spacing: -1.68px;
+  color: var(--text-h);
   margin: 32px 0;
+
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
   }
 }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: skyrim;
+  color: var(--text-h);
+  margin: 0;
+  padding: 12px 0 4.08px;
+}
+
 h2 {
   font-size: 32px;
+  font-weight: 300;
   line-height: 118%;
   letter-spacing: 1px;
-  margin: 0 0 8px;
+  margin-bottom: 14.4px;
+
   @media (max-width: 1024px) {
     font-size: 20px;
   }
 }
+
+h3,
+h4 {
+  font-weight: 500;
+  margin-bottom: 5.76px;
+}
+
+/* Components can resize their paragraphs by setting --p-size instead of overriding p. */
 p {
-  font-size: 24px;
   font-family: skyrim;
+  font-size: var(--p-size);
   line-height: 1.25;
   margin: 0;
-  /* letter-spacing: 1px; */
-  @media (max-width: 1280px){
-    font-size: 22px;
-  }
 }
+
 section {
   @media (max-width: 1600px) {
     padding-right: 2.75rem;
   }
-  @media (max-width: 1440px) {
-    padding-right: 2.75rem;
-  }
-  @media screen and (max-width: 1280px) {
-    padding-right: 2.75rem;
-  }
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
 }
 
 a {
   color: #5a91cf;
   text-decoration: none;
   cursor: pointer;
-}
-a:hover {
-  color: #a9c5e5;
-  text-decoration: underline;
-}
-.hatnote a {
-  color: #0645ad;
-}
-.hatnote a:hover {
-  color: #002bb8;
+
+  &:hover {
+    color: #a9c5e5;
+    text-decoration: underline;
+  }
 }
 
-:root:not([data-theme="dark"]) .navbutton img,
-:root:not([data-theme="dark"]) .wiki-preview-arrow,
-:root:not([data-theme="dark"]) .light-mode-invert {
-  filter: invert(1);
+.hatnote a {
+  color: #0645ad;
+
+  &:hover {
+    color: #002bb8;
+  }
+}
+
+/* Frame ornaments shared by the infobox image and the link preview card */
+:is(.infobox-image-frame, .wiki-preview-frame) {
+  position: absolute;
+  container-type: inline-size;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+:is(.infobox-image-frame__top, .infobox-image-frame__bottom, .wiki-preview-frame__top, .wiki-preview-frame__bottom) {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto !important;
+}
+
+:is(.infobox-image-frame__top, .wiki-preview-frame__top) {
+  top: 0;
+}
+
+:is(.infobox-image-frame__bottom, .wiki-preview-frame__bottom) {
+  bottom: 0;
+}
+
+:is(.infobox-image-frame__middle, .wiki-preview-frame__middle) {
+  position: absolute;
+  inset: 7.47cqw 0;
+  background: url("./assets/Info_Card_Small_Mid.png") center top / 100% auto repeat-y;
 }

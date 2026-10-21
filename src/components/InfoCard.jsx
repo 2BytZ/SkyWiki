@@ -9,7 +9,7 @@ export function InfoCard({info}) {
         <tr>
             <td>
                 <span className={i18next.resolvedLanguage=="dov" && "dovahzul-smaller"}>{info.title}</span>
-                <p hidden={i18next.resolvedLanguage!="dov"} class="dovahzul-english">({info.dovah_english})</p>
+                <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">({info.dovah_english})</p>
             </td>
             <td >
                 {description.map((part, index) => (

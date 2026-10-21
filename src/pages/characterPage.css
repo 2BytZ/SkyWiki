@@ -11,15 +11,6 @@
 .firstHeading {
     margin-bottom: 20px;
 }
-.mw-heading-2 {
-    font-size: 33px;
-}
-.mw-heading-3 {
-    font-size: 1.2em;
-}
-.mw-heading-4 {
-    font-size: 22px;
-}
 
 .content-body {
     display: grid;
@@ -49,11 +40,20 @@
     overflow-anchor: none;
 }
 
+/*--------------------- INFOBOX ---------------------*/
 .vcard {
     text-align: center;
 }
 
-/*--------------------- INFOBOX ---------------------*/
+.infobox {
+    padding: .2em .2em 0;
+    font-size: 88%;
+    line-height: 1.5em;
+    border-spacing: 3px;
+    margin: 0;
+
+    color: var(--text-TOC);
+}
 
 .infobox-wrapper--background {
     position: relative;
@@ -77,16 +77,6 @@
     background-position: center top;
     background-repeat: repeat-y;
     pointer-events: none;
-}
-
-.infobox {
-    padding: .2em .2em 0;
-    font-size: 88%;
-    line-height: 1.5em;
-    border-spacing: 3px;
-    margin: 0;
-
-    color: var(--text-TOC);
 }
 
 .infobox-wrapper--background .infobox {
@@ -159,39 +149,8 @@
 }
 
 .infobox-image-frame {
-    position: absolute;
-    inset: -3% 0% -3% 0%;
+    inset: -3% 0;
     z-index: -1;
-    container-type: inline-size;
-    overflow: hidden;
-    pointer-events: none;
-}
-
-.infobox-image-frame__top,
-.infobox-image-frame__bottom {
-    position: absolute;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: auto !important;
-    z-index: 1;
-}
-
-.infobox-image-frame__top {
-    top: 0;
-}
-
-.infobox-image-frame__bottom {
-    bottom: 0;
-}
-
-.infobox-image-frame__middle {
-    position: absolute;
-    inset: 7.47cqw 0;
-    background-image: url("../assets/Info_Card_Small_Mid.png");
-    background-position: center top;
-    background-repeat: repeat-y;
-    background-size: 100% auto;
 }
 
 .infobox-image-header .infobox-img > a {
@@ -270,8 +229,6 @@ img.mw-file-upright {
     height: auto;
     aspect-ratio: 4 / 5;
     object-fit: cover;
-    /* width: calc(var(--image-size-user) * var(--mw-file-upright, 1)); */
-
     vertical-align: middle;
 }
 
@@ -318,19 +275,18 @@ img.mw-file-upright {
 .page-quote .quote-style {
     position: absolute;
     z-index: 1;
-    font-weight: 700; 
-    font-size: 3em; 
+    font-size: 3em;
+    font-weight: 700;
     line-height: 1em;
 }
 .page-quote .quote-text-style {
-    margin-left: 1rem; 
     position: relative;
     z-index: 1;
-    padding: 0.5em 10px; 
     display: inline-block;
-    font-size: 1.8em;
-
+    margin-left: 1rem;
+    padding: 0.5em 10px;
     font-family: skyrim;
+    font-size: 1.8em;
     font-weight: 300;
 }
 
@@ -356,56 +312,49 @@ img.mw-file-upright {
 }
 
 #See_also ul {
-    margin-top: 0.3em;
-    margin-bottom: 0;
-    margin-left: 1.6em;
-    margin-right: 0;
-    margin-inline-start: 1.6em;
-    margin-inline-end: 0;
+    margin: 0.3em 0 0 1.6em;
     padding: 0;
 }
 
-.mw-heading, h2, h3, h4, h5, h6 {
+/* Heading wrappers carry the spacing; the heading inside them is just inline text. */
+.mw-heading {
     margin: 0;
-    padding-top: 12px;
-    padding-bottom: 4.08px;
+    padding: 12px 0 4.08px;
 }
 
-.mw-body-content .mw-heading-2, .mw-body-content .mw-heading-3, .mw-body-content .mw-heading-4 {
-    margin: 6px 0 6px 0;
+.mw-body-content .mw-heading {
+    margin: 6px 0;
 }
 
 .mw-heading-2 {
+    font-size: 33px;
     line-height: 1.375;
 }
+
 .mw-heading-3 {
-    padding-bottom: 0;
+    font-size: 1.2em;
     line-height: 1.6;
+    padding-bottom: 0;
 }
 
-.mw-heading-2, h2 {
-    margin-bottom: 14.4px;
-}
-.mw-heading-3, h3,
-.mw-heading-4, h4 {
-    margin-bottom: 5.76px;
+.mw-heading-4 {
+    font-size: 22px;
 }
 
-.mw-heading h2, .mw-heading h3, .mw-heading h4, .mw-heading h5, .mw-heading h6 {
+.mw-heading :is(h2, h3, h4, h5, h6) {
     display: inline;
     border: 0;
     margin: 0;
     padding: 0;
 }
-/*--------------------- TOC ---------------------*/
 
+/*--------------------- SIDE IMAGE ---------------------*/
 
 .image-overlay {
     position: sticky;
     top: 0;
     box-sizing: border-box;
     height: 100vh;
-
 }
 .image-overlay img {
     position: absolute;
@@ -420,71 +369,4 @@ img.mw-file-upright {
     z-index: 1;
     display: block;
     margin: 0;
-}
-
-
-
-/*--------------------- DOVAHZUL ---------------------*/
-
-
-
-.dovahzul-header {
-    font-family: 'dragonscript', sans-serif;
-    font-size: 3rem;
-    letter-spacing: 2px;
-    font-synthesis: weight;
-}
-.dovahzul-quote-style {
-    font-family: 'dragonscript', sans-serif;
-    position: relative; 
-    display: inline-block;
-    letter-spacing: 2px;
-    line-height: 100%;
-    font-synthesis: weight;
-
-}
-.dovahzul {
-    font-family: 'dragonscript', sans-serif;
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-synthesis: weight;
-
-}
-.dovahzul-small {
-    font-family: 'dragonscript', sans-serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-    font-synthesis: weight;
-
-}
-.dovahzul-smaller {
-    font-family: 'dragonscript', sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
-    font-synthesis: weight;
-
-}
-.dovahzul-english {
-    font-style: italic;
-    font-size: small;
-    font-family: var(--sans);
-    font-weight: 400;
-}
-td .dovahzul-english {
-    margin: 0;
-    font-size: 10px;
-    justify-self: center;
-    transform: translateY(-30%);
-
-}
-.dovahzul-lang-dropdown {
-    font-family: 'dragonscript', sans-serif;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-synthesis: weight;
-
-}
-
-.quote-text-style .dovahzul-english {
-    margin: 0.5em 0 0 0 !important;
 }

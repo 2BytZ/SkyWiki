@@ -92,36 +92,20 @@
     cursor: grabbing;
 }
 
-@-moz-document url-prefix() {
-    .vector-sticky-container {
-        scrollbar-width: none;
-    }
-}
-
 .vector-container {
     padding: 0 16px;
     margin-bottom: 2rem;
-
     line-height: 100% !important;
-
     color: var(--text-TOC);
 }
 .vector-toc-element {
-    font-size: 0.8rem;   
+    font-size: 0.8rem;
 }
 .vector-toc-contents {
     margin: 0;
     list-style: none;
     padding: 0;
 }
-
-
-ul.vector-toc-contents {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-}
-
 
 .vector-toc-list-item {
     position: relative;
@@ -164,23 +148,16 @@ ul.vector-toc-contents {
     background-color: #2a2b2c;
 
 }
-.item-1 {
+.item-1,
+.item-2,
+.item-3 {
     font-size: 18px;
-    @media (max-width: 1280px) {
-        font-size: 16px;
-    }
-}
-.item-2 {
-    font-size: 18px;
+
     @media (max-width: 1280px) {
         font-size: 16px;
     }
 }
 .item-3 {
-    font-size: 18px;
-    @media (max-width: 1280px) {
-        font-size: 16px;
-    }
     font-weight: 300;
 }
 .vector-toc {

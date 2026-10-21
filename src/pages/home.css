@@ -1,21 +1,27 @@
 .mw-first-header {
     display: flex;
     justify-content: center;
+}
 
+h1.mw-first-header:not(.dovahzul-header) {
     font-family: skyrim;
     letter-spacing: 3px;
 }
 
+p.mw-first-header {
+    font-size: 28px;
+    letter-spacing: 3px;
+}
 
 .mw-filter-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: skyrim;
 }
 .mw-filter-buttons span {
     padding-bottom: 2px;
-    font-family: skyrim;
     font-weight: 300;
     margin: 10px 2px 0px 2px;
     letter-spacing: 2px;
@@ -24,39 +30,33 @@
 
 .mw-games-nav {
     display: flex;
-    justify-content: center space-between;
     align-items: center;
     gap: 1rem;
     margin: 0;
     list-style: none;
 }
 
-div.character-nav .gallery {
+.character-nav .gallery {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
-
     gap: 10px;
-
     padding: 0;
-
     list-style: none;
 }
 
-ul.gallery li.gallerybox {
+.gallerybox {
     display: flex;
     flex: 1 1 360px;
     flex-direction: column;
     max-width: 380px;
     box-sizing: border-box;
-
     border: 1px solid var(--nav-border);
-
     background: var(--nav-button-bg);
 }
 
-ul.gallery li.gallerybox img {
+.gallerybox img {
     display: block;
     width: 100%;
     height: auto;
@@ -64,15 +64,14 @@ ul.gallery li.gallerybox img {
     object-fit: cover;
 }
 
-ul.gallery li.gallerybox a {
+.gallerybox a {
     color: inherit;
     text-decoration: none;
 }
 
-div.gallerytext {
+.gallerytext {
     padding: 9px 9px 15px;
     text-align: center;
-    
     color: var(--nav-text);
 }
 
@@ -90,20 +89,20 @@ div.gallerytext {
     border: 1px solid var(--filter-bg);
     font-family: skyrim;
     letter-spacing: 1px;
-}
 
-.games-nav-button:hover {
-    border-color: var(--filter-border);
-    background: var(--filter-bg-hover);
-    box-shadow: var(--shadow);
-}
-.games-nav-button[aria-pressed="true"] {
-    border-color: var(--border);
-    background: var(--filter-pressed);
+    &:hover {
+        border-color: var(--filter-border);
+        background: var(--filter-bg-hover);
+        box-shadow: var(--shadow);
+    }
+
+    &[aria-pressed="true"] {
+        border-color: var(--border);
+        background: var(--filter-pressed);
+    }
 }
 
 #All_button .games-nav-button {
-    padding: 1 6;
     width: 2.5rem;
     height: 34px;
 }
@@ -112,43 +111,4 @@ div.gallerytext {
     width: 32px;
     height: 32px;
     object-fit: contain;
-}
-
-
-
-/*-----------------------Dovahzul Stylings-----------------------*/
-
-.dovahzul-header {
-    font-family: 'dragonscript', sans-serif;
-    font-size: 56px;
-    letter-spacing: 2px;
-}
-
-.dovahzul {
-    font-family: 'dragonscript', sans-serif !important;
-    font-size: 18px;
-    letter-spacing: 2px;
-}
-.dovahzul-small {
-    font-family: 'dragonscript', sans-serif !important;
-    font-size: 16px;
-    letter-spacing: 2px;
-}
-.dovahzul-smaller {
-    font-family: 'dragonscript', sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
-}
-.dovahzul-english {
-    font-style: italic;
-    font-size: small;
-}
-.dovahzul-english.mw-first-header {
-    font-size: 28px;
-}
-
-
-ul.gallery li.gallerybox[hidden],
-[hidden] {
-    display: none;
 }

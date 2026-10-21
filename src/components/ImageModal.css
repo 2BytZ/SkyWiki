@@ -1,55 +1,48 @@
 
 
 .lightbox-container {
-    align-items: center;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    left: 0;
     position: fixed;
-    right: 0;
-    top: 0;
+    inset: 0;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .modal-content-and-placement-divider {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    height: 100%;
 }
 .modal-wrapper {
-    background: #2e2e2e;
-    display: block;
-    padding: 0;
     position: relative;
     z-index: 10000;
+    display: block;
+    padding: 0;
+    background: #2e2e2e;
 }
 .lightbox-modal {
     margin-left: 70px;
-    width: calc(80% - 70px);
-
-    overflow: hidden;
     width: 80%;
-
+    overflow: hidden;
 }
 
 .lightbox-button {
     position: absolute;
     top: 10px;
-    text-align: center;
-    right:10px;
-    margin: 0;
+    right: 10px;
     z-index: 10;
+    margin: 0;
+    text-align: center;
 }
 
 .modal-content {
     display: block;
+    margin: 0 20px 20px;
     font-size: 13px;
     line-height: 21px;
-    margin: 0 20px 20px;
-    zoom: 1;
 }
 .lightbox-modal .modal-content {
     height: 100%;
@@ -61,30 +54,20 @@
 }
 
 .lightbox-modal .media {
-    align-items: center;
     display: flex;
-    height: 100%;
+    align-items: center;
     justify-content: center;
+    height: 100%;
     overflow: hidden;
 }
 .lightbox-modal .media img {
     max-width: 80%;
 }
 
-
-
-
-
-
-
-
 .blackout {
+    position: fixed;
+    inset: 0;
+    z-index: 9;
     background: #2e2e2e;
     opacity: .9;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9;
 }

@@ -1,0 +1,57 @@
+/* Dovahzul (dragon script).
+   Imported last in main.jsx so these always win over component styles at equal specificity. */
+.dovahzul-header,
+.dovahzul-quote-style,
+.dovahzul,
+.dovahzul-small,
+.dovahzul-smaller,
+.dovahzul-lang-dropdown {
+  font-family: 'dragonscript', sans-serif;
+  letter-spacing: 2px;
+  font-synthesis: weight;
+}
+
+.dovahzul-header {
+  font-size: 3rem;
+}
+
+.dovahzul-quote-style {
+  position: relative;
+  display: inline-block;
+  line-height: 100%;
+}
+
+.dovahzul {
+  font-size: 18px;
+}
+
+.dovahzul-small {
+  font-size: 16px;
+}
+
+.dovahzul-smaller {
+  font-size: 14px;
+}
+
+.dovahzul-lang-dropdown {
+  font-size: 12px;
+}
+
+/* English gloss shown under Dovahzul text */
+.dovahzul-english {
+  font-family: var(--sans);
+  font-size: small;
+  font-style: italic;
+  font-weight: 400;
+}
+
+td .dovahzul-english {
+  margin: 0;
+  font-size: 10px;
+  justify-self: center;
+  transform: translateY(-30%);
+}
+
+.quote-text-style .dovahzul-english {
+  margin: 0.5em 0 0;
+}
