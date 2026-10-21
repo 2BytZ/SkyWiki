@@ -3,6 +3,10 @@
     justify-content: center;
 }
 
+.home-body-content {
+    padding-bottom: 2rem;
+}
+
 h1.mw-first-header:not(.dovahzul-header) {
     font-family: skyrim;
     letter-spacing: 3px;

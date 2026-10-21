@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Navbar } from "./Navbar"
 import { Footer } from "./Footer"
 import { Outlet } from "react-router-dom"
+import { PageFooter } from "./PageFooter"
 
 const LANGUAGE_STORAGE_KEY = "skyrim-wiki-language"
 const THEME_STORAGE_KEY = "skyrim-wiki-theme"

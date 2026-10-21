@@ -8,6 +8,7 @@ import i18next from "i18next"
 import { LinkPreview } from "../components/LinkPreview"
 import { ImageModal } from "../components/ImageModal"
 import { PageNotice } from "../components/PageNotice"
+import { PageFooter } from "../components/PageFooter"
 import { Cite, FootnoteList, FootnoteProvider } from "../components/Footnotes";
 import sources from "../data/sources/dranleic.json";
 
@@ -524,6 +525,7 @@ export function Dranleic() {
                         </div>
                     </div>
                 </main>
+                <PageFooter/>
             </div>
         </FootnoteProvider>
     )

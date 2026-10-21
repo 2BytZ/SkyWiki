@@ -8,6 +8,7 @@ import i18next from "i18next"
 import { LinkPreview } from "../components/LinkPreview"
 import { ImageModal } from "../components/ImageModal"
 import { PageNotice } from "../components/PageNotice"
+import { PageFooter } from "../components/PageFooter"
 
 import previewFrameBottom from "../assets/Info_Card_Small_Bottom.png"
 import previewFrameTop from "../assets/Info_Card_Small_Top.png"
@@ -251,6 +252,7 @@ export function Pharis() {
                         </div>
                     </div>
                 </main>
+                <PageFooter/>
             </div>
         </>
     )

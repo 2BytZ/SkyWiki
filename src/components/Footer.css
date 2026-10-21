@@ -1,12 +1,25 @@
 .site-footer {
-    --p-size: 1em;
     background-color: var(--footer-bg);
-    padding: 1rem;
-    text-align: center;
-    font-size: 18px;
-    opacity: 0.8;
 }
 
 .site-footer p {
     margin: 0.25rem 0;
+}
+
+.footer-bottom-wrapper {
+    background: var(--footer-copyright-bg);
+    border-top: 1px solid hsla(0, 0%, 100%, .08);
+}
+
+@media (min-width: 1024px) {
+    .footer-bottom-wrapper {
+        padding: 0 1.625rem;
+    }
+}
+
+.footer-copyright {
+    margin: 0 auto;
+    padding: 1.1rem 0;
+    text-align: left;
+    --p-size: .75rem;
 }

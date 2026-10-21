@@ -72,9 +72,10 @@
   --text: #bbc2cc;
   --text-h: #f3f4f6;
   --text-TOC: #9ca3af;
-  --bg: #16171d;
+  --bg: #1d1d1d;
   --border: #2e303a;
-  --footer-bg: #30323ba2;
+  --footer-bg:#181818;
+  --footer-copyright-bg: #151515;
   --shadow:
     rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   --nav-bg: #101010;

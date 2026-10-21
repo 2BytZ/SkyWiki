@@ -15,9 +15,9 @@ export function InfoCard({info}) {
                 {description.map((part, index) => (
                     <>
                         {part.href ? (
-                            <LinkPreview key={index} url={part.href}>{part.text}</LinkPreview>
+                            <LinkPreview key={index} url={part.href} className="infobox-text">{part.text}</LinkPreview>
                         ) : (
-                            <span key={index}>{part.text}</span>
+                            <span key={index} className="infobox-text">{part.text}</span>
                         )}
                         {description.length-1!=index && (part.separator || ", ")}
                     </>

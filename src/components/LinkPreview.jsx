@@ -49,7 +49,7 @@ function renderInlineMarkdown(text) {
     return parts;
 }
 
-export function LinkPreview({ url, children }) {
+export function LinkPreview({ url, children, className }) {
     const { i18n } = useTranslation("linkPreviews");
     const { search } = useLocation();
     const [arrowElement, setArrowElement] = useState(null);
@@ -123,12 +123,14 @@ export function LinkPreview({ url, children }) {
                     ref={setReference}
                     href={linkUrl}
                     {...getReferenceProps()}
-                    className="wiki-anchor-text"
+                    className={["wiki-anchor-text", className].filter(Boolean).join(" ")}
                 >
                     {linkText}
                 </a>
             ) : (
-                <span className="wiki-anchor-text">{linkText}</span>
+                <span className={["wiki-anchor-text", className].filter(Boolean).join(" ")}>
+                    {linkText}
+                </span>
             )}
 
             {preview && isPreviewOpen && (

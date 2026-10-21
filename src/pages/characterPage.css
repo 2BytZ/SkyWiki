@@ -14,9 +14,10 @@
 
 .content-body {
     display: grid;
-    column-gap: 24px;
     grid-template-columns: 12.25rem minmax(0, 1fr);
-    grid-template-areas: 'columnStart pageContent';
+    grid-template-areas:
+        'columnStart pageContent'
+        'columnStart pageFooter';
 }
 
 @media (min-width: 1440px) {
@@ -31,6 +32,7 @@
 
 .mw-content-container {
     grid-area: pageContent;
+    margin-left: 24px;
 }
 
 .vector-column-start {
@@ -38,6 +40,11 @@
     grid-area: columnStart;
     align-self: stretch;
     overflow-anchor: none;
+}
+
+section:last-of-type {
+    margin-bottom: 0 !important;
+    padding-bottom: 2rem;
 }
 
 /*--------------------- INFOBOX ---------------------*/
@@ -95,6 +102,16 @@
     font-family: skyrim;
     font-size: clamp(18px, calc(12px + 0.5vw), 20px);
     color: var(--text);
+}
+
+.infobox-text {
+    font-size: inherit;
+    font-family: inherit;
+}
+@media (max-width: 1280px) {
+    .infobox-text {
+        font-size: 13.9392px;
+    }
 }
 
 .infobox-title::before {

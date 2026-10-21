@@ -1,0 +1,119 @@
+.page-footer {
+    grid-area: pageFooter;
+    background-color: var(--footer-bg);
+    box-shadow: 0 -0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.363);
+}
+
+.footer-inner {
+    display: flex;
+    text-align: center;
+    --p-size: 1em;
+    padding: 1rem;
+    font-size: 18px;
+    opacity: 0.8;
+
+    gap: 2rem;
+}
+
+.page-footer p {
+    margin: 0.25rem 0;
+}
+
+footer .w-footer .footer-inner {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 1140px;
+    --margin-site: 1rem;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        padding: .5rem 2rem;
+        --margin-site: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        padding: 0 3rem;
+        --margin-site: 3rem;
+    }
+}
+
+.page-footer .w-footer {
+    margin: 0;
+}
+
+@media (min-width: 1024px) {
+    .page-footer .w-footer {
+        padding: 2.5rem 1.625rem;
+    }
+}
+
+/* Character pages render their own inline footer; the layout footer only shows once side margins appear */
+body:has(.content-body) .page-footer--outer {
+    display: none;
+}
+
+@media (min-width: 1440px) {
+    .page-footer--inline {
+        display: none;
+    }
+
+    body:has(.content-body) .page-footer--outer {
+        display: block;
+    }
+}
+
+.footer-flex-left {
+    display: flex;
+    flex-direction: row;
+    gap: .555rem;
+}
+
+.footer-brand-heading {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer-flex-right {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+@media (min-width: 1024px) {
+    .w-footer, .footer-flex-right {
+        padding-left: 2rem;
+        text-align: left;
+    }
+}
+
+.footer-flex-right ul {
+    display: flex;
+    flex-direction: column;
+    gap: .555rem;
+}
+
+.footer-explore-links {
+    font-family: 'skyrim';
+    font-weight: 300;
+}
+.footer-explore-links a {
+    color: var(--text);
+}
+.footer-explore-links a:hover {
+    color: var(--text-h);
+    text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+    footer .w-footer .footer-inner  {
+        align-items: start;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: minmax(300px, .9fr) minmax(560px, 1.4fr);
+        text-align: left;
+    }
+}
