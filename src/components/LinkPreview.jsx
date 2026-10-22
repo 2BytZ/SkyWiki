@@ -14,8 +14,8 @@ import {
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import previewArrow from "../assets/Down_Arrow-More_Settings.png";
-import previewFrameBottom from "../assets/Info_Card_Small_Bottom.png";
-import previewFrameTop from "../assets/Info_Card_Small_Top.png";
+import previewFrameBottom from "../assets/Info_Card_Small_Bottom_Preview.png"
+import previewFrameTop from "../assets/Info_Card_Small_Top_Preview.png"
 import "./LinkPreview.css";
 
 function renderInlineMarkdown(text) {

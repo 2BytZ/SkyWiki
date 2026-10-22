@@ -14,8 +14,10 @@ import sources from "../data/sources/dranleic.json";
 
 import DialogueSelectorStart from "../assets/Dialogue_Selector_Start.png"
 import DialogueSelectorEnd from "../assets/Dialogue_Selector_End.png"
-import previewFrameBottom from "../assets/Info_Card_Small_Bottom.png"
-import previewFrameTop from "../assets/Info_Card_Small_Top.png"
+import previewFrameBottom from "../assets/Info_Card_Small_Bottom_Preview.png"
+import previewFrameTop from "../assets/Info_Card_Small_Top_Preview.png"
+import infoboxImageFrameBottom from "../assets/Info_Card_Small_Bottom.png"
+import infoboxImageFrameTop from "../assets/Info_Card_Small_Top.png"
 import CaptionBackgroundLeft from "../assets/Journal_Main_Quest_Caption_Left.png"
 import CaptionBackgroundRight from "../assets/Journal_Main_Quest_Caption_Right.png"
 import infoboxBackground from "../assets/Main Menu.png"
@@ -29,6 +31,7 @@ export function Dranleic() {
     const contentRef = useRef(null);
     const [tocHidden, setTocHidden] = useState(false);
     const {t} = useTranslation("dranleic");
+    const [imageWidth, setImageWidth] = useState(0);
 
     return (
         <FootnoteProvider sources={sources}>
@@ -83,14 +86,14 @@ export function Dranleic() {
                                     </caption>
                                     <thead className="infobox-image-header">
                                         <tr>
-                                            <td colSpan="2" className="infobox-img">
+                                            <td colSpan="2" className="infobox-img" style={{ "--imageWidth": imageWidth }}>
                                                 <div className="infobox-image-frame" aria-hidden="true">
                                                     <div className="infobox-image-frame__middle" />
-                                                    <img className="infobox-image-frame__top" src={previewFrameTop} alt="" />
-                                                    <img className="infobox-image-frame__bottom" src={previewFrameBottom} alt="" />
+                                                    <img className="infobox-image-frame__top" src={infoboxImageFrameTop} />
+                                                    <img className="infobox-image-frame__bottom" src={infoboxImageFrameBottom} />
                                                 </div>
                                                 <ImageModal>
-                                                    <img src={"/dranleic-haligdrake-powerful-clenched-fist2.jpg"} alt="Dranleic Haligdrake" height="155" width="170" className="mw-file-upright" />
+                                                    <img id="profile-img" ref={(el) => { if (el?.complete) setImageWidth(el.naturalWidth); }} onLoad={(e) => setImageWidth(e.currentTarget.naturalWidth)} src={"/dranleic-haligdrake-powerful-clenched-fist2.jpg"} alt="Dranleic Haligdrake" className="mw-file-upright" />
                                                 </ImageModal>
                                             </td>
                                         </tr>

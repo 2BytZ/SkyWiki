@@ -208,8 +208,13 @@ a {
   bottom: 0;
 }
 
-:is(.infobox-image-frame__middle, .wiki-preview-frame__middle) {
+:is(.infobox-image-frame__middle) {
   position: absolute;
   inset: 7.47cqw 0;
   background: url("./assets/Info_Card_Small_Mid.png") center top / 100% auto repeat-y;
+}
+:is(.wiki-preview-frame__middle) {
+  position: absolute;
+  inset: 7.47cqw 0;
+  background: url("./assets/Info_Card_Small_Mid_Preview.png") center top / 100% auto repeat-y;
 }
