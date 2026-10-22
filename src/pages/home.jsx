@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next"
 import i18next from "i18next"
 import { useState } from "react"
 
+import { PageNotice } from "../components/PageNotice"
+
 import SkyrimLogo from "../assets/skyrim_logo_white.png"
 import OblivionLogo from "../assets/oblivion_logo.png"
 import MorrowindLogo from "../assets/morrowind_logo.png"
@@ -19,6 +21,7 @@ export function Home(){
             <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english mw-first-header">Valokein wah Kavselok</p>
             <br />
             <div className="home-body-content">
+                {PageNotice("language")}
                 <div>
                     <div className="mw-filter-buttons">
                     <span className={`${i18next.resolvedLanguage=="dov" && "dovahzul-small"}`}>{t("mwFt")}</span>
@@ -27,11 +30,6 @@ export function Home(){
                                 <li id="All_button">
                                     <button className="games-nav-button" type="button" onClick={() => setSelectedGame("all")} aria-pressed={selectedGame === "all" } width={40} height={40}>
                                         {t("mwNbA")}    
-                                    </button>
-                                </li>
-                                <li>
-                                    <button className="games-nav-button" type="button" onClick={() => setSelectedGame("sentinel")} aria-pressed={selectedGame === "sentinel"} width={40} height={40}>
-                                        {t("mwNbSe")}
                                     </button>
                                 </li>
                                 <li>
@@ -50,12 +48,6 @@ export function Home(){
                                     <button className="games-nav-button" type="button" onClick={() => setSelectedGame("morrowind")} aria-pressed={selectedGame === "morrowind" }>
                                         <img src={MorrowindLogo} className="filter-button-icon light-mode-invert" width={40} height={40} />
                                         {t("mwNbM")}                                        
-                                    </button>
-                                </li>
-                                <li>
-                                    <button className="games-nav-button" type="button" onClick={() => setSelectedGame("arena")} aria-pressed={selectedGame === "arena"}>
-                                        <img src={ArenaLogo} className="filter-button-icon light-mode-invert" width={40} height={40} />
-                                        {t("mwNbAr")}
                                     </button>
                                 </li>
                             </ul>
@@ -87,7 +79,7 @@ export function Home(){
                             </Link>
                         </li>
                         <li className="gallerybox" hidden={selectedGame !== "all" && selectedGame !== "oblivion"}>
-                            <Link to="" title="Go to character page for Priscilla Aurora">
+                            <Link title="Go to character page for Priscilla Aurora">
                                 <div className="thumb">
                                     <img src="/dummy-pic-1.png" alt="Priscilla Aurora" width="480" height="360" />
                                 </div>
@@ -98,7 +90,7 @@ export function Home(){
                             </Link>
                         </li>
                         <li className="gallerybox" hidden={selectedGame !== "all" && selectedGame !== "morrowind"}>
-                            <Link to="" title="Go to character page for Gwyndolin Golden-Wing">
+                            <Link title="Go to character page for Gwyndolin Golden-Wing">
                                 <div className="thumb">
                                     <img src="/dummy-pic-1.png" alt="Gwyndolin Golden-Wing" width={480} height={360} />
                                 </div>

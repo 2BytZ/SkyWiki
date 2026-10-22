@@ -35,14 +35,16 @@
   --text: #2c2c2b;
   --text-TOC: #eaecf0;
   --text-h: #000;
-  --bg: #FCFFF0;
+  --bg: #FCFFF0; /*FAEBD7*/
   --border: #e5e4e7;
-  --footer-bg: #fae19b;
+  --footer-bg: #FBEFD5;
+  --footer-copyright-bg: #F5DEB3;
   --filter-bg: #e8dca7;
   --filter-bg-hover: #e1d083;
   --filter-border: #716f00;
   --filter-pressed: #cfc696;
-  --notice-bg: white;
+  --notice-bg: #EEEEFF;
+  --notice-border: #AAAAFF;
   --reference-active-bg: #faf5da;
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
@@ -86,7 +88,8 @@
   --filter-border: #4c4c4c;
   --filter-bg-hover: #2f2f2f;
   --filter-pressed: #4d4d4d;
-  --notice-bg: black;
+  --notice-bg: #3d3a12;
+  --notice-border: #afb484;
   --reference-active-bg: #35373b;
   color-scheme: dark;
 }
@@ -208,13 +211,16 @@ a {
   bottom: 0;
 }
 
-:is(.infobox-image-frame__middle) {
+:is(.infobox-image-frame__middle, .wiki-preview-frame__middle) {
   position: absolute;
   inset: 7.47cqw 0;
-  background: url("./assets/Info_Card_Small_Mid.png") center top / 100% auto repeat-y;
+  background: center top / 100% auto repeat-y;
 }
-:is(.wiki-preview-frame__middle) {
-  position: absolute;
-  inset: 7.47cqw 0;
-  background: url("./assets/Info_Card_Small_Mid_Preview.png") center top / 100% auto repeat-y;
+
+.infobox-image-frame__middle {
+  background-image: url("./assets/Info_Card_Small_Mid.png");
+}
+
+.wiki-preview-frame__middle {
+  background-image: url("./assets/Info_Card_Small_Mid_Preview.png");
 }

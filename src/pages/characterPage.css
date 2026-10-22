@@ -160,9 +160,23 @@ section:last-of-type {
     background-image: none;
 }
 
+/* --frame-scale (% of the infobox width) drives both the image and its frame */
 .infobox-image-header {
+    --frame-scale: 100;
     position: relative;
     isolation: isolate;
+}
+
+@media (min-width: 648px) {
+    .infobox-image-header { --frame-scale: 90; }
+}
+
+@media (min-width: 1280px) {
+    .infobox-image-header { --frame-scale: 95; }
+}
+
+@media (min-width: 1440px) {
+    .infobox-image-header { --frame-scale: 100; }
 }
 
 .infobox-image-header .infobox-img {
@@ -172,8 +186,7 @@ section:last-of-type {
 }
 
 .infobox-image-frame {
-    --frame-scale: 100;
-    inset: 0 calc((100 - var(--frame-scale)) / 2.5  * 1%);
+    inset: 0 calc((100 - var(--frame-scale)) / 2.5 * 1%);
     z-index: 0;
 }
 
@@ -249,36 +262,12 @@ section:last-of-type {
 }
  
 img.mw-file-upright {
-    width: 100%;
+    width: calc(var(--frame-scale, 100) * 1%);
     height: auto;
     aspect-ratio: 54 / 50; /* make this wider (e.g. 1 / 1) to crop less on the sides */
     object-fit: cover; /* "contain" shows the whole image, with no cropping */
     vertical-align: middle;
     z-index: 0;
-}
-@media (min-width: 648px) {
-    .infobox-image-frame {
-        --frame-scale: 90;
-    }
-    img.mw-file-upright {
-        width: 90%;
-    }
-}
-@media (min-width: 1280px) {
-    .infobox-image-frame {
-        --frame-scale: 95;
-    }
-    img.mw-file-upright {
-        width: 95%;
-    }
-}
-@media (min-width: 1440px) {
-    .infobox-image-frame {
-        --frame-scale: 100;
-    }
-    img.mw-file-upright {
-        width: 100%;
-    }
 }
 
 /*--------------------- PAGE QUOTE ---------------------*/

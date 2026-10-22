@@ -52,7 +52,7 @@ export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
                             </Link>                            
                         </li>
                         <li>
-                            <Link className="nav-link" to={"/"}>
+                            <Link className="nav-link">
                                 <button type="button" className="navbutton">
                                     <img src={priscillaNavbarIcon} />
                                     Priscilla Aurora
@@ -60,7 +60,7 @@ export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
                             </Link>
                         </li>
                         <li>
-                            <Link className="nav-link" to={"/"}>
+                            <Link className="nav-link">
                                 <button type="button" className="navbutton">
                                     <img src={gwyndolinNavbarIcon} />
                                     Gwyndolin Golden-Wing
