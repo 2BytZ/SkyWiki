@@ -107,7 +107,7 @@ export function Pharis() {
                                             return <InfoCard key={info.title} info={info}/>
                                         })}
                                     </tbody>
-                                    <tfoot>
+                                    <tfoot className="infobox-footer">
                                         <tr>
                                             <td colSpan={2}>
                                                 <div className="infobox-footer__ornament" aria-hidden="true">
@@ -132,9 +132,9 @@ export function Pharis() {
                             </blockquote>
                             <section>
                                 <p id="lead-paragraph-1" className={i18next.resolvedLanguage=="dov" && "dovahzul"}>
-                                    <Trans i18nKey={"mwLp1"} ns="pharis" components={[
-
-                                    ]}/>
+                                    <Trans i18nKey="mwLp1" ns="pharis">
+                                        [Placeholder] An expert bounty hunter and assassin. He loves drinking, like, a lot, but he's not an alcoholic. He his quick with his hands and therefore pretty good at stealing. Though, he doesn't do it much, and does so only when necessary, unless it's a quick drink and he's short on Septims, if you know what I mean. He is an Archer, once an aspired one, but now a true Archer through and through with the reputation and effort he's put in from his time as bounty hunter/assassin. 'You won't find anyone better for the job in all of Tamriel!' Or so he says.
+                                    </Trans>
                                 </p>
                             </section>
                             <section>

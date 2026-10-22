@@ -18,7 +18,7 @@ export function PageFooter({ outer = false }) {
                         <ul className="footer-explore-links">
                             <Link to="/">Home</Link>
                             <Link to="/Credits">Credits &amp; Legal</Link>
-                            <a href="">Suggest improvements</a>
+                            <a href="mailto:bytzwastaken@protonmail.com&subject=Suggestion%20for%20an%20improvement%20on%20Himmeloften">Suggest improvements</a>
                         </ul>
                     </div>
                 </div>
