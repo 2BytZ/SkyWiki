@@ -22,6 +22,15 @@ export function Home(){
             <br />
             <div className="home-body-content">
                 {PageNotice("language")}
+                
+                    {/* 
+                    
+                        Paste short introduction to the site here 
+                        to give the user a clearer idea of what this 
+                        website is all about 
+                    
+                    */}
+                
                 <div>
                     <div className="mw-filter-buttons">
                     <span className={`${i18next.resolvedLanguage=="dov" && "dovahzul-small"}`}>{t("mwFt")}</span>
