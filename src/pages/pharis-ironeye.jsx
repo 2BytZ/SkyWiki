@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import { TableOfContents } from "../components/TableOfContents"
 import { InfoCard } from "../components/InfoCard"
 import { InfoboxWrapper } from "../components/InfoboxWrapper"
@@ -28,20 +28,44 @@ import DialogueSelectorEnd from "../assets/Dialogue_Selector_End.png"
 export function Pharis() {
     const contentRef = useRef(null)
     const {t} = useTranslation("pharis")
-
+    const [tocHidden, setTocHidden] = useState(false);
+    const [imageWidth, setImageWidth] = useState(0);
+    
     return (
         <>
-            <div className="content-body">
+            <div className={`content-body${tocHidden ? " toc-hidden" : ""}`}>
                 <div className="vector-column-start">
-                    <div className="image-overlay">
-                        <img src="src/assets/Main Menu.png" className="toc-background-img"/>
-                        <span>
-                            <TableOfContents contentRef={contentRef} />
-                        </span>
-                    </div>                
+                    <div  className="image-overlay" >
+                        <div className="hide-toc-button">
+                            <span>{tocHidden ? "Show" : "Hide"}</span>
+                            <span className="toc-toggle-wrapper">
+                                <button
+                                    type="button"
+                                    aria-controls="table-of-contents"
+                                    aria-expanded={!tocHidden}
+                                    onClick={() => setTocHidden(!tocHidden)}
+                                    style={{width: "20px", height: "20px"}}
+                                >
+                                </button>
+                                <img src="src/assets/Checkmark.png" className="toc-toggle-checkbox" />
+                                <img
+                                    src="src/assets/Checkmark Check.png"
+                                    className="toc-toggle-check"
+                                    hidden={!tocHidden}
+                                />
+                            </span>
+                        </div>
+                        <div id="table-of-contents" hidden={tocHidden}>
+                            <img src="src/assets/Main Menu.png" className="toc-background-img"/>
+                            <span>
+                                <TableOfContents contentRef={contentRef} />
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 <main className="mw-content-container">
                     {PageNotice("construction")}
+                    {PageNotice("missing-translation")}
                     <h1 className={`${i18next.resolvedLanguage=="dov" && "firstHeading"} mw-first-heading`}>{t("mwFh")}</h1>
                     <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul">pharis dolm3n</p>
                     <div className="vector-content">
@@ -61,14 +85,14 @@ export function Pharis() {
                                     </caption>
                                     <thead className="infobox-image-header">
                                         <tr>
-                                            <td colSpan={2} className="infobox-img">
+                                            <td colSpan="2" className="infobox-img" style={{ "--imageWidth": imageWidth }}>
                                                 <div className="infobox-image-frame" aria-hidden="true">
                                                     <div className="infobox-image-frame__middle" />
                                                     <img className="infobox-image-frame__top" src={previewFrameTop} alt="" />
                                                     <img className="infobox-image-frame__bottom" src={previewFrameBottom} alt="" />
                                                 </div>
                                                 <ImageModal>
-                                                    <img src="/Pharis-Ironeye-home-page-banner-art.jpg" alt="Pharis Ironeye" height={155} width={170} className="mw-file-upright" />
+                                                    <img id="profile-img" ref={(el) => { if (el?.complete) setImageWidth(el.naturalWidth); }} onLoad={(e) => setImageWidth(e.currentTarget.naturalWidth)} src="/Pharis-Ironeye-home-page-banner-art.jpg" alt="Pharis Ironeye" className="mw-file-upright" />
                                                 </ImageModal>
                                             </td>
                                         </tr>

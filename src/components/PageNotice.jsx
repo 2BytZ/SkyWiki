@@ -51,7 +51,19 @@ export function PageNotice(type) {
                 </div>
             </div>
         )
-    } 
+    } else if (type=="missing-translation") {
+        return (
+            <div className="mw-page-notice">
+                <div className="notice-content-wrapper">
+                    <strong style={{color:"--text-h"}}>This page seems to be missing translation for one or more languages</strong>
+                    <div className="notice-content">
+                        <p>Unfortunately, this means some may not be able to read the page.</p>
+                        <p>However, they will be added at a later date!</p> 
+                    </div>
+                </div>
+            </div>
+        )
+    }
     else {
         return;
     }
