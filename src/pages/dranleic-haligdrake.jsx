@@ -24,6 +24,9 @@ import infoboxBackground from "../assets/Main Menu.png"
 import messageCardDivider from "../assets/Message_Card_Divider.png"
 import dividerOrnateLeft from "../assets/Divider_Ornate_L.png"
 import dividerOrnateRight from "../assets/Divider_Ornate_R.png"
+import CheckmarkBox from "../assets/Checkmark.png"
+import CheckmarkCheck from  "../assets/Checkmark Check.png"
+import TOCBackgroundImage from "../assets/Main Menu.png"
 
 
 
@@ -49,16 +52,16 @@ export function Dranleic() {
                                     style={{width: "20px", height: "20px"}}
                                 >
                                 </button>
-                                <img src="src/assets/Checkmark.png" className="toc-toggle-checkbox" />
+                                <img src={CheckmarkBox} className="toc-toggle-checkbox" />
                                 <img
-                                    src="src/assets/Checkmark Check.png"
+                                    src={CheckmarkCheck}
                                     className="toc-toggle-check"
                                     hidden={!tocHidden}
                                 />
                             </span>
                         </div>
                         <div id="table-of-contents" hidden={tocHidden}>
-                            <img src="src/assets/Main Menu.png" className="toc-background-img"/>
+                            <img src={TOCBackgroundImage} className="toc-background-img"/>
                             <span>
                                 <TableOfContents contentRef={contentRef} />
                             </span>

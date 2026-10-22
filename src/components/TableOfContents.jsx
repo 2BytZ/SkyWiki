@@ -4,6 +4,7 @@ import scrollBarBottom from "../assets/Scroll_Bar_Bottom.png"
 import scrollBarMid from "../assets/Scroll_Bar_Mid.png"
 import scrollBarTop from "../assets/Scroll_Bar_Top.png"
 import "./TableOfContents.css"
+import ArrowsSelected from "../assets/Arrows_Selected.png"
 
 
 export function TableOfContents({ contentRef, language }) {
@@ -170,7 +171,7 @@ function ContentLabel({header, level}) {
                     <button aria-controls={`toc-${header.element.id}`} className="toc-collapse-button" aria-expanded={expanded} onClick={(e) => {setExpanded(!expanded)
                         e.stopPropagation();
                     }}>
-                        <img src="src/assets/Arrows_Selected.png" width={10} height={10} />
+                        <img src={ArrowsSelected} width={10} height={10} />
                     </button>
                 )}
             </div>

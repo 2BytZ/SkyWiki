@@ -4,6 +4,9 @@ import LanguageSwitcher from "./LanguageSwitcher"
 import { Trans, useTranslation } from "react-i18next"
 import i18next from "i18next"
 
+import DarkmodeMoon from "../assets/theme_darkmode_moon.png"
+import LightmodeSun from "../assets/theme_lightmode_sun.png"
+
 import inventoryFilterSeparator from "../assets/inventory_filter_separator.png"
 import inventoryFilterBox from "../assets/inventory_filter_box.png"
 
@@ -78,7 +81,7 @@ export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
                         <button title={theme === "dark" ? "Nocturnal mode" : "Meridia mode"}className="theme-toggle-btn" type="button" aria-pressed={theme === "dark"} onClick={() => {
                             onThemeChange(theme === "dark" ? "light" : "dark")
                         }}>
-                            <img src={theme === "dark" ? "src/assets/theme_darkmode_moon.png" : "src/assets/theme_lightmode_sun.png"} alt="Mode" width={30} height={30}/>
+                            <img src={theme === "dark" ? `${DarkmodeMoon}` : `${LightmodeSun}`} alt="Mode" width={30} height={30}/>
                         </button>
                     </div>
                 </nav>
