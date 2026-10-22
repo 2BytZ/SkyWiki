@@ -7,6 +7,16 @@
     padding-bottom: 2rem;
 }
 
+.home-body-text {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 46em;
+    p {
+        margin: 1em;
+    }
+}
+
 h1.mw-first-header:not(.dovahzul-header) {
     font-family: skyrim;
     letter-spacing: 3px;

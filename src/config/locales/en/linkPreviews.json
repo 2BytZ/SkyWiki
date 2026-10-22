@@ -1,4 +1,9 @@
 {
+    "/Dranleic_Haligdrake": {
+        "img": "/previews/preview-dranleic-haligdrake-frontfacing-portrait.jpg",
+        "summary": "**Dranleic Haligdrake** is a male Argonian warrior, thief and assassin, said to be the Dragonborn of legend. Having ties to notable criminal factions such as the Thieves Guild and the Dark Brotherhood, he also has connections with people in positions of power in Skyrim, such as the Jarls. Dranleic hails from Cyrodiil in Tamriel. His true age and potential parents are unknown; however, based on physical appearance and attributes, it is believed he was born in the last half-century. Dranleic is a notorious force of evil and mischief in Skyrim.",
+        "placement": "vertical"
+    },
     "https://en.uesp.net/wiki/Lore:Argonian": {
         "img": "/previews/preview-Argonian.png",
         "imageSource": "https://en.uesp.net/wiki/File:LO-race-Argonian.png",

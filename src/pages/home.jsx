@@ -10,6 +10,7 @@ import SkyrimLogo from "../assets/skyrim_logo_white.png"
 import OblivionLogo from "../assets/oblivion_logo.png"
 import MorrowindLogo from "../assets/morrowind_logo.png"
 import ArenaLogo from "../assets/arena_logo.png"
+import { LinkPreview } from "../components/LinkPreview"
 
 export function Home(){
     const {t} = useTranslation("home")
@@ -22,7 +23,21 @@ export function Home(){
             <br />
             <div className="home-body-content">
                 {PageNotice("language")}
-                
+                <div className="home-body-text">
+                    <p>
+                        This website is created for the purpose of writing down my own personal headcanons for my player character in the Elder Scrolls series.
+                    </p>
+                    <p>
+                        It serves the purpose of acting like a real wiki, with links and references to things that actually happened in the game, and using that to further reinforce my characters' "backstory" and, well, their character!
+                    </p>
+                    <p>
+                        Currently, the site is still very much under construction and it is still missing a lot of content and material that I either haven't started to even write yet, or just haven't inserted into the website yet. The most full and up-to-date page on the website currently is <LinkPreview url={"/Dranleic_Haligdrake"}>Dranleic Haligdrake</LinkPreview>, who is my first Skyrim playthrough character.
+                    </p>
+                    <p>
+                        I had a lot of fun making this website. And I will continue to improve upon it and add more content whenever I come around to it.
+                        Until then, I hope you too can find some joy in what I've created out of my passion for this game series, and even inspire you for a character in your next playthrough ;)
+                    </p>
+                </div>
                     {/* 
                     
                         Paste short introduction to the site here 

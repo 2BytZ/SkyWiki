@@ -139,7 +139,7 @@ export function LinkPreview({ url, children, className }) {
                     ref={setFloating}
                     style={floatingStyles}
                     {...getFloatingProps()}
-                    className={`link-preview__card wiki-preview-card wiki-preview-card--${previewPlacement}${preview.img ? "" : " wiki-preview-card--no-image"}`}
+                    className={`link-preview__card wiki-preview-card wiki-preview-card--${previewPlacement}${preview.img ? "" : " wiki-preview-card--no-image"}${isUespSource ? "" : " wiki-preview-card--no-legal-link"}`}
                 >
                     <img
                         ref={setArrowElement}
