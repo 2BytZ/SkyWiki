@@ -13,10 +13,12 @@
           theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
         }
         document.documentElement.dataset.theme = theme;
-        document.documentElement.style.backgroundColor = theme === "dark" ? "#1d1d1d" : "#FCFFF0";
-        document.documentElement.style.colorScheme = theme;
       })();
     </script>
+    <style>
+      :where(html[data-theme="dark"]) { background: #1d1d1d; color-scheme: dark; }
+      :where(html[data-theme="light"]) { background: #FCFFF0; color-scheme: light; }
+    </style>
   </head>
   <body>
     <div id="root"></div>

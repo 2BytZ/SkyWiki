@@ -34,18 +34,10 @@ export function Home(){
                         Currently, the site is still very much under construction and it is still missing a lot of content and material that I either haven't started to even write yet, or just haven't inserted into the website yet. The most full and up-to-date page on the website currently is <LinkPreview url={"/Dranleic_Haligdrake"}>Dranleic Haligdrake</LinkPreview>, who is my first Skyrim playthrough character.
                     </p>
                     <p>
-                        I had a lot of fun making this website. And I will continue to improve upon it and add more content whenever I come around to it.
+                        I had a lot of fun making this website and I will continue to improve upon it and add more content whenever I come around to it.
                         Until then, I hope you too can find some joy in what I've created out of my passion for this game series, and even inspire you for a character in your next playthrough ;)
                     </p>
-                </div>
-                    {/* 
-                    
-                        Paste short introduction to the site here 
-                        to give the user a clearer idea of what this 
-                        website is all about 
-                    
-                    */}
-                
+                </div>                
                 <div>
                     <div className="mw-filter-buttons">
                     <span className={`${i18next.resolvedLanguage=="dov" && "dovahzul-small"}`}>{t("mwFt")}</span>
