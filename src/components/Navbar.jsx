@@ -24,14 +24,14 @@ export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
         <div className="ts-container">
             <div className="ts-inner">
                 <div className="logo">
-                    <Link to={("/wiki")} className="mw-logo">
-                        <img src={theme == "dark" ? "./Shadowmarks_Thieves_Guild_Sign_darkmode.png" : "./Shadowmarks_Thieves_Guild_Sign.png"}/>
+                    <Link to="/wiki/Home" className="mw-logo">
+                        <img src={theme == "dark" ? "/Shadowmarks_Thieves_Guild_Sign_darkmode.png" : "/Shadowmarks_Thieves_Guild_Sign.png"}/>
                     </Link>
                 </div>
                 <nav className="navbar">
                     <ul className="nav-main">
                         <li>
-                            <Link className="nav-link" to={("/wiki")}>
+                            <Link className="nav-link" to="/wiki/Home">
                                 <button className="navbutton">
                                     <img src={homeNavbarIcon} />
                                     Home

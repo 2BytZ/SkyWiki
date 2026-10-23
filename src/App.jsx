@@ -21,11 +21,12 @@ function App() {
       <ScrollToTop/>
       <Routes>
         <Route element={<Layout/>}>
-          <Route path="/wiki" element={<Home/>} />
+          <Route path="/wiki/Home" element={<Home/>} />
           <Route path="/wiki/Dranleic_Haligdrake" element={<Dranleic/>}/>
           <Route path="/wiki/Pharis_Ironeye" element={<Pharis/>}/>
           <Route path="/wiki/Credits" element={<Credits/>}/>
-          <Route path="/" element={<Navigate to="/wiki" replace />} />
+          <Route path="/wiki" element={<Navigate to="/wiki/Home" replace />} />
+          <Route path="/" element={<Navigate to="/wiki/Home" replace />} />
         </Route>
       </Routes>
     </Router>

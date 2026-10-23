@@ -46,7 +46,7 @@ export function PageNotice(type) {
                     <div className="notice-content">
                         <p>This page is still under construction and is missing a lot of content!</p> 
                         <p>You can still browse the page as you like, but there may not be much to see...</p>
-                        <p>Proceed to a different page, or go back to the home page <Link to="/wiki">here</Link>.</p>
+                        <p>Proceed to a different page, or go back to the home page <Link to="/wiki/Home">here</Link>.</p>
                     </div>
                 </div>
             </div>
