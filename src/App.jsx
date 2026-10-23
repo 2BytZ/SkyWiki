@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from "react-router-dom"
 import { Home } from "./pages/home"
 import { Dranleic } from "./pages/dranleic-haligdrake"
 import { Pharis } from "./pages/pharis-ironeye"
@@ -21,14 +21,14 @@ function App() {
       <ScrollToTop/>
       <Routes>
         <Route element={<Layout/>}>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/Dranleic_Haligdrake" element={<Dranleic/>}/>
-          <Route path="/Pharis_Ironeye" element={<Pharis/>}/>
-          <Route path="/Credits" element={<Credits/>}/>
+          <Route path="/wiki" element={<Home/>} />
+          <Route path="/wiki/Dranleic_Haligdrake" element={<Dranleic/>}/>
+          <Route path="/wiki/Pharis_Ironeye" element={<Pharis/>}/>
+          <Route path="/wiki/Credits" element={<Credits/>}/>
+          <Route path="/" element={<Navigate to="/wiki" replace />} />
         </Route>
       </Routes>
     </Router>
   )
 }
-
 export default App

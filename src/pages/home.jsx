@@ -73,7 +73,7 @@ export function Home(){
                 <div className="character-nav">
                     <ul className="gallery">
                         <li className="gallerybox" hidden={selectedGame !== "all" && selectedGame !== "skyrim"} >
-                            <Link to={"/Dranleic_Haligdrake"} title="Go to character page for Dranleic Haligdrake">
+                            <Link to={"/wiki/Dranleic_Haligdrake"} title="Go to character page for Dranleic Haligdrake">
                                 <div className="thumb">
                                     <img src="/dranleic-haligdrake-power-stance-swords.jpg" alt="Dranleic Haligdrake" width="480" height="360"/>
                                 </div>
@@ -84,7 +84,7 @@ export function Home(){
                             </Link>
                         </li>
                         <li className="gallerybox" hidden={selectedGame !== "all" && selectedGame !== "skyrim"}>
-                            <Link to={"/Pharis_Ironeye"} title="Go to character page for Pharis Ironeye">
+                            <Link to={"/wiki/Pharis_Ironeye"} title="Go to character page for Pharis Ironeye">
                                 <div className="thumb">
                                     <img src="/Pharis-Ironeye-sideview-firing-bow.jpg" alt="Pharis Ironeye" width="480" height="360"/>
                                 </div>

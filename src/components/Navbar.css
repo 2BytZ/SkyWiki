@@ -10,7 +10,7 @@
     inset-inline: 0;
     bottom: 0;
     height: 7px;
-    background: url("src/assets/inventory_lists_bottombar_separator.png") repeat-x;
+    background: url("../assets/inventory_lists_bottombar_separator.png") repeat-x;
     pointer-events: none;
 }
 
