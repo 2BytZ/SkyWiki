@@ -394,6 +394,37 @@ img.mw-file-upright {
     box-sizing: border-box;
     height: 100vh;
 }
+.content-body:not(.toc-hidden) .image-overlay {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.content-body:not(.toc-hidden) .image-overlay > .hide-toc-button {
+    flex: 0 0 auto;
+    align-self: flex-start;
+}
+.content-body:not(.toc-hidden) #table-of-contents:not([hidden]) {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+.content-body:not(.toc-hidden) #table-of-contents > span {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+.content-body:not(.toc-hidden) #table-of-contents .toc-scroll-shell {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+.content-body:not(.toc-hidden) #table-of-contents .vector-sticky-container {
+    flex: 1 1 auto;
+    min-height: 0;
+}
 .image-overlay img {
     position: absolute;
     inset: 0;

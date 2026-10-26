@@ -71,3 +71,16 @@ border: none;
     --p-size: 18;
     font-size: 18px;
 }
+
+#resources-text {
+    font-family: 'skyrim';
+    font-weight: 300;
+}
+
+
+@media (min-width: 1600px) {
+    .notice-content {
+        --p-size: 22px;
+        font-size: 22px;
+    }
+}

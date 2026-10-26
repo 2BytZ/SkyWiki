@@ -192,3 +192,9 @@
   grid-column: 1 / -1;
   margin-bottom: 15px;
 }
+
+/* Firefox ignores justify-self on block-level boxes */
+.wiki-preview-card--no-image .copyright-and-legal-text {
+  width: fit-content;
+  margin-right: auto;
+}

@@ -5,6 +5,12 @@
     margin-top: 4.8px;
     font-size: 90%;
     word-wrap: break-word;
+    column-fill: balance;
+}
+
+.mw-references-columns > * {
+    margin-top: 0;
+    margin-left: 0;
 }
 
 .mw-references-columns li {

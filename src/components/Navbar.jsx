@@ -75,7 +75,7 @@ export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
                         <img className="navbar-right-background" src={inventoryFilterBox} alt="" />
                         <label className="nav-language-control">
                             <span className={i18next.resolvedLanguage=="dov" && "dovahzul"}>{t("lang")}</span>
-                            <span>{LanguageSwitcher()}</span>
+                            <span><LanguageSwitcher /></span>
                         </label>
                         <img className="navbar-right-separator" src={inventoryFilterSeparator} alt="" />
                         <button title={theme === "dark" ? "Nocturnal mode" : "Meridia mode"}className="theme-toggle-btn" type="button" aria-pressed={theme === "dark"} onClick={() => {

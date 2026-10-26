@@ -20,7 +20,7 @@ export function PageNotice(type) {
                                 <p>You have changed the language to <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dragon_Language"}>Dovahzul</LinkPreview>, the language of dragons!</p>
                                 <p>If you are not a dragon, or aren't well versed in the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Thu%27um"}>Thu'um</LinkPreview>, you'd be advised to revert back to your prefered language.</p>
                                 <br />
-                                <p style={{fontFamily: 'skyrim', fontWeight: "300", fontSize: "16px", '--p-size': '16px'}}>If this was intentional and you are learning &ndash; or trying to learn &ndash; Dovahzul, consider using the resources below, so you have a chance to reading the page.</p>
+                                <p id="resources-text">If this was intentional and you are learning &ndash; or trying to learn &ndash; Dovahzul, consider using the resources below, so you have a chance to reading the page.</p>
                             </div>
                             <ul>
                                 <li>
