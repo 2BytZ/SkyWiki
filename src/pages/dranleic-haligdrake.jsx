@@ -138,7 +138,7 @@ export function Dranleic() {
                             <section>
                                 <p id="lead-paragraph-1" className={i18next.resolvedLanguage=="dov" && "dovahzul"}>
                                     <Trans i18nKey="mwLp1" ns="dranleic">
-                                        <strong>Dranleic Haligdrake</strong> is a male <LinkPreview url={"https://en.uesp.net/wiki/Lore:Argonian"}>Argonian</LinkPreview> warrior, thief and assassin, said to be the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Last_Dragonborn"}>Dragonborn of legend</LinkPreview>. Having ties to notable criminal factions such as the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Thieves_Guild"} >Thieves Guild</LinkPreview> and the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dark_Brotherhood"}>Dark Brotherhood</LinkPreview>, he also has connections with people in positions of power in <LinkPreview url={"https://en.uesp.net/wiki/Lore:Skyrim"}>Skyrim</LinkPreview>, such as the <LinkPreview url={"https://en.uesp.net/wiki/Skyrim:Jarl"}>Jarls</LinkPreview>. Dranleic hails from <LinkPreview url={"https://en.uesp.net/wiki/Lore:Cyrodiil"}>Cyrodiil</LinkPreview> in <LinkPreview url={"https://en.uesp.net/wiki/Lore:Tamriel"}>Tamriel</LinkPreview>. His true age and potential parents are unknown; however, based on physical appearance and attributes, it is believed he was born in the last half-century. Dranleic is a notorious force of evil and mischief in Skyrim. Although it is said that he is the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dragonborn"} >Dragonborn</LinkPreview>, many citizens disagree because of the various misdeeds he has committed and chaos he has caused during his time in Skyrim.
+                                        <strong>Dranleic Haligdrake</strong> (or <strong>Dranleic "Revakdovah"</strong> lit. <i>"Holy-Dragon"</i> in <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dragon_Language"}>Dovahzul</LinkPreview>), also known as the <strong>Dragonborne</strong>, the <strong>Rider of Night</strong>, <strong>Dragonborn of Darkness</strong>, and <strong>Alduin's Scale</strong>, is a male <LinkPreview url={"https://en.uesp.net/wiki/Lore:Argonian"}>Argonian</LinkPreview> warrior, thief and assassin, said to be the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Last_Dragonborn"}>Dragonborn of legend</LinkPreview>. Having ties to notable criminal factions such as the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Thieves_Guild"} >Thieves Guild</LinkPreview> and the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dark_Brotherhood"}>Dark Brotherhood</LinkPreview>, he also has connections with people in positions of power in <LinkPreview url={"https://en.uesp.net/wiki/Lore:Skyrim"}>Skyrim</LinkPreview>, such as the <LinkPreview url={"https://en.uesp.net/wiki/Skyrim:Jarl"}>Jarls</LinkPreview>. Dranleic hails from <LinkPreview url={"https://en.uesp.net/wiki/Lore:Cyrodiil"}>Cyrodiil</LinkPreview> in <LinkPreview url={"https://en.uesp.net/wiki/Lore:Tamriel"}>Tamriel</LinkPreview>. His true age and potential parents are unknown; however, based on physical appearance and attributes, it is believed he was born in the last half-century. Dranleic is a notorious force of evil and mischief in Skyrim. Although it is said that he is the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dragonborn"} >Dragonborn</LinkPreview>, many citizens disagree because of the various misdeeds he has committed and chaos he has caused during his time in Skyrim.
                                     </Trans>
                                 </p>
                                 <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english"><b>Dranleic Revakdovah</b> los aan punmak <LinkPreview url="https://en.uesp.net/wiki/Lore:Argonian">Siigonis</LinkPreview> kendov, tafiir ahrk ahvulon, saag kos faal <LinkPreview url="https://en.uesp.net/wiki/Lore:Last_Dragonborn">Dovahkiin do zoor</LinkPreview>. Piraak gronne wah sahrotwultriintokahhe grik ol faal <LinkPreview url="https://en.uesp.net/wiki/Lore:Thieves_Guild">Tafiirretokah</LinkPreview> ahrk faal <LinkPreview url="https://en.uesp.net/wiki/Lore:Dark_Brotherhood">Vulzeymahmaar</LinkPreview>, rok ahk lost gevothendhe wah muz ko kostaadde do soleyk ko <LinkPreview url="https://en.uesp.net/wiki/Lore:Skyrim">Keizaal</LinkPreview>, grik ol faal <LinkPreview url="https://en.uesp.net/wiki/Skyrim:Jarl">Bronjunne</LinkPreview>. Dranleic yein nol <LinkPreview url="https://en.uesp.net/wiki/Lore:Cyrodiil">Sarodaal</LinkPreview> ko <LinkPreview url="https://en.uesp.net/wiki/Lore:Tamriel">Taazokaan</LinkPreview>. Ok vahzah bok ahrk zahvos lafaanne los vomindok; vutharaak, frolokvon wah kopraanuvgenund ahrk trahkiinne, nii los korah rok lost kiin ko fin laat hefbeneruvos. Dranleic los aan dufrahkei fussevokul ahrk lakif ahst Keizaal. To nii los saag tol rok los faal <LinkPreview url="https://en.uesp.net/wiki/Lore:Dragonborn">Dovahkiin</LinkPreview>, pogaan tursaalle vorolur fah do fin pogaat nostigge rok lost drah ahrk tahrovin rok lost drun ko ok tiid ahst Keizaal.</p>
@@ -162,21 +162,21 @@ export function Dranleic() {
                                     <h2 id="Early_life">Early life</h2>
                                 </div>
                                 <p>
-                                    Very little is known about Dranleic regarding his origins and the early days of his life. Ever since he was sentenced to execution in <LinkPreview url="https://en.uesp.net/wiki/Lore:Helgen">Helgen</LinkPreview>, along with other bandits, thieves, and <LinkPreview url="https://en.uesp.net/wiki/Lore:Ulfric_Stormcloak">Ulfric Stormcloak</LinkPreview>, almost nothing about him or his past has been known to anyone in Skyrim. It's as if Dranleic suddenly appeared in Skyrim and was unfortunately bundled together with other petty thieves and bandits ready for the chopping block. Some say that he was trying to cross the border of Skyrim to return home but was caught in an Imperial ambush.
+                                    Little is known about Dranleic's origins or early life. His earliest documented appearance was at <LinkPreview url={"https://en.uesp.net/wiki/Lore:Helgen"}>Helgen</LinkPreview>, where he was sentenced to execution along with other thieves, Stormcloak rebels, and <LinkPreview url={"https://en.uesp.net/wiki/Lore:Ulfric_Stormcloak"}>Ulfric Stormcloak</LinkPreview>. No records about him before this event have been found. <LinkPreview url={"https://en.uesp.net/wiki/Lore:Imperial_Legion"}>Imperial Legion</LinkPreview> soldiers and witnesses from the dragon attack at Helgen described him as <i>"having seemingly appeared from nowhere,"</i> and said he was <i>"unfortunately bundled together with other petty thieves and bandits ready for the chopping block."</i>[i] An account from an anonymous Stormcloak soldier stated Dranleic was trying to cross the border out of Skyrim to return home but was then <i>"caught in an Imperial ambush."</i>[i]
                                 </p>
                                 <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">
 
                                 </p>
                                     
                                 <p>
-                                    Despite this, people have speculated about his past. There are clear signs that point to Dranleic Haligdrake originating from Cyrodiil, as well as him being an orphan, seeing as he is so far from home and hasn't had any contact with his potential parents for so long, and also hasn't made an attempt to go back to his homeland since the Helgen dragon attack. It's also fair assume that Dranleic likely isn't immortal, and so, with his young and strong stature, can confidently say that he must have been born in the fourth era, within the last decade or half-decade.
+                                    Due to the absence of direct evidence, multiple theories have arisen. Scholars and bardic tales have suggested that he originated in Cyrodiil: if, as the Stormcloak soldier claimed, he was crossing the border to return home, his home must have lain on the other side. Although Argonians are native to the province of <LinkPreview url={"https://en.uesp.net/wiki/Lore:Black_Marsh"}>Black Marsh</LinkPreview>, they live throughout Tamriel, so scholars cannot say with certainty whether he was born in Cyrodiil or elsewhere.
                                 </p>
                                 <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">
                                     
                                 </p>
 
                                 <p>
-                                    The exact date of his birth is unclear, to say the least, but theories from sorcerers and their studies suggest he was born around the time of the first week of the third month of the year. So although speculative, this is the most information available related to Dranleic's past.
+                                    Some also theorize that he is an orphan, citing his apparent lack of contact with any relatives as well as the fact that he has made no known attempts to return home since the events at Helgen. Some researchers have dismissed rumors that the Dragonborn are immortal,[i] and estimate from his appearance that he was born in the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Fourth_Era"}>Fourth Era</LinkPreview>, between 4E 160 and 4E 180. The exact date of his birth is uncertain, though two independent kinds of sources point to the same week. One group claims to have seen Dranleic celebrate his birthday, stating it falls on the 6th of First Seed, while other sources from mages' studies suggest he was born during the first week of First Seed.[citation needed]
                                 </p>
                                 <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">
                                     
@@ -186,123 +186,40 @@ export function Dranleic() {
                                 <div className="mw-heading mw-heading-2">
                                     <h2 id="Career">Career</h2>
                                 </div>
+                                <p>
+                                    ...
+                                </p>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3 id="Early_career">Early career</h3>
+                                        <h3 id="Arrival_in_Skyrim">Arrival in Skyrim</h3>
                                     </div>
                                     <section>
                                         <div className="mw-heading mw-heading-4">
                                             <h4 id="Escape_from_Helgen">Escape from Helgen</h4>
                                         </div>
                                         <p>
-                                            
+                                            ...
                                         </p>
                                         <div className="mw-heading mw-heading-4">
                                             <h4 id="Thanehood_in_Whiterun">Thanehood in Whiterun</h4>
                                         </div>
                                         <p>
-                                            
+                                            ...
                                         </p>
                                         <div className="mw-heading mw-heading-4">
-                                            <h4 id="The_Greybeards_call">The Greybeards' call</h4>
+                                            <h4 id="Greybeards_summons">Greybeards' summons</h4>
                                         </div>
                                         <p>
-                                            
+                                            ...
                                         </p>
                                     </section>
                                 </section>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3 id="Joining_the_Thieves_Guild">Joining the Thieves Guild</h3>
+                                        <h3 id="Cidhna_Mine_escape">Escape from Cidhna Mine</h3>
                                     </div>
                                     <p>
-                                        
-                                    </p>
-                                    <section>
-                                        <div className="mw-heading mw-heading-4">
-                                            <h4 id="Becoming_a_Nightingale">Becoming a Nightingale</h4>
-                                        </div>
-                                        <p>
-                                            
-                                        </p>
-                                    </section>
-                                    <section>
-                                        <div className="mw-heading mw-heading-4">
-                                            <h4 id="Restoration_of_the_Thieves_Guild">Restoration of the Thieves Guild</h4>
-                                        </div>
-                                        <p>
-                                            
-                                        </p>
-                                    </section>
-                                    <section>
-                                        <div className="mw-heading mw-heading-4">
-                                            <h4 id="Becoming_Guildmaster">Becoming Guildmaster</h4>
-                                        </div>
-                                        <p>
-                                            
-                                        </p>
-                                    </section>
-                                </section>
-                                <section>
-                                    <div className="mw-heading mw-heading-3">
-                                        <h3 id="Joining_the_Companions">Joining the Companions</h3>
-                                    </div>
-                                    <p>
-                                        
-                                    </p>
-                                </section>
-                                <section>
-                                    <div className="mw-heading mw-heading-3">
-                                        <h3 id="Joining_the_Dark_Brotherhood">Joining the Dark Brotherhood</h3>
-                                    </div>
-                                    <p>
-                                        
-                                    </p>
-                                    <section>
-                                        <div className="mw-heading mw-heading-4">
-                                            <h4 id="Revitalizing_the_Dark_Brotherhood">Revitalizing the Dark Brotherhood</h4>
-                                        </div>
-                                        <p>
-                                            
-                                        </p>
-                                    </section>
-                                </section>
-                                <section>
-                                    <div className="mw-heading mw-heading-3">
-                                        <h3 id="Alliance_with_the_Stormcloaks">Alliance with the Stormcloaks</h3>
-                                    </div>
-                                    <p>
-                                        
-                                    </p>
-                                </section>
-                                <section>
-                                    <div className="mw-heading mw-heading-3">
-                                        <h3 id="Becoming_Thane_of_the_holds">Becoming Thane of the holds</h3>
-                                    </div>
-                                    <p>
-                                        
-                                    </p>
-                                </section>
-                                <section>
-                                    <div className="mw-heading mw-heading-3">
-                                        <h3 id="Pledging_allegiance_with_the_vampires">Pledging allegiance with the vampires</h3>
-                                    </div>
-                                    <p>
-                                        
-                                    </p>
-                                </section>
-                            </section>
-                            <section>
-                                <div className="mw-heading mw-heading-2">
-                                    <h2 id="Notable_events">Notable events</h2>
-                                </div>
-
-                                <section>
-                                    <div className="mw-heading mw-heading-3">
-                                        <h3 id="Escaping_from_Cidhna_Mine">Escaping from Cidhna Mine</h3>
-                                    </div>
-                                    <p>
-                                        
+                                        ...
                                     </p>
                                     <section>
                                         <div className="mw-heading mw-heading-4">
@@ -312,57 +229,127 @@ export function Dranleic() {
                                             See also: <a href="https://en.uesp.net/wiki/Lore:Forsworn_Rebellion">The Forsworn Rebellion</a>
                                         </div>
                                         <p>
-                                            
+                                            ...
                                         </p>
                                     </section>
                                 </section>
-
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3 id="Return_of_the_Dark_Brotherhood">Return of the Dark Brotherhood</h3>
+                                        <h3 id="Thieves_Guild">Thieves Guild</h3>
                                     </div>
                                     <p>
-                                        
+                                        ...
                                     </p>
+                                    <section>
+                                        <div>
+                                            <h4 id="Joining_Thieves_Guild">Joining</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                    <section>
                                         <div className="mw-heading mw-heading-4">
-                                            <h4 id="The_murder_of_Vittoria_Vici">The murder of Vittoria Vici</h4>
+                                            <h4 id="Nightingale">Nightingale</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4 id="Restoration_of_the_guild">Restoration of the guild</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4 id="Guildmaster">Guildmaster</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                </section>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3 id="Companions">Companions</h3>
+                                    </div>
+                                    <p>
+                                        ...
+                                    </p>
+                                </section>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3 id="Dark_Brotherhood">Dark Brotherhood</h3>
+                                    </div>
+                                    <p>
+                                        ...
+                                    </p>
+                                    <section>
+                                        <div>
+                                            <h4 id="Joining_Dark_Brotherhood">Joining</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4 id="Murder_of_Vittoria_Vici">Murder of Vittoria Vici</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4 id="Assassination_of_Gaius_Maro">Assassination of Gaius Maro</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4 id="Murder_of_the_Mysterious_Gourmet">Murder of the Mysterious Gourmet</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                </section>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3 id="Assassination_of_Titus_Mede_II">Assassination of Titus Mede II</h3>
+                                    </div>
+                                    <div role="note" className="hatnote">
+                                        See also: <a href="">The Assassination of Emperor Titud Mede II</a>
+                                    </div>
+                                    <p>
+                                        ...
+                                    </p>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4 id="Attempt">Attempt</h4>
                                         </div>
                                         <div role="note" className="hatnote">
-                                            See also: <a href="">The Assassination of Vittoria Vici</a>
+                                            Main article: <a href="">The Attempted Assassination of Emperor Titus Mede II</a>
                                         </div>
                                         <p>
-
+                                            ...
                                         </p>
+                                    </section>
+                                    <section>
                                         <div className="mw-heading mw-heading-4">
-                                            <h4 id="The_assassination_of_Gaius_Maro">The assassination of Gaius Maro</h4>
+                                            <h4 id="Assassination">Assassination</h4>
                                         </div>
                                         <p>
-
+                                            ...
                                         </p>
-                                        <div className="mw-heading mw-heading-4">
-                                            <h4 id="The_murder_of_the_Mysterious_Gourmet">The murder of the Mysterious Gourmet</h4>
-                                        </div>
-                                        <p>
-
-                                        </p>
-                                        <div className="mw-heading mw-heading-4">
-                                            <h4 id="Attempted_assassination_of_the_Emperor">Attempted assassination of the Emperor</h4>
-                                        </div>
-                                        <div role="note" className="hatnote">
-                                            See also: <a href="">The Attempted Assassination of Emperor Titus Mede II</a>
-                                        </div>
-                                        <p>
-
-                                        </p>
-                                        <div className="mw-heading mw-heading-4">
-                                            <h4 id="The_assassination_of_Emperor_Titus_Mede_II">The assassination of Emperor Titus Mede II</h4>
-                                        </div>
-                                        <div role="note" className="hatnote">
-                                            See also: <a href="">The Assassination of Emperor Titud Mede II</a>
-                                        </div>
-                                        <p>
-                                            
-                                        </p>
+                                    </section>
                                 </section>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
@@ -374,88 +361,128 @@ export function Dranleic() {
                                     <p>
                                         [...] Played a big part in the <a href="https://en.uesp.net/wiki/Lore:Stormcloak_Rebellion">Stormcloak rebellion</a> and their success in <a href="">the battle for Solitude</a>...
                                     </p>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4 id="Alliance_with_the_Stormcloaks">Alliance with the Stormcloaks</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                    <section>
                                     <div className="mw-heading mw-heading-4">
                                         <h4 id="Whiterun_city_takeover">Whiterun city takeover</h4>
                                     </div>
                                     <p>
-                                        
+                                        ...
                                     </p>
-                                    <div className="mw-heading mw-heading-4">
-                                        <h4 id="Liberation_of_Falkreath">Liberation of Falkreath</h4>
-                                    </div>
-                                    <p>
-                                        
-                                    </p>
-                                    <div className="mw-heading mw-heading-4">
-                                        <h4 id="Liberation_of_the_Reach">Liberation of the Reach</h4>
-                                    </div>
-                                    <p>
-                                        
-                                    </p>
-                                    <div className="mw-heading mw-heading-4">
-                                        <h4 id="Liberation_of_Hjaalmarch">Liberation of Hjaalmarch</h4>
-                                    </div>
-                                    <p>
-                                        
-                                    </p>
-                                    <div className="mw-heading mw-heading-4">
-                                        <h4 id="Liberation_of_the_Pale">Liberation of the Pale</h4>
-                                    </div>
-                                    <p>
-                                        
-                                    </p>
-                                    <div className="mw-heading mw-heading-4">
-                                        <h4 id="Liberation_of_Winterhold">Liberation of Winterhold</h4>
-                                    </div>
-                                    <p>
-                                        
-                                    </p>
-                                    <div className="mw-heading mw-heading-4">
-                                        <h4 id="Liberation_of_the_Rift">Liberation of the Rift</h4>
-                                    </div>
-                                    <p>
-                                        
-                                    </p>
-                                    <div className="mw-heading mw-heading-4">
-                                        <h4 id="Liberation_of_Haalfingar">Liberation of Haalfingar</h4>
-                                    </div>
-                                    <p>
-                                        
-                                    </p>
-                                    <div className="mw-heading mw-heading-4">
-                                        <h4 id="The_battle_for_Solitude">The battle for Solitude</h4>
-                                    </div>
-                                    <div role="note" className="hatnote">
-                                        See also: <a href="">The Battle of Solitude</a>
-                                    </div>
-                                    <p>
-                                        
-                                    </p>
-
+                                    </section>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4 id="Liberation_of_Falkreath">Liberation of Falkreath</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4 id="Liberation_of_the_Reach">Liberation of the Reach</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4 id="Liberation_of_Hjaalmarch">Liberation of Hjaalmarch</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                    <section>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4 id="The_battle_for_Solitude">Battle for Solitude</h4>
+                                        </div>
+                                        <div role="note" className="hatnote">
+                                           See also: <a href="">Battle of Solitude</a>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
                                 </section>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3>Vampires</h3>
+                                    </div>
+                                    <p>
+                                        ...
+                                    </p>
+                                </section>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3 id="Dragon_Crisis">Dragon Crisis</h3>
+                                    </div>
+                                    <p>
+                                        ...
+                                    </p>
+                                </section>
+                            </section>
+                            <section>
+                                <div>
+                                    <h2>Titles and honors</h2>
+                                </div>
+                                <p>
+                                    ...
+                                </p>
+                            </section>
+                            <section>
+                                <div>
+                                    <h2>Public perception</h2>
+                                </div>
+                                <p>
+                                    ...
+                                </p>
                             </section>
                             <section>
                                 <div className="mw-header mw-header-2">
                                     <h2 id="Personal_life">Personal life</h2>
                                 </div>
                                 <p>
-
+                                    ...
                                 </p>
-                                
-                                <section>
-                                    <div className="mw-heading mw-heading-3">
-                                        <h3 id="Personality">Personality</h3>
-                                    </div>
-                                    <p>
-
-                                    </p>
-                                </section>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
                                         <h3 id="Appearance">Appearance</h3>
                                     </div>
                                     <p>
-
+                                        ...
+                                    </p>
+                                    <section>
+                                        <div>
+                                            <h4>Equipment and combat style</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                </section>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3 id="Personality">Personality</h3>
+                                    </div>
+                                    <p>
+                                        ...
+                                    </p>
+                                </section>
+                                <section>
+                                    <div className="mw-heading mw-heading-3">
+                                        <h3 id="Beliefs">Beliefs</h3>
+                                    </div>
+                                    <p>
+                                        ...
                                     </p>
                                 </section>
                                 <section>
@@ -463,13 +490,8 @@ export function Dranleic() {
                                         <h3 id="Relationships">Relationships</h3>
                                     </div>
                                     <p>
-                                        
+                                        ...
                                     </p>
-                                </section>
-                                <section>
-                                    <div className="mw-heading mw-heading-3">
-                                        <h3 id="Beliefs">Beliefs</h3>
-                                    </div>
                                 </section>
                             </section>
                             <section>
