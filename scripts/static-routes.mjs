@@ -19,7 +19,7 @@ const redirect = `<!doctype html>
 <meta http-equiv="refresh" content="0; url=/wiki/Home">
 <link rel="canonical" href="/wiki/Home">
 <script>location.replace("/wiki/Home")</script>
-<title>Redirecting…</title></head>
+<title>Himmeloften - Personal Lore Archive</title></head>
 <body><a href="/wiki/Home">Go to the home page</a></body></html>
 `
 writeFileSync(join(dist, "wiki", "index.html"), redirect)
