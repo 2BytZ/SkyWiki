@@ -29,7 +29,24 @@
         },
         { 
             "title": "Birth", 
-            "desc": "6th of First Seed, 4E 1XX"
+            "desc": [
+                {
+                    "text": "6th",
+                    "separator": " of "
+                },
+                {
+                    "text": "First Seed",
+                    "href": "first-seed"
+                },
+                {
+                    "text": "4E",
+                    "href": "https://en.uesp.net/wiki/Lore:History#Fourth_Era",
+                    "separator": " "
+                },
+                {
+                    "text": "1XX"
+                }
+            ]
         },
         {
             "title": "Faction(s)",
@@ -44,7 +61,7 @@
                 },
                 {
                     "text": "Stormcloaks", 
-                    "href": "https://en.uesp.net/wiki/Lore:Stormcloaks"
+                    "href": "https://en.uesp.net/wiki/Lore:Stormcloak_Clan"
                 }
             ]
         },

@@ -49,15 +49,16 @@ function renderInlineMarkdown(text) {
     return parts;
 }
 
-export function LinkPreview({ url, children, className }) {
+export function LinkPreview({ url, previewId, children, className }) {
     const { i18n } = useTranslation("linkPreviews");
     const { search } = useLocation();
     const [arrowElement, setArrowElement] = useState(null);
     const language = i18n.resolvedLanguage || i18n.language;
-    const linkUrl = typeof url === "string" ? url : "";
-    const preview = linkUrl
-        ? i18n.getResource(language, "linkPreviews", linkUrl)
+    const previewKey = previewId || (typeof url === "string" ? url : "");
+    const preview = previewKey
+        ? i18n.getResource(language, "linkPreviews", previewKey)
         : undefined;
+    const linkUrl = typeof url === "string" && url.startsWith("http") ? url : preview?.link ?? url ?? "";
     const previewPlacement = preview?.placement === "vertical" ? "vertical" : "horizontal";
     const sourceUrl = linkUrl.startsWith("http://") || linkUrl.startsWith("https://")
         ? new URL(linkUrl)
@@ -73,7 +74,9 @@ export function LinkPreview({ url, children, className }) {
     const pinnedPreviewUrl = import.meta.env.DEV
         ? new URLSearchParams(search).get("preview")
         : null;
-    const isPreviewOpen = isOpen || pinnedPreviewUrl === linkUrl;
+    const isPreviewOpen = isOpen || pinnedPreviewUrl === previewKey;
+    const hideCopyright = preview?.noCopyright === true || preview?.noCopyright === "true";
+    const showLegal = isUespSource && !hideCopyright;
 
     const {
         refs: { setReference, setFloating },
@@ -139,7 +142,7 @@ export function LinkPreview({ url, children, className }) {
                     ref={setFloating}
                     style={floatingStyles}
                     {...getFloatingProps()}
-                    className={`link-preview__card wiki-preview-card wiki-preview-card--${previewPlacement}${preview.img ? "" : " wiki-preview-card--no-image"}${isUespSource ? "" : " wiki-preview-card--no-legal-link"}`}
+                    className={`link-preview__card wiki-preview-card wiki-preview-card--${previewPlacement}${preview.img ? "" : " wiki-preview-card--no-image"}${showLegal ? "" : " wiki-preview-card--no-legal-link"}`}
                 >
                     <img
                         ref={setArrowElement}
@@ -182,7 +185,7 @@ export function LinkPreview({ url, children, className }) {
                             </p>
                         )}
                     </div>
-                    {isUespSource && (
+                    {showLegal && (
                         <p className="copyright-and-legal-text">
                             Source:{" "}
                             <a href={linkUrl}>{sourceArticleTitle}</a>

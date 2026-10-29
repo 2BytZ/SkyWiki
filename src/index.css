@@ -31,10 +31,10 @@
   --nav-button-bg: #F5DEB3;
   --nav-border: #756d59;
   --nav-text: #000;
-
   --text: #2c2c2b;
   --text-TOC: #eaecf0;
   --text-h: #000;
+  --preview-text: var(--text-TOC);
   --bg: #FCFFF0; /*FAEBD7*/
   --border: #e5e4e7;
   --footer-bg: #FBEFD5;
@@ -74,6 +74,7 @@
   --text: #bbc2cc;
   --text-h: #f3f4f6;
   --text-TOC: #9ca3af;
+  --preview-text: var(--text);
   --bg: #1d1d1d;
   --border: #2e303a;
   --footer-bg:#181818;

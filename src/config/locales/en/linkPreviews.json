@@ -1,238 +1,523 @@
 {
-    "/Dranleic_Haligdrake": {
+    "dranleic": {
+        "link": "/Dranleic_Haligdrake",
         "img": "/previews/preview-dranleic-haligdrake-frontfacing-portrait.jpg",
         "summary": "**Dranleic Haligdrake** is a male Argonian warrior, thief and assassin, said to be the Dragonborn of legend. Having ties to notable criminal factions such as the Thieves Guild and the Dark Brotherhood, he also has connections with people in positions of power in Skyrim, such as the Jarls. Dranleic hails from Cyrodiil in Tamriel. His true age and potential parents are unknown; however, based on physical appearance and attributes, it is believed he was born in the last half-century. Dranleic is a notorious force of evil and mischief in Skyrim.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Lore:Argonian": {
+    "argonian": {
+        "link": "https://en.uesp.net/wiki/Lore:Argonian",
         "img": "/previews/preview-Argonian.png",
         "imageSource": "https://en.uesp.net/wiki/File:LO-race-Argonian.png",
         "summary": "**Argonians** (**Saxhleel**, or **People of the Root** in their native language of Jel) are the reptilian natives of Black Marsh, a vast swampland province in southeastern Tamriel. The other races often refer to them as **lizards**, **human lizards** or the **Lizard Folk** instead, especially when meaning to be derogatory. They are known as the foremost experts in guerrilla warfare throughout Tamriel, a reputation brought upon them by defending their borders from enemies for countless centuries.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Lore:Last_Dragonborn": {
+    "last-dragonborn": {
+        "link": "https://en.uesp.net/wiki/Lore:Last_Dragonborn",
         "img": "/previews/preview-Last-Dragonborn.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Dragonborn.jpg",
         "summary": "The **Last Dragonborn**, also simply known as the **Dragonborn** or **Dovahkiin**, and referred to as **Ysmir**, **Dragon of the North**, **Stormcrown** (which translates to 'Talos' in Ehlnofex), or **Qahnaarin**, is the hero foretold in the ancient Prophecy of the Dragonborn inscribed on Alduin's Wall."
     },
-    "https://en.uesp.net/wiki/Lore:Thieves_Guild": {
+    "thieves-guild": {
+        "link": "https://en.uesp.net/wiki/Lore:Thieves_Guild",
         "img": "/Shadowmarks_Thieves_Guild_Sign_darkmode.png",
         "imageSource": "https://en.uesp.net/wiki/File:SR-icon-shadowmark-Guild.png",
         "summary": "The **Thieves Guild**, also known as the **Children of the Shadows** and the **Fingers of the Fox**, is dedicated to the gathering and training of those who are stealthy and shadowy in nature.  Although criminal by its very definition, for untold years, local authorities in places throughout Tamriel have tolerated the existence of the guild for its role as \"crime regulator\", as it does not tolerate competition or egregious conduct from its members.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Lore:Dark_Brotherhood": {
+    "dark-brotherhood": {
+        "link": "https://en.uesp.net/wiki/Lore:Dark_Brotherhood",
         "img": "/previews/preview-Dark-Brotherhood.png",
         "imageSource": "https://elderscrolls.fandom.com/wiki/Dark_Brotherhood?file=Dbhand.png",
         "invert": "true",
         "summary": "The **Dark Brotherhood** is a guild of assassins shrouded in shadow and mystery which has been active all over Tamriel. While their business is certainly not legal, their existence has typically been tolerated or ignored. They operate from a number of hidden sanctuaries throughout the continent, with their secret headquarters said to be the Nightside Asylum. Whenever an individual with legal authority takes an interest in their dealings, the Brotherhood relies upon a combination of bribery, blackmail, coercion, and murder to keep their activities hidden.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Lore:Skyrim": {
+    "skyrim": {
+        "link": "https://en.uesp.net/wiki/Lore:Skyrim",
         "img": "/previews/preview-Skyrim.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:LO-map-Skyrim_(Anthology).jpg",
         "summary": "**Skyrim**, the northernmost province of Tamriel, is a cold and mountainous region also known as the **Old Kingdom**, **Mereth**, or the **Fatherland**, or **Keizaal** in the dragon tongue. Many past battles have given it a ravaged appearance and many ruins. Though currently inhabited primarily by Nords, the Elves who they replaced had resided there since time immemorial. The sovereign, the High King of Skyrim, is chosen by the Moot, a convention of jarls.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Skyrim:Jarl": {
+    "jarl": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Jarl",
         "summary": "A **Jarl** is a ruler of one of the nine holds of Skyrim, equivalent to a Cyrodiilic Count. The jarls of Skyrim are largely autonomous, though they all swear fealty to the High King. Most jarls have their own personal housecarl and steward, and some also have one or more thanes in their service. Many also have a court wizard in their service who is also sometimes the only spell merchant in town.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Lore:Cyrodiil": {
+    "cyrodiil": {
+        "link": "https://en.uesp.net/wiki/Lore:Cyrodiil",
         "img": "/previews/preview-Cyrodiil.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:LO-map-Cyrodiil_(Anthology).jpg",
         "summary": "**Cyrodiil**, sometimes shortened to **Cyrod** (and also known as the **Imperial Province**, **Dragon Empire**, **Red King**, **Starry Heart of Nirn**, or **Seat of Sundered Kings**), is a province in south-central Tamriel that is home to the human race known as Imperials. As the central region of Tamriel, Cyrodiil is also known as \"the Heartland.\" The capital of both Cyrodiil and the Holy Cyrodilic Empire of Tamriel, the Imperial City, is located on City Isle in the center of the province; at the heart of the city is White-Gold Tower, possibly the most renowned monument in Tamriel."
     },
-    "https://en.uesp.net/wiki/Lore:Tamriel": {
+    "tamriel": {
+        "link": "https://en.uesp.net/wiki/Lore:Tamriel",
         "img": "/previews/preview-Tamriel.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:MER-art-Arena_Anthology_Game_Map.jpg",
         "summary": "**Tamriel**, also known as the **Arena**, is one of the main continents of the planet Nirn. This land is a great melting pot of cultures and races; being home to at least a dozen races, with dozens more having died out or changed in ages gone by. The continent is divided into nine provinces, which have on occasion been united under the rule of the Empire.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Dragonborn": {
+    "dragonborn": {
+        "link": "https://en.uesp.net/wiki/Lore:Dragonborn",
         "img": "/previews/Symbol-of-the-Dragonborn.png",
         "imageSource": "https://en.uesp.net/wiki/File:SR-misc-Akaviri_Dragonborn_Symbol.png",
         "invert": "true",
         "summary": "A **Dragonborn** (or **Dovahkiin** in Dragon Language) is a mortal blessed with the blood and soul of a dragon by Akatosh, the Father of Dragons and chief of the Divines. Some sources claim that Dragonborn are fragments of Akatosh's soul and share this status with Alduin and possibly all of Dragonkind. Those with the blessing have an extraordinary aptitude in the use of the thu'um. They are able to absorb knowledge of shouts directly from the souls of slain dragons. This ability breeds fear in dragons, as the removal of their soul severs their immortality.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)": {
+    "thieves-guild-skyrim": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)",
         "img": "/previews/preview-Thieves-Guild-banner.png",
         "imageSource": "https://en.uesp.net/wiki/File:SR-banner-Thieves_Guild.png",
         "summary": "The **Thieves Guild** is an organization of professionals, except that in this case the professionals are burglars, robbers, pickpockets, smugglers and other enterprising operators. They typically don't have public guild halls but sometimes have safe-houses and members tend to gather at a single location in large towns, such as at a cornerclub, inn or tavern. Typically, members are bound not to rob each other, or kill anyone while thieving. The Thieves Guild usually has the resources to bribe officials, establish a black market of stolen goods and maintain a network of informants.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood": {
+    "dark-brotherhood-skyrim": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood",
         "img": "/previews/preview-Dark-Brotherhood-banner.png",
         "imageSource": "https://en.uesp.net/wiki/File:SR-banner-Dark_Brotherhood.png",
         "summary": "The **Dark Brotherhood** is a guild of professional assassins which historically possessed considerable influence and power but has recently fallen on considerably harder times. It is similar to Morrowind's Morag Tong, but despite a common misconception, it is a completely separate organization; also, the legality of this organization is much more limited than that of its older cousin. The leader of the Dark Brotherhood was the Night Mother, but now that role has fallen to Astrid. The Dark Brotherhood also has a contact in the Riften Thieves Guild. In Skyrim, you can choose to either join the Dark Brotherhood and take on assassinations for hire, or destroy the Brotherhood's last remaining chapter.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Lore:Stormcloaks": {
-        "img": "/previews/preview-Stormcloaks-banner.png",
-        "imageSource": "https://en.uesp.net/wiki/File:SR-banner-Stormcloaks.png",
+    "stormcloaks-faction": {
+        "link": "https://en.uesp.net/wiki/Lore:Stormcloaks",
+        "img": "/previews/preview-Stormcloaks-rebel.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Stormcloak_Soldier_02.jpg",
+        "imageLicense": "by-sa",
         "summary": "The **Stormcloaks** (known more formally as the **Sons and Daughters of Skyrim**) were the main organization of rebels in Skyrim's Stormcloak Rebellion. Strongest in eastern Skyrim and based in Windhelm, they were originally founded by Ulfric Stormcloak as a private army to advance his interests. A few years later in 4E 201, after Ulfric killed High King Torygg, their ranks swelled with those who supported his call for an end to the ban on Talos worship, as well as action against the Empire and the Thalmor. The Stormcloaks claimed to be the only ones who could call themselves true Sons (or Daughters) of Skyrim, although their ranks were not strictly limited to Nords.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Lore:Thanes": {
+    "thane": {
+        "link": "https://en.uesp.net/wiki/Lore:Thanes",
         "summary": "**Thanes** are highly esteemed figures in Skyrim: heroes and champions of their holds, dynastic landowners with personal housecarls at their command, often serving directly under Jarls. The title may be earned either through lineage or by notable deeds. The title of Thane is an honor bestowed by a Jarl in recognition of one's service, marking the individual as a person of great importance in the hold, a hero. Naming someone Thane was the highest honor a Jarl could bestow upon their subjects. They were also often assigned a personal housecarl, and a weapon from the Jarl's armory was awarded to them as a badge of office. Certain items were reserved for Jarls, such as honorary keys to cities, signifying their roles as guardians of the communities.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Lore:Whiterun": {
+    "whiterun": {
+        "link": "https://en.uesp.net/wiki/Lore:Whiterun",
         "img": "/previews/preview-Whiterun-city.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-place-Whiterun_02.jpg",
         "imageLicense": "by-sa",
         "summary": "**Whiterun** is one of the nine major cities in the province of Skyrim, and it serves as the capital of Whiterun Hold. The city lies in the very heart of Skyrim and functions as the province's center of trade. It also holds great cultural and historical significance, having ties with the Five Hundred Companions, who first discovered it in the late Merethic Era. Whiterun has been known by many titles, such as the **Great City**, the **Jewel of the North**, and the **Heart of Skyrim**. In the dragon language, the city is known as **Ahrolsedovah**, which means *Hill-of-Dragon*.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Riften": {
+    "riften": {
+        "link": "https://en.uesp.net/wiki/Lore:Riften",
         "img": "/previews/preview-Riften-city.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-place-Riften.jpg",
         "imageLicense": "by-sa",
         "summary": "**Riften** (sometimes called **Rifton**) is one of the nine major cities in the province of Skyrim, and is the hold capital of the Rift. Built on the shores of Lake Honrich, nestled within the Fall Forest, Riften lies close to Skyrim's borders with Cyrodiil and Morrowind, and enjoys robust trade with the latter via the nearby pass through the Velothi Mountains. Riften is also the home of the Thieves Guild in Skyrim, and has become infamous as a town where the aspiring rogue or thief can rise among the criminal underworld.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Dawnstar": {
+    "dawnstar": {
+        "link": "https://en.uesp.net/wiki/Lore:Dawnstar",
         "img": "/previews/preview-Dawnstar-city.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-place-Dawnstar.jpg",
         "imageLicense": "by-sa",
         "summary": "**Dawnstar** (also known as **Danstrar**) is a settlement on the northern coast of Skyrim, and the hold capital of the Pale. It was once a garrison town, which served as an exile post due to the cold harsh climate and notorious gales. The settlement seemingly got its name due to its reputation for \"greeting the sun as it begins its journey\". It has historically been troubled by the Ice Tribes and Gehenoth. Dawnstar has a history of being the site of battles that have crippled the fate of the Empire.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Markarth": {
+    "markarth": {
+        "link": "https://en.uesp.net/wiki/Lore:Markarth",
         "img": "/previews/preview-Markarth-city.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-place-Markarth_02.jpg",
         "imageLicense": "by-sa",
         "summary": "**Markarth** (translated as *\"Above the Karth\"* in the Reach language, also known as **Mar-Karth** and also called **Markarth Side**) is one of the nine major cities in the province of Skyrim, found in the river valley of the Reach. Known colloquially as the *\"City of Stone,\"* it is a former Dwarven city built through a large stone crag, intricately designed around the cliffs and waterfalls from the environment. Since the region is poor farmland, Markarth is mainly a mining-town that has a vast influx of silver veins in the mountain. The city is the focal point of power throughout the region. It is often disputed over between the Reachmen and the Nords. Markarth was founded on the abandoned remains of the radiant city, **Nchuand-Zel**.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Morthal": {
+    "morthal": {
+        "link": "https://en.uesp.net/wiki/Lore:Morthal",
         "img": "/previews/preview-Morthal-city.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-place-Morthal.jpg",
         "imageLicense": "by-sa",
         "summary": "**Morthal**, supposedly named after the great Nord hero Morihaus, is the capital of Hjaalmarch. It is a fairly small, humble town of little economic or strategic importance besides its small lumber mill. The town's symbol is a white triskelion on a field of gray reminiscent of its misty marshes. The triskelion's meaning, whether it represents the harmony of the mind, body, and spirit, or another concept entirely, was a topic of scholarly discussion. Tattoos featuring the Morthal triskelion were reserved solely for individuals who have valiantly defended Morthal and its inhabitants.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Solitude": {
+    "solitude": {
+        "link": "https://en.uesp.net/wiki/Lore:Solitude",
         "img": "/previews/preview-Solitude-city.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-place-Solitude.jpg",
         "imageLicense": "by-sa",
         "summary": "**Solitude**, also known as **Haafingar**, is one of the nine major cities in the province of Skyrim, situated on the highland bluffs of Haafingar Hold. The city is a major trading capital in the Sea of Ghosts, with an expansive and illustrious history that gives it its prominent political power. It is the home of the Bards College, an institute that preserves the ancient Nordic traditions of music and story-telling, as well as Coterie of Organized Scholars, which was one of the oldest scholarly institutions in the region. Solitude is the Imperial seat of power in Skyrim and has been the most influenced by Imperial culture since the union of King Mantiarco and Queen Potema Septim. Solitude is currently the capital of Skyrim, and in the provincial schism, it was the capital of Western Skyrim.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Winterhold_(city)": {
+    "winterhold": {
+        "link": "https://en.uesp.net/wiki/Lore:Winterhold_(city)",
         "img": "/previews/preview-Winterhold-city.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-place-Winterhold.jpg",
         "imageLicense": "by-sa",
         "summary": "**Winterhold** (also spelled out as **Winter Hold**) is one of the nine major cities in the province of Skyrim, and it serves as the capital city of the eponymous hold, Winterhold. Winterhold served as the capital of Skyrim numerous times throughout the First to Third Eras and has a rich, illustrious history. Even in its prime, it rivaled Solitude to the west. Found on the once larger Hsaarik Head, the city had an impressive harbor and many large districts for most of its history. Most of the city was lost when an event known as the Great Collapse cast most of it into the Sea of Ghosts in 4E 122. The most well-known landmark in the city is the College of Winterhold, Skyrim's premier institute in the arcane arts. The Fortress of Ice, found somewhere to the south of the city, is also known as the great Ice Fortress of Winterhold.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Windhelm": {
+    "windhelm": {
+        "link": "https://en.uesp.net/wiki/Lore:Windhelm",
         "img": "/previews/preview-Windhelm-city.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-place-Windhelm.jpg",
         "imageLicense": "by-sa",
         "summary": "**Windhelm**, the **City of Kings**, also known as \"Ysgramor's city\", is a city in northeastern Skyrim, close to the border with Morrowind, and is the only substantial city in the Hold of Eastmarch. It is not only the oldest extant city in Skyrim (the oldest city being Saarthal), but it does hold the title of being the oldest continuously inhabited human settlement in Tamriel. Windhelm was once the capital of the First Empire of the Nords and the old palace of the Ysgramor dynasty, the Palace of the Kings, still stands in the center of the city.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Falkreath": {
+    "falkreath": {
+        "link": "https://en.uesp.net/wiki/Lore:Falkreath",
         "img": "/previews/preview-Falkreath-city.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-place-Falkreath.jpg",
         "imageLicense": "by-sa",
         "summary": "**Falkreath** (also called **Falcrenth** or **Falcreath**) is one of the nine major cities in the province of Skyrim, serving as the capital of Falkreath Hold and the boreal forest. Its name derives from Elvish, though its meaning is unknown. The city is known as the \"heroes' graveyard\"; many great battles took place here for centuries, and countless warriors were buried here, leaving behind graves and monuments to them. Because of the nature of the city, the merchants of Falkreath are known to reflect the melancholic themes of death in their business.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Ysmir": {
+    "ysmir": {
+        "link": "https://en.uesp.net/wiki/Lore:Ysmir",
         "summary": "**Ysmir**, **Dragon of the North** is the Nordic Name of Kings, a title bestowed upon several heroes throughout history, typically by the voices of the Greybeards. In his sermons, Vivec claimed that Ysmir always appears as a great bearded king.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Skyrim:Brelyna_Maryon": {
+    "brelyna": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Brelyna_Maryon",
         "img": "/previews/preview-Brelyna-Maryon.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Brelyna_Maryon.jpg",
         "imageLicense": "by-sa",
         "summary": "**Brelyna Maryon** is a Dark Elf mystic and a student at the College of Winterhold. Unlike her fellow students, Onmund and J'zargo, Brelyna tends to cast summoning spells and wards in combat. Because of this, she may be very useful if you seek a follower who will provide defenses and distractions. She is most skilled in Alteration, Illusion, Conjuration, Sneak, and Restoration in that order. She does not know any Illusion spells, however, and often uses Destruction spells as well as bows, despite having minimal Archery and Destruction skills.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Lore:Madanach": {
+    "madanach": {
+        "link": "https://en.uesp.net/wiki/Lore:Madanach",
         "img": "/previews/preview-Lord-Madanach-imprisoned.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Madanach.jpg",
         "imageLicense": "by-sa",
         "summary": "**Madanach**, known as the **King in Rags**, was the Reachman king of the short-lived independent kingdom in the Reach that existed from 4E 174 to 4E 176 and the leader of the Forsworn Rebellion. He was a proficient spellcaster, specializing in the arts of ice magic and conjuration. In 4E 174, he led the Reachmen in the uprising that overthrew the Nord Jarl Hrolfdir of Markarth and established an independent kingdom in the Reach.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod": {
+    "asgeir-snow-shod": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Asgeir_Snow-Shod",
         "img": "/previews/preview-Asgeir-Snow-Shod.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Asgeir_Snow-Shod.jpg",
         "imageLicense": "by-sa",
         "summary": "**Asgeir Snow-Shod** is a Nord warrior living in Riften. He works at the Black-Briar Meadery as Maven Black-Briar's investor and partner. His parents are Nura and Vulwulf Snow-Shod, and his brother is Unmid. He also had a sister, Lilija, who was killed while serving as Battle Maiden for the Stormcloaks. His family has connections to the Stormcloaks and his marriage to someone with Imperial connections is seen as a step towards reconciliation.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Lore:Stormcloak_Rebellion": {
+    "stormcloak-rebellion": {
+        "link": "https://en.uesp.net/wiki/Lore:Stormcloak_Rebellion",
         "img": "/previews/preview-Stormcloak-rebellion.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:LG-cardart-A_Land_Divided_02.jpg",
         "summary": "The **Stormcloak Rebellion**, also known as the **Skyrim Civil War** and **Ulfric's Uprising**, was a civil war in Skyrim circa 4E 201. It was fought between the forces of the Third Empire, mobilized in western Skyrim, and the Stormcloak rebels of eastern Skyrim. The war saw two claimants to Skyrim's throne fight against each other, with the Empire supporting Elisif the Fair's claim of High Queen and the Stormcloaks insisting Jarl Ulfric Stormcloak had earned his right as High King.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Return_of_the_Dragons": {
+    "return-of-the-dragons": {
+        "link": "https://en.uesp.net/wiki/Lore:Return_of_the_Dragons",
         "img": "/previews/preview-Dragon-Crisis-LG-Prelease.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:LG-prerelease-Heroes_of_Skyrim.jpg",
         "summary": "The **Return of the Dragons**, also known as the **Dragon Crisis**, was an invasion of Tamriel that occurred in 4E 201, orchestrated by Alduin, the Nordic god of time. Alduin, along with his rage of resurrected dragons, caused destruction and chaos throughout Skyrim and Morrowind. However, a mysterious hero revealed to be the Nordic hero of legend, the Last Dragonborn, rose up and was able to defeat Alduin, as foretold by the Prophecy of the Dragonborn. It was concurrent with the Stormcloak Rebellion, a civil war in Skyrim, fought between the Third Empire's Imperial Legion forces, mobilized in western Skyrim, and the Stormcloak rebels of eastern Skyrim.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Alduin": {
+    "world-eater": {
+        "link": "https://en.uesp.net/wiki/Lore:Alduin",
         "img": "/previews/preview-Alduin-first-dragon-concept.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-concept-Alduin.jpg",
         "summary": "**Alduin** (also spelled **Ald'uin** or simply **Ald**), known as the **World-Eater**, the **First Dragon** (or **First of Dragons**), the **Dragon Who Eats the World**, **Time-Eater**, the **Twilight God**, the **Worm**, the **Dragon King**, and the **Firstborn** is an immensely powerful black Dragon. He is known as a malevolent being who destroys the world periodically, and the Nords believe that his reappearance heralds the end of the current kalpa and the beginning of the next. He is the self-proclaimed First-Born of Akatosh, and supposedly an aspect of him, having also been described as a \"fragment of Akatosh's soul\". Alduin is said to have begun as \"the wisest and most far-seeing\" of all Dragons.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Akatosh": {
+    "father": {
+        "link": "https://en.uesp.net/wiki/Lore:Akatosh",
         "img": "/previews/preview-Akatosh-Father-of-Dragons.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:LG-cardart-Avatar_of_Akatosh_02.jpg",
         "summary": "**Akatosh**, known as **Auri-El** (or **Auriel**) to the Mer, **Bormahu** (Our Father) to the dragons, the **great Dragon of Time** to the Nedes, **Alkosh** to the Khajiit, is the chief deity of the Eight or Nine Divines (the prescribed religious cults of Cyrodiil and its provinces). He is present in most Tamrielic religions. His avatar is a golden dragon, and he is often called the **Dragon God of Time**, **Father Akatosh**, and the **Lord of the Dragons**. He is generally considered to be the first of the gods to form in the Beginning Place; some even claim he established it. After his formation, other spirits found the process to be easier and the various pantheons of the world emerged. The Aedric spirit is the ultimate God of the Cyrodilic Empire, where he embodies the qualities of endurance, invincibility, and everlasting legitimacy while promoting the virtues of duty, service, and obedience. Akatosh is thought to be the father of all dragons, and their leader Alduin was titled \"First-Born of Akatosh\".",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Stormhold": {
+    "stormhold": {
+        "link": "https://en.uesp.net/wiki/Lore:Stormhold",
         "img": "/previews/preview-Stormhold-city.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:ON-place-Stormhold.jpg",
         "imageLicense": "by-sa",
         "summary": "**Stormhold** is one of the eight major cities in the province of Black Marsh, serving as the largest settlement of the region of Shadowfen. Stormhold has a dark history that involves the nearby Dark Elves, as it was once the foothold of their slavery industry in the province. The modern-day Stormhold was built atop of an Ayleid ruin known as **Silyanorn** (translated as *Library* in Barsaebic Ayleidoon). During the time of the Ebonheart Pact, the city-state of Stormhold was named the capital of Black Marsh, at least for portions of the province that was affiliated with them.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Shadowfen": {
+    "shadowfen": {
+        "link": "https://en.uesp.net/wiki/Lore:Shadowfen",
         "img": "/previews/preview-Shadowfen.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:ON-place-Shadowfen.jpg",
         "imageLicense": "by-sa",
         "summary": "**Shadowfen** is the northwest region of Black Marsh. The region borders Morrowind to the north, and Cyrodiil to the west. It is a fetid mire, often fought over by the Imperial Legion and Dunmer slavers. The cities of Stormhold and Alten Corimont are located here. It is also home to the Shadowscales, those Argonians born under the sign of the Shadow, and thus destined for a life in the Dark Brotherhood. The Argonians of Shadowfen are traditionally born beneath the great Hist tree at the Hatching Pools, tended to by the Keepers of the Shell.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Black_Marsh": {
+    "black-marsh": {
+        "link": "https://en.uesp.net/wiki/Lore:Black_Marsh",
         "img": "/previews/preview-Black-Marsh.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:LO-map-Black_Marsh_(Anthology).jpg",
         "summary": "**Black Marsh** is a dense swampland region of southeastern Tamriel, home to the reptilian humanoid race of Argonians and a race of sapient trees known as the Hist. Mer refer to the region as **Argonia**, named after an ancient battlefield. The Argonians do not have a word for their homeland in their native language, in part because they do not consider it a singular nation. A member of the Argonian Gee-Rusleel tribe once used the wide-swamp gesture alongside the word ***kronka-thatith*** (roughly meaning \"everything-egg\") to describe the region, which is probably the closest non-Jel speakers will ever get in the way of a \"true name\" for the region. Many Argonians who live there struggle with the concept of it being a \"province\", as there is so much varied difference in each part of Black Marsh.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Shadowscales": {
+    "shadowscales": {
+        "link": "https://en.uesp.net/wiki/Lore:Shadowscales",
         "summary": "The **Shadowscales** are an order of Argonian assassins originating in Black Marsh. Argonians born under the sign of the Shadow are taken at birth and offered to the Dark Brotherhood where they are trained in the arts of stealth and assassination. Shadowscales can identify other members of the order by special medallions. They are typically made of brass and inscribed with the likeness of Sithis, the Dread Father. Any Shadowscale who lives to come of age is accepted into the Dark Brotherhood as a full member of the family. They may also leave the Brotherhood to serve the Argonian people in Black Marsh as ku-vastei, the agents of needed change and arbiters. They act with impunity there, and some are said to serve as personal assassins to the King of Black Marsh and as protectors of the ancient members of the royalty. However, no such king is thought to have ruled since the height of Argonian civilization in ages past—if at all—and the monarch's role as commander of the Shadowscales is said to be overstated.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Skyrim:Ysolda": {
+    "ysolda": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Ysolda",
         "img": "/previews/preview-Ysolda.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-quest-Rare_Gifts.jpg",
         "imageLicense": "by-sa",
         "summary": "**Ysolda** is a Nord citizen who lives in Whiterun. She is one of the few citizens who trusts the Khajiit traders traveling across Skyrim, and her greatest dream is to buy The Bannered Mare from Hulda. Incidentally, should something happen to Hulda, you will find Ysolda taking her place behind the bar in the taproom. During your drunken stupor in A Night To Remember, you will unconsciously buy a wedding ring from Ysolda, for your beloved Moira. Ysolda also has a great secret, discovered during the quest Sleeping Tree Cave.",
         "placement": "vertical"
     },
-    "https://en.uesp.net/wiki/Lore:Helgen": {
+    "helgen": {
+        "link": "https://en.uesp.net/wiki/Lore:Helgen",
         "img": "/previews/preview-Helgen-city.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-place-Helgen.jpg",
         "imageLicense": "by-sa",
         "summary": "**Helgen**, referred to as the \"Gateway to the North\" due to the many travelers who visited while coming from Cyrodiil to the south, was a fortified hamlet located east-northeast of the city of Falkreath, south of Riverwood, and north of Pale Pass. The rather small \"backwater hovel\" was guarded by a wooden wall and the slopes of the mountains it was nestled in, and surrounded a large fort known as Helgen Keep. The Keep held a barracks for Imperial troops, a torture room, and led into a series of caves that traveled north into the wilderness.",
         "placement": "horizontal"
     },
-    "https://en.uesp.net/wiki/Lore:Ulfric_Stormcloak": {
+    "ulfric-stormcloak": {
+        "link": "https://en.uesp.net/wiki/Lore:Ulfric_Stormcloak",
         "img": "/previews/preview-Jarl-Ulfric.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Ulfric_Stormcloak.jpg",
         "imageLicense": "by-sa",
         "summary": "**Ulfric Stormcloak** of the Stormcloak Clan was the Jarl of Windhelm and the leader of the Stormcloak Rebellion. Ulfric first rose to prominence due to his involvement in the Markarth Incident, which began when he and his militia successfully retook the city. For retaking Markarth, Ulfric and his militia were initially permitted to worship Talos by Jarl Hrolfdir and the Imperial Legion; however, they were soon arrested to appease the Thalmor. Following his release from prison, Ulfric and his militia known as the Stormcloaks engaged in skirmishes with the Empire, although they failed to gain much support from Skyrim's populace. In 4E 201, Ulfric killed the High King of Skyrim, Torygg, in a duel, beginning a full-scale civil war against the Empire.",
         "placement": "vertical"
+    },
+    "stormcloak-clan": {
+        "link": "https://en.uesp.net/wiki/Lore:Stormcloak_Clan",
+        "img": "/previews/preview-Stormcloaks-banner.png",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-banner-Stormcloaks.png",
+        "summary": "The **Stormcloak Clan** was a Nordic clan from Windhelm. The Stormcloaks could trace their lineage all the way back to the founding of Windhelm in the Merethic Era, and boasted of having helped to build the city. During the First Era, the clan owned a vineyard that produced some vintages that were regarded as extremely rare collector's items by the time of the Interregnum.",
+        "placement": "vertical"
+    },
+    "imperial-legion": {
+        "link": "https://en.uesp.net/wiki/Lore:Imperial_Legion",
+        "img": "/previews/preview-Imperial-legion.png",
+        "imageSource": "https://en.uesp.net/wiki/File:MW-banner-Imperial.png",
+        "summary": "The **Imperial Legion**, also known as the **Imperial Army**, **Dragon-Tribe of the Emperor**, the **Red Legions**, and the **Ruby Ranks**, is the main fighting force of the Empire of Tamriel. It is often pluralized as the Imperial Legions. Headquartered in the Imperial City Prison, they operate under the auspices and authority of the Emperor himself. With its vast numbers, quality training, and rigid discipline, the Legion is considered one of the best armies ever assembled in history. The primary mission of the Imperial Legion is to preserve the peace and rule of law in the Empire. Those who protect the Emperor and the Imperial Province are sometimes called the **Imperial Guard** and the **Imperial Watch**. A Legion Centurion is typically in command of the Palace Guard of the White Gold Tower. The Legion's administration is known as the **Imperial War Office**.",
+        "placement": "vertical"
+    },
+    "imperial": {
+        "link": "https://en.uesp.net/wiki/Lore:Imperial",
+        "img": "/previews/preview-Imperial.png",
+        "imageSource": "https://en.uesp.net/wiki/File:LO-race-Imperial.png",
+        "summary": "The **Imperials**, also known as **Cyrodiils**, **Cyrodilics**, and **Imperial Cyrods**, are the well-educated and well-spoken natives of the civilized and cosmopolitan province of Cyrodiil. Imperials are also known for the discipline and training of their citizen armies, and their respect for the rule of law. Imperials have proved to be shrewd diplomats and traders, and these traits, along with their remarkable skill and training as infantry, have enabled them to colonize various other nations and create the Empire. Their hegemony has waxed and waned throughout the eras, and most historians refer to three distinct Empires, the ends of which each mark a new epoch in Tamrielic history.",
+        "placement": "vertical"
+    },
+    "fourth-era-history": {
+        "link": "https://en.uesp.net/wiki/Lore:History#Fourth_Era",
+        "summary": "The **Fourth Era**, also called the **Fourth Age**, is the current and ongoing time period in Tamriel history. It was marked by a changing political map across Tamriel. Notably, The Empire fell under the leadership of the Mede Dynasty, after a conflict known as the Stormcrown Interregnum.",
+        "placement": "vertical"
+    },
+
+    
+
+    "calendar-months": {
+        "link": "https://en.uesp.net/wiki/Lore:Calendar#Month",
+        "summary": "The Tamrielic calendar has twelve **months**. The twelve months run from Morning Star to Evening Star, and are grouped into winter, spring, summer, and autumn according to their prevalent weather. Each month is associated with one of twelve constellations. A constellation's *season* lasts approximately a month: as the sun rises near that constellation, it hides the stars from view. The thirteenth constellation, the Serpent, moves through the sky without an assigned season. A person's birth under a constellation is believed to influence their character and abilities.",
+        "placement": "vertical"
+    },
+        "morningstar": {
+            "summary": "**Morning Star** (also written **Morningstar**) is the first of twelve months on the Tamrielic calendar and lasts for 31 days. It is associated with the Ritual constellation and is the last of the winter months.",
+            "placement": "vertical",
+            "noCopyright": "true"
+        },
+        "suns-dawn": {
+            "summary": "**Sun's Dawn** is the second of the twelve months on the Tamrielic calendar and lasts for 28 days. It is associated with the Lover constellation and is the first month of spring.",
+            "placement": "vertical",
+            "noCopyright": "true"
+        },
+        "first-seed": {
+            "summary": "**First Seed** is the third month on the Tamrielic calendar and lasts for 31 days. Its associated constellation is the Lord and is the second month of spring.",
+            "placement": "vertical",
+            "noCopyright": "true"
+        },
+        "rains-hand": {
+            "summary": "**Rain's Hand** is the fourth month of the Tamrielic calendar and lasts for 30 days. It has the Mage as its constellation and is the third and last month of spring.",
+            "placement": "vertical",
+            "noCopyright": "true"
+        },
+        "second-seed": {
+            "summary": "**Second Seed** is the fifth month on the Tamrielic calendar and lasts for 31 days. Its constellation is that of the Shadow and is the first of the summer months.",
+            "placement": "vertical",
+            "noCopyright": "true"
+        },
+        "midyear": {
+            "summary": "**Midyear** (also written **Mid Year**) is, as the name implies, the sixth month of the Tamrielic calendar and marks the halfway point of the year. It lasts for 30 days, has the Steed as its constellation, and is the second month of summer.",
+            "placement": "vertical",
+            "noCopyright": "true"
+        },
+        "suns-height": {
+            "summary": "**Sun's Height** is the seventh month on the Tamrielic calendar. It lasts for 31 days, is the last month of summer, and has the Apprentice as its constellation.",
+            "placement": "vertical",
+            "noCopyright": "true"
+        },
+        "last-seed": {
+            "summary": "**Last Seed** is the eighth month of the Tamrielic calendar and lasts for 31 days. It is associated with the Warrior constellation and is the first month of autumn.",
+            "placement": "vertical",
+            "noCopyright": "true"
+        },
+        "hearthfire": {
+            "summary": "**Hearthfire** (also written **Heartfire**, **Hearth Fire**, or **Heart Fire**) is the ninth month of the Tamrielic calendar and lasts for 30 days. It is associated with the Lady constellation and is the second month of autumn.",
+            "placement": "vertical",
+            "noCopyright": "true"
+        },
+        "frostfall": {
+            "summary": "**Frostfall** (also written **Frost Fall**) is the 10th month on the Tamrielic calendar and lasts for 31 days. It is associated with the Tower constellation and is the last month of autumn.",
+            "placement": "vertical",
+            "noCopyright": "true"
+        },
+        "suns-dusk": {
+            "summary": "**Sun's Dusk** is the 11th month of the Tamrielic calendar and lasts for 30 days. It is the first winter month and is associated with the Atronach constellation.",
+            "placement": "vertical",
+            "noCopyright": "true"
+        },
+        "evening-star": {
+            "summary": "**Evening Star** is the 12th and final month of the Tamrielic calendar. It lasts for 31 days, is the second month of winter, and is associated with the Thief constellation.",
+            "placement": "vertical",
+            "noCopyright": "true"
+        },
+    
+            "the-ritual": {
+                "link": "https://en.uesp.net/wiki/Lore:The_Ritual",
+                "img": "/previews/preview-the-Ritual.png",
+                "imageSource": "https://en.uesp.net/wiki/File:SR-birthsign-The_Ritual.png",
+                "imageLicense": "by-sa",
+                "summary": "The **Ritual** (known as the **Laboratory** to the Dwemer) is a constellation of seven stars which is in the night sky during Morning Star. It is one of the Mage's charges. Those born under the sign of the Ritual are thought to have various abilities depending on the aspects of the moons and planets. It is consistently depicted by most cultures as taking the shape of the Aurbic Eye.",
+                "placement": "vertical"
+            },
+            "the-lover": {
+                "link": "https://en.uesp.net/wiki/Lore:The_Lover",
+                "img": "/previews/preview-the-Lover.png",
+                "imageSource": "https://en.uesp.net/wiki/File:SR-birthsign-The_Lover.png",
+                "imageLicense": "by-sa",
+                "summary": "The **Lover** is a constellation of twelve stars which is in the night sky during Sun's Dawn. It is one of the Thief's charges. Those born under the sign of the Lover are thought to be graceful and passionate."
+            },
+            "the-lord": {
+                "link": "https://en.uesp.net/wiki/Lore:The_Lord",
+                "img": "public/previews/preview-the-Lord.png",
+                "imageSource": "https://en.uesp.net/wiki/File:SR-birthsign-The_Lord.png",
+                "imageLicense": "by-sa",
+                "summary": "The **Lord** is a constellation of nineteen stars which is visible in the night sky during First Seed. It is one of the Warrior's charges. Those born under the sign of the Lord are thought to be stronger and healthier, although they are sometimes referred to as Trollkin due to their innate weakness to fire.",
+                "placement": "vertical"
+            },
+            "the-mage": {
+                "link": "https://en.uesp.net/wiki/Lore:The_Mage",
+                "img": "/previews/preview-the-Mage",
+                "imageSource": "https://en.uesp.net/wiki/File:SR-birthsign-The_Mage.png",
+                "imageLicense": "by-sa",
+                "summary": "The **Mage** (also known as the **Wizard**, the **Sage**, the **Mechanist** to the Dwemer, and the **Witch in the Stars** or simply the **Witch** to the Reachmen) is a constellation of twenty-seven stars and the planet Julianos, which is in the night sky during the month of Rain's Hand. Along with the Warrior and the Thief, it is a Guardian constellation, and its charges are the Apprentice, the Atronach, and the Ritual. Those born under the sign of the Mage are thought to have more magicka and a talent for spellcasting. They are also thought to be arrogant and absent-minded",
+                "placement": "vertical"
+            },
+            "the-shadow": {
+                "link": "https://en.uesp.net/wiki/Lore:The_Shadow",
+                "img": "/previews/preview-the-Shadow",
+                "imageSource": "https://en.uesp.net/wiki/File:SR-birthsign-The_Shadow.png",
+                "imageLicense": "by-sa",
+                "summary": "The **Shadow** is a constellation of five stars which is in the night sky during Second Seed. It is one of the Thief's charges. Those born under the sign of the Shadow are thought to have the ability to hide in shadows. Argonians born under the Shadow may be offered to the Dark Brotherhood to become Shadowscales. Argonian accounts warn those born under the Shadow from seeking to use the power of the artifact of Fangs of Sithis and link the downfall of their ancestors to this artifact.",
+                "placement": "vertical"
+            },
+            "the-steed": {
+                "link": "https://en.uesp.net/wiki/Lore:The_Steed",
+                "img": "/previews/preview-the-Steed",
+                "imageSource": "https://en.uesp.net/wiki/File:SR-birthsign-The_Steed.png",
+                "imageLicense": "by-sa",
+                "summary": "The **Steed** is a constellation of eight stars which is in the night sky during Midyear. It is one of the Warrior's charges. Those born under the sign of the Steed are thought to be impatient and always hurrying from one place to another. It is typically depicted as a horse. According to some the Steed is prominent in the southern sky during the summer solstice.",
+                "placement": "vertical"
+            },
+            "the-apprentice": {
+                "link": "https://en.uesp.net/wiki/Lore:The_Apprentice",
+                "img": "/previews/preview-the-Apprentice",
+                "imageSource": "https://en.uesp.net/wiki/File:SR-birthsign-The_Apprentice.png",
+                "imageLicense": "by-sa",
+                "summary": "The **Apprentice** (known as the **Automaton** to the Dwemer) is a constellation of eleven stars which is in the night sky during Sun's Height. It is one of the Mage's charges. Those born under the sign of the Apprentice are thought to have an affinity for magic, but also a vulnerability to magic.",
+                "placement": "vertical"
+            },
+            "the-warrior": {
+                "link": "https://en.uesp.net/wiki/Lore:The_Warrior_(constellation)",
+                "img": "/previews/preview-the-Warrior",
+                "imageSource": "https://en.uesp.net/wiki/File:SR-birthsign-The_Warrior.png",
+                "imageLicense": "by-sa",
+                "summary": "The **Warrior** (known as the **Headsman** to the Reachmen) is a constellation of thirty or twenty-eight stars and the planet Akatosh which is in the night sky during Last Seed. It is one of the Guardian constellations, and its charges are the Lady, the Steed, and the Lord. Those born under the sign of the Warrior are thought to be short-tempered and skilled with weapons.",
+                "placement": "vertical"
+            },
+            "the-lady": {
+                "link": "https://en.uesp.net/wiki/Lore:The_Lady",
+                "img": "/previews/preview-the-Lady",
+                "imageSource": "https://en.uesp.net/wiki/File:SR-birthsign-The_Lady.png",
+                "imageLicense": "by-sa",
+                "summary": "The **Lady** is a constellation of four stars which is in the night sky during Hearthfire. It is one of the Warrior's charges. Those born under the sign of the Lady are thought to be kind and tolerant.",
+                "placement": "vertical"
+            },
+            "the-tower": {
+                "link": "https://en.uesp.net/wiki/Lore:The_Tower",
+                "img": "/previews/preview-the-Tower",
+                "imageSource": "https://en.uesp.net/wiki/File:SR-birthsign-The_Tower.png",
+                "imageLicense": "by-sa",
+                "summary": "The **Tower** is a constellation of twelve stars which is in the night sky during Frostfall. It is one of the Thief's charges. Those born under the sign of the Tower are thought to have a knack for finding gold and opening locks.",
+                "placement": "vertical"
+            },
+            "the-atronach": {
+                "link": "https://en.uesp.net/wiki/Lore:The_Atronach",
+                "img": "/previews/preview-the-Atronach",
+                "imageSources": "https://en.uesp.net/wiki/File:SR-birthsign-The_Atronach.png",
+                "imageLicense": "by-sa",
+                "summary": "The **Atronach** (sometimes the **Golem**, known as the **Warmachine** to the Dwemer) is a constellation of ten stars which is in the night sky during Sun's Dusk. It is one of the Mage's charges. Those born under the sign of the Atronach are thought to be natural sorcerers with deep reserves of magicka, but that cannot generate their own magicka.",
+                "placement": "vertical"
+            },
+            "the-thief": {
+                "linK": "https://en.uesp.net/wiki/Lore:The_Thief",
+                "img": "/previews/preview-the-Thief",
+                "imageSource": "https://en.uesp.net/wiki/File:SR-birthsign-The_Thief.png",
+                "imageLicense": "by-sa",
+                "summary": "The **Thief** (known as the **Hunter** to the Reachmen) is a constellation of eighteen or seventeen stars and the planet Arkay which is in the night sky during Evening Star. It is a Guardian constellation, and its charges are the Lover, the Shadow, and the Tower. Those born under the sign of the Thief are thought to take risks and evade harm. Their luck is thought to run out eventually, cutting their lives short.",
+                "placement": "vertical"
+            },
+            "the-serpent": {
+                "link": "https://en.uesp.net/wiki/Lore:The_Serpent",
+                "img": "/previews/preview-the-Serpent",
+                "imageSource": "https://en.uesp.net/wiki/File:SR-birthsign-The_Serpent.png",
+                "imageLicense": "by-sa",
+                "summary": "The **Serpent** (known as the **Snake in the Stars** to the Reachmen, or simply the **Snake** to both Reachmen and Redguards) is a constellation of four unstars which is not relegated to being in the night sky during a particular time of the year. Unlike stars, the unstars that form the Serpent move about the sky and do not emit varliance. The Serpent's motions are considered to be unpredictable, though they can be predicted to a degree. Sometimes it is deemed impossible, however. Those born under the sign of the Serpent are thought to have no characteristics in common except being the most blessed and the most cursed. Despite consisting of four unstars it was also known as the **Scaled Blanket**, \"made of not-stars, whose number is thirteen\", as it was the thirteenth constellation",
+                "placement": "vertical"
+            },
+
+    "greybeards": {
+        "link": "https://en.uesp.net/wiki/Lore:Greybeards",
+        "img": "/previews/preview-Greybeards",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Greybeards.jpg",
+        "imageLicense": "by-sa",
+        "summary": "The **Greybeards**, also known as the **Men of the Throat** (or the **Throat GOATs**), are an ancient and honored order of monks, live in silence at the ancient monastery High Hrothgar near the summit of the Throat of the World. They are the most famous of the Tongues, or masters of the Voice.",
+        "placement": "vertical"
+    },
+    "high-hrothgar": {
+        "link": "https://en.uesp.net/wiki/Lore:High_Hrothgar",
+        "img": "/previews/preview-High-Hrothgar",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-High_Hrothgar.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**High Hrothgar** (named for the region of Hrothgar) is a secluded monastery, perched atop the highest peak in Skyrim, the Throat of the World. Here reside the few members of the ancient order of the Greybeards, who endeavor to become more attuned to the voice of the sky. Jurgen Windcaller, after his defeat at Red Mountain and subsequent meditation, built his home at High Hrothgar and founded the order to study the Thu'um in peace.",
+        "placement": "horizontal"
+    },
+    "pale-pass": {
+        "link": "https://en.uesp.net/wiki/Lore:Pale_Pass",
+        "img": "/previews/preview-Pale-Pass.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-Pale_Pass.jpg",
+        "summary": "**Pale Pass** is a secluded pass through the Jerall Mountains on the Cyrodiil-Skyrim border. A ruined Imperial fort can be found in the pass. The flora is similar to the rest of the mountain range, and a tribe of ogres inhabit the area. A cobbled road winds its way through the pass, and many small frozen lakes culminate in the lowest parts of the valley. The easiest way to get to and from the pass on the Cyrodiil side is to go through a natural cave system located north of Bruma, named the Serpent's Trail by the Akaviri. The pass emerges into Falkreath Hold on the Skyrim side, near the settlements of Helgen and Neugrad Watch.",
+        "placement": "horizontal"
+    },
+    "imperial-soldier-skyrim": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Imperial_Soldier",
+        "img": "/previews/preview-Imperial-soldier.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Imperial_Soldier.jpg",
+        "summary": "**Imperial Soldiers** are the forces of the Imperial Legion. They are mostly made up of Imperials; however local recruiting has increased the amount of Nords in the Legion. Highly trained and well led, the soldiers of the Imperial Legion have earned a reputation as some of the greatest warriors in Tamriel. Imperial Soldiers have fought in many memorable and historic battles, and used their training and skills to conquer the rest of Tamriel under Tiber Septim and establish the modern empire.",
+        "placement": "vertical"
+    },
+    "riverwood": {
+        "link": "https://en.uesp.net/wiki/Lore:Riverwood",
+        "img": "/previews/preview-Riverwood.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-Riverwood.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Riverwood** is a logging town on the banks of the White River in Whiterun Hold, at the western base of the Throat of the World. It is located northeast of Falkreath and Lake Ilinalta, north of Helgen, and almost directly south of Whiterun. Despite its seemingly prime location, the settlement doesn't receive many visitors. The famous Guardian Stones lie to the southwest of town.",
+        "placement": "horizontal"
+    },
+    "dragonsreach": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Dragonsreach",
+        "img": "/previews/preview-Dragonsreach.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-Dragonsreach.jpg",
+        "imageLicense": "by-sa",
+        "summary": "Dragonsreach is the residence of the Jarl of Whiterun Hold, the hold's seat of political power, and the location of the hold's jail. It is initially occupied by Balgruuf the Greater and his court, but may be seized by Vignar Gray-Mane if the Stormcloak Rebels prevail in the Civil War. The palace, which is divided into four sections - Dragonsreach, the Jarl's Quarters, the Great Porch, and the Dungeon - is in the Cloud District of Whiterun, overlooking the city. The main entrance is at the top of three flights of stairs starting from the Gildergreen tree, with two pools intersected by the stairs. There are four doors to the outside, though only two are accessible from the ground: one opens to the main hall, while the other leads to the dungeon, which serves as the hold's jail. ",
+        "placement": "horizontal"
     }
+
 }

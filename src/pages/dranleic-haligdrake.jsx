@@ -162,21 +162,21 @@ export function Dranleic() {
                                     <h2 id="Early_life">Early life</h2>
                                 </div>
                                 <p>
-                                    Little is known about Dranleic's origins or early life. His earliest documented appearance was at <LinkPreview url={"https://en.uesp.net/wiki/Lore:Helgen"}>Helgen</LinkPreview>, where he was sentenced to execution along with other thieves, Stormcloak rebels, and <LinkPreview url={"https://en.uesp.net/wiki/Lore:Ulfric_Stormcloak"}>Ulfric Stormcloak</LinkPreview>. No records about him before this event have been found. <LinkPreview url={"https://en.uesp.net/wiki/Lore:Imperial_Legion"}>Imperial Legion</LinkPreview> soldiers and witnesses from the dragon attack at Helgen described him as <i>"having seemingly appeared from nowhere,"</i> and said he was <i>"unfortunately bundled together with other petty thieves and bandits ready for the chopping block."</i>[i] An account from an anonymous Stormcloak soldier stated Dranleic was trying to cross the border out of Skyrim to return home but was then <i>"caught in an Imperial ambush."</i>[i]
+                                    Little is known about Dranleic's origins or early life. His earliest documented appearance was at <LinkPreview url={"https://en.uesp.net/wiki/Lore:Helgen"}>Helgen</LinkPreview>, where he was sentenced to execution along with other thieves, <LinkPreview url={"https://en.uesp.net/wiki/Lore:Stormcloaks"}>Stormcloak</LinkPreview> rebels, and <LinkPreview url={"https://en.uesp.net/wiki/Lore:Ulfric_Stormcloak"}>Ulfric Stormcloak</LinkPreview>. No records about him before this event have been found. <LinkPreview url={"https://en.uesp.net/wiki/Lore:Imperial_Legion"}>Imperial Legion</LinkPreview> soldiers and witnesses from the <LinkPreview url={"xyz"}>dragon attack at Helgen</LinkPreview> described him as <i>"having seemingly appeared from nowhere,"</i> and said he was <i>"unfortunately bundled together with other petty thieves and bandits ready for the chopping block."</i>[i] An account from an anonymous Stormcloak soldier stated Dranleic was trying to cross the border out of <LinkPreview url={"https://en.uesp.net/wiki/Lore:Skyrim"}>Skyrim</LinkPreview> to return home but was then <i>"caught in an Imperial ambush."</i>[i]
                                 </p>
                                 <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">
 
                                 </p>
                                     
                                 <p>
-                                    Due to the absence of direct evidence, multiple theories have arisen. Scholars and bardic tales have suggested that he originated in Cyrodiil: if, as the Stormcloak soldier claimed, he was crossing the border to return home, his home must have lain on the other side. Although Argonians are native to the province of <LinkPreview url={"https://en.uesp.net/wiki/Lore:Black_Marsh"}>Black Marsh</LinkPreview>, they live throughout Tamriel, so scholars cannot say with certainty whether he was born in Cyrodiil or elsewhere.
+                                    Due to the absence of direct evidence, multiple theories have arisen. Scholars and bardic tales have suggested that he originated in <LinkPreview url={"https://en.uesp.net/wiki/Lore:Cyrodiil"}>Cyrodiil</LinkPreview>: if, as the Stormcloak soldier claimed, he was crossing the border to return home, his home must have lain on the other side. Although <LinkPreview url={"https://en.uesp.net/wiki/Lore:Argonian"}>Argonians</LinkPreview> are native to the province of <LinkPreview url={"https://en.uesp.net/wiki/Lore:Black_Marsh"}>Black Marsh</LinkPreview>, they live throughout <LinkPreview url={"https://en.uesp.net/wiki/Lore:Tamriel"}>Tamriel</LinkPreview>, so scholars cannot say with certainty whether he was born in Cyrodiil or elsewhere.
                                 </p>
                                 <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">
                                     
                                 </p>
 
                                 <p>
-                                    Some also theorize that he is an orphan, citing his apparent lack of contact with any relatives as well as the fact that he has made no known attempts to return home since the events at Helgen. Some researchers have dismissed rumors that the Dragonborn are immortal,[i] and estimate from his appearance that he was born in the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Fourth_Era"}>Fourth Era</LinkPreview>, between 4E 160 and 4E 180. The exact date of his birth is uncertain, though two independent kinds of sources point to the same week. One group claims to have seen Dranleic celebrate his birthday, stating it falls on the 6th of First Seed, while other sources from mages' studies suggest he was born during the first week of First Seed.[citation needed]
+                                    Some also theorize that he is an orphan, citing his apparent lack of contact with any relatives as well as the fact that he has made no known attempts to return home since the events at Helgen.[citation needed] Some researchers have dismissed rumors that the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dragonborn"}>Dragonborn</LinkPreview> are immortal,[i] and estimate from his appearance that he was born in the <LinkPreview url={"https://en.uesp.net/wiki/Lore:History#Fourth_Era"}>Fourth Era</LinkPreview>, between 4E 160 and 4E 180. The exact date of his birth is uncertain, though two independent kinds of sources point to the same week. One group claims to have seen Dranleic celebrate his birthday, stating it falls on the 6th of <LinkPreview url={"first-seed"}>First Seed</LinkPreview>, while other sources from mages' studies suggest he was born during the first week of First Seed.[citation needed]
                                 </p>
                                 <p hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-english">
                                     
@@ -193,24 +193,36 @@ export function Dranleic() {
                                     <div className="mw-heading mw-heading-3">
                                         <h3 id="Arrival_in_Skyrim">Arrival in Skyrim</h3>
                                     </div>
+                                    <p>
+                                        Dranleic's documented activity begins in <LinkPreview url={"https://en.uesp.net/wiki/Lore:Skyrim"}>Skyrim</LinkPreview> in 4E 201, when he was captured near the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Cyrodiil"}>Cyrodiil</LinkPreview> border and taken to <LinkPreview url={"https://en.uesp.net/wiki/Lore:Helgen"}>Helgen</LinkPreview> for execution. He survived the dragon attack that interrupted the proceedings and made his way to <LinkPreview url={"https://en.uesp.net/wiki/Lore:Whiterun"}>Whiterun</LinkPreview>, where his part in the death of a dragon led witnesses to hail him as the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dragonborn"}>Dragonborn</LinkPreview>. Soon afterward, he was summoned to <LinkPreview url={"https://en.uesp.net/wiki/Lore:High_Hrothgar"}>High Hrothgar</LinkPreview>, where the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Greybeards"}>Greybeards</LinkPreview> reportedly confirmed the claim, which remains disputed by some.
+                                    </p>
                                     <section>
                                         <div className="mw-heading mw-heading-4">
                                             <h4 id="Escape_from_Helgen">Escape from Helgen</h4>
                                         </div>
-                                        <p>
-                                            ...
-                                        </p>
-                                        <div className="mw-heading mw-heading-4">
-                                            <h4 id="Thanehood_in_Whiterun">Thanehood in Whiterun</h4>
+                                        <div>
+                                            Main article: <a href="">Attack on Helgen</a>
                                         </div>
                                         <p>
-                                            ...
+                                            On the 17th of Last Seed, 4E 201, Dranleic was captured by Imperial forces near the <LinkPreview url={"pale-pass"}>Pale Pass</LinkPreview> on the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Cyrodiil"}>Cyrodiil</LinkPreview>-<LinkPreview url={"https://en.uesp.net/wiki/Lore:Skyrim"}>Skyrim</LinkPreview> border.[ref] He was taken to <LinkPreview url={"https://en.uesp.net/wiki/Lore:Helgen"}>Helgen</LinkPreview> alongside <LinkPreview url={"stormcloaks-faction"}>Stormcloak rebels</LinkPreview>, other prisoners, and <LinkPreview url={"https://en.uesp.net/wiki/Lore:Ulfric_Stormcloak"}>Ulfric Stormcloak</LinkPreview>, <LinkPreview url={"https://en.uesp.net/wiki/Lore:Jarl"}>Jarl</LinkPreview> of <LinkPreview url={"https://en.uesp.net/wiki/Lore:Windhelm"}>Windhelm</LinkPreview>. <LinkPreview url={"imperial-soldiers-skyrim"}>Imperial soldiers</LinkPreview> mistook him for a Stormcloak and sentenced him to execution with the rest. <LinkPreview url={"https://en.uesp.net/wiki/Lore:General_Tullius"}>General Tullius</LinkPreview> later described the whole ordeal with Dranleic as "a big misunderstanding"[ref]. As Dranleic stepped up to the block for his turn, a black dragon, later identified as <LinkPreview url={"https://en.uesp.net/wiki/Lore:Alduin"}>Alduin</LinkPreview>, attacked the town and interrupted the proceedings. In the chaos, Stormcloak prisoners scattered and fled to the Keep, where the Imperial soldiers' barracks were located. Dranleic was then freed by a Stormcloak, and he fought alongside them through Legionnaires to escape through Helgen Keep.[ref]
+                                        </p>
+                                        <div className="mw-heading mw-heading-4">
+                                            <h4 id="Whiterun">Whiterun</h4>
+                                        </div>
+                                        <p>
+                                            After escaping Helgen, Dranleic traveled to <LinkPreview url={"https://en.uesp.net/wiki/Lore:Riverwood"}>Riverwood</LinkPreview>, where one of the escapees had connections, and after a short rest continued to <LinkPreview url={"https://en.uesp.net/wiki/Lore:Whiterun"}>Whiterun</LinkPreview>. "I'd never seen an Argonian so stone-faced in my life, but he claimed to have had news from Helgen about the dragon attack," a former Whiterun guard stated, and he was admitted.[ref] At <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dragonsreach"}>Dragonsreach</LinkPreview>, he told the then-Jarl <LinkPreview url={"https://en.uesp.net/wiki/Lore:Balgruuf_the_Greater"}>Balgruuf the Greater</LinkPreview> of what he had seen at Helgen, and the jarl believed him. Balgruuf's <LinkPreview url={"https://en.uesp.net/wiki/Skyrim:Court_Wizard"}>court wizard</LinkPreview>, <LinkPreview url={"https://en.uesp.net/wiki/Lore:Farengar_Secret-Fire"}>Farengar Secret-Fire</LinkPreview>, who has been studying the return of the dragons, reportedly welcomed the news with enthusiasm and asked Dranleic to recover a <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dragonstone"}>Dragonstone</LinkPreview> from <LinkPreview url={"https://en.uesp.net/wiki/Lore:Bleak_Falls_Barrow"}>Bleak Falls Barrow</LinkPreview>, an ancient Nord tomb in the mountains above Riverwood.[ref]
+                                        </p>
+                                        <p>
+                                            Dranleic cleared the bandits and <LinkPreview url={"https://en.uesp.net/wiki/Lore:Draugr"}>draugr</LinkPreview> from the barrow and retrieved the Dragonstone from its inner sanctum, where he also took an ancient nord battle axe from a draugr.[ref] Journeymen, who later investigated the barrow reported finding the body of a <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dunmer"}>Dunmer</LinkPreview> near a chamber where Dranleic had seemingly freed him from a spider's web.[ref]
+                                        </p>
+                                        <p>
+                                            When Dranleic delivered the Dragonstone to Farengar, <LinkPreview url={"https://en.uesp.net/wiki/Skyrim:Irileth"}>Irileth</LinkPreview>, Balgruuf's <LinkPreview url={"https://en.uesp.net/wiki/Skyrim:Housecarl"}>housecarl</LinkPreview>, reported that a dragon had been sighted at the watchtower west of Whiterun. A company of guards marched out, and Balgruuf advised Dranleic to join them. They found the tower in ruins, and the dragon, later identified as <LinkPreview url={"https://en.uesp.net/wiki/Lore:Mirmulnir"}>Mirmulnir</LinkPreview>, attacked soon after. Irileth, the guards, and Dranleic fought it; several guards were killed, but the dragon was slain.[ref] Eyewitnesses stated that Dranleic "absorbed its soul" as the dragon's body burned away to bone, and onlookers took this as a sign that he was Dragonborn.[ref]
                                         </p>
                                         <div className="mw-heading mw-heading-4">
                                             <h4 id="Greybeards_summons">Greybeards' summons</h4>
                                         </div>
                                         <p>
-                                            ...
+                                            Soon after the dragon's death, a thunderous voice from the mountains was heard calling "DOVAHKIIN!", which was identified as the voice of the <LinkPreview url={"https://en.uesp.net/wiki/Lore:Greybeards"}>Greybeards</LinkPreview> of <LinkPreview url={"https://en.uesp.net/wiki/Lore:High_Hrothgar"}>High Hrothgar</LinkPreview>.[ref] Dranleic first reported back to Balgruuf, who named him Thane of Whiterun (see Titles and honors), and then traveled to <LinkPreview url={"https://en.uesp.net/wiki/Lore:Ivarstead"}>Ivarstead</LinkPreview> to climb the 7,000 Steps to the monastery. As stated by Balgruuf, "You'd better get up to High Hrothgar immediately. There's no refusing the summons of the Greybeards." There, on the 18th of Last Seed, 4E 201, the Greybeards tested him, taught him the ways of the Voice, or <LinkPreview url={"https://en.uesp.net/wiki/Lore:Thu%27um"}>Thu'um</LinkPreview>, and gave him knowledge of the words FUS and RO (the first two words of <LinkPreview url={"https://en.uesp.net/wiki/Skyrim:Unrelenting_Force"}>Unrelenting Force</LinkPreview>) and WULD (the first word of <LinkPreview url={"https://en.uesp.net/wiki/Skyrim:Whirlwind_Sprint"}>Whirlwind Sprint</LinkPreview>). According to the Greybeards, he was not only <LinkPreview url={"https://en.uesp.net/wiki/Lore:Dragonborn"}>Dragonborn</LinkPreview> but unusually gifted in the way of the Voice.[ref]
                                         </p>
                                     </section>
                                 </section>
@@ -241,7 +253,7 @@ export function Dranleic() {
                                         ...
                                     </p>
                                     <section>
-                                        <div>
+                                        <div className="mw-heading mw-heading-4">
                                             <h4 id="Joining_Thieves_Guild">Joining</h4>
                                         </div>
                                         <p>
@@ -289,7 +301,7 @@ export function Dranleic() {
                                         ...
                                     </p>
                                     <section>
-                                        <div>
+                                        <div className="mw-heading mw-heading-4">
                                             <h4 id="Joining_Dark_Brotherhood">Joining</h4>
                                         </div>
                                         <p>
@@ -431,15 +443,15 @@ export function Dranleic() {
                                 </section>
                             </section>
                             <section>
-                                <div>
-                                    <h2>Titles and honors</h2>
+                                <div className="mw-heading mw-heading-2">
+                                    <h2 id="Titles_and_honors">Titles and honors</h2>
                                 </div>
                                 <p>
                                     ...
                                 </p>
                             </section>
                             <section>
-                                <div>
+                                <div className="mw-heading mw-heading-2">
                                     <h2>Public perception</h2>
                                 </div>
                                 <p>
@@ -461,7 +473,7 @@ export function Dranleic() {
                                         ...
                                     </p>
                                     <section>
-                                        <div>
+                                        <div className="mw-heading mw-heading-4">
                                             <h4>Equipment and combat style</h4>
                                         </div>
                                         <p>
