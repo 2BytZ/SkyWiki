@@ -516,8 +516,160 @@
         "img": "/previews/preview-Dragonsreach.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:SR-place-Dragonsreach.jpg",
         "imageLicense": "by-sa",
-        "summary": "Dragonsreach is the residence of the Jarl of Whiterun Hold, the hold's seat of political power, and the location of the hold's jail. It is initially occupied by Balgruuf the Greater and his court, but may be seized by Vignar Gray-Mane if the Stormcloak Rebels prevail in the Civil War. The palace, which is divided into four sections - Dragonsreach, the Jarl's Quarters, the Great Porch, and the Dungeon - is in the Cloud District of Whiterun, overlooking the city. The main entrance is at the top of three flights of stairs starting from the Gildergreen tree, with two pools intersected by the stairs. There are four doors to the outside, though only two are accessible from the ground: one opens to the main hall, while the other leads to the dungeon, which serves as the hold's jail. ",
+        "summary": "**Dragonsreach** is the residence of the Jarl of Whiterun Hold, the hold's seat of political power, and the location of the hold's jail. The palace, which is divided into four sections - Dragonsreach, the Jarl's Quarters, the Great Porch, and the Dungeon - is in the Cloud District of Whiterun, overlooking the city. The main entrance is at the top of three flights of stairs starting from the Gildergreen tree, with two pools intersected by the stairs. There are four doors to the outside, though only two are accessible from the ground: one opens to the main hall, while the other leads to the dungeon, which serves as the hold's jail. ",
         "placement": "horizontal"
+    },
+    "tullius": {
+        "link": "https://en.uesp.net/wiki/Lore:Tullius",
+        "img": "",
+        "imageSource": "",
+        "imageLicense": "by-sa",
+        "summary": "**Tullius** was an Imperial general of the Imperial Legion and the Governor of Skyrim. Tullius was originally from Cyrodiil, but Emperor Titus Mede II sent him to Skyrim to serve as the province's military governor following the killing of High King Torygg and the subsequent outbreak of the Stormcloak Rebellion in 4E 201. Tullius was sent to Skyrim to suppress the rebellion and restore the peace. As military governor, Tullius commanded all legions stationed in Skyrim from Castle Dour in Solitude, and the Nord Legate Rikke served as his second-in-command.",
+        "placement": "vertical"        
+    },
+    "dragon": {
+        "link": "https://en.uesp.net/wiki/Lore:Dragon",
+        "img": "",
+        "imageSource": "",
+        "imageLicense": "by-sa",
+        "summary": "**Dragons** (also known as **drakes**, **wyrms** or **worms**, **dov*** or **dovah** in their native language, **drah-gkon** or **dov-rha** to the ancient Nords, or **Aka** in Ehlnofex) are a rarely-seen race of large reptilian beasts of Aedric nature. They are rumored to be from Akavir (which literally means \"Dragon Land\"), though there are ancient tales of Dragons also coming from Atmora. They are large, scaled creatures, easily several times larger than a human or elf. They have long, slender extremities, with thin bat-like wings and ridges of spikes along thier back.",
+        "placement": "vertical"
+    },
+    "balgruuf": {
+        "link": "https://en.uesp.net/wiki/Lore:Balgruuf_the_Greater",
+        "img": "",
+        "imageSource": "",
+        "imageLicense": "by-sa",
+        "summary": "**Balgruuf the Greater** was the Jarl of Whiterun Hold in Skyrim in 4E 201, and ruled from the prosperous and strategically-located city of the same name. A proud Nord and a descendant of High King Olaf One-Eye, Balgruuf admired the Greybeards and once made the pilgrimage to High Hrothgar as a young man. His three children were Frothar, Dagny, and Nelkir, but he had no spouse in 4E 201. While considered a fair and shrewd ruler, and an honorable warrior who put his heart and soul into his service, he was also not considered a patient man.",
+        "placement": "vertical"
+    },
+    "mirmulnir": {
+        "link": "https://en.uesp.net/wiki/Lore:Mirmulnir",
+        "img": "",
+        "imageSource": "",
+        "imageLicense": "by-sa",
+        "summary": "",
+        "placement": "vertical"
+    },
+    "court-wizard": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Court_Wizard",
+        "img": "",
+        "imageSource": "",
+        "imageLicense": "by-sa",
+        "summary": "",
+        "placement": "vertical"
+    },
+    "farengar": {
+        "link": "https://en.uesp.net/wiki/Lore:Farengar_Secret-Fire",
+        "img": "",
+        "imageSource": "",
+        "summary": "**Farengar Secret-Fire** was the Nord Court Wizard of Jarl Balgruuf the Greater in 4E 201, and assisted Balgruuf with his magical affairs. His duties also required him to assist in the containment of the Ebony Blade, that would later be found by Balgruuf's son Nelkir. He was uninterested in the Skyrim Civil War and did not support the Empire. He was dedicated to the College of Winterhold and focused on furthering the cause of magical research. He was known to be reclusive and arrogant, but was also eminent in Daedric studies.",
+        "placement": "vertical"
+    },
+    "dragonstone": {
+        "link": "https://en.uesp.net/wiki/Lore:Dragonstone",
+        "img": "",
+        "imageSource": "",
+        "summary": "",
+        "placement": "vertical"
+    },
+    "bleak-falls": {
+        "link": "https://en.uesp.net/wiki/Lore:Bleak_Falls_Barrow",
+        "img": "",
+        "imageSource": "",
+        "summary": "",
+        "placement": "horizontal"
+    },
+    "nord": {
+        "link": "https://en.uesp.net/wiki/Lore:Nord",
+        "img": "",
+        "imageSource": "",
+        "summary": "",
+        "placement": "vertical"
+    },
+    "draugr": {
+        "link": "https://en.uesp.net/wiki/Lore:Draugr",
+        "img": "",
+        "imageSource": "",
+        "summary": "",
+        "placement": "vertical"
+    },
+    "dunmer": {
+        "link": "https://en.uesp.net/wiki/Lore:Dunmer",
+        "img": "",
+        "imageSource": "",
+        "summary": "",
+        "placement": "vertical"
+    },
+    "irileth": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Irileth",
+        "img": "",
+        "imageSource": "",
+        "summary": "",
+        "placement": "vertical"
+    },
+    "housecarl": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Housecarl",
+        "summary": "",
+        "placement": "vertical"
+    },
+    "ivarstead": {
+        "link": "https://en.uesp.net/wiki/Lore:Ivarstead",
+        "img": "",
+        "imageSource": "",
+        "imageLicense": "",
+        "summary": "",
+        "placement": "horizontal"
+    },
+    "thuum": {
+        "link": "https://en.uesp.net/wiki/Lore:Thu%27um",
+        "summary": "",
+        "placement": "vertical"
+    },
+    "shrine-of-talos": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Shrine_of_Talos"
+    },
+    "margret": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Margret"
+    },
+    "breton": {
+        "link": "https://en.uesp.net/wiki/Lore:Breton"
+    },
+    "weylin": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Weylin"
+    },
+    "forsworn": {
+        "link": "https://en.uesp.net/wiki/Lore:Forsworn"
+    },
+    "thonar-silver-blood": {
+        "link": "https://en.uesp.net/wiki/Lore:Thonar_Silver-Blood"
+    },
+    "betrid-silver-blood": {
+        "link":"https://en.uesp.net/wiki/Skyrim:Betrid_Silver-Blood"
+    },
+    "treasury-house": {
+        "link": "https://en.uesp.net/wiki/Skyrim:The_Treasury_House"
+    },
+    "nana-ildene": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Nana_Ildene"
+    },
+    "donnel": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Donnel"
+    },
+    "nepos's-house": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Nepos%27s_House"
+    },
+    "nepos-the-nose": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Nepos_the_Nose"
+    },
+    "morven": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Morven"
+    },
+    "tynan": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Tynan"
+    },
+    "uaile": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Uaile"
     }
 
 }
