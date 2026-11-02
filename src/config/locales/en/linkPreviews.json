@@ -522,47 +522,43 @@
     "tullius": {
         "link": "https://en.uesp.net/wiki/Lore:Tullius",
         "img": "",
-        "imageSource": "",
-        "imageLicense": "by-sa",
         "summary": "**Tullius** was an Imperial general of the Imperial Legion and the Governor of Skyrim. Tullius was originally from Cyrodiil, but Emperor Titus Mede II sent him to Skyrim to serve as the province's military governor following the killing of High King Torygg and the subsequent outbreak of the Stormcloak Rebellion in 4E 201. Tullius was sent to Skyrim to suppress the rebellion and restore the peace. As military governor, Tullius commanded all legions stationed in Skyrim from Castle Dour in Solitude, and the Nord Legate Rikke served as his second-in-command.",
         "placement": "vertical"        
     },
     "dragon": {
         "link": "https://en.uesp.net/wiki/Lore:Dragon",
-        "img": "",
-        "imageSource": "",
+        "img": "/previews/preview-Dragon.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-creature-Dragon_02.jpg",
         "imageLicense": "by-sa",
         "summary": "**Dragons** (also known as **drakes**, **wyrms** or **worms**, **dov*** or **dovah** in their native language, **drah-gkon** or **dov-rha** to the ancient Nords, or **Aka** in Ehlnofex) are a rarely-seen race of large reptilian beasts of Aedric nature. They are rumored to be from Akavir (which literally means \"Dragon Land\"), though there are ancient tales of Dragons also coming from Atmora. They are large, scaled creatures, easily several times larger than a human or elf. They have long, slender extremities, with thin bat-like wings and ridges of spikes along thier back.",
         "placement": "vertical"
     },
     "balgruuf": {
         "link": "https://en.uesp.net/wiki/Lore:Balgruuf_the_Greater",
-        "img": "",
-        "imageSource": "",
+        "img": "/previews/preview-Balgruuf.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Balgruuf_the_Greater.jpg",
         "imageLicense": "by-sa",
         "summary": "**Balgruuf the Greater** was the Jarl of Whiterun Hold in Skyrim in 4E 201, and ruled from the prosperous and strategically-located city of the same name. A proud Nord and a descendant of High King Olaf One-Eye, Balgruuf admired the Greybeards and once made the pilgrimage to High Hrothgar as a young man. His three children were Frothar, Dagny, and Nelkir, but he had no spouse in 4E 201. While considered a fair and shrewd ruler, and an honorable warrior who put his heart and soul into his service, he was also not considered a patient man.",
         "placement": "vertical"
     },
     "mirmulnir": {
         "link": "https://en.uesp.net/wiki/Lore:Mirmulnir",
-        "img": "",
-        "imageSource": "",
+        "img": "/previews/preview-Mirmulnir.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-quest-Dragon_Rising_03.jpg",
         "imageLicense": "by-sa",
-        "summary": "",
+        "summary": "**Mirmulnir** was a dragon whose name means \"Allegiance Strong Hunt\" (or more accurately \"Loyal Mortal Hunter\") in the Dragon Language. Mirmulnir was one of many dragons to survive the Dragon War, and one of the few who successfully avoided persecution by the Akaviri Dragonguard. By 2E 373, he was still purportedly alive, having last been sighted by the Blades in the Reach in 2E 212.",
         "placement": "vertical"
     },
     "court-wizard": {
         "link": "https://en.uesp.net/wiki/Skyrim:Court_Wizard",
-        "img": "",
-        "imageSource": "",
-        "imageLicense": "by-sa",
-        "summary": "",
+        "summary": "**Court Wizards** are the jarls' personal mages who research and study magic. They can usually be found in the jarl's palace or longhouse. They sell a variety of spells from all of the schools of magic, and other items that are of use to mages, including soul gems and scrolls. Their selection of available spells and magical items are bested only by the mages at the College of Winterhold. In court politics they are the equals of housecarls, except on magical matters, but less important than stewards. They are usually left alone by their jarl due to the Nords' suspicion and distrust of all things magical. They are also the only members of court that do not have to relocate if their hold changes sides in the civil war.",
         "placement": "vertical"
     },
     "farengar": {
         "link": "https://en.uesp.net/wiki/Lore:Farengar_Secret-Fire",
-        "img": "",
-        "imageSource": "",
+        "img": "/previews/preview-Farengar.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Farengar_Secret-Fire.jpg",
+        "imageLicense": "by-sa",
         "summary": "**Farengar Secret-Fire** was the Nord Court Wizard of Jarl Balgruuf the Greater in 4E 201, and assisted Balgruuf with his magical affairs. His duties also required him to assist in the containment of the Ebony Blade, that would later be found by Balgruuf's son Nelkir. He was uninterested in the Skyrim Civil War and did not support the Empire. He was dedicated to the College of Winterhold and focused on furthering the cause of magical research. He was known to be reclusive and arrogant, but was also eminent in Daedric studies.",
         "placement": "vertical"
     },
@@ -570,64 +566,72 @@
         "link": "https://en.uesp.net/wiki/Lore:Dragonstone",
         "img": "",
         "imageSource": "",
-        "summary": "",
+        "summary": "The **Dragonstone** is a stone tablet that depicts a map of Skyrim, marked with the locations of Dragon burial mounds. It was crafted following the Dragon War and was meant to document the burial of the Dragon-Lords in Skyrim for when Alduin returned. It was created in the days that followed Alduin's defeat in the Dragon War. It was protected by the Keeper of the Dragonstone, a Draugr, in his tomb at Bleak Falls Barrow.",
         "placement": "vertical"
     },
     "bleak-falls": {
         "link": "https://en.uesp.net/wiki/Lore:Bleak_Falls_Barrow",
-        "img": "",
-        "imageSource": "",
-        "summary": "",
+        "img": "/previews/preview-Bleak-Falls-Barrow.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-Bleak_Falls_Barrow.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Bleak Falls Barrow** is an old Nordic temple ruin in the snow-laden Brittleshin Hills that divides Whiterun Hold to the north from Falkreath Hold to the south. The ruin stands out prominently above the town of Riverwood, the nearest settlement, and has inspired some fear in the local citizens.",
         "placement": "horizontal"
     },
     "nord": {
         "link": "https://en.uesp.net/wiki/Lore:Nord",
-        "img": "",
-        "imageSource": "",
-        "summary": "",
+        "img": "/previews/preview-Nord.png",
+        "imageSource": "https://en.uesp.net/wiki/File:LO-race-Nord.png",
+        "summary": "**Nords**, also known as **Northmen**, **Bron** in the Language of Dragons, or the **Children of the Sky**, are a race of tall and fair-haired humans from Skyrim who are known for their incredible resistance to cold and magical frost. They are fierce, strong and enthusiastic warriors, and many become renowned warriors, soldiers and mercenaries all over Tamriel. Eager to augment their martial skills beyond the traditional methods of Skyrim, they excel in all manner of warfare, and are known as a militant people by their neighbors. Nords were known for a time for their nautical prowess when they migrated from Atmora. Seafaring merchants or smugglers are not unheard of, as was the case with Tobias.",
         "placement": "vertical"
     },
     "draugr": {
         "link": "https://en.uesp.net/wiki/Lore:Draugr",
-        "img": "",
-        "imageSource": "",
-        "summary": "",
+        "img": "/previews/preview-Draugr.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-creature-Draugr.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Draugr** are a form of ancient Nord dead found in Skyrim and Solstheim. Their bodies were mummified prior to reanimation, protecting their ligaments and muscle from the detrimental effects of rot. Draugr retain many of their former human skills and thus can greatly differ in their combat preferences, much like living humans. Some draugr will charge in on intruders wielding their battleaxes or greatswords, while others keep their distance and use their bow and arrows, yet others are very proficient with magic and can sometimes even be seen summoning powerful Atronachs. Many Draugr speak using the Dragon Language, and are also known to have the ability to use the Thu'um.",
         "placement": "vertical"
     },
     "dunmer": {
         "link": "https://en.uesp.net/wiki/Lore:Dunmer",
-        "img": "",
-        "imageSource": "",
-        "summary": "",
+        "img": "/previews/preview-Dunmer.png",
+        "imageSource": "https://en.uesp.net/wiki/File:LO-race-Dunmer.png",
+        "summary": "The Dunmer, also known as Dark Elves, Ash-Elves by the Daedra, Gray Elves by argonians Pureblooded Folk by themselves, or the archaic names Moriche and Drow are the grey-skinned, typically red-eyed elven peoples of Morrowind. In the Empire, \"Dark Elf\" is the common usage, but they and their Aldmeri brethren prefer the term \"Dunmer\". \"Dark\" is variously interpreted as meaning \"dark-skinned\", \"gloomy\", and \"ill-favored by fate\", with the Dunmer and their national identity embracing these various connotations with enthusiasm.",
         "placement": "vertical"
     },
     "irileth": {
         "link": "https://en.uesp.net/wiki/Skyrim:Irileth",
-        "img": "",
-        "imageSource": "",
-        "summary": "",
+        "img": "/previews/preview-Irileth.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Irileth.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Irileth** is a Dark Elf nightblade who serves as housecarl to Jarl Balgruuf the Greater of Whiterun, and remains by his side at all times within Dragonsreach. Although it is highly uncommon for a Dunmer to serve as housecarl in Skyrim, Irileth and Balgruuf fought in many battles together when they were younger. When Balgruuf was named as Jarl of Whiterun, she demanded that she be his housecarl, on account of their long-forged battle-bond.",
         "placement": "vertical"
     },
     "housecarl": {
         "link": "https://en.uesp.net/wiki/Skyrim:Housecarl",
-        "summary": "",
+        "summary": "**Housecarls** are the personal bodyguards appointed to jarls and their thanes (if any) in Skyrim. Housecarls are free men and women who are voluntarily sworn to protect their masters with their own lives. Almost every jarl and thane in the province of Skyrim has their own personal housecarl that is often by their side. However, the housecarls of thanes are often found inside of that thane's home. Every housecarl that is appointed to you is also available as a follower, who, in turn, can carry out orders, carry equipment, and protect you from harm.",
         "placement": "vertical"
     },
     "ivarstead": {
         "link": "https://en.uesp.net/wiki/Lore:Ivarstead",
-        "img": "",
-        "imageSource": "",
-        "imageLicense": "",
-        "summary": "",
+        "img": "/previews/preview-Ivarstead.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-Ivarstead_02.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Ivarstead** (also known as **Hillgrund's Steading**) is a small milling town, situated at the eastern base of the Throat of the World, on the western edge of the Rift, built on the western shore of Lake Geir. Pilgrims and travelers often pass through, as the town is located at the beginning of the 7,000 Steps to High Hrothgar. Northeast of Ivarstead lies the Nordic ruin known as Shroud Hearth Barrow.",
         "placement": "horizontal"
     },
     "thuum": {
         "link": "https://en.uesp.net/wiki/Lore:Thu%27um",
-        "summary": "",
+        "summary": "The **Thu'um**, also referred to as the **Masculine Breath**, **Storm Voice**, or simply the **Voice**, is a form of magic most commonly practiced by Nords that uses the language of the dragons to produce mystical shouts comparable to powerful spells. The word actually means \"shout\" in the dragon tongue. It is said dragons make no distinction between debating and fighting, and so their words have always been magical and powerful, for those who take the time to learn and understand their meaning. The Nords believe that Kyne, the Goddess of the Storm and chief of deity of their pantheon, breathed onto the land at the Throat of the World to form them.",
         "placement": "vertical"
     },
     "shrine-of-talos": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Shrine_of_Talos"
+        "link": "https://en.uesp.net/wiki/Skyrim:Shrine_of_Talos",
+        "img": "/previews/preview-Shrine-of-Talos.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-interior-Shrine_of_Talos.jpg",
+        "imageLicense": "by-sa",
+        "summary": "The **Shrine of Talos** is a small shrine in Markarth dedicated to the worship of the god Talos. It is a small, one-room location that is usually empty. The statue of the forsaken deity is the well-lit center-piece of the otherwise gloomy interior. A shrine of Talos can be found directly in front of the statue.",
+        "placement": "horizontal"
     },
     "margret": {
         "link": "https://en.uesp.net/wiki/Skyrim:Margret"
@@ -670,6 +674,21 @@
     },
     "uaile": {
         "link": "https://en.uesp.net/wiki/Skyrim:Uaile"
+    },
+    "eltrys": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Eltrys"
+    },
+    "cidhna-mine": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Cidhna_Mine"
+    },
+    "markarth-ruins": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Cidhna_Mine#Markarth_Ruins"
+    },
+    "grisvar-the-unlucky": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Grisvar_the_Unlucky"
+    },
+    "druadach-redoubt": {
+        "link": "https://en.uesp.net/wiki/Lore:Druadach_Redoubt"
     }
 
 }
