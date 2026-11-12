@@ -512,3 +512,45 @@ img.mw-file-upright {
 .table th {
     background-color: var(--table-header-background);
 }
+
+div.tleft {
+    margin: 0 1em .5em 0;
+    border-color: beige; /*placeholder color*/
+    /*margin: 0.5em 1.4em 1.3em 0;*/ 
+    float: left;
+    clear: left;
+}
+div.tright {
+    margin: 0 0 .5em 1em;
+    float: right;
+    clear: right;
+}
+.thumb {
+    margin-bottom: 0.5em;
+    width: auto;
+    background-color: transparent;
+    z-index: 100;
+}
+div.thumb div {
+    background-color: rgb(14, 13, 13);
+}
+div.thumb div.thumbinner {
+    min-width: 75px;
+}
+div.thumbinner {
+    border: 1px solid grey;
+    padding: 3px;
+    font-size: 94%;
+    text-align: center;
+    overflow: hidden;
+}
+.thumbinner, .thumbinner img {
+    width: 222px;
+}
+.thumbcaption {
+    text-align: left;
+    border: 0;
+    line-height: 1.4em;
+    padding: 3px;
+    font-size: 94%;
+}

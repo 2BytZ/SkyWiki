@@ -27,6 +27,42 @@
                 }
             ],
             "baseDamage": 7
+        },
+        "shiv": {
+            "title": "Shiv",
+            "type": "weapon",
+            "img": "",
+            "baseDamage": 5,
+            "description": "An improvised dagger-like weapon. These sharpened utensils are the only handily available weapon in prison, excluding fists and magic. Due to its improvised nature, a shiv cannot be improved."
+        },
+        "old-gods-set": {
+            "title": "Armor of the Old Gods (set)",
+            "type": "armor",
+            "slot": [
+                "head",
+                "chest",
+                "hands",
+                "feet"
+            ],
+            "enchantment": [
+                {
+                    "id": "fortify-magicka",
+                    "magnitude": 50
+                },
+                {
+                    "id": "fortify-destruction-cost",
+                    "magnitude": 25
+                },
+                {
+                    "id": "fortify-one-handed",
+                    "magnitude": 25
+                },
+                {
+                    "id": "fortify-stamina",
+                    "magnitude": 50
+                }
+            ],
+            "armorRating": 50
         }
     }
 }

@@ -7,6 +7,30 @@
         "fortify-alteration": {
             "validItems": ["head", "neck", "chest", "finger"],
             "text": "Alteration spells cost <mag>% less to cast."
+        },
+        "fortify-archery": {
+            "validItems": ["head", "neck", "hands", "finger"],
+            "text": "Bows do <mag>% more damage."
+        },
+        "fortify-barter": {
+            "validItems": ["neck"],
+            "text": "Prices are <mag>% better."
+        },
+        "fortify-block": {
+            "validItems": ["neck", "hands", "finger", "shield"],
+            "text": "Block <mag>% more damage with your shield."
+        },
+        "fortify-conjuration": {
+            "validItems": ["head", "neck", "chest", "finger"],
+            "text": "Conjuration spells cost <mag>% less to cast."
+        },
+        "fortify-destruction": {
+            "validItems": ["head", "neck", "chest", "finger"],
+            "text": "Destruction spells cost <mag>% less to cast."
+        },
+        "fortify-heavy-armor": {
+            "validItems": ["neck", "chest", "hands", "finger"],
+            "text": ""
         }
     },
     "weapon": {

@@ -38,7 +38,7 @@ button.item-preview__reference {
 .item-preview__body p {
   margin-top: 12px;
   color: var(--preview-text);
-  font-family: inherit;
+  font-family: skyrim;
   font-size: 16px;
   line-height: 1.4;
 }

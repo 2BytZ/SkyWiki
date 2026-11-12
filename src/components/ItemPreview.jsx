@@ -23,6 +23,37 @@ import { resolveItemEnchantments } from "./itemEnchantments";
 import "./LinkPreview.css";
 import "./ItemPreview.css";
 
+function renderInlineMarkdown(text) {
+    const parts = [];
+    const emphasisPattern = /(\*\*\*|\*\*|\*)(.+?)\1/g;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = emphasisPattern.exec(text)) !== null) {
+        parts.push(text.slice(lastIndex, match.index));
+
+        const content = renderInlineMarkdown(match[2]);
+        const key = `${match.index}-${emphasisPattern.lastIndex}`;
+
+        if (match[1] === "***") {
+            parts.push(
+                <strong key={key}>
+                    <em>{content}</em>
+                </strong>,
+            );
+        } else if (match[1] === "**") {
+            parts.push(<strong key={key}>{content}</strong>);
+        } else {
+            parts.push(<em key={key}>{content}</em>);
+        }
+
+        lastIndex = emphasisPattern.lastIndex;
+    }
+
+    parts.push(text.slice(lastIndex));
+    return parts;
+}
+
 export function ItemPreview({ name, children, className }) {
     const { t, i18n } = useTranslation(["itemPreviews", "enchantments"]);
     const { search } = useLocation();
@@ -168,7 +199,7 @@ export function ItemPreview({ name, children, className }) {
                                 </p>
                             ))}
                             {item.description && (
-                                <p><b>{t("labels.description")}:</b><br />{item.description}</p>
+                                <p><b>{t("labels.description")}:</b><br />{renderInlineMarkdown(item.description)}</p>
                             )}
                         </div>
                         {item.img && (
