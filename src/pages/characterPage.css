@@ -499,3 +499,16 @@ img.mw-file-upright {
 .toc-toggle-check[hidden] {
     display: none;
 }
+
+
+.table {
+    border-collapse: collapse;
+    font-size: 16px;
+}
+.table th, .table td {
+    border: 1px solid var(--table-border);
+    padding: 5px;
+}
+.table th {
+    background-color: var(--table-header-background);
+}

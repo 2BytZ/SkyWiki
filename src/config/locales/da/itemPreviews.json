@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "baseDamage": "Grundskade",
+        "armorRating": "Rustningsværdi",
+        "enchantment": "Fortryllelse",
+        "configurationError": "Fejl i forhåndsvisningens opsætning",
+        "description": "Beskrivelse"
+    },
+    "items": {}
+}

@@ -129,6 +129,13 @@
   object-fit: cover;
 }
 
+.wiki-preview-card--vertical:not(.wiki-preview-card--no-legal-link) .wiki-preview-thumb {
+  grid-row: 1 / 3;
+  min-height: calc(100% - 15px);
+  max-height: none;
+  margin-bottom: 15px;
+}
+
 .wiki-preview-body {
   position: relative;
   z-index: 1;
@@ -179,6 +186,7 @@
 }
 
 .wiki-preview-card--vertical:not(.wiki-preview-card--no-image) .copyright-and-legal-text {
+  grid-column: 1;
   padding-right: 18px;
   padding-left: 10px;
 }

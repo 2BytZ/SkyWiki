@@ -1,0 +1,58 @@
+.item-preview__reference {
+  color: #5a91cf;
+}
+
+button.item-preview__reference {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.item-preview__reference:hover {
+  color: #a9c5e5;
+  text-decoration: underline;
+}
+
+.item-preview__card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 40%);
+  gap: 16px;
+  align-items: center;
+  width: min(520px, calc(100vw - 16px));
+  max-width: none;
+  padding: 30px 28px;
+}
+
+.item-preview__card--no-image {
+  grid-template-columns: minmax(0, 1fr);
+  width: min(420px, calc(100vw - 16px));
+}
+
+.item-preview__body {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.item-preview__body p {
+  margin-top: 12px;
+  color: var(--preview-text);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.item-preview__enchantment--invalid {
+  color: #ff8080;
+}
+
+.item-preview__image {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 0;
+}

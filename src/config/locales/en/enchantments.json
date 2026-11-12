@@ -1,0 +1,23 @@
+{
+    "armor": {
+        "fortify-alchemy": {
+            "validItems": ["head", "neck", "hands", "finger"],
+            "text": "Created potions are <mag>% more powerful."
+        },
+        "fortify-alteration": {
+            "validItems": ["head", "neck", "chest", "finger"],
+            "text": "Alteration spells cost <mag>% less to cast."
+        }
+    },
+    "weapon": {
+        "absorb-health": {
+            "text": "Absorb <mag> points of health."
+        },
+        "fire-damage": {
+            "text": "Burns the target for <mag> points. Targets on fire take extra damage."
+        },
+        "frost-damage": {
+            "text": "Target takes <mag> points of frost damage to Health and Stamina."
+        }
+    }
+}

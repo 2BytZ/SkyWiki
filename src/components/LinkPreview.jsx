@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
     arrow,
     FloatingPortal,
@@ -58,6 +58,12 @@ export function LinkPreview({ url, previewId, children, className }) {
     const preview = previewKey
         ? i18n.getResource(language, "linkPreviews", previewKey)
         : undefined;
+    useEffect(() => {
+        if (preview?.img) {
+            const image = new Image();
+            image.src = preview.img;
+        }
+    }, [preview?.img]);
     const linkUrl = typeof url === "string" && url.startsWith("http") ? url : preview?.link ?? url ?? "";
     const previewPlacement = preview?.placement === "vertical" ? "vertical" : "horizontal";
     const sourceUrl = linkUrl.startsWith("http://") || linkUrl.startsWith("https://")

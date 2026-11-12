@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "baseDamage": "Base Damage",
+        "armorRating": "Armor Rating",
+        "enchantment": "Enchantment(s)",
+        "configurationError": "Preview configuration error",
+        "description": "Description"
+    },
+    "items": {
+        "dragonstone": {
+            "title": "Dragonstone",
+            "link": "https://en.uesp.net/wiki/Lore:Dragonstone",
+            "img": "",
+            "description": "The **Dragonstone** is a stone tablet that depicts a map of Skyrim, marked with the locations of Dragon burial mounds. It was crafted following the Dragon War and was meant to document the burial of the Dragon-Lords in Skyrim for when Alduin returned. It was created in the days that followed Alduin's defeat in the Dragon War. It was protected by the Keeper of the Dragonstone, a Draugr, in his tomb at Bleak Falls Barrow."
+        },
+        "iron-sword": {
+            "title": "Iron Sword",
+            "type": "weapon",
+            "enchantment": [
+                {
+                    "id": "fire-damage",
+                    "magnitude": 10
+                },
+                {
+                    "id": "frost-damage",
+                    "magnitude": 5
+                }
+            ],
+            "baseDamage": 7
+        }
+    }
+}
