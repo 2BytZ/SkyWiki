@@ -15,8 +15,6 @@ import sources from "../data/sources/dranleic.json";
 
 import DialogueSelectorStart from "../assets/Dialogue_Selector_Start.png"
 import DialogueSelectorEnd from "../assets/Dialogue_Selector_End.png"
-import previewFrameBottom from "../assets/Info_Card_Small_Bottom_Preview.png"
-import previewFrameTop from "../assets/Info_Card_Small_Top_Preview.png"
 import infoboxImageFrameBottom from "../assets/Info_Card_Small_Bottom.png"
 import infoboxImageFrameTop from "../assets/Info_Card_Small_Top.png"
 import CaptionBackgroundLeft from "../assets/Journal_Main_Quest_Caption_Left.png"
@@ -34,13 +32,25 @@ import TOCBackgroundImage from "../assets/Main Menu.png"
 export function Dranleic() {
     const contentRef = useRef(null);
     const [tocHidden, setTocHidden] = useState(false);
+    const [mobileTOCHidden, setMobileTOCHidden] = useState(false);
     const {t} = useTranslation("dranleic");
     const [imageWidth, setImageWidth] = useState(0);
 
     return (
         <FootnoteProvider sources={sources}>
             <div className={`content-body${tocHidden ? " toc-hidden" : ""}`}>
-                <div className="vector-column-start">
+                <div className="mobile-toc-collapse-btn">
+                    <button
+                        type="button"
+                        aria-controls="hamburger-collapse"
+                        aria-expanded={!tocHidden}
+                        onClick={() => setMobileTOCHidden(!mobileTOCHidden)}
+                        style={{width: "44px", height: "44px"}}
+                    >
+                    &uarr;
+                    </button>
+                </div>
+                <div className="vector-column-start" id="hamburger-collapse" hidden={mobileTOCHidden}>
                     <div  className="image-overlay" >
                         <div className="hide-toc-button">
                             <span>{tocHidden ? "Show" : "Hide"}</span>

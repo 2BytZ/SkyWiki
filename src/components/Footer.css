@@ -6,6 +6,10 @@
     margin: 0.25rem 0;
 }
 
+.footer-copyright p {
+    font-size: 0.75rem;
+}
+
 .footer-bottom-wrapper {
     background: var(--footer-copyright-bg);
     border-top: 1px solid hsla(0, 0%, 100%, .08);
@@ -21,5 +25,4 @@
     margin: 0 auto;
     padding: 1.1rem 0;
     text-align: left;
-    --p-size: .75rem;
 }

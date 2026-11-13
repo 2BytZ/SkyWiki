@@ -41,7 +41,7 @@
 .modal-content {
     display: block;
     margin: 0 20px 20px;
-    font-size: 13px;
+    font-size: 0.722222rem;
     line-height: 21px;
 }
 .lightbox-modal .modal-content {

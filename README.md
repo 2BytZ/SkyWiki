@@ -1,5 +1,12 @@
 # React + Vite
 
+## Font sizes
+
+At a 1280px viewport, the root font size is 18px when the browser default is
+16px. The root `clamp()` in `src/index.css` scales typography and `rem`-based
+layout sizes smoothly for smaller and larger screens. Adjust its minimum,
+preferred value, and maximum to change the overall scale.
+
 ## Item previews
 
 Import `ItemPreview` where it is used:

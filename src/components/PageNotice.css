@@ -15,8 +15,7 @@
         display: flex;
         flex-direction: row;
         list-style: none;
-        --p-size: 16;
-        font-size: 16px;
+        font-size: 0.888889rem;
         flex-wrap: nowrap;
         justify-content: center;
         gap: 0.5em 1.5em;
@@ -44,7 +43,7 @@ position: absolute;
 background: none;
 border: none;
     right: 10px;
-    font-size: 20px;
+    font-size: 1.111111rem;
     cursor: auto;
 }
 
@@ -55,7 +54,7 @@ border: none;
 
 .notice-header {
     padding: 0 0 10px 0;
-    font-size: 32px;
+    font-size: 1.777778rem;
     color: var(--text-h);
 }
 
@@ -68,19 +67,14 @@ border: none;
 
 .notice-content {
     padding: 0;
-    --p-size: 18;
-    font-size: 18px;
+    font-size: 1rem;
+}
+
+.notice-content p {
+    font-size: inherit;
 }
 
 #resources-text {
     font-family: 'skyrim';
     font-weight: 300;
-}
-
-
-@media (min-width: 1600px) {
-    .notice-content {
-        --p-size: 22px;
-        font-size: 22px;
-    }
 }

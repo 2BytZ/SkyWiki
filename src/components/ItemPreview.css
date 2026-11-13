@@ -39,7 +39,7 @@ button.item-preview__reference {
   margin-top: 12px;
   color: var(--preview-text);
   font-family: skyrim;
-  font-size: 16px;
+  font-size: 0.888889rem;
   line-height: 1.4;
 }
 

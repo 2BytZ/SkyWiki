@@ -6,9 +6,8 @@
 .footer-inner {
     display: flex;
     text-align: center;
-    --p-size: 1em;
     padding: 1rem;
-    font-size: 18px;
+    font-size: 1rem;
     opacity: 0.8;
 
     gap: 2rem;
@@ -16,6 +15,7 @@
 
 .page-footer p {
     margin: 0.25rem 0;
+    font-size: inherit;
 }
 
 footer .w-footer .footer-inner {

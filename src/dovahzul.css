@@ -22,32 +22,32 @@
 }
 
 .dovahzul {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .dovahzul-small {
-  font-size: 16px;
+  font-size: 0.888889rem;
 }
 
 .dovahzul-smaller {
-  font-size: 14px;
+  font-size: 0.777778rem;
 }
 
 .dovahzul-lang-dropdown {
-  font-size: 12px;
+  font-size: 0.666667rem;
 }
 
 /* English gloss shown under Dovahzul text */
 .dovahzul-english {
   font-family: var(--sans);
-  font-size: small;
+  font-size: 0.722222rem;
   font-style: italic;
   font-weight: 400;
 }
 
 td .dovahzul-english {
   margin: 0;
-  font-size: 10px;
+  font-size: 0.555556rem;
   justify-self: center;
   transform: translateY(-30%);
 }
