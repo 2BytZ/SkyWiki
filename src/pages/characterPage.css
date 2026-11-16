@@ -521,15 +521,20 @@ img.mw-file-upright {
     display: none;
 }
 
-
-.mobile-toc-collapse-btn {
-    position: fixed;
-    top: 50vh;
-    z-index: 11;
+.mobile-toc-drawer {
+    display: contents;
 }
 
-
 @media (max-width: 639px) {
+
+    .content-body {
+        --mobile-toc-width: min(22rem, calc(100vw - 44px));
+    }
+
+    .vector-toc {
+        margin-left: 10px;
+    }
+
     .vector-column-start {
         position: fixed;
         inset: 0;
@@ -554,6 +559,85 @@ img.mw-file-upright {
     .footer-copyright p {
         text-align: center;
     }
+
+    .mobile-toc-drawer {
+        display: block;
+        position: fixed;
+        inset: 0 auto 0 0;
+        z-index: 10;
+        width: var(--mobile-toc-width);
+        transform: translateX(0);
+        transition: transform 250ms ease;
+    }
+    .mobile-toc-hidden .mobile-toc-drawer {
+        transform: translateX(-100%);
+    }
+    #hamburger-collapse {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        height: 100%;
+        background: black;
+        visibility: visible;
+        transition: visibility 0s;
+    }
+    #hamburger-collapse .toc-scroll-shell {
+        margin-right: 18px;
+    }
+    .mobile-toc-hidden #hamburger-collapse {
+        visibility: hidden;
+        transition: visibility 0s 250ms;
+    }
+    .mobile-toc-collapse-btn button:focus-visible {
+        outline: 2px solid white;
+        outline-offset: -2px;
+    }
+    .mobile-toc-collapse-btn {
+        position: absolute;
+        top: 50%;
+        left: 98%; 
+        z-index: 11;
+        transform: translateY(-50%);
+    }
+    .mobile-toc-collapse-btn button {
+        display: flex;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+    .mobile-toc-collapse-btn button::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: url("../assets/Selector_Right.png") center / contain no-repeat;
+    }
+
+    .content-body:has(> .mobile-toc-drawer)::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease;
+    }
+
+    .content-body:has(> .mobile-toc-drawer):not(.mobile-toc-hidden)::before {
+        opacity: 1;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+        .mobile-toc-drawer,
+        #hamburger-collapse,
+        .mobile-toc-hidden #hamburger-collapse {
+            transition: none;
+        }
+    }
 }
 
 @media (min-width: 640px) {
@@ -561,10 +645,6 @@ img.mw-file-upright {
         display: none;
     }
 }
-
-
-
-
 
 
 

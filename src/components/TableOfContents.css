@@ -95,7 +95,7 @@
 .vector-container {
     padding: 0 0.888889rem;
     margin-bottom: 2rem;
-    line-height: 1 !important;
+    line-height: 1;
     color: var(--text-TOC);
 }
 .vector-toc-element {
@@ -152,6 +152,24 @@
 .item-2,
 .item-3 {
     font-size: 0.888889rem;
+}
+@media (max-width: 639px) {
+    .top-heading {
+        font-size: 1.5rem;
+    }
+    .item-1,
+    .item-2,
+    .item-3 {
+        font-size: 1.5rem;
+        padding-left: 0.333332rem;
+    }
+    .vector-container {
+        line-height: 2rem;
+    }
+    .toc-collapse-button {
+        width: 22px;
+        height: 22px;
+    }
 }
 .item-3 {
     font-weight: 300;

@@ -32,50 +32,54 @@ import TOCBackgroundImage from "../assets/Main Menu.png"
 export function Dranleic() {
     const contentRef = useRef(null);
     const [tocHidden, setTocHidden] = useState(false);
-    const [mobileTOCHidden, setMobileTOCHidden] = useState(false);
+    const [mobileTOCHidden, setMobileTOCHidden] = useState(true);
     const {t} = useTranslation("dranleic");
     const [imageWidth, setImageWidth] = useState(0);
 
     return (
         <FootnoteProvider sources={sources}>
-            <div className={`content-body${tocHidden ? " toc-hidden" : ""}`}>
-                <div className="mobile-toc-collapse-btn">
-                    <button
-                        type="button"
-                        aria-controls="hamburger-collapse"
-                        aria-expanded={!tocHidden}
-                        onClick={() => setMobileTOCHidden(!mobileTOCHidden)}
-                        style={{width: "44px", height: "44px"}}
-                    >
-                    &uarr;
-                    </button>
-                </div>
-                <div className="vector-column-start" id="hamburger-collapse" hidden={mobileTOCHidden}>
-                    <div  className="image-overlay" >
-                        <div className="hide-toc-button">
-                            <span>{tocHidden ? "Show" : "Hide"}</span>
-                            <span className="toc-toggle-wrapper">
-                                <button
-                                    type="button"
-                                    aria-controls="table-of-contents"
-                                    aria-expanded={!tocHidden}
-                                    onClick={() => setTocHidden(!tocHidden)}
-                                    style={{width: "20px", height: "20px"}}
-                                >
-                                </button>
-                                <img src={CheckmarkBox} className="toc-toggle-checkbox" />
-                                <img
-                                    src={CheckmarkCheck}
-                                    className="toc-toggle-check"
-                                    hidden={!tocHidden}
-                                />
-                            </span>
-                        </div>
-                        <div id="table-of-contents" hidden={tocHidden}>
-                            <img src={TOCBackgroundImage} className="toc-background-img"/>
-                            <span>
-                                <TableOfContents contentRef={contentRef} />
-                            </span>
+            <div className={`content-body${tocHidden ? " toc-hidden" : ""}${mobileTOCHidden ? " mobile-toc-hidden" : ""}`}>
+                <div className="mobile-toc-drawer">
+                    <div className="mobile-toc-collapse-btn">
+                        <button
+                            type="button"
+                            aria-controls="hamburger-collapse"
+                            aria-expanded={!mobileTOCHidden}
+                            aria-label={mobileTOCHidden ? "Expand table of contents" : "Collapse table of contents"}
+                            onClick={() => {
+                                setTocHidden(false);
+                                setMobileTOCHidden(hidden => !hidden);
+                            }}
+                        >
+                        </button>
+                    </div>
+                    <div className="vector-column-start" id="hamburger-collapse">
+                        <div  className="image-overlay" >
+                            <div className="hide-toc-button">
+                                <span>{tocHidden ? "Show" : "Hide"}</span>
+                                <span className="toc-toggle-wrapper">
+                                    <button
+                                        type="button"
+                                        aria-controls="table-of-contents"
+                                        aria-expanded={!tocHidden}
+                                        onClick={() => setTocHidden(!tocHidden)}
+                                        style={{width: "20px", height: "20px"}}
+                                    >
+                                    </button>
+                                    <img src={CheckmarkBox} className="toc-toggle-checkbox" />
+                                    <img
+                                        src={CheckmarkCheck}
+                                        className="toc-toggle-check"
+                                        hidden={!tocHidden}
+                                    />
+                                </span>
+                            </div>
+                            <div id="table-of-contents" hidden={tocHidden}>
+                                <img src={TOCBackgroundImage} className="toc-background-img"/>
+                                <span>
+                                    <TableOfContents contentRef={contentRef} />
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>

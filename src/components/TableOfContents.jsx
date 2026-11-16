@@ -171,7 +171,7 @@ function ContentLabel({header, level}) {
                     <button aria-controls={`toc-${header.element.id}`} className="toc-collapse-button" aria-expanded={expanded} onClick={(e) => {setExpanded(!expanded)
                         e.stopPropagation();
                     }}>
-                        <img src={ArrowsSelected} width={10} height={10} />
+                        <img src={ArrowsSelected} />
                     </button>
                 )}
             </div>
