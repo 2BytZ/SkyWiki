@@ -128,6 +128,7 @@ export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
                         <Link to="/wiki/Pharis_Ironeye" onClick={() => setMenuOpen(false)}>
                             Pharis Ironeye
                         </Link>
+                        <span>Lahvriiluz</span>
                         <p>Oblivion</p>
                         <span>Priscilla Aurora</span>
                         <p>Morrowind</p>

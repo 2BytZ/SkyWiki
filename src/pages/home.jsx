@@ -116,6 +116,17 @@ export function Home(){
                                 </div>
                             </Link>
                         </li>
+                        <li className="gallerybox" hidden={selectedGame !== "all" && selectedGame !== "skyrim"}>
+                            <Link title="Go to character page for Lahvriiluz">
+                            <div className="thumb">
+                                <img src="/dummy-pic-1.png" alt="Lahvriiluz" width={480} height={360} />
+                            </div>
+                            <div className="gallerytext">
+                                <p>Lahvriiluz</p>
+                                <span hidden={i18next.resolvedLanguage!="dov"} className="dovahzul-smaller">l4vr3luz</span>
+                            </div>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -776,26 +776,36 @@ export function Dranleic() {
                                 </p>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3>The Doubters</h3>
+                                        <h3>Doubters</h3>
                                     </div>
                                     <p>
-                                        ...
+                                        Doubters are those who believe that Dranleic is neither a Dragonborn nor the figure from Alduin's Wall. There have been several pieces of evidence to suggest that he is at the very least a Dragonborn and might even be the fabled figure of the wall. Despite this, the doubters are stubborn in their belief that he is not the Dragonborn. The most vocal and active of doubters are the Dragon cultists, followers of the Dragon Cult led by the Dragon Priests, who worship the figure known as Miraak, whom they believe to be the one and only true Dragonborn, and who consider people like Dranleic to be frauds. These cultists once said directly to Dranleic's face that he is nothing but a fraud, and not a "true Dragonborn".
+                                    </p>
+                                    <p>
+                                       These doubters' beliefs are further strengthened by the acts of Dranleic, such as his killings and thefts. These people openly state their belief and share it with others, spreading a bad reputation for Dranleic. The biggest flaw in the doubters' logic is that Dranleic has slain Alduin and ended the Dragon Crisis for good, arguably making him the figure described in the legend. Even so, the doubters stick with the idea of Dranleic not actually being a savior or a hero.
                                     </p>
                                 </section>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3>The Believers</h3>
+                                        <h3>Believers</h3>
                                     </div>
                                     <p>
-                                        ...
+                                        Believers are the ones who wholeheartedly believe that Dranleic is a Dragonborn through and through, the savior of Skyrim and the figure from the legend of Alduin's Wall, for having slain Alduin. The believers are by far the biggest group of the three, praising Dranleic for his efforts and singing of his story and drinking to his name. When they see him, they know him. The believers know how strong he really is and what he's capable of. They have seen and heard Dranleic slay many dragons before, notably the dragon at Whiterun Watchtower. They've taken the words of the Greybeards as fact, and don't question their authority.
+                                    </p>
+                                    <p>
+                                        However, there are some holes in the believers' logic, as pointed out by some of the doubters. One that is often brought up is "how can we be sure he is the dragonborn when anyone could have killed Alduin. Dranleic just ended up taking all the credit." The doubters argue that Dranleic received help and only finished Alduin off. They say, "If he really is the Dragonborn, he should've been able to slay Alduin by himself no problem!" Others point out that people who aren't Dragonborn have learned to use the Voice. So, some doubters say, "With enough training, even Ulfric could've slain Alduin! If only he wasn't so busy with his damn Stormcloak Rebellion."
                                     </p>
                                 </section>
                                 <section>
                                     <div className="mw-heading mw-heading-3">
-                                        <h3>The Fence-sitters</h3>
+                                        <h3>Fence-sitters</h3>
                                     </div>
                                     <p>
-                                        ...
+                                        "Fence-sitters" is the nickname given to the minority of people who take no firm side between the doubters and the believers. They stand idly by and hear the opinions and mumblings of both the doubters and the believers, and take bits and pieces from their conversations and make up their own mind about the situation.
+                                    </p>
+                                    <p>
+                                        These people often come to the conclusion that Dranleic is Dragonborn, but might not necessarily be the one from Alduin's Wall. They believe he is Dragonborn because of the Greybeards' word, and the many eyewitness accounts of Dranleic absorbing the soul of a dragon &ndash; a trait which is unique to Dragonborn. They also hold that the legend of Alduin's Wall is only a legend, and need not be true. Some fence-sitters are also simply biased, possibly due to having been on the receiving end of Dranleic's tricks, or being against the idea of an Argonian Dragonborn, when most had expected a Nord or an Imperial.
+
                                     </p>
                                 </section>
                             </section>

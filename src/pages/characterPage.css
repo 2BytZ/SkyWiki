@@ -293,8 +293,8 @@ img.mw-file-upright {
     isolation: isolate;
     container-type: inline-size;
 
+    margin-right: 0;
     margin-inline-start: 2vw;
-
     color: var(--text-TOC);
 }
 
@@ -549,7 +549,8 @@ img.mw-file-upright {
         text-align: center;
     }
     .mw-content-container {
-        padding-right: 20px;
+        margin-left: 2.333333rem;
+        margin-right: 2.333333rem;
     }
     section {
         padding-right: 0;
@@ -630,7 +631,7 @@ img.mw-file-upright {
     .content-body:has(> .mobile-toc-drawer):not(.mobile-toc-hidden)::before {
         opacity: 1;
     }
-    
+
     @media (prefers-reduced-motion: reduce) {
         .mobile-toc-drawer,
         #hamburger-collapse,
@@ -662,7 +663,7 @@ img.mw-file-upright {
 
 div.tleft {
     margin: 0 1em .5em 0;
-    border-color: beige; /*placeholder color*/
+    border-color: var(--table-border);
     /*margin: 0.5em 1.4em 1.3em 0;*/ 
     float: left;
     clear: left;
@@ -679,20 +680,20 @@ div.tright {
     z-index: 100;
 }
 div.thumb div {
-    background-color: rgb(14, 13, 13);
+    background-color: var(--image-box-background);
 }
 div.thumb div.thumbinner {
     min-width: 75px;
 }
 div.thumbinner {
-    border: 1px solid grey;
+    border: 1px solid var(--image-box-border);
     padding: 3px;
     font-size: 94%;
     text-align: center;
     overflow: hidden;
 }
 .thumbinner, .thumbinner img {
-    width: 222px;
+    width: 12.11125rem;
 }
 .thumbcaption {
     text-align: left;
