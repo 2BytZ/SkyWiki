@@ -1,6 +1,6 @@
 // Runs on every page: theme, language, navigation, then the features the page has.
 import { applyLanguage, currentLanguage } from "./i18n.js"
-import { initPreviews } from "./previews.js"
+import { initPreviews, completePreviewLinks } from "./previews.js"
 import { initArticle } from "./article.js"
 
 const THEME_KEY = "skyrim-wiki-theme"
@@ -83,6 +83,8 @@ initLanguagePicker()
 initNavigation()
 initGameFilter()
 initPreviews()
+// before translations and footnotes look at the article, so they see the finished links
+await completePreviewLinks()
 initArticle()
 if (document.querySelector(".credits-table")) import("./credits.js")
 applyLanguage(currentLanguage)

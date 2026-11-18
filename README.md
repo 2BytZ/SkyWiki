@@ -33,10 +33,10 @@ Article text is ordinary HTML. The React components are replaced by these patter
 **Link with a hover preview** (was `<LinkPreview url="whiterun">Whiterun</LinkPreview>`):
 
 ```html
-<span class="link-preview"><a href="https://en.uesp.net/wiki/Lore:Whiterun" class="wiki-anchor-text" data-preview="whiterun">Whiterun</a></span>
+<a data-preview="whiterun">Whiterun</a>
 ```
 
-`data-preview` is the key in `locales/<language>/linkPreviews.json`. It can also be a full URL, if that's how the entry is keyed. If a language doesn't have the entry, the English one is shown. For a link with no address, use `<span class="wiki-anchor-text">` in place of the `<a>`.
+`data-preview` is the key in `locales/<language>/linkPreviews.json` (or a full URL, if that's how the entry is keyed). The script fills in the address from the entry's `link`, adds the link styling and wraps the link in its `<span class="link-preview">`. A link that already has an `href` keeps it, so the longer form the pages were converted with works too. If the key isn't in linkPreviews.json yet, the text is shown without a link, and the browser console lists every missing key. Leave the text empty (`<a data-preview="whiterun"></a>`) to show the link's address. If a language doesn't have the entry, the English one is shown.
 
 **Item preview** (was `<ItemPreview name="dragonstone">`). Use an `<a href="…">` if the item has a `link`. Otherwise use a button:
 

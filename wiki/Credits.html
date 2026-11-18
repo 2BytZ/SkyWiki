@@ -1,125 +1,198 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credits &amp; Legal - Himmeloften</title>
-    <link rel="icon" href="/favicon.ico">
-    <script>
-        // Apply the saved theme before anything is drawn
-        (function () {
-            var theme = null;
-            try { theme = localStorage.getItem("skyrim-wiki-theme"); } catch (e) {}
-            if (theme !== "light" && theme !== "dark") {
-                theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-            }
-            document.documentElement.dataset.theme = theme;
-        })();
-    </script>
-    <style>
-        :where(html[data-theme="dark"]) { background: #1d1d1d; color-scheme: dark; }
-        :where(html[data-theme="light"]) { background: #FCFFF0; color-scheme: light; }
-    </style>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/dovahzul.css">
-    <link rel="stylesheet" href="/css/Navbar.css">
-    <link rel="stylesheet" href="/css/Footer.css">
-    <link rel="stylesheet" href="/css/PageFooter.css">
-    <link rel="stylesheet" href="/css/credits.css">
-    <script type="module" src="/js/site.js"></script>
-</head>
-<body>
-<div id="root">
-<header class="ts-container">
-    <div class="ts-inner">
-        <div class="hamburger-menu">
-            <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation" aria-controls="mobile-navigation" aria-expanded="false">☰</button>
-        </div>
-        <div class="logo">
-            <a href="/wiki/Home.html" class="mw-logo" aria-label="Home"><img class="theme-logo" src="/images/Shadowmarks_Thieves_Guild_Sign.png" alt=""></a>
-        </div>
-        <nav class="navbar">
-            <ul class="nav-main">
-                <li><a class="nav-link" href="/wiki/Home.html"><button class="navbutton" tabindex="-1"><img src="/assets/Town.png" alt="">Home</button></a></li>
-                <li><a class="nav-link" href="/wiki/Dranleic_Haligdrake.html"><button class="navbutton" tabindex="-1"><img src="/assets/dragonborne_warrior.png" alt="">Dranleic Haligdrake</button></a></li>
-                <li><a class="nav-link" href="/wiki/Pharis_Ironeye.html"><button class="navbutton" tabindex="-1"><img src="/assets/bow_and_drinks.png" alt="">Pharis Ironeye</button></a></li>
-                <li><a class="nav-link"><button type="button" class="navbutton"><img src="/assets/frost_and_greatsword.png" alt="">Priscilla Aurora</button></a></li>
-                <li><a class="nav-link"><button type="button" class="navbutton"><img src="/assets/wealth_and_pike.png" alt="">Gwyndolin Golden-Wing</button></a></li>
-            </ul>
-            <div class="navbar-right">
-                <img class="navbar-right-background" src="/assets/inventory_filter_box.png" alt="">
-                <label class="nav-language-control">
-                    <span data-i18n="navbar:lang" data-dov-class="dovahzul">Language</span>
-                    <span><select id="lang-nav"><option value="en">English</option><option value="da">Dansk</option><option value="dov" class="dovahzul-lang-dropdown">Dovahzul</option></select></span>
-                </label>
-                <img class="navbar-right-separator" src="/assets/inventory_filter_separator.png" alt="">
-                <button title="Meridia mode" class="theme-toggle-btn" type="button" aria-pressed="false"><img id="theme-icon" src="/assets/theme_lightmode_sun.png" alt="Mode" width="30" height="30"></button>
-            </div>
-        </nav>
-        <nav id="mobile-navigation" class="mobile-navigation" hidden>
-            <a href="/wiki/Home.html" class="mw-logo" aria-label="Home"><img class="theme-logo" src="/images/Shadowmarks_Thieves_Guild_Sign.png" alt=""></a>
-            <div>
-                <a href="/wiki/Home.html">Home</a>
-                <a href="/wiki/Credits.html">Credits</a>
-            </div>
-            <div>
-                <strong>Characters</strong>
-                <p>Skyrim</p>
-                <a href="/wiki/Dranleic_Haligdrake.html">Dranleic Haligdrake</a>
-                <a href="/wiki/Pharis_Ironeye.html">Pharis Ironeye</a>
-                <span>Lahvriiluz</span>
-                <p>Oblivion</p>
-                <span>Priscilla Aurora</span>
-                <p>Morrowind</p>
-                <span>Gwyndolin Golden-Wing</span>
-            </div>
-        </nav>
-    </div>
-</header>
-<main class="mw-page-container">
-    <div class="credits-page">
-        <h1>Credits &amp; Legal</h1>
-        <section>
-            <h2>Link preview text</h2>
-            <p>The text in link previews is taken from articles on the <a href="https://en.uesp.net/">Unofficial Elder Scrolls Pages (UESP)</a>. Each preview links to its source article and the article's revision history, which lists its authors. This text is available under the <a href="https://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a> (CC BY-SA 2.5), as described in UESP's <a href="https://en.uesp.net/wiki/UESPWiki:Copyright_and_Ownership">copyright policy</a>. Excerpts may be shortened or lightly edited.</p>
-        </section>
-        <section>
-            <h2>Images</h2>
-            <p>Images in link previews come from UESP or, where noted, the Elder Scrolls Wiki on Fandom. Their rights depend on the image: most show game material, whose copyright belongs to Bethesda Softworks. Where UESP made an image from game components, the composition is licensed by UESP under CC BY-SA 2.5, while the components remain Bethesda's. Each image below links to the page it came from, which states its licensing.</p>
-            <p id="credits-error" role="alert" hidden>Image credits could not be loaded. Please reload the page.</p>
-            <table class="credits-table" hidden>
-                <thead><tr><th>Preview</th><th>Image</th><th>Rights</th></tr></thead>
-                <tbody></tbody>
-            </table>
-        </section>
-        <section><h2>Other resources</h2><p>Dovahzul translation resources: <a href="https://www.thuum.org/">thuum.org</a>.</p></section>
-        <section><h2>Disclaimer</h2><p>This is an unofficial fan-made, non-commercial project. It is not affiliated with, endorsed by, or sponsored by Bethesda Softworks or ZeniMax Media. The Elder Scrolls and related names, logos and game material are trademarks or copyright of their respective owners.</p></section>
-    </div>
-</main>
-<footer class="site-footer">
-    <section class="page-footer page-footer--outer">
-        <div class="wrapper w-footer">
-            <div class="footer-inner">
-                <div class="footer-flex-left">
-                    <img src="/images/Shadowmarks_Thieves_Guild_Sign_darkmode.png" class="light-mode-invert" width="50" height="50" alt="">
-                    <div class="footer-brand-heading">
-                        <strong style="color: var(--text-h)">Himmeloften</strong>
-                        <p>A personal character lore archive</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Credits &amp; Legal - Himmeloften</title>
+        <link rel="icon" href="/favicon.ico">
+        <script>
+            // Apply the saved theme before anything is drawn
+            (function () {
+                var theme = null;
+                try { theme = localStorage.getItem("skyrim-wiki-theme"); } catch (e) {}
+                if (theme !== "light" && theme !== "dark") {
+                    theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                document.documentElement.dataset.theme = theme;
+            })();
+        </script>
+        <style>
+            :where(html[data-theme="dark"]) { background: #1d1d1d; color-scheme: dark; }
+            :where(html[data-theme="light"]) { background: #FCFFF0; color-scheme: light; }
+        </style>
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/dovahzul.css">
+        <link rel="stylesheet" href="/css/Navbar.css">
+        <link rel="stylesheet" href="/css/Footer.css">
+        <link rel="stylesheet" href="/css/PageFooter.css">
+        <link rel="stylesheet" href="/css/credits.css">
+        <script type="module" src="/js/site.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            <header class="ts-container">
+                <div class="ts-inner">
+                    <div class="hamburger-menu">
+                        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation" aria-controls="mobile-navigation" aria-expanded="false">
+                            ☰
+                        </button>
+                    </div>
+                    <div class="logo">
+                        <a href="/wiki/Home.html" class="mw-logo" aria-label="Home">
+                            <img class="theme-logo" src="/images/Shadowmarks_Thieves_Guild_Sign.png" alt="">
+                        </a>
+                    </div>
+                    <nav class="navbar">
+                        <ul class="nav-main">
+                            <li>
+                                <a class="nav-link" href="/wiki/Home.html">
+                                    <button class="navbutton" tabindex="-1">
+                                        <img src="/assets/Town.png" alt="">
+                                        Home
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="/wiki/Dranleic_Haligdrake.html">
+                                    <button class="navbutton" tabindex="-1">
+                                        <img src="/assets/dragonborne_warrior.png" alt="">
+                                        Dranleic Haligdrake
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="/wiki/Pharis_Ironeye.html">
+                                    <button class="navbutton" tabindex="-1">
+                                        <img src="/assets/bow_and_drinks.png" alt="">
+                                        Pharis Ironeye
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link">
+                                    <button type="button" class="navbutton">
+                                        <img src="/assets/frost_and_greatsword.png" alt="">
+                                        Priscilla Aurora
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link">
+                                    <button type="button" class="navbutton">
+                                        <img src="/assets/wealth_and_pike.png" alt="">
+                                        Gwyndolin Golden-Wing
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="navbar-right">
+                            <img class="navbar-right-background" src="/assets/inventory_filter_box.png" alt="">
+                            <label class="nav-language-control">
+                                <span data-i18n="navbar:lang" data-dov-class="dovahzul">Language</span>
+                                <span>
+                                    <select id="lang-nav">
+                                        <option value="en">English</option>
+                                        <option value="da">Dansk</option>
+                                        <option value="dov" class="dovahzul-lang-dropdown">Dovahzul</option>
+                                    </select>
+                                </span>
+                            </label>
+                            <img class="navbar-right-separator" src="/assets/inventory_filter_separator.png" alt="">
+                            <button title="Meridia mode" class="theme-toggle-btn" type="button" aria-pressed="false">
+                                <img id="theme-icon" src="/assets/theme_lightmode_sun.png" alt="Mode" width="30" height="30">
+                            </button>
+                        </div>
+                    </nav>
+                    <nav id="mobile-navigation" class="mobile-navigation" hidden>
+                        <a href="/wiki/Home.html" class="mw-logo" aria-label="Home">
+                            <img class="theme-logo" src="/images/Shadowmarks_Thieves_Guild_Sign.png" alt="">
+                        </a>
+                        <div>
+                            <a href="/wiki/Home.html">Home</a>
+                            <a href="/wiki/Credits.html">Credits</a>
+                        </div>
+                        <div>
+                            <strong>Characters</strong>
+                            <p>Skyrim</p>
+                            <a href="/wiki/Dranleic_Haligdrake.html">Dranleic Haligdrake</a>
+                            <a href="/wiki/Pharis_Ironeye.html">Pharis Ironeye</a>
+                            <span>Lahvriiluz</span>
+                            <p>Oblivion</p>
+                            <span>Priscilla Aurora</span>
+                            <p>Morrowind</p>
+                            <span>Gwyndolin Golden-Wing</span>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <main class="mw-page-container">
+                <div class="credits-page">
+                    <h1>Credits &amp; Legal</h1>
+                    <section>
+                        <h2>Link preview text</h2>
+                        <p>The text in link previews is taken from articles on the <a href="https://en.uesp.net/">Unofficial Elder Scrolls Pages (UESP)</a>. Each preview links to its source article and the article's revision history, which lists its authors. This text is available under the <a href="https://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a> (CC BY-SA 2.5), as described in UESP's <a href="https://en.uesp.net/wiki/UESPWiki:Copyright_and_Ownership">copyright policy</a>. Excerpts may be shortened or lightly edited.</p>
+                    </section>
+                    <section>
+                        <h2>Images</h2>
+                        <p>Images in link previews come from UESP or, where noted, the Elder Scrolls Wiki on Fandom. Their rights depend on the image: most show game material, whose copyright belongs to Bethesda Softworks. Where UESP made an image from game components, the composition is licensed by UESP under CC BY-SA 2.5, while the components remain Bethesda's. Each image below links to the page it came from, which states its licensing.</p>
+                        <p id="credits-error" role="alert" hidden>Image credits could not be loaded. Please reload the page.</p>
+                        <table class="credits-table" hidden>
+                            <thead>
+                                <tr>
+                                    <th>Preview</th>
+                                    <th>Image</th>
+                                    <th>Rights</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h2>Other resources</h2>
+                        <p>
+                            Dovahzul translation resources: <a href="https://www.thuum.org/">thuum.org</a>.
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Disclaimer</h2>
+                        <p>
+                            This is an unofficial fan-made, non-commercial project. It is not affiliated with, endorsed by, or sponsored by Bethesda Softworks or ZeniMax Media. The Elder Scrolls and related names, logos and game material are trademarks or copyright of their respective owners.
+                        </p>
+                    </section>
+                </div>
+            </main>
+            <footer class="site-footer">
+                <section class="page-footer page-footer--outer">
+                    <div class="wrapper w-footer">
+                        <div class="footer-inner">
+                            <div class="footer-flex-left">
+                                <img src="/images/Shadowmarks_Thieves_Guild_Sign_darkmode.png" class="light-mode-invert" width="50" height="50" alt="">
+                                <div class="footer-brand-heading">
+                                    <strong style="color: var(--text-h)">Himmeloften</strong>
+                                    <p>A personal character lore archive</p>
+                                </div>
+                            </div>
+                            <div class="footer-flex-right">
+                                <h5 style="letter-spacing: 2px; padding: 0">EXPLORE</h5>
+                                <ul class="footer-explore-links">
+                                    <a href="/wiki/Home.html">Home</a>
+                                    <a href="/wiki/Credits.html">Credits &amp; Legal</a>
+                                    <a href="mailto:bytzwastaken@protonmail.com&amp;subject=Suggestion%20for%20an%20improvement%20on%20Himmeloften">Suggest improvements</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="footer-bottom-wrapper">
+                    <div class="footer-copyright">
+                        <p>
+                            © <span id="copyright-year">2026</span> Tobias R. aka. BytZ · Unofficial fan project, not affiliated with or endorsed by Bethesda Softworks or ZeniMax Media. The Elder Scrolls and related names and materials belong to their respective owners.
+                        </p>
                     </div>
                 </div>
-                <div class="footer-flex-right">
-                    <h5 style="letter-spacing: 2px; padding: 0">EXPLORE</h5>
-                    <ul class="footer-explore-links"><a href="/wiki/Home.html">Home</a><a href="/wiki/Credits.html">Credits &amp; Legal</a><a href="mailto:bytzwastaken@protonmail.com&amp;subject=Suggestion%20for%20an%20improvement%20on%20Himmeloften">Suggest improvements</a></ul>
-                </div>
-            </div>
+            </footer>
         </div>
-    </section>
-    <div class="footer-bottom-wrapper">
-        <div class="footer-copyright">
-            <p>© <span id="copyright-year">2026</span> Tobias R. aka. BytZ · Unofficial fan project, not affiliated with or endorsed by Bethesda Softworks or ZeniMax Media. The Elder Scrolls and related names and materials belong to their respective owners.</p>
-        </div>
-    </div>
-</footer>
-</div>
-</body>
+    </body>
 </html>

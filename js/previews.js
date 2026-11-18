@@ -173,6 +173,42 @@ async function preload(reference) {
     if (data?.img) new Image().src = data.img
 }
 
+// Lets a preview link be written as just <a data-preview="whiterun">Whiterun</a>:
+// fills in the address from linkPreviews.json, the link class and the wrapper span.
+// Links that already have an href keep it.
+export async function completePreviewLinks(root = document) {
+    const previews = await namespace("linkPreviews")
+    const missing = new Set()
+    for (let link of root.querySelectorAll("[data-preview]")) {
+        const key = link.dataset.preview
+        const preview = previews(key)
+        if (!preview && !key.startsWith("http")) missing.add(key)
+
+        if (link.tagName === "A" && !link.hasAttribute("href")) {
+            const href = preview || key.startsWith("http") ? previewHref(key, preview) : ""
+            if (href) {
+                link.setAttribute("href", href)
+            } else {
+                // nowhere to link to: show it as plain text, like the React version did
+                const span = document.createElement("span")
+                for (const attribute of link.attributes) span.setAttribute(attribute.name, attribute.value)
+                span.append(...link.childNodes)
+                link.replaceWith(span)
+                link = span
+            }
+        }
+        if (!link.textContent.trim()) link.textContent = preview?.title || link.getAttribute("href") || key
+        link.classList.add("wiki-anchor-text")
+        if (!link.parentElement.classList.contains("link-preview")) {
+            const wrapper = document.createElement("span")
+            wrapper.className = "link-preview"
+            link.replaceWith(wrapper)
+            wrapper.append(link)
+        }
+    }
+    if (missing.size) console.warn(`${missing.size} link previews aren't in linkPreviews.json yet:`, [...missing].sort())
+}
+
 const REFERENCE = "[data-preview], [data-item]"
 
 export function initPreviews() {
