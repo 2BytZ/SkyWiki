@@ -695,7 +695,7 @@
         "placement": "vertical"
     },
     "the-thief": {
-        "linK": "https://en.uesp.net/wiki/Lore:The_Thief",
+        "link": "https://en.uesp.net/wiki/Lore:The_Thief",
         "img": "/previews/preview-the-Thief.png",
         "imageSource": "https://en.uesp.net/wiki/File:SR-birthsign-The_Thief.png",
         "imageLicense": "by-sa",

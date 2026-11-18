@@ -17,7 +17,7 @@ export function PageFooter({ outer = false }) {
                         <h5 style={{letterSpacing: 2, padding: 0}}>EXPLORE</h5>
                         <ul className="footer-explore-links">
                             <Link to="/wiki/Home">Home</Link>
-                            <Link to="/wiki/Credits">Credits &amp; Legal</Link>
+                            <a href="/wiki/Credits/">Credits &amp; Legal</a>
                             <a href="mailto:bytzwastaken@protonmail.com&subject=Suggestion%20for%20an%20improvement%20on%20Himmeloften">Suggest improvements</a>
                         </ul>
                     </div>

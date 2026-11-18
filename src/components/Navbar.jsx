@@ -116,7 +116,7 @@ export function Navbar({  language, onLanguageChange, theme, onThemeChange }) {
 
                     <div>
                         <Link to="/wiki/Home" onClick={() => setMenuOpen(false)}>Home</Link>
-                        <Link to="/wiki/Credits" onClick={() => setMenuOpen(false)}>Credits</Link>
+                        <a href="/wiki/Credits/">Credits</a>
                     </div>
 
                     <div>

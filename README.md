@@ -1,5 +1,13 @@
 # React + Vite
 
+## Static migration
+
+Credits & Legal is maintained as plain HTML in `wiki/Credits/index.html`, with
+its behavior in `src/credits.js`. The other pages still use React. Run
+`npm run dev` for local development or `npm run build` to generate both the
+static credits page and the remaining React routes in `dist`. The site expects
+to be hosted at the root of a web server.
+
 ## Font sizes
 
 At a 1280px viewport, the root font size is 18px when the browser default is

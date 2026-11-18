@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from "r
 import { Home } from "./pages/home"
 import { Dranleic } from "./pages/dranleic-haligdrake"
 import { Pharis } from "./pages/pharis-ironeye"
-import { Credits } from "./pages/credits"
 import { Layout } from "./components/Layout"
 
 
@@ -24,7 +23,6 @@ function App() {
           <Route path="/wiki/Home" element={<Home/>} />
           <Route path="/wiki/Dranleic_Haligdrake" element={<Dranleic/>}/>
           <Route path="/wiki/Pharis_Ironeye" element={<Pharis/>}/>
-          <Route path="/wiki/Credits" element={<Credits/>}/>
           <Route path="/wiki" element={<Navigate to="/wiki/Home" replace />} />
           <Route path="/" element={<Navigate to="/wiki/Home" replace />} />
         </Route>
