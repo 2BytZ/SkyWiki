@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharis Ironeye - Himmeloften</title>
+    <link rel="icon" href="/favicon.ico">
+    <script>
+        // Apply the saved theme before anything is drawn
+        (function () {
+            var theme = null;
+            try { theme = localStorage.getItem("skyrim-wiki-theme"); } catch (e) {}
+            if (theme !== "light" && theme !== "dark") {
+                theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            }
+            document.documentElement.dataset.theme = theme;
+        })();
+    </script>
+    <style>
+        :where(html[data-theme="dark"]) { background: #1d1d1d; color-scheme: dark; }
+        :where(html[data-theme="light"]) { background: #FCFFF0; color-scheme: light; }
+    </style>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/PageNotice.css">
+    <link rel="stylesheet" href="/css/LinkPreview.css">
+    <link rel="stylesheet" href="/css/TableOfContents.css">
+    <link rel="stylesheet" href="/css/characterPage.css">
+    <link rel="stylesheet" href="/css/ItemPreview.css">
+    <link rel="stylesheet" href="/css/ImageModal.css">
+    <link rel="stylesheet" href="/css/PageFooter.css">
+    <link rel="stylesheet" href="/css/Footnotes.css">
+    <link rel="stylesheet" href="/css/Navbar.css">
+    <link rel="stylesheet" href="/css/Footer.css">
+    <link rel="stylesheet" href="/css/dovahzul.css">
+    <script type="module" src="/js/site.js"></script>
+</head>
+<body>
+<div id="root">
+<header class="ts-container">
+    <div class="ts-inner">
+        <div class="hamburger-menu">
+            <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation" aria-controls="mobile-navigation" aria-expanded="false">☰</button>
+        </div>
+        <div class="logo">
+            <a href="/wiki/Home.html" class="mw-logo" aria-label="Home"><img class="theme-logo" src="/images/Shadowmarks_Thieves_Guild_Sign.png" alt=""></a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-main">
+                <li><a class="nav-link" href="/wiki/Home.html"><button class="navbutton" tabindex="-1"><img src="/assets/Town.png" alt="">Home</button></a></li>
+                <li><a class="nav-link" href="/wiki/Dranleic_Haligdrake.html"><button class="navbutton" tabindex="-1"><img src="/assets/dragonborne_warrior.png" alt="">Dranleic Haligdrake</button></a></li>
+                <li><a class="nav-link" href="/wiki/Pharis_Ironeye.html"><button class="navbutton" tabindex="-1"><img src="/assets/bow_and_drinks.png" alt="">Pharis Ironeye</button></a></li>
+                <li><a class="nav-link"><button type="button" class="navbutton"><img src="/assets/frost_and_greatsword.png" alt="">Priscilla Aurora</button></a></li>
+                <li><a class="nav-link"><button type="button" class="navbutton"><img src="/assets/wealth_and_pike.png" alt="">Gwyndolin Golden-Wing</button></a></li>
+            </ul>
+            <div class="navbar-right">
+                <img class="navbar-right-background" src="/assets/inventory_filter_box.png" alt="">
+                <label class="nav-language-control">
+                    <span data-i18n="navbar:lang" data-dov-class="dovahzul">Language</span>
+                    <span><select id="lang-nav"><option value="en">English</option><option value="da">Dansk</option><option value="dov" class="dovahzul-lang-dropdown">Dovahzul</option></select></span>
+                </label>
+                <img class="navbar-right-separator" src="/assets/inventory_filter_separator.png" alt="">
+                <button title="Meridia mode" class="theme-toggle-btn" type="button" aria-pressed="false"><img id="theme-icon" src="/assets/theme_lightmode_sun.png" alt="Mode" width="30" height="30"></button>
+            </div>
+        </nav>
+        <nav id="mobile-navigation" class="mobile-navigation" hidden>
+            <a href="/wiki/Home.html" class="mw-logo" aria-label="Home"><img class="theme-logo" src="/images/Shadowmarks_Thieves_Guild_Sign.png" alt=""></a>
+            <div>
+                <a href="/wiki/Home.html">Home</a>
+                <a href="/wiki/Credits.html">Credits</a>
+            </div>
+            <div>
+                <strong>Characters</strong>
+                <p>Skyrim</p>
+                <a href="/wiki/Dranleic_Haligdrake.html">Dranleic Haligdrake</a>
+                <a href="/wiki/Pharis_Ironeye.html">Pharis Ironeye</a>
+                <span>Lahvriiluz</span>
+                <p>Oblivion</p>
+                <span>Priscilla Aurora</span>
+                <p>Morrowind</p>
+                <span>Gwyndolin Golden-Wing</span>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="mw-page-container">
+    <div class="content-body">
+        <div class="vector-column-start">
+            <div class="image-overlay">
+                <div class="hide-toc-button"><span>Hide</span><span class="toc-toggle-wrapper"><button type="button" aria-controls="table-of-contents" aria-expanded="true" style="width: 20px; height: 20px"></button><img src="/assets/Checkmark.png" class="toc-toggle-checkbox"><img src="/assets/Checkmark%20Check.png" class="toc-toggle-check" hidden></span></div>
+                <div id="table-of-contents"><img src="/assets/Main%20Menu.png" class="toc-background-img"><span>
+                    <div class="toc-scroll-shell">
+                        <div class="vector-sticky-container">
+                            <nav class="vector-toc">
+                                <div class="vector-container">
+                                    <div class="vector-toc-element">
+                                        <ul class="vector-toc-contents">
+                                            <li class="top-heading"><b>Back to top</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="toc-scrollbar-skin">
+                            <button class="toc-scrollbar-arrow toc-scrollbar-arrow-top" aria-label="Scroll table of contents up"><img src="/assets/Scroll_Bar_Top.png" alt=""></button>
+                            <div class="toc-scrollbar-track" style="background-image: url(/assets/Scroll_Bar_Mid.png)">
+                                <div class="toc-scrollbar-thumb"></div>
+                            </div>
+                            <button class="toc-scrollbar-arrow toc-scrollbar-arrow-bottom" aria-label="Scroll table of contents down"><img src="/assets/Scroll_Bar_Bottom.png" alt=""></button>
+                        </div>
+                    </div>
+                </span></div>
+            </div>
+        </div>
+        <div class="mw-content-container">
+            <div class="mw-page-notice">
+                <div class="notice-content-wrapper">
+                    <strong class="notice-header">UNDER CONSTRUCTION!</strong>
+                    <div class="notice-content">
+                        <p>This page is still under construction and is missing a lot of content!</p>
+                        <p>You can still browse the page as you like, but there may not be much to see...</p>
+                        <p>Proceed to a different page, or go back to the home page <a href="/wiki/Home.html">here</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mw-page-notice">
+                <div class="notice-content-wrapper">
+                    <strong style="color: --text-h">This page seems to be missing translation for one or more languages</strong>
+                    <div class="notice-content">
+                        <p>Unfortunately, this means some may not be able to read the page.</p>
+                        <p>However, they will be added at a later date!</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="mw-first-heading" data-dov-class="firstHeading" data-i18n="pharis:mwFh">Pharis Ironeye</h1>
+            <p hidden data-lang-only="dov" class="dovahzul">pharis dolm3n</p>
+            <div class="vector-content">
+                <div class="mw-body-content">
+                    <div class="infobox-wrapper infobox-wrapper--background" style="--infobox-background: url(/assets/Main%20Menu.png)">
+                        <table class="infobox vcard">
+                            <caption class="infobox-title" data-dov-class="dovahzul-small" style="--infobox-title-background-left: url(/assets/Journal_Miscellaneous_Caption_Left.png); --infobox-title-background-right: url(/assets/Journal_Miscellaneous_Caption_Right.png)" data-i18n="pharis:mwIbt">Pharis Ironeye</caption>
+                            <thead class="infobox-image-header">
+                                <tr>
+                                    <td colspan="2" class="infobox-img">
+                                        <div class="infobox-image-frame" aria-hidden="true"><div class="infobox-image-frame__middle"></div><img class="infobox-image-frame__top" src="/assets/Info_Card_Small_Top.png" alt=""><img class="infobox-image-frame__bottom" src="/assets/Info_Card_Small_Bottom.png" alt=""></div>
+                                        <div class="image-inner"><img id="profile-img" src="/images/Pharis-Ironeye-home-page-banner-art.jpg" alt="Pharis Ironeye" class="mw-file-upright"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><img class="infobox-image-divider" src="/assets/Message_Card_Divider.png"></td>
+                                </tr>
+                            </thead>
+                            <tbody data-i18n-infobox="pharis">
+                                <tr><td><span>Homeland/Origin</span><p class="dovahzul-english" hidden>()</p></td><td><span class="link-preview"><a href="https://en.uesp.net/wiki/Lore:Stormhold" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Lore:Stormhold">Stormhold</a></span>, <span class="link-preview"><a href="https://en.uesp.net/wiki/Lore:Shadowfen" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Lore:Shadowfen">Shadowfen</a></span>, <span class="link-preview"><a href="https://en.uesp.net/wiki/Lore:Black_Marsh" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Lore:Black_Marsh">Black Marsh</a></span>, <span class="link-preview"><a href="https://en.uesp.net/wiki/Lore:Tamriel" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Lore:Tamriel">Tamriel</a></span></td></tr>
+                                <tr><td><span>Race</span><p class="dovahzul-english" hidden>()</p></td><td><span class="link-preview"><a href="https://en.uesp.net/wiki/Lore:Argonian" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Lore:Argonian">Argonian</a></span></td></tr>
+                                <tr><td><span>Gender</span><p class="dovahzul-english" hidden>()</p></td><td><span class="infobox-text">Male</span></td></tr>
+                                <tr><td><span>Birth</span><p class="dovahzul-english" hidden>()</p></td><td><span class="infobox-text">14th of Second Seed, 4E 180</span></td></tr>
+                                <tr><td><span>Factions(s)</span><p class="dovahzul-english" hidden>()</p></td><td><span class="link-preview"><a href="https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)">Thieves Guild</a></span>, <span class="link-preview"><a href="https://en.uesp.net/wiki/Lore:Shadowscales" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Lore:Shadowscales">Shadowscales</a></span></td></tr>
+                                <tr><td><span>Occupation</span><p class="dovahzul-english" hidden>()</p></td><td><span class="infobox-text">Treasure-/Bounty Hunter</span> and <span class="infobox-text">Assassin</span></td></tr>
+                                <tr><td><span>Known for</span><p class="dovahzul-english" hidden>()</p></td><td><span class="infobox-text">His excellent stealth, alchemy, and marksmanship</span></td></tr>
+                                <tr><td><span>Relations</span><p class="dovahzul-english" hidden>()</p></td><td><span class="link-preview"><a href="https://en.uesp.net/wiki/Skyrim:Saadia" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Skyrim:Saadia">Saadia</a></span>, <span class="link-preview"><a href="https://en.uesp.net/wiki/Skyrim:Angi" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Skyrim:Angi">Angi</a></span>, <span class="link-preview"><a href="https://en.uesp.net/wiki/Skyrim:Faendal" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Skyrim:Faendal">Faendal</a></span>, <span class="link-preview"><a href="https://en.uesp.net/wiki/Skyrim:Brynjolf" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Skyrim:Brynjolf">Brynjolf</a></span>, <span class="link-preview"><a href="https://en.uesp.net/wiki/Skyrim:Balgruuf_the_Greater" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Skyrim:Balgruuf_the_Greater">Jarl Balgruuf the Greater</a></span>, <span class="link-preview"><a href="https://en.uesp.net/wiki/Skyrim:Captain_Aldis" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Skyrim:Captain_Aldis">Captain Aldis</a></span>, <span class="link-preview"><a href="https://en.uesp.net/wiki/Skyrim:Fihada" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Skyrim:Fihada">Frihada</a></span>, <span class="link-preview"><a href="https://en.uesp.net/wiki/Skyrim:Elrindir" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Skyrim:Elrindir">Elrindir</a></span></td></tr>
+                                <tr><td><span>Spouse</span><p class="dovahzul-english" hidden>()</p></td><td><span class="link-preview"><a href="https://en.uesp.net/wiki/Skyrim:Ysolda" class="wiki-anchor-text infobox-text" data-preview="https://en.uesp.net/wiki/Skyrim:Ysolda">Ysolda</a></span></td></tr>
+                                <tr><td><span>Children</span><p class="dovahzul-english" hidden>()</p></td><td><span class="infobox-text">1</span></td></tr>
+                            </tbody>
+                            <tfoot class="infobox-footer">
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="infobox-footer__ornament" aria-hidden="true"><img src="/assets/Divider_Ornate_L.png"><div class="infobox-footer__middle"></div><img src="/assets/Divider_Ornate_R.png"></div>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <blockquote class="page-quote">
+                        <div class="page-quote-frame" aria-hidden="true"><img class="page-quote-frame-start" src="/assets/Dialogue_Selector_Start.png"><div class="page-quote-frame-middle"></div><img class="page-quote-frame-end" src="/assets/Dialogue_Selector_End.png"></div>
+                        <div class="quote-text-style"><span data-dov-class="dovahzul-quote-style" data-i18n="pharis:mwQt">You won't find anyone better in all of Tamriel, my friend!</span></div>
+                    </blockquote>
+                    <section>
+                        <p id="lead-paragraph-1" data-dov-class="dovahzul" data-i18n-trans="pharis:mwLp1">[Placeholder] An expert bounty hunter and assassin. He loves drinking, like, a lot, but he's not an alcoholic. He his quick with his hands and therefore pretty good at stealing. Though, he doesn't do it much, and does so only when necessary, unless it's a quick drink and he's short on Septims, if you know what I mean. He is an Archer, once an aspired one, but now a true Archer through and through with the reputation and effort he's put in from his time as bounty hunter/assassin. 'You won't find anyone better for the job in all of Tamriel!' Or so he says.</p>
+                    </section>
+                    <section>
+                        <div class="mw-heading mw-heading-2">
+                            <h2>Early life</h2>
+                        </div>
+                        <p>...</p>
+                    </section>
+                    <section>
+                        <div class="mw-heading mw-heading-2">
+                            <h2>Career</h2>
+                        </div>
+                        <p></p>
+                    </section>
+                    <section>
+                        <div class="mw-heading mw-heading-3">
+                            <h3>Early career</h3>
+                        </div>
+                        <p></p>
+                    </section>
+                    <section>
+                        <div class="mw-heading mw-heading-2">
+                            <h2>Skyrim</h2>
+                        </div>
+                        <section>
+                            <div class="mw-heading mw-heading-3">
+                                <h3>Arrival in Skyrim</h3>
+                            </div>
+                            <p></p>
+                        </section>
+                    </section>
+                    <section>
+                        <div class="mw-heading mw-heading-2">
+                            <h2>Factions and affiliations</h2>
+                        </div>
+                        <p></p>
+                        <section>
+                            <div class="mw-heading mw-heading-3">
+                                <h3>Joining the Thieves Guild</h3>
+                            </div>
+                            <p></p>
+                        </section>
+                    </section>
+                    <section>
+                        <div class="mw-heading mw-heading-2">
+                            <h2>Notable events</h2>
+                        </div>
+                        <p></p>
+                    </section>
+                    <section>
+                        <div class="mw-heading mw-heading-2">
+                            <h2>Personal life</h2>
+                        </div>
+                        <p></p>
+                        <section>
+                            <div class="mw-heading mw-heading-3">
+                                <h3>Personality</h3>
+                            </div>
+                            <p></p>
+                        </section>
+                        <section>
+                            <div class="mw-heading mw-heading-3">
+                                <h3>Appearance</h3>
+                            </div>
+                            <p></p>
+                        </section>
+                        <section>
+                            <div class="mw-heading mw-heading-3">
+                                <h3>Relationships</h3>
+                            </div>
+                            <p></p>
+                        </section>
+                        <section>
+                            <div class="mw-heading mw-heading-3">
+                                <h3>Beliefs</h3>
+                            </div>
+                            <p></p>
+                        </section>
+                    </section>
+                    <section>
+                        <div class="mw-heading mw-heading-2">
+                            <h2>Gallery</h2>
+                        </div>
+                        <div class="gallery-image-collection">
+                            <ul class="gallery-container">
+                                <li class="gallery-list-item"><span class="gallery-img">
+                                    <div class="image-inner"><img src="/images/bullseye-pharis-headshot-art-gore.jpg" width="300" height="169"></div>
+                                </span></li>
+                                <li class="gallery-list-item"><span class="gallery-img">
+                                    <div class="image-inner"><img src="/images/Pharis-Ironeye-sunrise-sitting.jpg" width="300" height="169"></div>
+                                </span></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="mw-heading mw-heading-2">
+                            <h2>See also</h2>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="mw-heading mw-heading-2">
+                            <h2>References</h2>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <section class="page-footer page-footer--inline">
+            <div class="wrapper w-footer">
+                <div class="footer-inner">
+                    <div class="footer-flex-left">
+                        <img src="/images/Shadowmarks_Thieves_Guild_Sign_darkmode.png" class="light-mode-invert" width="50" height="50" alt="">
+                        <div class="footer-brand-heading">
+                            <strong style="color: var(--text-h)">Himmeloften</strong>
+                            <p>A personal character lore archive</p>
+                        </div>
+                    </div>
+                    <div class="footer-flex-right">
+                        <h5 style="letter-spacing: 2px; padding: 0">EXPLORE</h5>
+                        <ul class="footer-explore-links"><a href="/wiki/Home.html">Home</a><a href="/wiki/Credits.html">Credits &amp; Legal</a><a href="mailto:bytzwastaken@protonmail.com&amp;subject=Suggestion%20for%20an%20improvement%20on%20Himmeloften">Suggest improvements</a></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="site-footer">
+    <section class="page-footer page-footer--outer">
+        <div class="wrapper w-footer">
+            <div class="footer-inner">
+                <div class="footer-flex-left">
+                    <img src="/images/Shadowmarks_Thieves_Guild_Sign_darkmode.png" class="light-mode-invert" width="50" height="50" alt="">
+                    <div class="footer-brand-heading">
+                        <strong style="color: var(--text-h)">Himmeloften</strong>
+                        <p>A personal character lore archive</p>
+                    </div>
+                </div>
+                <div class="footer-flex-right">
+                    <h5 style="letter-spacing: 2px; padding: 0">EXPLORE</h5>
+                    <ul class="footer-explore-links"><a href="/wiki/Home.html">Home</a><a href="/wiki/Credits.html">Credits &amp; Legal</a><a href="mailto:bytzwastaken@protonmail.com&amp;subject=Suggestion%20for%20an%20improvement%20on%20Himmeloften">Suggest improvements</a></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-bottom-wrapper">
+        <div class="footer-copyright">
+            <p>© <span id="copyright-year">2026</span> Tobias R. aka. BytZ · Unofficial fan project, not affiliated with or endorsed by Bethesda Softworks or ZeniMax Media. The Elder Scrolls and related names and materials belong to their respective owners.</p>
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+</html>

@@ -1,27 +1,11 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+ico" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=/wiki/Home.html">
+    <link rel="canonical" href="/wiki/Home.html">
+    <script>location.replace("/wiki/Home.html")</script>
     <title>Himmeloften - Personal Lore Archive</title>
-    <script>
-      (function () {
-        var theme = null;
-        try { theme = localStorage.getItem("skyrim-wiki-theme"); } catch (e) {}
-        if (theme !== "light" && theme !== "dark") {
-          theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-        }
-        document.documentElement.dataset.theme = theme;
-      })();
-    </script>
-    <style>
-      :where(html[data-theme="dark"]) { background: #1d1d1d; color-scheme: dark; }
-      :where(html[data-theme="light"]) { background: #FCFFF0; color-scheme: light; }
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+</head>
+<body><a href="/wiki/Home.html">Go to the home page</a></body>
 </html>

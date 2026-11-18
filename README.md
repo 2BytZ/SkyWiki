@@ -1,99 +1,79 @@
-# React + Vite
+# Himmeloften (static version)
 
-## Static migration
+Plain HTML, CSS and JavaScript. There's no build step and nothing to install: upload the folder's contents to the root of your web host.
 
-Credits & Legal is maintained as plain HTML in `wiki/Credits/index.html`, with
-its behavior in `src/credits.js`. The other pages still use React. Run
-`npm run dev` for local development or `npm run build` to generate both the
-static credits page and the remaining React routes in `dist`. The site expects
-to be hosted at the root of a web server.
+## Viewing it locally
 
-## Font sizes
+The pages load their translations and previews with `fetch()`, and they use paths that start with `/`. That means you can't just double-click an HTML file. Serve the folder instead:
 
-At a 1280px viewport, the root font size is 18px when the browser default is
-16px. The root `clamp()` in `src/index.css` scales typography and `rem`-based
-layout sizes smoothly for smaller and larger screens. Adjust its minimum,
-preferred value, and maximum to change the overall scale.
+- **VS Code:** right-click `index.html` and choose *Open with Live Server*. Open the `Himmeloften` folder itself, not a parent folder.
+- **Terminal:** run `python -m http.server` in this folder, then open http://localhost:8000.
 
-## Item previews
+## Folders
 
-Import `ItemPreview` where it is used:
+| Path | What's in it |
+|---|---|
+| `wiki/Home.html`, `wiki/Dranleic_Haligdrake.html`, `wiki/Pharis_Ironeye.html`, `wiki/Credits.html` | The pages |
+| `index.html`, `wiki/index.html` | Forward to the home page |
+| `404.html` | Forwards the old React addresses (`/wiki/Home/`, `/wiki/Credits/`, …) to the new pages; otherwise "Page not found" |
+| `css/` | The stylesheets, unchanged from the React project. Pages link them in the order React applied them, so keep that order. |
+| `js/` | The scripts (see below) |
+| `locales/en`, `locales/da`, `locales/dov` | The translation, link-preview and item-preview files |
+| `data/sources/` | Footnote sources |
+| `images/` | Photos and preview images (was `public/`) |
+| `assets/` | UI artwork (was `src/assets/`) |
+| `fonts/` | Fonts |
 
-```jsx
-import { ItemPreview } from "../components/ItemPreview";
+The header and footer are copied into every page. If you add a page or a nav link, update all the pages.
 
-<ItemPreview name="dragonstone" />
-<ItemPreview name="iron-sword">an iron sword</ItemPreview>
+## Writing pages
+
+Article text is ordinary HTML. The React components are replaced by these patterns:
+
+**Link with a hover preview** (was `<LinkPreview url="whiterun">Whiterun</LinkPreview>`):
+
+```html
+<span class="link-preview"><a href="https://en.uesp.net/wiki/Lore:Whiterun" class="wiki-anchor-text" data-preview="whiterun">Whiterun</a></span>
 ```
 
-`name` is the key in `src/config/locales/en/itemPreviews.json`; children
-optionally override the displayed text. Add entries under `items`:
+`data-preview` is the key in `locales/<language>/linkPreviews.json`. It can also be a full URL, if that's how the entry is keyed. If a language doesn't have the entry, the English one is shown. For a link with no address, use `<span class="wiki-anchor-text">` in place of the `<a>`.
 
-```json
-{
-  "my-weapon": {
-    "title": "My Weapon",
-    "type": "weapon",
-    "baseDamage": 12,
-    "enchantment": [
-      { "id": "fire-damage", "magnitude": 10 },
-      { "id": "frost-damage", "magnitude": 5 }
-    ],
-    "description": "A description of the weapon.",
-    "img": "/previews/my-weapon.png",
-    "link": "/wiki/My_Weapon"
-  }
-}
+**Item preview** (was `<ItemPreview name="dragonstone">`). Use an `<a href="…">` if the item has a `link`. Otherwise use a button:
+
+```html
+<span class="link-preview"><button type="button" class="wiki-anchor-text item-preview__reference" data-item="shiv">Shiv</button></span>
 ```
 
-Only `title` is needed for an ordinary item; the description, image, and link
-are optional. Without a link, the name opens the preview instead of navigating.
-Weapons use `type: "weapon"` and an optional `baseDamage`. Armor uses
-`type: "armor"`, an optional `armorRating`, and a required `slot`: `head`,
-`neck`, `chest`, `hands`, `finger`, `feet`, or `shield`. Use armor slots for
-clothing and jewelry too. An ordinary item can omit `type`.
+`data-item` is the key under `items` in `itemPreviews.json`. Enchantments work as before. See the rules in `js/itemEnchantments.js` and the definitions in `locales/en/enchantments.json`.
 
-Both armor and weapons can have an `enchantment` array. Each entry has an `id`
-and a `magnitude`, as in the weapon example above. Define the IDs and their
-description templates under `armor` or `weapon` in
-`src/config/locales/en/enchantments.json`. Every `<mag>` in a description is
-replaced with the item's magnitude. Armor enchantments also need a `validItems`
-array listing the slots they can be applied to. For example:
+**Footnote** (was `<Cite id="uriel-assassination"/>`):
 
-```json
-{
-  "title": "My Helmet",
-  "type": "armor",
-  "slot": "head",
-  "armorRating": 15,
-  "enchantment": [{ "id": "fortify-alchemy", "magnitude": 24 }]
-}
+```html
+<sup data-cite="uriel-assassination" style="font-family: skyrim"></sup>
 ```
 
-Enchantments applied to an invalid armor slot are shown in red with a warning.
-Invalid slots, missing magnitudes, and unknown enchantments are reported in the
-preview and the browser console. For an exceptional pre-enchanted artifact that
-doesn't follow the normal slot rules, set `allowInvalidSlot` to `true` on that
-specific enchantment entry. The armor still needs a valid slot.
+The numbers and the References list (`<ol data-footnotes="/data/sources/dranleic.json">`) fill in automatically, in order of first use.
 
-Put images in `public/previews` and use their `/previews/...` paths. Add translated
-item entries with the same keys to `da/itemPreviews.json` or
-`dov/itemPreviews.json`. To translate enchantment descriptions, add entries with
-the same type and ID to the corresponding `enchantments.json` file; armor slot
-rules are always taken from the English catalogue. Missing entries fall back to
-English. Provide appropriate attribution for any images you use.
+**Image that opens in a lightbox:** wrap it in `<div class="image-inner">…</div>`.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Table of contents:** built automatically from the article's `h2`–`h5` headings.
 
-Currently, two official plugins are available:
+## Translations
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The English text is written directly in the HTML. Attributes connect elements to the locale files:
 
-## React Compiler
+- `data-i18n="dranleic:mwFh"` sets the element's text from the key `mwFh` in `locales/<language>/dranleic.json`.
+- `data-i18n-trans="dranleic:mwLp1"` does the same for a paragraph with links inside. The translation uses `<0>…</0>`, `<2>…</2>` tags, numbered by the paragraph's children, just like react-i18next's `<Trans>`. If a language doesn't have the key, the English HTML stays.
+- `data-i18n-infobox="dranleic"` on a `<tbody>` builds the infobox rows from that file's `infobox` list.
+- `data-dov-class="dovahzul"` adds a class while Dovahzul is selected.
+- `data-lang-only="dov" hidden` means the element only shows in Dovahzul.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Scripts
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `js/site.js` runs on every page. It handles the theme, language picker, menus and home page filter, and starts the scripts below.
+- `js/i18n.js` handles translations.
+- `js/previews.js` draws the link and item hover cards.
+- `js/article.js` builds the table of contents, footnotes, lightbox and infobox ornaments.
+- `js/credits.js` builds the image credits table.
+- `js/markup.js` holds small HTML helpers.
+- `js/itemEnchantments.js` contains the enchantment rules.

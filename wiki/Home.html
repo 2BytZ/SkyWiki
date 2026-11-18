@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himmeloften - Personal Lore Archive</title>
+    <link rel="icon" href="/favicon.ico">
+    <script>
+        // Apply the saved theme before anything is drawn
+        (function () {
+            var theme = null;
+            try { theme = localStorage.getItem("skyrim-wiki-theme"); } catch (e) {}
+            if (theme !== "light" && theme !== "dark") {
+                theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            }
+            document.documentElement.dataset.theme = theme;
+        })();
+    </script>
+    <style>
+        :where(html[data-theme="dark"]) { background: #1d1d1d; color-scheme: dark; }
+        :where(html[data-theme="light"]) { background: #FCFFF0; color-scheme: light; }
+    </style>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/PageNotice.css">
+    <link rel="stylesheet" href="/css/LinkPreview.css">
+    <link rel="stylesheet" href="/css/TableOfContents.css">
+    <link rel="stylesheet" href="/css/characterPage.css">
+    <link rel="stylesheet" href="/css/ItemPreview.css">
+    <link rel="stylesheet" href="/css/ImageModal.css">
+    <link rel="stylesheet" href="/css/PageFooter.css">
+    <link rel="stylesheet" href="/css/Footnotes.css">
+    <link rel="stylesheet" href="/css/Navbar.css">
+    <link rel="stylesheet" href="/css/Footer.css">
+    <link rel="stylesheet" href="/css/dovahzul.css">
+    <script type="module" src="/js/site.js"></script>
+</head>
+<body>
+<div id="root">
+<header class="ts-container">
+    <div class="ts-inner">
+        <div class="hamburger-menu">
+            <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation" aria-controls="mobile-navigation" aria-expanded="false">☰</button>
+        </div>
+        <div class="logo">
+            <a href="/wiki/Home.html" class="mw-logo" aria-label="Home"><img class="theme-logo" src="/images/Shadowmarks_Thieves_Guild_Sign.png" alt=""></a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-main">
+                <li><a class="nav-link" href="/wiki/Home.html"><button class="navbutton" tabindex="-1"><img src="/assets/Town.png" alt="">Home</button></a></li>
+                <li><a class="nav-link" href="/wiki/Dranleic_Haligdrake.html"><button class="navbutton" tabindex="-1"><img src="/assets/dragonborne_warrior.png" alt="">Dranleic Haligdrake</button></a></li>
+                <li><a class="nav-link" href="/wiki/Pharis_Ironeye.html"><button class="navbutton" tabindex="-1"><img src="/assets/bow_and_drinks.png" alt="">Pharis Ironeye</button></a></li>
+                <li><a class="nav-link"><button type="button" class="navbutton"><img src="/assets/frost_and_greatsword.png" alt="">Priscilla Aurora</button></a></li>
+                <li><a class="nav-link"><button type="button" class="navbutton"><img src="/assets/wealth_and_pike.png" alt="">Gwyndolin Golden-Wing</button></a></li>
+            </ul>
+            <div class="navbar-right">
+                <img class="navbar-right-background" src="/assets/inventory_filter_box.png" alt="">
+                <label class="nav-language-control">
+                    <span data-i18n="navbar:lang" data-dov-class="dovahzul">Language</span>
+                    <span><select id="lang-nav"><option value="en">English</option><option value="da">Dansk</option><option value="dov" class="dovahzul-lang-dropdown">Dovahzul</option></select></span>
+                </label>
+                <img class="navbar-right-separator" src="/assets/inventory_filter_separator.png" alt="">
+                <button title="Meridia mode" class="theme-toggle-btn" type="button" aria-pressed="false"><img id="theme-icon" src="/assets/theme_lightmode_sun.png" alt="Mode" width="30" height="30"></button>
+            </div>
+        </nav>
+        <nav id="mobile-navigation" class="mobile-navigation" hidden>
+            <a href="/wiki/Home.html" class="mw-logo" aria-label="Home"><img class="theme-logo" src="/images/Shadowmarks_Thieves_Guild_Sign.png" alt=""></a>
+            <div>
+                <a href="/wiki/Home.html">Home</a>
+                <a href="/wiki/Credits.html">Credits</a>
+            </div>
+            <div>
+                <strong>Characters</strong>
+                <p>Skyrim</p>
+                <a href="/wiki/Dranleic_Haligdrake.html">Dranleic Haligdrake</a>
+                <a href="/wiki/Pharis_Ironeye.html">Pharis Ironeye</a>
+                <span>Lahvriiluz</span>
+                <p>Oblivion</p>
+                <span>Priscilla Aurora</span>
+                <p>Morrowind</p>
+                <span>Gwyndolin Golden-Wing</span>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="mw-page-container">
+    <h1 class="mw-first-header" data-dov-class="dovahzul-header" data-i18n="home:mwFh">Welcome to Himmeloften</h1>
+    <p hidden data-lang-only="dov" class="dovahzul-english mw-first-header">Valokein wah Kavselok</p>
+    <br>
+    <div class="home-body-content">
+        <div data-lang-only="dov" hidden>
+            <div class="mw-page-notice__lang">
+                <button type="button" class="page-notice-close-button">X</button>
+                <div class="notice-content-wrapper">
+                    <strong class="notice-header">WARNING</strong>
+                    <div class="notice-content">
+                        <p>You have changed the language to <span class="link-preview"><a href="https://en.uesp.net/wiki/Lore:Dragon_Language" class="wiki-anchor-text" data-preview="https://en.uesp.net/wiki/Lore:Dragon_Language">Dovahzul</a></span>, the language of dragons!</p>
+                        <p>If you are not a dragon, or aren't well versed in the <span class="link-preview"><a href="https://en.uesp.net/wiki/Lore:Thu%27um" class="wiki-anchor-text" data-preview="https://en.uesp.net/wiki/Lore:Thu%27um">Thu'um</a></span>, you'd be advised to revert back to your prefered language.</p>
+                        <br>
+                        <p id="resources-text">If this was intentional and you are learning – or trying to learn – Dovahzul, consider using the resources below, so you have a chance to reading the page.</p>
+                    </div>
+                    <ul>
+                        <li><a target="new" href="https://www.thuum.org/library/Dovahzul%20Print%20Dictionary%204th%20Edition.pdf">Dovahzul Dictionary 4th Edition</a></li>
+                        <li><a target="new" href="https://www.thuum.org/assets/Learning%20Dovahzul.pdf">Learning Dovahzul - First Edition - from www.thuum.org</a></li>
+                        <li><a target="new" href="https://www.thuum.org/translator.php">Dovahzul to English translator</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="home-body-text">
+            <p>This website is created for the purpose of writing down my own personal headcanons for my player character in the Elder Scrolls series.</p>
+            <p>It serves the purpose of acting like a real wiki, with links and references to things that actually happened in the game, and using that to further reinforce my characters' "backstory" and, well, their character!</p>
+            <p>Currently, the site is still very much under construction and it is still missing a lot of content and material that I either haven't started to even write yet, or just haven't inserted into the website yet. The most full and up-to-date page on the website currently is <span class="link-preview"><a href="/wiki/Dranleic_Haligdrake.html" class="wiki-anchor-text" data-preview="dranleic">Dranleic Haligdrake</a></span>, who is my first Skyrim playthrough character.</p>
+            <p>I had a lot of fun making this website and I will continue to improve upon it and add more content whenever I come around to it. Until then, I hope you too can find some joy in what I've created out of my passion for this game series, and even inspire you for a character in your next playthrough ;)</p>
+        </div>
+        <div>
+            <div class="mw-filter-buttons"><span data-dov-class="dovahzul-small" data-i18n="home:mwFt">Filter characters by game:</span><nav>
+                <ul class="mw-games-nav">
+                    <li id="All_button"><button class="games-nav-button" type="button" data-game-filter="all" aria-pressed="true" width="40" height="40" data-i18n="home:mwNbA">All</button></li>
+                    <li><button class="games-nav-button" type="button" data-game-filter="skyrim" aria-pressed="false" data-i18n="home:mwNbS"><img src="/assets/skyrim_logo_white.png" class="filter-button-icon light-mode-invert" width="40" height="40">Skyrim</button></li>
+                    <li><button class="games-nav-button" type="button" data-game-filter="oblivion" aria-pressed="false" data-i18n="home:mwNbO"><img src="/assets/oblivion_logo.png" class="filter-button-icon light-mode-invert" width="40" height="40">Oblivion</button></li>
+                    <li><button class="games-nav-button" type="button" data-game-filter="morrowind" aria-pressed="false" data-i18n="home:mwNbM"><img src="/assets/morrowind_logo.png" class="filter-button-icon light-mode-invert" width="40" height="40">Morrowind</button></li>
+                </ul>
+            </nav></div>
+        </div>
+        <div class="character-nav">
+            <ul class="gallery">
+                <li class="gallerybox" data-game="skyrim"><a href="/wiki/Dranleic_Haligdrake.html" title="Go to character page for Dranleic Haligdrake">
+                    <div class="thumb"><img src="/images/dranleic-haligdrake-power-stance-swords.jpg" alt="Dranleic Haligdrake" width="480" height="360"></div>
+                    <div class="gallerytext"><p>Dranleic Haligdrake</p><span hidden data-lang-only="dov" class="dovahzul-smaller">dranl2c revakdov4</span></div>
+                </a></li>
+                <li class="gallerybox" data-game="skyrim"><a href="/wiki/Pharis_Ironeye.html" title="Go to character page for Pharis Ironeye">
+                    <div class="thumb"><img src="/images/Pharis-Ironeye-sideview-firing-bow.jpg" alt="Pharis Ironeye" width="480" height="360"></div>
+                    <div class="gallerytext"><p>Pharis Ironeye</p><span hidden data-lang-only="dov" class="dovahzul-smaller">pharis dolm3n</span></div>
+                </a></li>
+                <li class="gallerybox" data-game="oblivion"><a title="Go to character page for Priscilla Aurora">
+                    <div class="thumb"><img src="/images/dummy-pic-1.png" alt="Priscilla Aurora" width="480" height="360"></div>
+                    <div class="gallerytext"><p>Priscilla Aurora</p><span hidden data-lang-only="dov" class="dovahzul-smaller">priscilla loksilkun</span></div>
+                </a></li>
+                <li class="gallerybox" data-game="morrowind"><a title="Go to character page for Gwyndolin Golden-Wing">
+                    <div class="thumb"><img src="/images/dummy-pic-1.png" alt="Gwyndolin Golden-Wing" width="480" height="360"></div>
+                    <div class="gallerytext"><p>Gwyndolin Golden-Wing</p><span hidden data-lang-only="dov" class="dovahzul-smaller">gwyndolin yuvonv3ng</span></div>
+                </a></li>
+                <li class="gallerybox" data-game="skyrim"><a title="Go to character page for Lahvriiluz">
+                    <div class="thumb"><img src="/images/dummy-pic-1.png" alt="Lahvriiluz" width="480" height="360"></div>
+                    <div class="gallerytext"><p>Lahvriiluz</p><span hidden data-lang-only="dov" class="dovahzul-smaller">l4vr3luz</span></div>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer class="site-footer">
+    <section class="page-footer page-footer--outer">
+        <div class="wrapper w-footer">
+            <div class="footer-inner">
+                <div class="footer-flex-left">
+                    <img src="/images/Shadowmarks_Thieves_Guild_Sign_darkmode.png" class="light-mode-invert" width="50" height="50" alt="">
+                    <div class="footer-brand-heading">
+                        <strong style="color: var(--text-h)">Himmeloften</strong>
+                        <p>A personal character lore archive</p>
+                    </div>
+                </div>
+                <div class="footer-flex-right">
+                    <h5 style="letter-spacing: 2px; padding: 0">EXPLORE</h5>
+                    <ul class="footer-explore-links"><a href="/wiki/Home.html">Home</a><a href="/wiki/Credits.html">Credits &amp; Legal</a><a href="mailto:bytzwastaken@protonmail.com&amp;subject=Suggestion%20for%20an%20improvement%20on%20Himmeloften">Suggest improvements</a></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-bottom-wrapper">
+        <div class="footer-copyright">
+            <p>© <span id="copyright-year">2026</span> Tobias R. aka. BytZ · Unofficial fan project, not affiliated with or endorsed by Bethesda Softworks or ZeniMax Media. The Elder Scrolls and related names and materials belong to their respective owners.</p>
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+</html>
