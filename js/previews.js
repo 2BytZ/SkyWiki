@@ -173,40 +173,82 @@ async function preload(reference) {
     if (data?.img) new Image().src = data.img
 }
 
-// Lets a preview link be written as just <a data-preview="whiterun">Whiterun</a>:
-// fills in the address from linkPreviews.json, the link class and the wrapper span.
-// Links that already have an href keep it.
+// Swap an element for one with another tag, keeping its attributes and contents
+function retag(element, tagName) {
+    const replacement = document.createElement(tagName)
+    for (const attribute of element.attributes) replacement.setAttribute(attribute.name, attribute.value)
+    replacement.append(...element.childNodes)
+    element.replaceWith(replacement)
+    return replacement
+}
+
+function wrap(element) {
+    if (element.parentElement?.classList.contains("link-preview")) return
+    const wrapper = document.createElement("span")
+    wrapper.className = "link-preview"
+    element.replaceWith(wrapper)
+    wrapper.append(element)
+}
+
+// Lets previews be written as short as the React components were:
+//   <a data-preview="whiterun">Whiterun</a>   (was <LinkPreview url="whiterun">Whiterun</LinkPreview>)
+//   <a data-item="shiv">Shiv</a>              (was <ItemPreview name="shiv">Shiv</ItemPreview>)
+// Fills in the address, the classes and the wrapper. Empty text shows the preview's title
+// (or the address), like the components did.
 export async function completePreviewLinks(root = document) {
     const previews = await namespace("linkPreviews")
     const missing = new Set()
     for (let link of root.querySelectorAll("[data-preview]")) {
         const key = link.dataset.preview
         const preview = previews(key)
-        if (!preview && !key.startsWith("http")) missing.add(key)
-
+        if (key && !preview && !key.startsWith("http")) missing.add(key)
         if (link.tagName === "A" && !link.hasAttribute("href")) {
+            // no preview yet: plain text instead of a link to nowhere
             const href = preview || key.startsWith("http") ? previewHref(key, preview) : ""
-            if (href) {
-                link.setAttribute("href", href)
-            } else {
-                // nowhere to link to: show it as plain text, like the React version did
-                const span = document.createElement("span")
-                for (const attribute of link.attributes) span.setAttribute(attribute.name, attribute.value)
-                span.append(...link.childNodes)
-                link.replaceWith(span)
-                link = span
-            }
+            if (href) link.setAttribute("href", href)
+            else link = retag(link, "span")
         }
-        if (!link.textContent.trim()) link.textContent = preview?.title || link.getAttribute("href") || key
+        if (!link.textContent.trim()) link.textContent = preview?.title ?? link.getAttribute("href") ?? key
         link.classList.add("wiki-anchor-text")
-        if (!link.parentElement.classList.contains("link-preview")) {
-            const wrapper = document.createElement("span")
-            wrapper.className = "link-preview"
-            link.replaceWith(wrapper)
-            wrapper.append(link)
-        }
+        wrap(link)
     }
     if (missing.size) console.warn(`${missing.size} link previews aren't in linkPreviews.json yet:`, [...missing].sort())
+
+    const missingItems = new Set()
+    for (let reference of root.querySelectorAll("[data-item]")) {
+        const name = reference.dataset.item
+        const item = await findItem(name)
+        if (!item) missingItems.add(name)
+        if (reference.tagName === "A" && !reference.hasAttribute("href")) {
+            if (item?.link) reference.setAttribute("href", item.link)
+            else if (item) {
+                reference = retag(reference, "button") // no page to go to: opens on click instead
+                reference.type = "button"
+            } else reference = retag(reference, "span")
+        }
+        if (!reference.textContent.trim()) reference.textContent = item?.title ?? name
+        reference.classList.add("wiki-anchor-text", "item-preview__reference")
+        wrap(reference)
+    }
+    if (missingItems.size) console.warn(`${missingItems.size} item previews aren't in itemPreviews.json yet:`, [...missingItems].sort())
+}
+
+// Keeps punctuation right after a link on the same line as the link
+// (so "Whiterun," never wraps with the comma alone on the next line)
+export function keepPunctuationWithLinks(root = document) {
+    root.querySelectorAll(".link-preview").forEach((link) => {
+        if (link.parentElement?.classList.contains("link-nowrap")) return
+        const next = link.nextSibling
+        if (next?.nodeType !== Node.TEXT_NODE) return
+        const punctuation = next.textContent.match(/^[,.;:!?)'"]+/)
+        if (!punctuation) return
+        const wrapper = document.createElement("span")
+        wrapper.className = "link-nowrap"
+        wrapper.style.whiteSpace = "nowrap"
+        link.replaceWith(wrapper)
+        wrapper.append(link, punctuation[0])
+        next.textContent = next.textContent.slice(punctuation[0].length)
+    })
 }
 
 const REFERENCE = "[data-preview], [data-item]"
@@ -246,6 +288,9 @@ export function initPreviews() {
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") close()
     })
-    document.addEventListener("languagechange", close)
+    document.addEventListener("languagechange", () => {
+        close()
+        keepPunctuationWithLinks() // text may have been redrawn in the new language
+    })
     window.addEventListener("resize", () => openCard && position(openCard.card, openCard.reference))
 }

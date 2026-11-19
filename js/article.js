@@ -133,7 +133,8 @@ function initTocToggles() {
     })
 }
 
-// ---------- footnotes: <sup data-cite="id"> + <ol data-footnotes="sources.json"> ----------
+// ---------- footnotes ----------
+// <sup data-cite="id"></sup> (was <Cite id="id"/>) and <ol data-footnotes="/data/sources/x.json"></ol> (was <FootnoteList/>)
 // In source texts, "[label](url)" becomes a link and "*text*" italics
 function renderSourceText(text) {
     const pattern = /\*((?:\[[^\]]+\]\([^)\s]+\)|[^*])+)\*|\[([^\]]+)\]\(([^)\s]+)\)/g
@@ -169,6 +170,7 @@ async function initFootnotes() {
         const used = [] // numbered in order of first use
         for (const cite of document.querySelectorAll("sup[data-cite]")) {
             const id = cite.dataset.cite
+            cite.style.fontFamily = "skyrim"
             if (!sourceById(id)) {
                 console.warn(`Footnote source "${id}" not found`)
                 cite.removeAttribute("id")

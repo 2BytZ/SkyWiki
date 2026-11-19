@@ -60,6 +60,10 @@
                     "href": "https://en.uesp.net/wiki/Skyrim:Dark_Brotherhood"
                 },
                 {
+                    "text": "Companions", 
+                    "href": "the-companions"
+                },
+                {
                     "text": "Stormcloaks", 
                     "href": "https://en.uesp.net/wiki/Lore:Stormcloak_Clan"
                 }
@@ -115,6 +119,12 @@
                 },
                 {
                     "text": "Stormblade"
+                },
+                {
+                    "text": "Leader of the Companions"
+                },
+                {
+                    "text": "penis"
                 },
                 {
                     "text": "Guildmaster"

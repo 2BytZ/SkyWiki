@@ -1,15 +1,15 @@
-// Translations. Text is written in English in the HTML; elements marked with
-// data-i18n attributes get their text from /locales/<language>/<namespace>.json:
+// Translations, like react-i18next in the React version. Elements marked with these
+// attributes get their text from /locales/<language>/<namespace>.json:
 //
-//   data-i18n="ns:key"         replaces the element's text with the value of "key"
-//   data-i18n-trans="ns:key"   like data-i18n, but the value may contain <0>…</0> tags that
-//                              reuse the element's own child elements (same as react-i18next's
-//                              <Trans>). If the key is missing, the English HTML is kept.
-//   data-i18n-infobox="ns"     a <tbody> whose rows are built from the "infobox" list
+//   data-i18n="ns:key"         the element's text is the value of "key"      (was {t("key")})
+//   data-i18n-trans="ns:key"   the element's HTML is the English text; other languages use
+//                              "key", where <0>…</0> tags reuse the element's own children
+//                                                                           (was <Trans i18nKey="key">)
+//   data-i18n-infobox="ns"     a <tbody> filled with rows from the "infobox" list
 //   data-dov-class="cls"       adds the class "cls" while Dovahzul is selected
 //   data-lang-only="dov"       only shown while that language is selected
 //
-// Missing keys fall back to English.
+// Keys missing in a language fall back to English, then to what's in the HTML.
 
 import { infoboxRowsHTML } from "./markup.js"
 
@@ -90,6 +90,12 @@ function parseTrans(text) {
     return root.children
 }
 
+// The children <0>, <1>, … refer to, counted the way JSX counts them: whitespace that
+// only exists because of a line break (e.g. from a code formatter) doesn't count
+function transChildren(nodes) {
+    return nodes.filter((node) => !(node.nodeType === Node.TEXT_NODE && /^\s*$/.test(node.textContent) && node.textContent.includes("\n")))
+}
+
 function renderTrans(nodes, originals) {
     const fragment = document.createDocumentFragment()
     for (const node of nodes) {
@@ -113,19 +119,26 @@ function renderTrans(nodes, originals) {
             // the text belongs inside the link, not around it
             clone = original.cloneNode(true)
             const link = clone.firstElementChild
-            if (node.children.length) link.replaceChildren(renderTrans(node.children, [...link.childNodes]))
+            if (node.children.length) link.replaceChildren(renderTrans(node.children, transChildren([...link.childNodes])))
         } else if (original.hasAttribute("data-cite") || !node.children.length) {
             clone = original.cloneNode(true)
         } else {
             clone = original.cloneNode(false)
-            clone.append(renderTrans(node.children, [...original.childNodes]))
+            clone.append(renderTrans(node.children, transChildren([...original.childNodes])))
         }
         fragment.append(clone)
     }
     return fragment
 }
 
+// What the element held in the HTML, used when no file has the key
 const originalContent = new WeakMap()
+function restoreOriginal(element) {
+    if (!originalContent.has(element)) originalContent.set(element, [...element.childNodes].map((n) => n.cloneNode(true)))
+    const original = originalContent.get(element)
+    element.replaceChildren(...original.map((n) => n.cloneNode(true)))
+    return original
+}
 
 // ---------- applying a language ----------
 export async function applyLanguage(language) {
@@ -147,24 +160,21 @@ export async function applyLanguage(language) {
     if (language !== currentLanguage) return
 
     textElements.forEach((element) => {
+        restoreOriginal(element)
         const [ns, key] = splitKey(element.dataset.i18n)
         const value = lookups[ns](key)
         if (typeof value === "string") setOwnText(element, value)
     })
 
     transElements.forEach((element) => {
-        if (!originalContent.has(element)) originalContent.set(element, [...element.childNodes].map((n) => n.cloneNode(true)))
-        const original = originalContent.get(element)
+        const original = restoreOriginal(element)
         const [ns, key] = splitKey(element.dataset.i18nTrans)
         const value = lookups[ns](key)
-        if (typeof value === "string") {
-            element.replaceChildren(renderTrans(parseTrans(value), original))
-        } else {
-            element.replaceChildren(...original.map((n) => n.cloneNode(true)))
-        }
+        if (typeof value === "string") element.replaceChildren(renderTrans(parseTrans(value), transChildren(original)))
     })
 
     infoboxes.forEach((tbody) => {
+        restoreOriginal(tbody)
         const rows = lookups[tbody.dataset.i18nInfobox]("infobox")
         if (Array.isArray(rows)) tbody.innerHTML = infoboxRowsHTML(rows, lookups.linkPreviews, isDovahzul)
     })
