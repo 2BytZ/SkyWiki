@@ -42,6 +42,15 @@
         },
         "frost-damage": {
             "text": "Target takes <mag> points of frost damage to Health and Stamina."
+        },
+
+
+
+
+
+
+        "deadly-to-elves": {
+            "text": "Does 1.2x damage to High Elves, Wood Elves, Dark Elves, and Falmer"
         }
     }
 }

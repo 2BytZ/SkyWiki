@@ -13,20 +13,23 @@
             "img": "",
             "description": "The **Dragonstone** is a stone tablet that depicts a map of Skyrim, marked with the locations of Dragon burial mounds. It was crafted following the Dragon War and was meant to document the burial of the Dragon-Lords in Skyrim for when Alduin returned. It was created in the days that followed Alduin's defeat in the Dragon War. It was protected by the Keeper of the Dragonstone, a Draugr, in his tomb at Bleak Falls Barrow."
         },
-        "iron-sword": {
-            "title": "Iron Sword",
+        "statue-of-Dibella": {
+            "title": "Statue of Dibella",
+            "img": "",
+            "description": "A standard golden statue depicting the Dibella, the Goddess of Beauty, Love, and Affection."
+        },
+
+
+        "honed-ancient-nord-battle-axe-of-frost": {
+            "title":"Honed Ancient Nord Battle Axe of Frost",
             "type": "weapon",
             "enchantment": [
                 {
-                    "id": "fire-damage",
-                    "magnitude": 10
-                },
-                {
                     "id": "frost-damage",
-                    "magnitude": 5
+                    "magnitude": 10
                 }
             ],
-            "baseDamage": 7
+            "baseDamage": 21
         },
         "shiv": {
             "title": "Shiv",
@@ -63,6 +66,18 @@
                 }
             ],
             "armorRating": 50
+        },
+        "wuuthrad": {
+            "title": "Wuuthrad",
+            "type": "weapon",
+            "img": "",
+            "enchantment": [
+                {
+                    "id": "deadly-to-elves"   
+                }
+            ],
+            "baseDamage": 25,
+            "description": "\"**Ysgramor's Axe**\", better known as ***Wuuthrad***, meaning \"Storm's Tears\" in the language of Atmora, was the legendary battleaxe wielded by Ysgramor during his conquest of Skyrim in the late Merethic Era. With Wuuthrad in his hands, Ysgramor and his Five Hundred Companions slaughtered an untold number of elves, which culminated in the founding of the First Empire of the Nords. For the Companions, Wuuthrad is a sacred relic which holds a great deal of respect and reverence, and through it they can trace their line straight back to the first Harbinger. It is held to be the greatest of all Nord weapons."
         }
     }
 }

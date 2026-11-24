@@ -65,7 +65,29 @@ function initNavigation() {
         event.target.closest(".page-notice-close-button")?.closest(".mw-page-notice__lang")?.remove()
     })
 }
+function expandSettings() {
+    const toggle = document.querySelector(".settings-button")
+    const panel = document.querySelector("#settings-panel")
+    const cog = document.querySelector(".settings-cog")
+    if (!toggle || !panel || !cog) return
 
+    toggle.addEventListener("click", () => {
+        const isOpen = panel.classList.toggle("is-open")
+        panel.inert = !isOpen
+        toggle.setAttribute("aria-expanded", String(isOpen))
+
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            cog.getAnimations().forEach((animation) => animation.cancel())
+            cog.animate(
+                [
+                    { transform: "rotate(0deg)" },
+                    { transform: "rotate(360deg)" }
+                ],
+                { duration: 400, easing: "ease" }
+            )
+        }
+    })
+}
 // ---------- home page character filter ----------
 function initGameFilter() {
     const buttons = document.querySelectorAll("[data-game-filter]")
@@ -81,6 +103,7 @@ function initGameFilter() {
 initTheme()
 initLanguagePicker()
 initNavigation()
+expandSettings()
 initGameFilter()
 initPreviews()
 // before translations and footnotes look at the article, so they see the finished links

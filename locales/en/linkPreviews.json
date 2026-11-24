@@ -178,21 +178,88 @@
         "placement": "horizontal"
     },
     "treasury-house": {
-        "link": "https://en.uesp.net/wiki/Skyrim:The_Treasury_House"
+        "link": "https://en.uesp.net/wiki/Skyrim:The_Treasury_House",
+        "img": "/images/previews/preview-the-treasury-house.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-The_Treasury_House.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**The Treasury House** is the main financial institution for Markarth and the Reach. It is on the first terrace above and in the northern area of the city. It provides financial support and services for the landowners of the Reach, notably the Silver-Blood family and its patrons. All the miners, farmers, and day-laborers of the Reach get their wages through the Treasury House. Rhiada runs the front desk, where the actual treasury is kept behind an expert-locked gate. Nana Ildene (who has worked there for over twenty years) and Donnel keep things tidy. Thonar Silver-Blood, who handles all of his family's business, effectively controls the establishment. Betrid, Thonar's wife and an admitted and unrepentant gold-digger, can also be found here.",
+        "placement": "horizontal"
     },
     "nepos's-house": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Nepos%27s_House"
+        "link": "https://en.uesp.net/wiki/Skyrim:Nepos%27s_House",
+        "img": "/images/previews/preview-Neposs-house.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-Nepos%27s_House.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Nepos's House** is a luxurious private residence owned by Nepos the Nose, who is a wealthy resident of Markarth. It is located on the third terrace on the northern side of Markarth, next door to Vlindrel Hall, above Endon's House and two terraces above Arnleif and Sons Trading Company. His three Breton servants appear to be very protective of him, especially Uaile, who questions visitors at the door and claims to be Nepos's maid.",
+        "placement": "horizontal"
     },
     "cidhna-mine": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Cidhna_Mine"
-    },
-    "markarth-ruins": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Cidhna_Mine#Markarth_Ruins"
+        "link": "https://en.uesp.net/wiki/Skyrim:Cidhna_Mine",
+        "img": "/images/previews/preview-Cidhna-Mine.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-Cidhna_Mine.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Cidhna Mine** is a medium-sized silver mine and forced-labor prison camp in southern Markarth. It contains two zones: Cidhna Mine and Markarth Ruins. The mine is owned by the Silver-Blood family, and is used as Markarth's prison. The silver ore deposits are mined by the prisoners day and night, who only receive food on a weekly basis when they have met their mining quota. Cidhna Mine is generally considered the most feared and secure prison in Skyrim.",
+        "placement": "horizontal"
     },
     "druadach-redoubt": {
-        "link": "https://en.uesp.net/wiki/Lore:Druadach_Redoubt"
+        "link": "https://en.uesp.net/wiki/Lore:Druadach_Redoubt",
+        "img": "/images/previews/preview-Druadach-redoubt.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:ON-place-Druadach_Redoubt.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Druadach Redoubt** is a Reachfolk bastion and forge located in the Druadach Mountains in the Reach, southeast of the Dwemer ruins of Bthar-Zel. The cavern within was known as the Druadach Redoubt Cave, which was abundant in iron and quicksilver ore. Various plants and fungi grew within and around the fortifications, including nightshade, hanging moss, blue mountain flowers, mora tapinella, juniper trees, and potatoes.",
+        "placement": "horizontal"
     },
+    "bee-and-barb": {
 
+    },
+    "pawned-prawn": {
+
+    },
+    "haelga's-bunkhouse": {
+
+    },
+    "dwemer-museum": {
+
+    },
+    "riftweald-manor": {
+
+    },
+    "irkngthand": {
+
+    },
+    "jorrvaskr": {
+
+    },
+    "sky-forge": {
+
+    },
+    "brotherhood-sanctuary-skyrim": {
+
+    },
+    "honorhall": {
+
+    },
+    "abandoned-shack": {
+
+    },
+    "iron-breaker-mine": {
+
+    },
+    "anga's-mill": {
+
+    },
+    "hall-of-the-dead": {
+
+    },
+    "castle-dour": {
+
+    },
+    "temple-of-the-divines": {
+
+    },
+    "dragon-bridge": {
+
+    },
     
 
     "thieves-guild": {
@@ -267,8 +334,22 @@
         "placement": "vertical"
     },
     "forsworn": {
-        "link": "https://en.uesp.net/wiki/Lore:Forsworn"
+        "link": "https://en.uesp.net/wiki/Lore:Forsworn",
+        "img": "/images/previews/preview-Forsworn.png",
+        "imageSource": "https://en.uesp.net/wiki/File:LG-cardart-Forsworn_Looter.png",
+        "summary": "The **Forsworn**, also known as the **Madmen of the Reach**, are a clan of Reachmen formed following the Markarth Incident in 4E 176. The Forsworn claim that they are the true sons and daughters of The Reach, but are often considered \"two septims short of a pint of ale\". Despite appearing primitive in nature, the Forsworn have proven to be an aggressive political force which has an astute grasp of insurgency warfare, and even have agents living among the populace of Markarth in secret. They directly oppose all other major political force, which has an astute grasp of insurgency warfare, and even have agents living among the populace of Markarth in secret.",
+        "placement": "vertical"
     },
+    "companions": {
+
+    },
+    "silver-hand": {
+
+    },
+    "penitus": {
+
+    },
+
 
     
 
@@ -297,11 +378,18 @@
         "link": "https://en.uesp.net/wiki/Lore:Dunmer",
         "img": "/images/previews/preview-Dunmer.png",
         "imageSource": "https://en.uesp.net/wiki/File:LO-race-Dunmer.png",
-        "summary": "The Dunmer, also known as Dark Elves, Ash-Elves by the Daedra, Gray Elves by argonians Pureblooded Folk by themselves, or the archaic names Moriche and Drow are the grey-skinned, typically red-eyed elven peoples of Morrowind. In the Empire, \"Dark Elf\" is the common usage, but they and their Aldmeri brethren prefer the term \"Dunmer\". \"Dark\" is variously interpreted as meaning \"dark-skinned\", \"gloomy\", and \"ill-favored by fate\", with the Dunmer and their national identity embracing these various connotations with enthusiasm.",
+        "summary": "The **Dunmer**, also known as **Dark Elves**, **Ash-Elves** by the Daedra, **Gray Elves** by argonians, **Pureblooded Folk** by themselves, or the archaic names **Moriche** and **Drow** are the grey-skinned, typically red-eyed elven peoples of Morrowind. In the Empire, \"Dark Elf\" is the common usage, but they and their Aldmeri brethren prefer the term \"Dunmer\". \"Dark\" is variously interpreted as meaning \"dark-skinned\", \"gloomy\", and \"ill-favored by fate\", with the Dunmer and their national identity embracing these various connotations with enthusiasm.",
         "placement": "vertical"
     },
     "breton": {
-        "link": "https://en.uesp.net/wiki/Lore:Breton"
+        "link": "https://en.uesp.net/wiki/Lore:Breton",
+        "img": "/images/previews/preview-Breton.png",
+        "imageSource": "https://en.uesp.net/wiki/File:LO-race-Breton.png",
+        "summary": "**Bretons** (from the Ehlnofex *beratu* meaning \"half\") are a hybrid race of both human and elven ancestry that primarily inhabit their ancestral homeland of High Rock, and the Systres Archipelago. Bretondom originated from the Nedes of High Rock and Aldmer interbreeding for centuries as far back as the Merethic Era. This mixed ancestry gives Bretons a unique perspective on Nirn's oldest feud: the conflict between men and mer. The Bretons' Nedic ancestors are referred to as the Druids of Galen (or proto-Bretons) by retroactive nomenclature, while Clan Direnni are primarily credited as being their Aldmer ancestors. Bretons are also distantly related to the Reachfolk.",
+        "placement": "vertical"
+    },
+    "khajiit": {
+
     },
 
     
@@ -350,6 +438,9 @@
         "summary": "**Akatosh**, known as **Auri-El** (or **Auriel**) to the Mer, **Bormahu** (Our Father) to the dragons, the **great Dragon of Time** to the Nedes, **Alkosh** to the Khajiit, is the chief deity of the Eight or Nine Divines (the prescribed religious cults of Cyrodiil and its provinces). He is present in most Tamrielic religions. His avatar is a golden dragon, and he is often called the **Dragon God of Time**, **Father Akatosh**, and the **Lord of the Dragons**. He is generally considered to be the first of the gods to form in the Beginning Place; some even claim he established it. After his formation, other spirits found the process to be easier and the various pantheons of the world emerged. The Aedric spirit is the ultimate God of the Cyrodilic Empire, where he embodies the qualities of endurance, invincibility, and everlasting legitimacy while promoting the virtues of duty, service, and obedience. Akatosh is thought to be the father of all dragons, and their leader Alduin was titled \"First-Born of Akatosh\".",
         "placement": "horizontal"
     },
+    "arkay": {
+
+    },
     "ysolda": {
         "link": "https://en.uesp.net/wiki/Skyrim:Ysolda",
         "img": "/images/previews/preview-Ysolda.jpg",
@@ -368,7 +459,8 @@
     },
     "tullius": {
         "link": "https://en.uesp.net/wiki/Lore:Tullius",
-        "img": "",
+        "img": "/images/previews/preview-general-Tullius.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:LG-cardart-General_Tullius_04.jpg",
         "summary": "**Tullius** was an Imperial general of the Imperial Legion and the Governor of Skyrim. Tullius was originally from Cyrodiil, but Emperor Titus Mede II sent him to Skyrim to serve as the province's military governor following the killing of High King Torygg and the subsequent outbreak of the Stormcloak Rebellion in 4E 201. Tullius was sent to Skyrim to suppress the rebellion and restore the peace. As military governor, Tullius commanded all legions stationed in Skyrim from Castle Dour in Solitude, and the Nord Legate Rikke served as his second-in-command.",
         "placement": "vertical"
     },
@@ -405,49 +497,170 @@
         "placement": "vertical"
     },
     "margret": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Margret"
+        "link": "https://en.uesp.net/wiki/Skyrim:Margret",
+        "img": "/images/previews/preview-Margret.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Margret.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Margret** was a Nord citizen visiting Markarth from her home in Cyrodiil. She was an Imperial agent, her attention focused on the Markarth Treasury deed, which she was instructed to either buy or steal for General Tullius and the Imperials, but was unsuccessful.",
+        "placement": "vertical"
     },
     "weylin": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Weylin"
+        "link": "https://en.uesp.net/wiki/Skyrim:Weylin",
+        "img": "/images/previews/preview-Weylin.png",
+        "imageSource": "https://elderscrolls.fandom.com/wiki/Weylin?file=Weylin.png",
+        "summary": "**Weylin** was a Breton witchblade from Markarth. Up until recently an employee at the local smelter, Weylin lived in the Warrens. He wore a set of miner's clothes, a pair of boots, and a pair of gloves.",
+        "placement": "vertical"
     },
     "thonar-silver-blood": {
-        "link": "https://en.uesp.net/wiki/Lore:Thonar_Silver-Blood"
+        "link": "https://en.uesp.net/wiki/Lore:Thonar_Silver-Blood",
+        "img": "/images/previews/preview-Thonar.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Thonar_Silver-Blood.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Thonar Silver-Blood** was a Nord member of the Silver-Blood family who was a powerful figure in Markarth and the Reach during the late second and early third centuries of the Fourth Era. Although his older brother, Thongvor, was the head of the family, he primarily concerned himself with politics and left Thonar to handle all the Silver-Bloods' business. Following the Markarth Incident in 4E 176, Thonar offered the captured leader of the Reachman uprising, Madanach, a deal: he would be spared and allowed to lead his remaining followers, who had fled into the hills and become the Forsworn, in their rebellion while he was imprisoned in Cidhna Mine, as long as the Forsworn dealt with the Silver-Bloods' enemies. Madanach accepted the deal, and Thonar used their agreement to solidify the power of the Silver-Bloods over the next two decades.",
+        "placement": "vertical"
     },
     "betrid-silver-blood": {
-        "link":"https://en.uesp.net/wiki/Skyrim:Betrid_Silver-Blood"
+        "link":"https://en.uesp.net/wiki/Skyrim:Betrid_Silver-Blood",
+        "img": "/images/previews/preview-Betrid.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Betrid_Silver-Blood.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Betrid Silver-Blood** was a Nord citizen who lived at the Treasury House in Markarth. Her husband was the influential head of the Silver-Blood family, Thonar, whom she only married for the money.",
+        "placement": "vertical"
     },
     "nana-ildene": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Nana_Ildene"
+        "link": "https://en.uesp.net/wiki/Skyrim:Nana_Ildene",
+        "img": "/images/previews/preview-Nana-Ildene.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Nana_Ildene.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Nana Ildene** was a Breton witchblade who worked and lived in Markarth at The Treasury House. She worked as a cleaner and had done so for twenty years. She was revealed to be a Forsworn agent and together with Donnel, another cleaner and Forsworn agent, murdered Thonar Silver-Blood's wife, Betrid.",
+        "placement": "vertical"
     },
     "donnel": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Donnel"
+        "link": "https://en.uesp.net/wiki/Skyrim:Donnel",
+        "img": "/images/previews/preview-Donnel.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Donnel.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Donnel** was an elderly witchblade who lived and worked at The Treasury House in Markarth. He and Nana Ildene cleaned the house. They were revealed to be Forsworn agents and the murderers of Thonar Silver-Blood's wife, Betrid.",
+        "placement": "vertical"
     },
     "nepos-the-nose": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Nepos_the_Nose"
+        "link": "https://en.uesp.net/wiki/Skyrim:Nepos_the_Nose",
+        "img": "/images/previews/preview-Nepos-the-nose.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Nepos_the_Nose.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Nepos the Nose** was an elderly nightblade who lived a luxurious life in Markarth. He worked for Thonar Silver-Blood by \"handling\" any situations with the workers. At first glance he seemed to be nothing more than a wealthy old man. However, upon investigating recent Forsworn attacks it was discovered that he was, in fact, responsible for the deaths of many innocent people. Nepos lived his life in seclusion and never left his upper-class house in the Dryside of Markarth. He was constantly surrounded by his servants and spent all of his time in front of the fireplace inside his house, carefully studying a book.",
+        "placement": "vertical"
     },
     "morven": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Morven"
+        "link": "https://en.uesp.net/wiki/Skyrim:Morven",
+        "img": "/images/previews/preview-Morven.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Morven.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Morven** was a Breton witchblade who lived in Markarth at Nepos's house where he worked as a servant. He was an undercover Forsworn agent and bodyguard of Nepos the Nose, one of the most influential citizens in Markarth.",
+        "placement": "vertical"
     },
     "tynan": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Tynan"
+        "link": "https://en.uesp.net/wiki/Skyrim:Tynan",
+        "img": "/images/previews/preview-Tynan.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Tynan.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Tynan** was a Breton witchblade who lived in Markarth. He worked as a henchman and bodyguard for Nepos the Nose. He was an undercover Forsworn like Nepos and the other servants of his.",
+        "placement": "vertical"
     },
     "uaile": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Uaile"
+        "link": "https://en.uesp.net/wiki/Skyrim:Uaile",
+        "img": "/images/previews/preview-uaile.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Uaile.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Uaile** was a Breton witchblade who lived in Markarth. She was the daughter of Uraccen, a prisoner incarcerated in Cidhna Mine. She worked as a maid for Nepos the Nose, or so she would have liked to think. She was actually a Forsworn agent who guarded the hall of Nepos's house and questioned visitors to see if they were a threat.",
+        "placement": "vertical"
     },
     "eltrys": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Eltrys"
+        "link": "https://en.uesp.net/wiki/Skyrim:Eltrys",
+        "img": "/images/previews/preview-Eltrys.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Eltrys.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Eltrys** was a Breton citizen who lived in Markarth. He was recently married to Rhiade and the couple awaited their first baby. He was related in a ploy to uncover the conspiracy surrounding the Forsworn.",
+        "placement": "vertical"
     },
     "grisvar-the-unlucky": {
-        "link": "https://en.uesp.net/wiki/Skyrim:Grisvar_the_Unlucky"
+        "link": "https://en.uesp.net/wiki/Skyrim:Grisvar_the_Unlucky",
+        "img": "/images/previews/preview-Grisvar.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Grisvar_the_Unlucky.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Grisvar the Unlucky** was a Nord thief who had been locked up in Cidhna Mine for life after committing many crimes. He was found dead in Cidhna Mine by being stabbed with a shiv after the rest of the Forsworn prisoners of Cidhna Mine had escaped.",
+        "placement": "vertical"
     },
     "titus-mede-II": {
         "link": "https://en.uesp.net/wiki/Lore:Titus_Mede_II",
         "img": "/images/previews/preview-Emperor-Titus-Mede-II.jpg",
         "imageSource": "https://en.uesp.net/wiki/File:LG-cardart-Emperor_Titus_Mede_II_02.jpg",
-        "summary": "Titus Mede II was an emperor of the Third Empire and Mede Dynasty during the Fourth Era. Three years after his accession, Titus II was pulled into the Great War against the Aldmeri Dominion. After four years, Titus II and the Imperial Legion defeated the Aldmeri Dominion's main army in Cyrodiil, but the Empire was in no shape to continue the war, forcing Titus II to sign the controversial White-Gold Concordat. The Concordat outlawed the worship of Talos and forced the Empire to cede a large section of southern Hammerfell to the Dominion. The ban on Talos worship caused discontent and eventually led to the Stormcloak Rebellion in Skyrim.",
+        "summary": "**Titus Mede II** was an emperor of the Third Empire and Mede Dynasty during the Fourth Era. Three years after his accession, Titus II was pulled into the Great War against the Aldmeri Dominion. After four years, Titus II and the Imperial Legion defeated the Aldmeri Dominion's main army in Cyrodiil, but the Empire was in no shape to continue the war, forcing Titus II to sign the controversial White-Gold Concordat. The Concordat outlawed the worship of Talos and forced the Empire to cede a large section of southern Hammerfell to the Dominion. The ban on Talos worship caused discontent and eventually led to the Stormcloak Rebellion in Skyrim.",
         "placement": "vertical"
     },
+    "keerava": {
 
+    },
+    "bersi": {
+
+    },
+    "haelga": {
+
+    },
+    "mercer-frey": {
+
+    },
+    "vald": {
+
+    },
+    "kodlak-whitemane": {
+
+    },
+    "farkas": {
+
+    },
+    "grelod-the-kind": {
+
+    },
+    "vittoria-vici": {
+
+    },
+    "aventus-aretino": {
+
+    },
+    "constance-michel": {
+
+    },
+    "fultheim": {
+
+    },
+    "alea-quintos": {
+
+    },
+    "vasha": {
+
+    },
+    "narfi": {
+
+    },
+    "beitild": {
+
+    },
+    "ennodius-papius": {
+
+    },
+    "gaius-maro": {
+
+    },
+    "commander-maro": {
+
+    },
+
+
+
+    "black-sacrament-ritual": {
+
+    },
 
     
 
@@ -495,7 +708,9 @@
         "summary": "The **Thu'um**, also referred to as the **Masculine Breath**, **Storm Voice**, or simply the **Voice**, is a form of magic most commonly practiced by Nords that uses the language of the dragons to produce mystical shouts comparable to powerful spells. The word actually means \"shout\" in the dragon tongue. It is said dragons make no distinction between debating and fighting, and so their words have always been magical and powerful, for those who take the time to learn and understand their meaning. The Nords believe that Kyne, the Goddess of the Storm and chief of deity of their pantheon, breathed onto the land at the Throat of the World to form them.",
         "placement": "vertical"
     },
+    "harbinger": {
 
+    },
     
 
     "stormcloak-rebellion": {
@@ -517,6 +732,13 @@
         "summary": "The **Fourth Era**, also called the **Fourth Age**, is the current and ongoing time period in Tamriel history. It was marked by a changing political map across Tamriel. Notably, The Empire fell under the leadership of the Mede Dynasty, after a conflict known as the Stormcrown Interregnum.",
         "placement": "vertical"
     },
+    "helgen-dragon-attack": {
+        "link": "/wiki/Helgen_Dragon_Attack.html",
+        "img": "/images/previews/preview-Helgen-attack.png",
+        "imageSource": "https://en.uesp.net/wiki/File:LG-cardart-Alduin_Alt.png",
+        "summary": "The **Helgen Dragon Attack**, also known as the **Fall of Helgen**, was the first major event of the Return of the Dragons in 4E 201. Alduin attacked Helgen without warning, heralding in the return of the Dragons, while the Imperial legion, under the guidance of General Tullius, were in the middle of executing Stormcloak soldiers. Only a few individuals managed to escape, including Tullius, Ulfric Stormcloak, and an unknown prisoner.",
+        "placement": "vertical"
+    },
 
     
 
@@ -534,6 +756,12 @@
         "imageSource": "https://en.uesp.net/wiki/File:SR-creature-Draugr.jpg",
         "imageLicense": "by-sa",
         "summary": "**Draugr** are a form of ancient Nord dead found in Skyrim and Solstheim. Their bodies were mummified prior to reanimation, protecting their ligaments and muscle from the detrimental effects of rot. Draugr retain many of their former human skills and thus can greatly differ in their combat preferences, much like living humans. Some draugr will charge in on intruders wielding their battleaxes or greatswords, while others keep their distance and use their bow and arrows, yet others are very proficient with magic and can sometimes even be seen summoning powerful Atronachs. Many Draugr speak using the Dragon Language, and are also known to have the ability to use the Thu'um.",
+        "placement": "vertical"
+    },
+    "frostbite-spider": {
+        "link": "https://en.uesp.net/wiki/Skyrim:Frostbite_Spider",
+        "img": "/images/previews/preview-frostbite-spider-v1.png",
+        "summary": "**Frostbite Spiders** are giant arachnids which attack on sight, and can be found both in the wilderness and in dungeons. Their lairs are often covered in webs, and usually contain web sacs. Spider Eggs can be found in nearby egg sacs. They come in two different color variations: one that tends to appear in dungeons and in the more southern areas of Skyrim is reddish orange, while the ones found in the northern areas tends to be bluish white. There is no difference otherwise between the color variations, though size can dictate combat difficulty in dealing with them: the smallest ones are the easiest, followed by the medium sized ones, and the toughest of all are the spiders which outsize a horse.",
         "placement": "vertical"
     },
 

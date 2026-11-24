@@ -121,10 +121,12 @@
                     "text": "Stormblade"
                 },
                 {
-                    "text": "Leader of the Companions"
+                    "text": "Leader of the",
+                    "separator": " "
                 },
                 {
-                    "text": "penis"
+                    "text": "Companions",
+                    "href": "the-companions"
                 },
                 {
                     "text": "Guildmaster"

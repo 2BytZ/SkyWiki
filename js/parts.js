@@ -31,15 +31,23 @@
                 <li><a class="nav-link" href="/wiki/Pharis_Ironeye.html"><button class="navbutton" tabindex="-1"><img src="/assets/bow_and_drinks.png" alt="">Pharis Ironeye</button></a></li>
                 <li><a class="nav-link"><button type="button" class="navbutton"><img src="/assets/frost_and_greatsword.png" alt="">Priscilla Aurora</button></a></li>
                 <li><a class="nav-link"><button type="button" class="navbutton"><img src="/assets/wealth_and_pike.png" alt="">Gwyndolin Golden-Wing</button></a></li>
+                <li><a class="nav-link"><button type="button" class="navbutton"><img src="/assets/hermaeus-morah.png" style="filter: invert;" alt="">Lahvriiluz</button></a></li>
             </ul>
             <div class="navbar-right">
-                <img class="navbar-right-background" src="/assets/inventory_filter_box.png" alt="">
-                <label class="nav-language-control">
-                    <span data-i18n="navbar:lang" data-dov-class="dovahzul"></span>
-                    <span><select id="lang-nav"><option value="en">English</option><option value="da">Dansk</option><option value="dov" class="dovahzul-lang-dropdown">Dovahzul</option></select></span>
-                </label>
-                <img class="navbar-right-separator" src="/assets/inventory_filter_separator.png" alt="">
-                <button title="${dark ? "Nocturnal mode" : "Meridia mode"}" class="theme-toggle-btn" type="button" aria-pressed="${dark}"><img id="theme-icon" src="${dark ? "/assets/theme_darkmode_moon.png" : "/assets/theme_lightmode_sun.png"}" alt="Mode" width="30" height="30"></button>
+                <div class="settings" id="settings-panel" inert>
+                    <div class="settings-content">
+                        <img class="navbar-right-background" src="/assets/inventory_filter_box.png" alt="">
+                        <label class="nav-language-control">
+                            <span data-i18n="navbar:lang" data-dov-class="dovahzul"></span>
+                            <span><select id="lang-nav"><option value="en">English</option><option value="da">Dansk</option><option value="dov" class="dovahzul-lang-dropdown">Dovahzul</option></select></span>
+                        </label>
+                        <img class="navbar-right-separator" src="/assets/inventory_filter_separator.png" alt="">
+                        <button title="${dark ? "Nocturnal mode" : "Meridia mode"}" class="theme-toggle-btn" type="button" aria-pressed="${dark}"><img id="theme-icon" src="${dark ? "/assets/theme_darkmode_moon.png" : "/assets/theme_lightmode_sun.png"}" alt="Mode" width="30" height="30"></button>
+                    </div>
+                </div>
+                <button type="button" class="settings-button" aria-expanded="false" aria-controls="settings-panel">
+                    <img class="settings-cog" src="../assets/dummy-asset.png" alt="Settings" style="width:44px; height:44px;">
+                </button>
             </div>
         </nav>
         <nav id="mobile-navigation" class="mobile-navigation" hidden>

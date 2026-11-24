@@ -69,6 +69,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    z-index: 3;
 }
 
 .nav-language-control {
@@ -133,11 +134,10 @@
     gap: 0.277778rem;
     box-sizing: border-box;
     width: max-content;
-    min-width: 18.777778rem;
+    z-index: 4;
     min-height: 2.555556rem;
     flex: 0 0 auto;
     justify-content: flex-end;
-    padding: 0 0 0 2.111111rem;
 }
 
 .navbar-right-background {
@@ -150,7 +150,7 @@
     pointer-events: none;
 }
 
-.navbar-right > :not(.navbar-right-background) {
+.settings-content > :not(.navbar-right-background) {
     position: relative;
     z-index: 1;
 }
@@ -172,7 +172,6 @@
 @media (max-width: 680px) {
     .navbar-right {
         min-width: 0;
-        padding-left: 1.111111rem;
     }
 }
 
@@ -240,3 +239,37 @@
         padding-left: 1.555556rem;
     }
 }
+    .settings {
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 4;
+
+        display: flex;
+        align-items: center;
+        width: max-content;
+        min-height: 2.555556rem;
+
+        overflow: hidden;
+    }
+    .settings.is-open {
+        clip-path: inset(0 0 0 0);
+    }
+    .settings-content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: max-content;
+        min-height: 2.555556rem;
+        background-color: transparent;
+
+        transform: translateX(100%);
+        transition: transform 400ms ease;
+
+        padding: .3rem .5rem .3rem 2rem;
+        gap: .5rem;
+    }
+    .settings.is-open .settings-content {
+        transform: translateX(0);
+    }

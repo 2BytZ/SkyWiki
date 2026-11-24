@@ -42,12 +42,14 @@ async function linkCard(reference) {
         const title = decodeURIComponent(source.pathname.split("/").pop()).split(":").pop().replaceAll("_", " ")
         legal = `<p class="copyright-and-legal-text">Source: <a href="${escapeHTML(linkUrl)}">${escapeHTML(title)}</a> (<a href="${escapeHTML(history.href)}">history</a>)`
             + (preview.img ? ` · <a href="/wiki/Credits.html">Image credits</a>` : "") + `</p>`
+    } else if (preview.img && preview.imageSource) {
+        legal = `<p class="copyright-and-legal-text"><a href="/wiki/Credits.html">Image credits</a></p>`
     }
 
     const card = document.createElement("div")
     card.className = `link-preview__card wiki-preview-card wiki-preview-card--${placement}`
         + (preview.img ? "" : " wiki-preview-card--no-image")
-        + (showLegal ? "" : " wiki-preview-card--no-legal-link")
+        + (legal ? "" : " wiki-preview-card--no-legal-link")
     card.innerHTML = frameHTML()
         + (preview.img ? `<img src="${escapeHTML(preview.img)}" alt="${escapeHTML(preview.title || "")}" class="wiki-preview-thumb${inverted ? " wiki-preview-thumb--inverted" : ""}">` : "")
         + `<div class="wiki-preview-body"><strong>${inlineMarkdown(preview.title || "")}</strong>`
