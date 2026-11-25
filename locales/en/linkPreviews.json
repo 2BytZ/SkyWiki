@@ -210,13 +210,28 @@
         "placement": "horizontal"
     },
     "bee-and-barb": {
-
+        "link": "https://en.uesp.net/wiki/Skyrim:The_Bee_and_Barb",
+        "img": "/images/previews/preview-Bee-and-Barb.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-The_Bee_and_Barb.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**The Bee and Barb** is an inn located in the center of the city of Riften, next to the marketplace. The inn is owned and run by an Argonian couple, Keerava and the bartender, Talen-Jei. The inn has the usual services of renting a room for a night and purchasing food and drink. Talen-Jei also offers special drinks unique to the Bee and Barb: Velvet LeChance, White-Gold Tower, and Cliff Racer.",
+        "placement": "horizontal"
     },
     "pawned-prawn": {
-
+        "link": "https://en.uesp.net/wiki/Skyrim:Pawned_Prawn",
+        "img": "/images/previews/preview-Pawned-Prawn.jpg",
+        "imageSource": "https://images.uesp.net/archive/8/8d/20211124231902%21SR-place-Pawned_Prawn.jpg",
+        "imageLicense": "by-sa",
+        "summary": "The **Pawned Prawn** is the general goods store in Riften. The store is owned and run by Bersi Honey-Hand, altough his wife, Drifa, will take over running the store if anything happens to Bersi. It is located next door to Black-Briar Meadery, to the west of The Bee and Barb near the center of Riften.",
+        "placement": "horizontal"
     },
     "haelga's-bunkhouse": {
-
+        "link": "https://en.uesp.net/wiki/Skyrim:Haelga%27s_Bunkhouse",
+        "img": "/images/previews/preview-Haelgas-bunkhouse.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-Haelga%27s_Bunkhouse.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Haelga's Bunkhouse** is a boarding house in Riften run by Haelga that houses serveral of Riften's citizens. The bunkhouse serves as a kind of communal buiding for those who live in the working class in Riften, and offers food, drink, and a place to sleep for those who have had a long day at work with nowhere else to spend the night.",
+        "placement": "horizontal"
     },
     "dwemer-museum": {
 
@@ -599,7 +614,11 @@
         "placement": "vertical"
     },
     "keerava": {
-
+        "link": "https://en.uesp.net/wiki/Skyrim:Keerava",
+        "img": "/images/previews/preview-Keerava.png",
+        "imageSource": "https://skyrim.fandom.com/wiki/Keerava?file=Keerava.png",
+        "summary": "Keerava is a female Argonian and the innkeeper of The Bee and Barb in Riften. She tends to it alongside Talen-Jei, who is the bartender. She sells standard food and drinks and she is the one you have to speak to, if you wish to rent a room to sleep in for the night at the inn. She recently found herself involved with the Thieves Guild for owing money to them. She wishes to one day leave the city of Riften together with Talen-Jei.",
+        "placement": "vertical"
     },
     "bersi": {
 

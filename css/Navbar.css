@@ -128,10 +128,10 @@
 }
 
 .navbar-right {
+    --settings-button-width: 4.5rem;
     position: relative;
     display: inline-flex;
     align-items: center;
-    gap: 0.277778rem;
     box-sizing: border-box;
     width: max-content;
     z-index: 4;
@@ -148,11 +148,8 @@
     height: 100%;
     object-fit: fill;
     pointer-events: none;
-}
-
-.settings-content > :not(.navbar-right-background) {
-    position: relative;
-    z-index: 1;
+    transform: translateX(calc(100% - var(--settings-button-width)));
+    transition: transform 400ms ease;
 }
 
 .navbar-right-separator {
@@ -167,6 +164,7 @@
     place-items: center;
     flex: 0 0 auto;
     align-items: center;
+    margin-right: 0;
 }
 
 @media (max-width: 680px) {
@@ -241,35 +239,67 @@
 }
     .settings {
         position: absolute;
-        right: 100%;
+        right: 0;
         top: 50%;
         transform: translateY(-50%);
         z-index: 4;
 
-        display: flex;
-        align-items: center;
         width: max-content;
-        min-height: 2.555556rem;
-
+        padding-right: var(--settings-button-width);
         overflow: hidden;
-    }
-    .settings.is-open {
-        clip-path: inset(0 0 0 0);
     }
     .settings-content {
         position: relative;
+        overflow: hidden;
+    }
+    .settings-controls {
         display: flex;
         align-items: center;
         width: max-content;
-        min-height: 2.555556rem;
-        background-color: transparent;
+        min-height: max(3rem, 44px);
+        box-sizing: border-box;
 
         transform: translateX(100%);
         transition: transform 400ms ease;
 
-        padding: .3rem .5rem .3rem 2rem;
+        padding: .3rem .25rem .3rem 2rem;
         gap: .5rem;
     }
-    .settings.is-open .settings-content {
+    .settings.is-open .settings-controls,
+    .settings.is-open .navbar-right-background {
         transform: translateX(0);
+    }
+    .settings-button {
+        position: relative;
+        z-index: 5;
+        display: grid;
+        align-items: center;
+        justify-items: end;
+        width: var(--settings-button-width);
+        height: 3rem;
+        min-height: 44px;
+        padding: 0 0.4rem 0 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .settings-cog {
+        width: 30px;
+        height: 30px;
+    }
+
+    @media (max-width: 400px) {
+        .nav-language-control {
+            padding-left: 0;
+        }
+        .settings-controls {
+            padding-left: 2.5rem;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .settings-controls,
+        .navbar-right-background {
+            transition: none;
+        }
     }

@@ -8,11 +8,13 @@ const FRAME_TOP = "/assets/Info_Card_Small_Top_Preview.png"
 const FRAME_BOTTOM = "/assets/Info_Card_Small_Bottom_Preview.png"
 const OPEN_DELAY = 450
 const CLOSE_DELAY = 250
+const pinnedName = new URLSearchParams(window.location.search).get("preview")
 
 let openCard = null // { reference, card }
 let openTimer = null
 let closeTimer = null
 let wanted = null // the reference whose card should be showing
+let pinnedScrolled = false
 
 function frameHTML() {
     return `<img class="wiki-preview-arrow" src="${ARROW}" alt="" aria-hidden="true">`
@@ -121,7 +123,8 @@ function position(card, reference) {
     const arrowWidth = arrow.offsetWidth
     const arrowX = Math.max(5, Math.min(ref.left + ref.width / 2 - x - arrowWidth / 2, width - arrowWidth - 5))
     arrow.style.left = `${arrowX}px`
-    arrow.style[place.side === "top" ? "bottom" : "top"] = "-12px"
+    arrow.style.top = place.side === "bottom" ? "-12px" : ""
+    arrow.style.bottom = place.side === "top" ? "-12px" : ""
     arrow.style.transform = place.side === "bottom" ? "rotate(180deg)" : ""
 }
 
@@ -139,7 +142,11 @@ async function open(reference) {
     if (openCard?.reference === reference) return
     wanted = reference
     const card = await (reference.dataset.item !== undefined ? itemCard(reference) : linkCard(reference))
-    if (!card || wanted !== reference) return
+    if (wanted !== reference) return
+    if (!card) {
+        if (pinnedName) console.warn(`No preview data found for "${pinnedName}".`)
+        return
+    }
     close()
     wanted = reference
     card.id = "preview-card"
@@ -162,6 +169,7 @@ function scheduleOpen(reference) {
 }
 
 function scheduleClose() {
+    if (pinnedName) return
     clearTimeout(openTimer)
     clearTimeout(closeTimer)
     closeTimer = setTimeout(close, CLOSE_DELAY)
@@ -256,6 +264,27 @@ export function keepPunctuationWithLinks(root = document) {
 const REFERENCE = "[data-preview], [data-item]"
 
 export function initPreviews() {
+    document.addEventListener("languagechange", () => {
+        close()
+        keepPunctuationWithLinks() // text may have been redrawn in the new language
+        if (!pinnedName) return
+        const reference = [...document.querySelectorAll(REFERENCE)].find((element) =>
+            (element.dataset.preview === pinnedName || element.dataset.item === pinnedName)
+            && element.getClientRects().length > 0
+        )
+        if (!reference) {
+            console.warn(`No visible preview reference found for "${pinnedName}" on this page.`)
+            return
+        }
+        if (!pinnedScrolled) {
+            reference.scrollIntoView({ block: "center" })
+            pinnedScrolled = true
+        }
+        open(reference)
+    })
+    window.addEventListener("resize", () => openCard && position(openCard.card, openCard.reference))
+    if (pinnedName) return
+
     document.addEventListener("pointerover", (event) => {
         if (event.pointerType === "touch") return
         const reference = event.target.closest(REFERENCE)
@@ -290,9 +319,4 @@ export function initPreviews() {
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") close()
     })
-    document.addEventListener("languagechange", () => {
-        close()
-        keepPunctuationWithLinks() // text may have been redrawn in the new language
-    })
-    window.addEventListener("resize", () => openCard && position(openCard.card, openCard.reference))
 }

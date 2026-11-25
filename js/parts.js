@@ -35,18 +35,20 @@
             </ul>
             <div class="navbar-right">
                 <div class="settings" id="settings-panel" inert>
+                    <img class="navbar-right-background" src="/assets/inventory_filter_box.png" alt="">
                     <div class="settings-content">
-                        <img class="navbar-right-background" src="/assets/inventory_filter_box.png" alt="">
-                        <label class="nav-language-control">
-                            <span data-i18n="navbar:lang" data-dov-class="dovahzul"></span>
-                            <span><select id="lang-nav"><option value="en">English</option><option value="da">Dansk</option><option value="dov" class="dovahzul-lang-dropdown">Dovahzul</option></select></span>
-                        </label>
-                        <img class="navbar-right-separator" src="/assets/inventory_filter_separator.png" alt="">
-                        <button title="${dark ? "Nocturnal mode" : "Meridia mode"}" class="theme-toggle-btn" type="button" aria-pressed="${dark}"><img id="theme-icon" src="${dark ? "/assets/theme_darkmode_moon.png" : "/assets/theme_lightmode_sun.png"}" alt="Mode" width="30" height="30"></button>
+                        <div class="settings-controls">
+                            <label class="nav-language-control">
+                                <span data-i18n="navbar:lang" data-dov-class="dovahzul"></span>
+                                <span><select id="lang-nav"><option value="en">English</option><option value="da">Dansk</option><option value="dov" class="dovahzul-lang-dropdown">Dovahzul</option></select></span>
+                            </label>
+                            <img class="navbar-right-separator" src="/assets/inventory_filter_separator.png" alt="">
+                            <button title="${dark ? "Nocturnal mode" : "Meridia mode"}" class="theme-toggle-btn" type="button" aria-pressed="${dark}"><img id="theme-icon" src="${dark ? "/assets/theme_darkmode_moon.png" : "/assets/theme_lightmode_sun.png"}" alt="Mode" width="30" height="30"></button>
+                        </div>
                     </div>
                 </div>
                 <button type="button" class="settings-button" aria-expanded="false" aria-controls="settings-panel">
-                    <img class="settings-cog" src="../assets/dummy-asset.png" alt="Settings" style="width:44px; height:44px;">
+                    <img class="settings-cog" src="../assets/inventory_settings.png" alt="Settings">
                 </button>
             </div>
         </nav>

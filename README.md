@@ -47,6 +47,8 @@ The header, footer and other shared parts live in `js/parts.js`. To add a nav li
 
 Preview links get their address from `linkPreviews.json` (an `href` you write yourself is kept), and item previews from `itemPreviews.json`. If an item has no `link`, it opens its card on click. Leave a preview link empty to show the preview's title or address. The browser console lists any preview and item names that aren't in the JSON files yet.
 
+To debug a preview, add `?preview=whiterun` (or an item name, such as `?preview=shiv`) to a page URL. The first visible matching reference is scrolled into view and its preview stays open until the parameter is removed. This opt-in works on the hosted site as well as locally; the console reports missing references or preview data.
+
 ## Translations
 
 All three languages come from the locale files, as in React: `locales/en`, `locales/da` and `locales/dov`. The infobox and texts marked `data-i18n` are filled from `<language>/<page>.json`. Keys missing in Danish or Dovahzul fall back to English. Paragraphs marked `data-i18n-trans` have their English in the HTML, and the other languages use the key with `<0>…</0>` tags, numbered by the paragraph's children, like react-i18next's `<Trans>`.
