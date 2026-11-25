@@ -164,6 +164,17 @@ p {
   margin: 0;
 }
 
+@media (max-width: 639px) {
+  .mw-body-content p:not(.dovahzul):not(.dovahzul-english):not(.infobox *),
+  .home-body-text p,
+  .gallerytext p,
+  .credits-page p,
+  .mw-body-content section :is(ul, ol, table):not(.infobox):not(.infobox *),
+  .credits-table {
+    font-size: 1.5rem;
+  }
+}
+
 section {
   @media (max-width: 1600px) {
     padding-right: 2.75rem;
@@ -227,3 +238,4 @@ a {
 .wiki-preview-frame__middle {
   background-image: url("../assets/Info_Card_Small_Mid_Preview.png");
 }
+

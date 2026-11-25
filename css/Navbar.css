@@ -235,12 +235,14 @@
         left: 0.5rem;
         right: 0.5rem;
         z-index: 20;
-        max-height: 70vh;
+        max-height: 80vh;
         overflow: auto;
         padding: 1rem;
         color: var(--nav-text);
         background: var(--nav-bg);
         border: 2px solid var(--nav-border);
+        font-size: 1.5rem;
+        line-height: 3rem;
     }
 
     .mobile-navigation a,
@@ -250,6 +252,7 @@
     }
 
     .mobile-navigation p {
+        font-size: inherit;
         margin: 0.75rem 0 0.25rem;
     }
     .nav-language-control {
