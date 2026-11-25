@@ -1,3 +1,4 @@
+/*#region Misc.*/
 .link-preview {
   position: relative;
   display: inline-block;
@@ -11,6 +12,26 @@
   border-radius: 6px;
 }
 
+.wiki-anchor-text {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.wiki-preview-card {
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  background-color: transparent;
+  border-radius: 2px;
+  width: min(300px, calc(100vw - 16px));
+  z-index: 9999; /* Keeps it on top of other content */
+  font-family: sans-serif;
+  text-align: left;
+  color: var(--text-TOC); /* remove if frame assets are changed for light mode */
+}
+/*#endregion Misc.*/
+
+/*#region Preview text*/
 .wiki-preview-card .preview-text {
   display: -webkit-box;
   overflow: hidden;
@@ -35,24 +56,150 @@
   margin: 0px 14px 4px 14px;
 }
 
-.wiki-anchor-text {
-  text-decoration: none;
-  display: inline-block;
+.wiki-preview-card--vertical.wiki-preview-card--no-image .preview-text {
+  -webkit-line-clamp: 5;
+}
+/*#endregion Preview text*/
+
+/*#region Vertical previews*/
+.wiki-preview-card--vertical {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 40%);
+  column-gap: .5rem;
+  align-items: stretch;
+  width: min(29rem, calc(100vw - 1rem));
+  max-width: none;
+  padding: 1.3rem .8rem 1.3rem 1.5rem;
 }
 
-.wiki-preview-card {
+.wiki-preview-card--vertical.wiki-preview-card--no-image {
+  display: block;
+  width: min(420px, calc(100vw - 16px));
+  max-width: none;
+  padding: 32px;
+}
+
+.wiki-preview-card--vertical:not(.wiki-preview-card--no-image).wiki-preview-card--no-legal-link {
+  padding-bottom: 25px;
+}
+
+.wiki-preview-card--vertical .wiki-preview-thumb {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  max-width: 100%;
+  height: 12rem;
+  min-height: 0;
+  max-height: none;
+  object-fit: contain;
+}
+
+.wiki-preview-card--vertical:not(.wiki-preview-card--no-legal-link) .wiki-preview-thumb {
+  grid-row: 1 / 3;
+}
+
+.wiki-preview-card--vertical .wiki-preview-body {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0; /* prevent overlap */
+}
+
+.wiki-preview-card--vertical .copyright-and-legal-text {
+  align-self: end;
+  object-position: left bottom;
+}
+
+/*#endregion Vertical previews*/
+
+/*#region Horizontal previews*/
+.wiki-preview-card--horizontal {
+  display: flex;
+  flex-direction: column;
+  width: min(17rem, calc(100vw - 1rem));
+  max-width: none;
+  padding: 20px 18px;
+}
+
+.wiki-preview-card--horizontal .wiki-preview-thumb {
   box-sizing: border-box;
-  position: relative;
-  isolation: isolate;
-  background-color: transparent;
-  border-radius: 2px;
-  width: min(300px, calc(100vw - 16px));
-  z-index: 9999; /* Keeps it on top of other content */
-  font-family: sans-serif;
-  text-align: left;
-  color: var(--text-TOC); /* remove if frame assets are changed for light mode */
+  width: 100%;
+  height: 10.5rem;
+  object-fit: cover;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 10px;
 }
 
+.wiki-preview-card--horizontal .copyright-and-legal-text {
+  margin: 8px 0 5px;
+}
+/*#endregion Horizontal previews*/
+
+/*#region Image*/
+.wiki-preview-thumb {
+  z-index: 1;
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+.wiki-preview-thumb--inverted {
+  filter: invert(1);
+}
+/*#endregion Image*/
+
+/*#region Body*/
+.wiki-preview-body {
+  position: relative;
+  z-index: 1;
+  font-synthesis: weight style;
+  align-self: center;
+}
+
+.wiki-preview-body > strong {
+  display: block;
+  font-size: 0.888889rem;
+}
+
+.copyright-and-legal-text {
+  justify-self: left;
+  position: relative;
+  z-index: 1;
+  font-size: 0.555556rem;
+  line-height: 1.3;
+  text-align: center;
+  font-family: var(--sans);
+  color: white;
+  overflow-wrap: anywhere;
+
+}
+
+.copyright-and-legal-text a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.wiki-preview-card--vertical .copyright-and-legal-text {
+  grid-column: 1 / -1;
+}
+
+.wiki-preview-card--vertical:not(.wiki-preview-card--no-image) .copyright-and-legal-text {
+  grid-column: 1;
+  padding-right: 18px;
+  padding-left: 10px;
+}
+
+/* Firefox ignores justify-self on block-level boxes */
+.wiki-preview-card--no-image .copyright-and-legal-text {
+  width: fit-content;
+  margin-right: auto;
+}
+/*#endregion Body*/
+
+/*#region Frame*/
 .link-preview__card .wiki-preview-arrow {
   position: absolute;
   width: 36px;
@@ -66,182 +213,4 @@
   inset: 0;
   z-index: 0;
 }
-
-.wiki-preview-card--horizontal {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 18px;
-}
-
-.wiki-preview-card--horizontal .wiki-preview-thumb {
-  box-sizing: border-box;
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  justify-self: center;
-  align-self: center;
-  margin-bottom: 10px;
-}
-
-.wiki-preview-card--vertical {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 200px;
-  align-items: stretch;
-  width: min(520px, calc(100vw - 16px));
-  max-width: none;
-  padding: 24px 15px 0px 28px;
-}
-
-.wiki-preview-card--vertical.wiki-preview-card--no-image {
-  display: block;
-  width: min(420px, calc(100vw - 16px));
-  max-width: none;
-  padding: 32px;
-}
-
-.wiki-preview-thumb {
-  z-index: 1;
-  width: 100%;
-  height: 150px;
-  object-fit: contain;
-  display: block;
-}
-
-.wiki-preview-thumb--inverted {
-  filter: invert(1);
-}
-
-.wiki-preview-card--vertical .wiki-preview-thumb {
-  grid-column: 2;
-  grid-row: 1;
-  justify-self: center;
-  align-self: center;
-  width: max-content;
-  max-width: 100%;
-  /* height 0 + min-height 100% keeps the image from growing the row beyond the text */
-  height: 0;
-  min-height: 100%;
-  max-height: 180px;
-  object-fit: cover;
-}
-
-.wiki-preview-card--vertical:not(.wiki-preview-card--no-legal-link) .wiki-preview-thumb {
-  grid-row: 1 / 3;
-  min-height: calc(100% - 15px);
-  max-height: none;
-  margin-bottom: 15px;
-}
-
-.wiki-preview-body {
-  position: relative;
-  z-index: 1;
-}
-
-.wiki-preview-card--vertical .wiki-preview-body {
-  grid-column: 1;
-  grid-row: 1;
-  min-width: 26ch;
-}
-
-.wiki-preview-card--vertical.wiki-preview-card--no-image .wiki-preview-body {
-  min-width: 0;
-}
-
-.wiki-preview-card--vertical.wiki-preview-card--no-image .preview-text {
-  -webkit-line-clamp: 5;
-}
-
-.wiki-preview-body {
-  font-synthesis: weight style;
-}
-
-.wiki-preview-body > strong {
-  display: block;
-  font-size: 0.888889rem;
-}
-
-.copyright-and-legal-text {
-  justify-self: left;
-  position: relative;
-  z-index: 1;
-  margin: 8px 0 0;
-  font-size: 0.555556rem;
-  line-height: 1.3;
-  text-align: center;
-  font-family: var(--sans);
-  color: white;
-  overflow-wrap: anywhere;
-}
-
-.wiki-preview-card--vertical:not(.wiki-preview-card--no-image) {
-  padding-bottom: 10px;
-}
-
-.wiki-preview-card--vertical:not(.wiki-preview-card--no-image).wiki-preview-card--no-legal-link {
-  padding-bottom: 25px;
-}
-
-.wiki-preview-card--vertical:not(.wiki-preview-card--no-image) .copyright-and-legal-text {
-  grid-column: 1;
-  padding-right: 18px;
-  padding-left: 10px;
-}
-
-.copyright-and-legal-text a {
-  color: inherit;
-  text-decoration: underline;
-}
-
-.wiki-preview-card--vertical .copyright-and-legal-text {
-  grid-column: 1 / -1;
-}
-
-/* Firefox ignores justify-self on block-level boxes */
-.wiki-preview-card--no-image .copyright-and-legal-text {
-  width: fit-content;
-  margin-right: auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.wiki-preview-card--vertical {
-  width: min(29rem, calc(100vw - 1rem));
-  max-width: none;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 40%);
-  column-gap: .5rem;
-  padding: 1.3rem .8rem .6rem 1.5rem;
-}
-.wiki-preview-card--vertical .wiki-preview-body{
-  min-width: 0; /* prevent overlap */
-}
-.wiki-preview-card--vertical .wiki-preview-thumb,
-.wiki-preview-card--vertical:not(.wiki-preview-card--no-legal-link) .wiki-preview-thumb {
-  width: 100%;
-  height: 12rem;
-  min-height: 0;
-  max-height: none;
-  object-fit: contain;
-}
-
-.wiki-preview-card--horizontal {
-  width: min(17rem, calc(100vw - 1rem));
-  max-width: none;
-}
-
-.wiki-preview-card--no-image {
-  width: none;
-}
-
-.copyright-and-legal-text {
-  margin-bottom: 15px;
-}
+/*#endregion Frame*/
