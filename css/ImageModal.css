@@ -64,6 +64,43 @@
     max-width: 80%;
 }
 
+@media (max-width: 639px) and (orientation: portrait) {
+    .lightbox-modal {
+        width: 100%;
+        max-height: 100vh;
+        max-height: 100dvh;
+        margin-left: 0;
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+
+    .lightbox-modal::-webkit-scrollbar {
+        display: none;
+    }
+
+    .lightbox-modal .modal-content,
+    .lightbox-modal .lightbox,
+    .lightbox-modal .media {
+        height: auto;
+    }
+
+    .lightbox-modal .media {
+        overflow: visible;
+    }
+
+    .lightbox-modal .media img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .lightbox-modal .lightbox-button {
+        position: fixed;
+        top: max(10px, env(safe-area-inset-top));
+        right: max(10px, env(safe-area-inset-right));
+    }
+}
+
 .blackout {
     position: fixed;
     inset: 0;

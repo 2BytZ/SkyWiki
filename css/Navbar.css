@@ -2,7 +2,22 @@
 .ts-container {
     background: var(--nav-bg);
     position: relative;
+    /*position: sticky;
+
+    top: 0;
+    z-index: 30;
+    transition: transform 200ms ease; */
 }
+
+/* .ts-container.is-hidden:not(:focus-within) {
+    transform: translateY(-100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ts-container {
+        transition: none;
+    }
+} */
 
 .ts-container::after {
     content: "";
@@ -185,6 +200,10 @@
 }
 
 @media (max-width: 639px) {
+    .navbar-right {
+        --settings-button-width: 5rem;
+    }
+
     .logo,
     .nav-main {
         display: none;

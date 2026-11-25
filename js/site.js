@@ -50,6 +50,35 @@ function initLanguagePicker() {
 }
 
 // ---------- navigation and footer ----------
+/* function initScrollHeader() {
+    const header = document.querySelector(".ts-container")
+    if (!header) return
+
+    const revealDistance = 80
+    let previousY = Math.max(0, window.scrollY)
+    let upwardStartY = previousY
+
+    window.addEventListener("scroll", () => {
+        const currentY = Math.max(0, window.scrollY)
+        const menuOpen = document.querySelector(".mobile-nav-toggle")
+            ?.getAttribute("aria-expanded") === "true"
+        const settingsOpen = document.querySelector(".settings-button")
+            ?.getAttribute("aria-expanded") === "true"
+
+        if (currentY === 0 || menuOpen || settingsOpen) {
+            header.classList.remove("is-hidden")
+            upwardStartY = currentY
+        } else if (currentY > previousY) {
+            header.classList.add("is-hidden")
+            upwardStartY = currentY
+        } else if (upwardStartY - currentY >= revealDistance) {
+            header.classList.remove("is-hidden")
+        }
+
+        previousY = currentY
+    }, { passive: true })
+}
+ */
 function initNavigation() {
     const toggle = document.querySelector(".mobile-nav-toggle")
     const menu = document.querySelector("#mobile-navigation")
@@ -103,6 +132,7 @@ function initGameFilter() {
 initTheme()
 initLanguagePicker()
 initNavigation()
+// initScrollHeader()
 expandSettings()
 initGameFilter()
 initPreviews()
