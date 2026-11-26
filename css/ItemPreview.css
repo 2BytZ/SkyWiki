@@ -18,9 +18,9 @@ button.item-preview__reference {
 .item-preview__card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 40%);
-  gap: 16px;
+  column-gap: .5rem;
   align-items: center;
-  width: min(520px, calc(100vw - 16px));
+  width: min(32rem, calc(100vw - 1rem));
   max-width: none;
   padding: 30px 28px;
 }
@@ -52,7 +52,9 @@ button.item-preview__reference {
   z-index: 1;
   display: block;
   width: 100%;
-  max-height: 220px;
+  height: 16rem;
+  min-height: 0;
+  max-height: none;
   object-fit: contain;
   border-radius: 0;
 }

@@ -16,7 +16,7 @@
         "statue-of-Dibella": {
             "title": "Statue of Dibella",
             "img": "",
-            "description": "A standard golden statue depicting the Dibella, the Goddess of Beauty, Love, and Affection."
+            "description": "A standard golden statue depicting Dibella, the Goddess of Beauty, Love, and Affection."
         },
 
 
@@ -69,15 +69,16 @@
         },
         "wuuthrad": {
             "title": "Wuuthrad",
+            "link": "https://en.uesp.net/wiki/Lore:Wuuthrad",
             "type": "weapon",
-            "img": "",
+            "img": "/images/previews/preview-wuuthrad.png",
             "enchantment": [
                 {
                     "id": "deadly-to-elves"   
                 }
             ],
             "baseDamage": 25,
-            "description": "\"**Ysgramor's Axe**\", better known as ***Wuuthrad***, meaning \"Storm's Tears\" in the language of Atmora, was the legendary battleaxe wielded by Ysgramor during his conquest of Skyrim in the late Merethic Era. With Wuuthrad in his hands, Ysgramor and his Five Hundred Companions slaughtered an untold number of elves, which culminated in the founding of the First Empire of the Nords. For the Companions, Wuuthrad is a sacred relic which holds a great deal of respect and reverence, and through it they can trace their line straight back to the first Harbinger. It is held to be the greatest of all Nord weapons."
+            "description": "\"**Ysgramor's Axe**\", better known as ***Wuuthrad***, meaning \"Storm's Tears\" in the language of Atmora, was the legendary battleaxe wielded by Ysgramor during his conquest of Skyrim in the late Merethic Era..."
         }
     }
 }

@@ -234,16 +234,36 @@
         "placement": "horizontal"
     },
     "dwemer-museum": {
-
+        "link": "https://en.uesp.net/wiki/Skyrim:Understone_Keep#Dwemer_Museum",
+        "img": "/images/previews/preview-dwemer-museum.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-interior-Dwemer_Museum.jpg",
+        "imageLicense": "by-sa",
+        "summary": "The **Dwemer Museum** is a museum located in Understone Keep in the city of Markarth. It showcases many of the findings from Nchuand-Zel, featuring many Dwarven creations and automatons such as the Dwarven Spiders, Ballistas, and Centurion. Regular civilians are usually locked out of the musuem unless granted access by the owner, Calcelmo, and its upper-level, Calcelmo's Laboratory, is strictly forbidden to all except Calcelmo himself.",
+        "placement": "horizontal"
     },
     "riftweald-manor": {
-
+        "link": "https://en.uesp.net/wiki/Skyrim:Riftweald_Manor",
+        "img": "/images/previews/preview-riftweald-manor.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-Riftweald_Manor.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Riftweald Manor** is a house in Riften previously owned by Mercer Frey, located next to the Temple of Mara and the Hall of the Dead. It is a two-storey manor and holds a master bedroom, a balcony room and a storeroom upstairs, a main hall, dining area and study downstairs, and a cellar below. The house is known for its unusual security: its street-facing doors are barred from the inside, and instead of a back door, the backyard leads to a raised ramp that can be let down from beneath the balcony. Many in Riften see the ramp as an escape route. A cabinet in the study is also said to hide a passage down to the sewers.",
+        "placement": "horizontal"
     },
     "irkngthand": {
-
+        "link": "https://en.uesp.net/wiki/Lore:Irkngthand",
+        "img": "/images/previews/preview-irkngthand.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-Irkngthand_03.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Irkngthand** is a Dwemer ruin tunneling beneath Lake Yorgrim in The Pale hold of Skyrim. Irkngthand is home to the only known depiction of the Snow Elves before the Dwemer corrupted them into the modern Falmer. The Great Statue of Irkngthand was built in secret by the Falmeri slaves and adorned by the two Eyes of the Falmer, which are giant gems of enormous value said burn into oneself upon viewing their magnificence.",
+        "placement": "horizontal"
     },
     "jorrvaskr": {
-
+        "link": "https://en.uesp.net/wiki/Lore:Jorrvaskr",
+        "img": "/images/previews/preview-jorrvaskr.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-place-Jorrvaskr.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Jorrvaskr** is an ancient mead hall in the Skyrim city of Whiterun. The longhouse was originally constructed from the hull of the Jorrvaskr, one of the longships used by the Five Hundred Companions to cross the Sea of Ghosts from Atmora. The ship's band decided to settle at the site of the ancient Skyforge, and the city of Whiterun subsequently grew around the mead hall.",
+        "placement": "horizontal"
     },
     "sky-forge": {
 
@@ -356,7 +376,11 @@
         "placement": "vertical"
     },
     "companions": {
-
+        "link": "https://en.uesp.net/wiki/Lore:Companions",
+        "img": "/images/previews/preview-companions-banner.png",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-banner-Companions.png",
+        "summary": "The **Companions** (also known as ***Zeymahzin*** in the Dragon Language) are a group of warriors who take on private and public contracts for the people of Skyrim, and who purportedly carry on the tradition of the Five Hundred Companions of Ysgramor. Although the two groups offer a similar service, the Fighters Guild historically had a strong presence in Skyrim until the Companions seemingly replaced it entirely in the Fourth Era. They are based in the city of Whiterun, within the mead hall of Jorrvaskr. The most elite members are included in the Circle of Jorrvaskr, and the chief councilor and arbitrator is known as the Harbinger, after Ysgramor, the \"harbinger of us all\" and the only real recognized leader of the Companions. Each new Harbinger is chosen by the last.",
+        "placement": "vertical"
     },
     "silver-hand": {
 
@@ -621,19 +645,43 @@
         "placement": "vertical"
     },
     "bersi": {
-
+        "link": "https://en.uesp.net/wiki/Skyrim:Bersi_Honey-Hand",
+        "img": "/images/previews/preview-Bersi.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Bersi_Honey-Hand.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Bersi Honey-Hand** is the Nord owner and vendor of the general goods store Pawned Prawn in Riften. His wife Drifa lives in the store with him. A former sailor, Bersi used to own a fishing boat, which he named the Brawny Prawn. After selling his boat, he named his shop to commemorate his former life. Like many other citizens of Riften, Bersi is concerned about the rampant corruption within the city. Unlike most, he believes in improving the morality of the citizens through worship at the Temple of Mara. This has earned him the ridicule of many other citizens, who are convinced that the corruption runs too deep to be removed with prayers.",
+        "placement": "vertical"
     },
     "haelga": {
-
+        "link": "https://en.uesp.net/wiki/Skyrim:Haelga",
+        "img": "/images/previews/preview-Haelga.jpg",
+        "imageSource": "https://images.uesp.net/archive/c/ca/20120114221417%21SR-npc-Haelga.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Haelga** is a Nord citizen and the promiscuous owner of Haelga's Bunkhouse in Riften. She saved her niece Svana Far-Shield from the orphanage when her parents died, and now has her working as a maid in the Bunkhouse. Relations between the two are rather strained, as Svana believes she is being worked like a slave and that Haelga takes her worship of Dibella too seriously.",
+        "placement": "vertical"
     },
     "mercer-frey": {
-
+        "link": "https://en.uesp.net/wiki/Lore:Mercer_Frey",
+        "img": "/images/previews/preview-mercer-frey.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Mercer_Frey.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Mercer Frey** was a Breton thief and skilled swordsman who lived during the second and early third centuries of the Fourth Era. He began his career of thievery as a member of the Thieves Guild in Skyrim, where he learned from Guild Master Gallus Desidenius. Mercer was also the previous owner of Riftweald Manor in Riften. However, he was never seen at this location, instead tasking Vald with guarding it.",
+        "placement": "vertical"
     },
     "vald": {
-
+        "link": "https://en.uesp.net/wiki/Skyrim:Vald",
+        "img": "/images/previews/preview-vald.jpg",
+        "imageSource": "https://en.uesp.net/wiki/File:SR-npc-Vald.jpg",
+        "imageLicense": "by-sa",
+        "summary": "**Vald**, a Nord bandit, was an associate of the Thieves Guild in Riften. Vald previously completed jobs for Maven Black-Briar, but during a job in which he was transporting the Quill of Gemination across Lake Honrich, he crashed the boat and lost the quill. Since then, he has been in debt to Maven, and works as a guard watching over Riftweald Manor, which was owned by Mercer Frey.",
+        "placement": "vertical"
     },
     "kodlak-whitemane": {
-
+        "link": "https://en.uesp.net/wiki/Lore:Kodlak_Whitemane",
+        "img": "/images/previews/preview-kodlak.png",
+        "imageSource": "https://en.uesp.net/wiki/File:LG-cardart-Companion_Harbinger_(Nord).png",
+        "summary": "**Kodlak Whitemane** was a Nord warrior and a well-respected Harbinger of the Companions. He avoided politics, and maintained the Companions' long-standing tradition of abstaining from political conflicts during the Stormcloak Rebellion. He was also something of a philosopher, prone to pondering on the meaning of honor and nobility.",
+        "placement": "vertical"
     },
     "farkas": {
 
@@ -728,7 +776,8 @@
         "placement": "vertical"
     },
     "harbinger": {
-
+        "summary": "A **Harbinger** is the chief councilor and arbitrator, after Ysgramor, the \"the harbinger of us all\" and is the only real recognized leader of the Companions. Each new Harbinger is chosen by the last.",
+        "placement": "vertical"
     },
     
 
