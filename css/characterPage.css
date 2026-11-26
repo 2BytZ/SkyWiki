@@ -527,7 +527,35 @@ img.mw-file-upright {
 @media (max-width: 639px) {
 
     .content-body {
+        grid-template-columns: minmax(0, 1fr);
         --mobile-toc-width: min(22rem, calc(100vw - 44px));
+    }
+
+    .mw-body-content .table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .infobox td {
+        overflow-wrap: anywhere;
+    }
+
+    .infobox tbody td:first-child {
+        width: 35%;
+    }
+
+    .infobox .link-preview {
+        white-space: normal;
+    }
+
+    .gallery-list-item,
+    .gallery-list-item img {
+        max-width: 100%;
+    }
+
+    .gallery-list-item img {
+        height: auto;
     }
 
     .vector-toc {

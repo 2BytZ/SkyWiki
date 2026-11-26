@@ -20,3 +20,10 @@
     text-align: left;
     border-bottom: 1px solid currentColor;
 }
+
+@media (max-width: 639px) {
+    .credits-table {
+        display: block;
+        overflow-x: auto;
+    }
+}

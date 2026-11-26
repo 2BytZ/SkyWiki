@@ -165,12 +165,11 @@ p {
 }
 
 @media (max-width: 639px) {
-  .mw-body-content p:not(.dovahzul):not(.dovahzul-english):not(.infobox *),
+  .mw-body-content p:not(.dovahzul):not(.dovahzul-english):not(table *),
   .home-body-text p,
   .gallerytext p,
-  .credits-page p,
-  .mw-body-content section :is(ul, ol, table):not(.infobox):not(.infobox *),
-  .credits-table {
+  .credits-page p:not(table *),
+  .mw-body-content section :is(ul, ol):not(table *) {
     font-size: 1.5rem;
   }
 }
