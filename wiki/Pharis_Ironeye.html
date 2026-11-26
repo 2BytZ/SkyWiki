@@ -1,201 +1,264 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharis Ironeye - Himmeloften</title>
-    <link rel="icon" href="/favicon.ico">
-    <script>
-        // Apply the saved theme before anything is drawn
-        (function () {
-            var theme = null;
-            try { theme = localStorage.getItem("skyrim-wiki-theme"); } catch (e) {}
-            if (theme !== "light" && theme !== "dark") {
-                theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-            }
-            document.documentElement.dataset.theme = theme;
-        })();
-    </script>
-    <script src="/js/parts.js"></script>
-    <style>
-        :where(html[data-theme="dark"]) { background: #1d1d1d; color-scheme: dark; }
-        :where(html[data-theme="light"]) { background: #FCFFF0; color-scheme: light; }
-    </style>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="/css/PageNotice.css">
-    <link rel="stylesheet" href="/css/LinkPreview.css">
-    <link rel="stylesheet" href="/css/TableOfContents.css">
-    <link rel="stylesheet" href="/css/characterPage.css">
-    <link rel="stylesheet" href="/css/ItemPreview.css">
-    <link rel="stylesheet" href="/css/ImageModal.css">
-    <link rel="stylesheet" href="/css/PageFooter.css">
-    <link rel="stylesheet" href="/css/Footnotes.css">
-    <link rel="stylesheet" href="/css/Navbar.css">
-    <link rel="stylesheet" href="/css/Footer.css">
-    <link rel="stylesheet" href="/css/dovahzul.css">
-    <script type="module" src="/js/site.js"></script>
-</head>
-<body>
-<div id="root">
-<site-header></site-header>
-<main class="mw-page-container">
-    <div class="content-body">
-        <div class="vector-column-start">
-            <div class="image-overlay">
-                <div class="hide-toc-button"><span>Hide</span><span class="toc-toggle-wrapper"><button type="button" aria-controls="table-of-contents" aria-expanded="true" style="width: 20px; height: 20px"></button><img src="/assets/Checkmark.png" class="toc-toggle-checkbox"><img src="/assets/Checkmark%20Check.png" class="toc-toggle-check" hidden></span></div>
-                <div id="table-of-contents"><img src="/assets/Main%20Menu.png" class="toc-background-img"><span>
-                    <table-of-contents></table-of-contents>
-                </span></div>
-            </div>
-        </div>
-        <div class="mw-content-container">
-            <page-notice type="construction"></page-notice>
-            <page-notice type="missing-translation"></page-notice>
-            <h1 class="mw-first-heading" data-dov-class="firstHeading" data-i18n="pharis:mwFh"></h1>
-            <p hidden data-lang-only="dov" class="dovahzul">pharis dolm3n</p>
-            <div class="vector-content">
-                <div class="mw-body-content">
-                    <div class="infobox-wrapper infobox-wrapper--background" style="--infobox-background: url(/assets/Main%20Menu.png)">
-                        <table class="infobox vcard">
-                            <caption class="infobox-title" data-dov-class="dovahzul-small" style="--infobox-title-background-left: url(/assets/Journal_Miscellaneous_Caption_Left.png); --infobox-title-background-right: url(/assets/Journal_Miscellaneous_Caption_Right.png)" data-i18n="pharis:mwIbt"></caption>
-                            <thead class="infobox-image-header">
-                                <tr>
-                                    <td colspan="2" class="infobox-img">
-                                        <div class="infobox-image-frame" aria-hidden="true"><div class="infobox-image-frame__middle"></div><img class="infobox-image-frame__top" src="/assets/Info_Card_Small_Top.png" alt=""><img class="infobox-image-frame__bottom" src="/assets/Info_Card_Small_Bottom.png" alt=""></div>
-                                        <div class="image-inner"><img id="profile-img" src="/images/Pharis-Ironeye-home-page-banner-art.jpg" alt="Pharis Ironeye" class="mw-file-upright"></div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><img class="infobox-image-divider" src="/assets/Message_Card_Divider.png"></td>
-                                </tr>
-                            </thead>
-                            <tbody data-i18n-infobox="pharis"></tbody>
-                            <tfoot class="infobox-footer">
-                                <tr>
-                                    <td colspan="2">
-                                        <div class="infobox-footer__ornament" aria-hidden="true"><img src="/assets/Divider_Ornate_L.png"><div class="infobox-footer__middle"></div><img src="/assets/Divider_Ornate_R.png"></div>
-                                    </td>
-                                </tr>
-                            </tfoot>
-                        </table>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pharis Ironeye - Himmeloften</title>
+        <link rel="icon" href="/favicon.ico">
+        <script>
+            // Apply the saved theme before anything is drawn
+            (function () {
+                var theme = null;
+                try { theme = localStorage.getItem("skyrim-wiki-theme"); } catch (e) {}
+                if (theme !== "light" && theme !== "dark") {
+                    theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                document.documentElement.dataset.theme = theme;
+            })();
+        </script>
+        <script src="/js/parts.js"></script>
+        <style>
+            :where(html[data-theme="dark"]) { background: #1d1d1d; color-scheme: dark; }
+            :where(html[data-theme="light"]) { background: #FCFFF0; color-scheme: light; }
+        </style>
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="/css/PageNotice.css">
+        <link rel="stylesheet" href="/css/LinkPreview.css">
+        <link rel="stylesheet" href="/css/TableOfContents.css">
+        <link rel="stylesheet" href="/css/characterPage.css">
+        <link rel="stylesheet" href="/css/ItemPreview.css">
+        <link rel="stylesheet" href="/css/ImageModal.css">
+        <link rel="stylesheet" href="/css/PageFooter.css">
+        <link rel="stylesheet" href="/css/Footnotes.css">
+        <link rel="stylesheet" href="/css/Navbar.css">
+        <link rel="stylesheet" href="/css/Footer.css">
+        <link rel="stylesheet" href="/css/dovahzul.css">
+        <script type="module" src="/js/site.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            <site-header></site-header>
+            <main class="mw-page-container">
+                <div class="content-body mobile-toc-hidden">
+                    <div class="mobile-toc-drawer">
+                        <div class="mobile-toc-collapse-btn">
+                            <button type="button" aria-controls="hamburger-collapse" aria-expanded="false" aria-label="Expand table of contents"></button>
+                        </div>
+                        <div class="vector-column-start" id="hamburger-collapse">
+                            <div class="image-overlay">
+                                <div class="hide-toc-button">
+                                    <span>Hide</span>
+                                    <span class="toc-toggle-wrapper">
+                                        <button type="button" aria-controls="table-of-contents" aria-expanded="true" style="width: 20px; height: 20px"></button>
+                                        <img src="/assets/Checkmark.png" class="toc-toggle-checkbox" alt="">
+                                        <img src="/assets/Checkmark%20Check.png" class="toc-toggle-check" alt="" hidden>
+                                    </span>
+                                </div>
+                                <div id="table-of-contents">
+                                    <img src="/assets/Main%20Menu.png" class="toc-background-img" alt="">
+                                    <span>
+                                        <table-of-contents></table-of-contents>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <blockquote class="page-quote">
-                        <div class="page-quote-frame" aria-hidden="true"><img class="page-quote-frame-start" src="/assets/Dialogue_Selector_Start.png"><div class="page-quote-frame-middle"></div><img class="page-quote-frame-end" src="/assets/Dialogue_Selector_End.png"></div>
-                        <div class="quote-text-style"><span data-dov-class="dovahzul-quote-style" data-i18n="pharis:mwQt"></span></div>
-                    </blockquote>
-                    <section>
-                        <p id="lead-paragraph-1" data-dov-class="dovahzul" data-i18n-trans="pharis:mwLp1">[Placeholder] An expert bounty hunter and assassin. He loves drinking, like, a lot, but he's not an alcoholic. He his quick with his hands and therefore pretty good at stealing. Though, he doesn't do it much, and does so only when necessary, unless it's a quick drink and he's short on Septims, if you know what I mean. He is an Archer, once an aspired one, but now a true Archer through and through with the reputation and effort he's put in from his time as bounty hunter/assassin. 'You won't find anyone better for the job in all of Tamriel!' Or so he says.</p>
-                    </section>
-                    <section>
-                        <div class="mw-heading mw-heading-2">
-                            <h2>Early life</h2>
-                        </div>
-                        <p>...</p>
-                    </section>
-                    <section>
-                        <div class="mw-heading mw-heading-2">
-                            <h2>Career</h2>
-                        </div>
-                        <p></p>
-                    </section>
-                    <section>
-                        <div class="mw-heading mw-heading-3">
-                            <h3>Early career</h3>
-                        </div>
-                        <p></p>
-                    </section>
-                    <section>
-                        <div class="mw-heading mw-heading-2">
-                            <h2>Skyrim</h2>
-                        </div>
-                        <section>
-                            <div class="mw-heading mw-heading-3">
-                                <h3>Arrival in Skyrim</h3>
+                    <div class="mw-content-container">
+                        <page-notice type="language"></page-notice>
+                        <page-notice type="construction"></page-notice>
+                        <page-notice type="missing-translation"></page-notice>
+                        <h1 class="mw-first-heading" data-dov-class="firstHeading" data-i18n="pharis:mwFh"></h1>
+                        <p hidden data-lang-only="dov" class="dovahzul">pharis dolm3n</p>
+                        <div class="vector-content">
+                            <div class="mw-body-content">
+                                <div class="infobox-wrapper infobox-wrapper--background" style="--infobox-background: url(/assets/Main%20Menu.png)">
+                                    <table class="infobox vcard">
+                                        <caption class="infobox-title" data-dov-class="dovahzul-small" style="--infobox-title-background-left: url(/assets/Journal_Miscellaneous_Caption_Left.png); --infobox-title-background-right: url(/assets/Journal_Miscellaneous_Caption_Right.png)" data-i18n="pharis:mwIbt"></caption>
+                                        <thead class="infobox-image-header">
+                                            <tr>
+                                                <td colspan="2" class="infobox-img">
+                                                    <div class="infobox-image-frame" aria-hidden="true">
+                                                        <div class="infobox-image-frame__middle"></div>
+                                                        <img class="infobox-image-frame__top" src="/assets/Info_Card_Small_Top.png" alt="">
+                                                        <img class="infobox-image-frame__bottom" src="/assets/Info_Card_Small_Bottom.png" alt="">
+                                                    </div>
+                                                    <div class="image-inner">
+                                                        <img id="profile-img" src="/images/Pharis-Ironeye-home-page-banner-art.jpg" alt="Pharis Ironeye" class="mw-file-upright">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <img class="infobox-image-divider" src="/assets/Message_Card_Divider.png" alt="">
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody data-i18n-infobox="pharis"></tbody>
+                                        <tfoot class="infobox-footer">
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="infobox-footer__ornament" aria-hidden="true">
+                                                        <img src="/assets/Divider_Ornate_L.png" alt="">
+                                                        <div class="infobox-footer__middle"></div>
+                                                        <img src="/assets/Divider_Ornate_R.png" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <blockquote class="page-quote">
+                                    <div class="page-quote-frame" aria-hidden="true">
+                                        <img class="page-quote-frame-start" src="/assets/Dialogue_Selector_Start.png" alt="">
+                                        <div class="page-quote-frame-middle"></div>
+                                        <img class="page-quote-frame-end" src="/assets/Dialogue_Selector_End.png" alt="">
+                                    </div>
+                                    <div class="quote-text-style">
+                                        <span data-dov-class="dovahzul-quote-style" data-i18n="pharis:mwQt"></span>
+                                    </div>
+                                </blockquote>
+                                <section>
+                                    <p id="lead-paragraph-1" data-i18n-trans="pharis:mwLp1">
+                                        [Placeholder] An expert bounty hunter and assassin. He loves drinking, like, a lot, but he's not an alcoholic. He his quick with his hands and therefore pretty good at stealing. Though, he doesn't do it much, and does so only when necessary, unless it's a quick drink and he's short on Septims, if you know what I mean. He is an Archer, once an aspired one, but now a true Archer through and through with the reputation and effort he's put in from his time as bounty hunter/assassin. 'You won't find anyone better for the job in all of Tamriel!' Or so he says.
+                                    </p>
+                                </section>
+                                <section>
+                                    <div class="mw-heading mw-heading-2">
+                                        <h2 id="Early_life">Early life</h2>
+                                    </div>
+                                    <p>
+                                        ...
+                                    </p>
+                                </section>
+                                <section>
+                                    <div class="mw-heading mw-heading-2">
+                                        <h2 id="Career">Career</h2>
+                                    </div>
+                                    <p>
+                                        ...
+                                    </p>
+                                </section>
+                                <section>
+                                    <div class="mw-heading mw-heading-3">
+                                        <h3 id="Skyrim">Skyrim</h3>
+                                    </div>
+                                    <p>
+                                        ...
+                                    </p>
+                                    <section>
+                                        <div class="mw-heading mw-heading-4">
+                                            <h4 class="Arrival_in_Skyrim">Arrival in Skyrim</h4>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                </section>
+                                <section>
+                                    <div class="mw-heading mw-heading-2">
+                                        <h2 id="Factions_and_affiliations">Factions and affiliations</h2>
+                                    </div>
+                                    <p>
+                                        ...
+                                    </p>
+                                    <section>
+                                        <div class="mw-heading mw-heading-3">
+                                            <h3 id="Thieves_Guild">Thieves Guild</h3>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                </section>
+                                <section>
+                                    <div class="mw-heading mw-heading-2">
+                                        <h2 id="Notable_events">Notable events</h2>
+                                    </div>
+                                    <p>
+                                        ...
+                                    </p>
+                                </section>
+                                <section>
+                                    <div class="mw-heading mw-heading-2">
+                                        <h2 id="Personal_life">Personal life</h2>
+                                    </div>
+                                    <p>
+                                        ...
+                                    </p>
+                                    <section>
+                                        <div class="mw-heading mw-heading-3">
+                                            <h3 id="Personality">Personality</h3>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                    <section>
+                                        <div class="mw-heading mw-heading-3">
+                                            <h3 id="Appearance">Appearance</h3>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                    <section>
+                                        <div class="mw-heading mw-heading-3">
+                                            <h3 id="Relationships">Relationships</h3>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                    <section>
+                                        <div class="mw-heading mw-heading-3">
+                                            <h3 id="Beliefs">Beliefs</h3>
+                                        </div>
+                                        <p>
+                                            ...
+                                        </p>
+                                    </section>
+                                </section>
+                                <section>
+                                    <div class="mw-heading mw-heading-2">
+                                        <h2 id="Gallery">Gallery</h2>
+                                    </div>
+                                    <div class="gallery-image-collection">
+                                        <ul class="gallery-container">
+                                            <li class="gallery-list-item">
+                                                <span class="gallery-img">
+                                                    <div class="image-inner">
+                                                        <img src="/images/bullseye-pharis-headshot-art-gore.jpg" alt="Portrait of Pharis Ironeye" width="300" height="169">
+                                                    </div>
+                                                </span>
+                                            </li>
+                                            <li class="gallery-list-item">
+                                                <span class="gallery-img">
+                                                    <div class="image-inner">
+                                                        <img src="/images/Pharis-Ironeye-sunrise-sitting.jpg" alt="Pharis Ironeye sitting at sunrise" width="300" height="169">
+                                                    </div>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                                <section id="See_also">
+                                    <div class="mw-heading mw-heading-2">
+                                        <h2>See also</h2>
+                                    </div>
+                                    <ul>
+                                        <li><a data-preview="https://en.uesp.net/wiki/Lore:Argonian">Argonians</a></li>
+                                        <li><a data-preview="https://en.uesp.net/wiki/Skyrim:Thieves_Guild_(faction)">Thieves Guild</a></li>
+                                        <li><a data-preview="https://en.uesp.net/wiki/Lore:Shadowscales">Shadowscales</a></li>
+                                    </ul>
+                                </section>
                             </div>
-                            <p></p>
-                        </section>
-                    </section>
-                    <section>
-                        <div class="mw-heading mw-heading-2">
-                            <h2>Factions and affiliations</h2>
                         </div>
-                        <p></p>
-                        <section>
-                            <div class="mw-heading mw-heading-3">
-                                <h3>Joining the Thieves Guild</h3>
-                            </div>
-                            <p></p>
-                        </section>
-                    </section>
-                    <section>
-                        <div class="mw-heading mw-heading-2">
-                            <h2>Notable events</h2>
-                        </div>
-                        <p></p>
-                    </section>
-                    <section>
-                        <div class="mw-heading mw-heading-2">
-                            <h2>Personal life</h2>
-                        </div>
-                        <p></p>
-                        <section>
-                            <div class="mw-heading mw-heading-3">
-                                <h3>Personality</h3>
-                            </div>
-                            <p></p>
-                        </section>
-                        <section>
-                            <div class="mw-heading mw-heading-3">
-                                <h3>Appearance</h3>
-                            </div>
-                            <p></p>
-                        </section>
-                        <section>
-                            <div class="mw-heading mw-heading-3">
-                                <h3>Relationships</h3>
-                            </div>
-                            <p></p>
-                        </section>
-                        <section>
-                            <div class="mw-heading mw-heading-3">
-                                <h3>Beliefs</h3>
-                            </div>
-                            <p></p>
-                        </section>
-                    </section>
-                    <section>
-                        <div class="mw-heading mw-heading-2">
-                            <h2>Gallery</h2>
-                        </div>
-                        <div class="gallery-image-collection">
-                            <ul class="gallery-container">
-                                <li class="gallery-list-item"><span class="gallery-img">
-                                    <div class="image-inner"><img src="/images/bullseye-pharis-headshot-art-gore.jpg" width="300" height="169"></div>
-                                </span></li>
-                                <li class="gallery-list-item"><span class="gallery-img">
-                                    <div class="image-inner"><img src="/images/Pharis-Ironeye-sunrise-sitting.jpg" width="300" height="169"></div>
-                                </span></li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="mw-heading mw-heading-2">
-                            <h2>See also</h2>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="mw-heading mw-heading-2">
-                            <h2>References</h2>
-                        </div>
-                    </section>
+                    </div>
+                    <page-footer></page-footer>
                 </div>
-            </div>
+            </main>
+            <site-footer></site-footer>
         </div>
-        <page-footer></page-footer>
-    </div>
-</main>
-<site-footer></site-footer>
-</div>
-</body>
+    </body>
 </html>

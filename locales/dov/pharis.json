@@ -40,7 +40,7 @@
             "desc": "14th of Second Seed, 4E 180"
         },
         {
-            "title": "Factions(s)",
+            "title": "Faction(s)",
             "desc": [
                 {
                     "text": "Thieves Guild", 
@@ -54,14 +54,7 @@
         },
         {
             "title": "Occupation",
-            "desc": [
-                {
-                    "text": "Treasure-/Bounty Hunter"
-                },
-                {
-                    "text": "Assassin"
-                }
-            ]
+            "desc": "Treasure hunter, bounty hunter, and assassin"
         },
         {
             "title": "Known for", 
@@ -95,7 +88,7 @@
                     "href": "https://en.uesp.net/wiki/Skyrim:Captain_Aldis"
                 },
                 {
-                    "text": "Frihada", 
+                    "text": "Fihada",
                     "href": "https://en.uesp.net/wiki/Skyrim:Fihada"
                 },
                 {
